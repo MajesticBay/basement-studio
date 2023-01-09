@@ -80,4 +80,11 @@ a {
   color: var(--color-white);
 }
 
+.nav__mobile {
+  display: flex;
+}
+.nav__desktop {
+  display: none;
+}
+
 /*# sourceMappingURL=main.css.map */

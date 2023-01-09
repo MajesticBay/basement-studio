@@ -1,15 +1,22 @@
+import Hamburger from "./Hamburger";
+import logo from "../images/logo.svg";
+
 export const Header = () => {
     return (
-        <header>
-            <nav>
+        <header className="header">
+            <nav className="nav__mobile">
+                <img src={logo}/>
+                <Hamburger />
+            </nav>
+            <nav className="nav__desktop">
                 <ul>
                     <li>ПРО НАС</li>
-                    <li>Студія звукозапису</li>
-                    <li>курс DJ</li>
-                    <li>курс production</li>
-                    <li>оренда</li>
-                    <li>подкаст</li>
-                    <li>контакти</li>
+                    <li>СТУДІЯ ЗВУКОЗАПИСУ</li>
+                    <li>КУРС DJ</li>
+                    <li>КУРС PRODUCTION</li>
+                    <li>ОРЕНДА</li>
+                    <li>ПОДКАСТ</li>
+                    <li>КОНТАКТИ</li>
                 </ul>
             </nav>
         </header>

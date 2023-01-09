@@ -2,3 +2,13 @@
     background-color: var(--color-primary);
     color: var(--color-white);
 }
+
+.nav {
+    &__mobile {
+        display: flex;
+    }
+
+    &__desktop {
+        display: none;
+    }
+}
