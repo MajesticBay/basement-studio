@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Div = styled.div`
-  width: 2rem;
+  width: 3.3rem;
   height: 2rem;
   position: ${({ openMobileMenu }) => (openMobileMenu ? 'fixed' : 'static')};
   top: ${({ openMobileMenu }) => (openMobileMenu ? '1.7rem' : 'auto')};
@@ -15,7 +15,7 @@ const Div = styled.div`
   flex-flow: column nowrap;
 
   div {
-    width: 2rem;
+    width: 3.3rem;
     height: 0.25rem;
     background-color: ${({ openMobileMenu }) => (openMobileMenu ? '#333' : '#ccc')};
     // background-color #ccc;
@@ -47,7 +47,7 @@ const Hamburger = ({ openMobileMenu, setOpenMobileMenu }) => {
     >
       <div />
       <div />
-      <div />
+      {/* <div /> */}
     </Div>
   );
 };

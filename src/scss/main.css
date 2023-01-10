@@ -82,9 +82,27 @@ a {
 
 .nav__mobile {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .nav__desktop {
   display: none;
+}
+
+.nav-desktop__list-menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav__mobile {
+    display: none;
+  }
+  .nav__desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
