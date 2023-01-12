@@ -133,22 +133,31 @@ a {
     border-right: 1px solid rgba(255, 255, 255, 0.4);
   }
 }
-.hero-screen {
-  background-image: url("/src/images/bg-desktop.png");
+.hero {
+  background-image: url("/src/images/bg-mobile.png");
   height: 100vh;
   position: relative;
 }
-.hero-screen__mouse-container {
+.hero__scroll-container {
   position: absolute;
   bottom: 0;
   width: 100%;
   display: flex;
   justify-content: center;
 }
+.hero__scroll--desktop {
+  display: none;
+}
 
 @media only screen and (min-width: 768px) {
-  .hero-screen {
+  .hero {
     background-image: url("/src/images/bg-desktop.png");
+  }
+  .hero__scroll--mobile {
+    display: none;
+  }
+  .hero__scroll--desktop {
+    display: block;
   }
 }
 

@@ -1,20 +1,36 @@
-.hero-screen {
-    background-image: url("/src/images/bg-desktop.png");
+.hero {
+    background-image: url("/src/images/bg-mobile.png");
     height: 100vh;
     position: relative;
 
-    &__mouse-container {
+    &__scroll-container {
         position: absolute;
         bottom: 0;
         width: 100%;
         display: flex;
         justify-content: center;
     }
+
+    &__scroll {
+        &--desktop {
+            display: none;
+        }
+    }
 }
 
 
 @media only screen and (min-width: 768px) {
-    .hero-screen {
+    .hero {
         background-image: url("/src/images/bg-desktop.png");
+
+        &__scroll {
+            &--mobile {
+                display: none;
+            }
+
+            &--desktop {
+                display: block;
+            }
+        }
     }
 }
