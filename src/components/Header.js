@@ -22,7 +22,7 @@ export const Header = () => {
                 </ul>
                 <div className="locale">
                     <p className="locale__current-language">UA</p>
-                    <img src={down} className="locale__down" />
+                    <img src={down} className="locale__down" alt="locale"/>
                 </div>
             </nav>
         </header>
