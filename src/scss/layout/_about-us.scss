@@ -1,0 +1,13 @@
+.about-us {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+    background: var(--color-primary);
+
+    &__text {
+        color: var(--color-white);
+        font-size: 1.4rem;
+    }
+}
