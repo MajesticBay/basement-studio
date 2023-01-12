@@ -136,6 +136,14 @@ a {
 .top-screen {
   background-image: url("/src/images/bg-desktop.png");
   height: 100vh;
+  position: relative;
+}
+.top-screen__mouse-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (min-width: 768px) {
