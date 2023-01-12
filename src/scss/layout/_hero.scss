@@ -1,4 +1,4 @@
-.top-screen {
+.hero-screen {
     background-image: url("/src/images/bg-desktop.png");
     height: 100vh;
     position: relative;
@@ -14,7 +14,7 @@
 
 
 @media only screen and (min-width: 768px) {
-    .top-screen {
+    .hero-screen {
         background-image: url("/src/images/bg-desktop.png");
     }
 }

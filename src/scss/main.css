@@ -133,12 +133,12 @@ a {
     border-right: 1px solid rgba(255, 255, 255, 0.4);
   }
 }
-.top-screen {
+.hero-screen {
   background-image: url("/src/images/bg-desktop.png");
   height: 100vh;
   position: relative;
 }
-.top-screen__mouse-container {
+.hero-screen__mouse-container {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -147,7 +147,7 @@ a {
 }
 
 @media only screen and (min-width: 768px) {
-  .top-screen {
+  .hero-screen {
     background-image: url("/src/images/bg-desktop.png");
   }
 }
