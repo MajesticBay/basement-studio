@@ -78,9 +78,7 @@ a {
 .about-us {
   display: flex;
   flex-direction: column;
-  padding-top: 8rem;
-  padding-left: 3.2rem;
-  padding-right: 3.2rem;
+  padding: 8rem 3.2rem;
   background: var(--color-primary);
 }
 .about-us__text {
@@ -175,6 +173,9 @@ a {
   .hero__scroll--desktop {
     display: block;
   }
+}
+.record-studio {
+  padding: 8rem 3.2rem;
 }
 .record-studio__header {
   font-size: 2.8rem;
