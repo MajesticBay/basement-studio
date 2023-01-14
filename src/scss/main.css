@@ -182,7 +182,42 @@ a {
   color: var(--color-white);
 }
 .record-studio__text {
+  font-size: 1.6rem;
   color: var(--color-white);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
+  padding: 2.4rem;
+}
+.card__title {
+  font-size: 2rem;
+}
+.card__price {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.card__list {
+  padding: 3.2rem 0;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.card__text {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.72);
+}
+.card__button {
+  background: var(--color-white);
+  width: 100%;
+  text-align: center;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  font-size: 1.6rem;
+  color: var(--color-primary);
 }
 
 /*# sourceMappingURL=main.css.map */
