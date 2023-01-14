@@ -2,10 +2,10 @@ import arrow from "../images/arrow.svg";
 
 export const Btn = () => {
     return (
-        <button>
+        <div className="btn">
             <span>ДЕТАЛЬНІШЕ</span>
             <img src={arrow} alt="arrow" />
-        </button>
+        </div>
     )
 }
 
