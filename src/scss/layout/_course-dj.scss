@@ -1,5 +1,16 @@
 .course-dj {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // gap: 4rem;
+    padding: 0 3.2rem;
+
+    &__text-container {
+        padding: 4rem 0;
+    }
+
     &__text {
+        font-size: 1.6rem;
         color: var(--color-white);
     }
 }
