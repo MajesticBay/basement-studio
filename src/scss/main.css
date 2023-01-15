@@ -91,6 +91,10 @@ a {
 }
 
 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.8rem 0;
   border: 2px solid rgba(255, 255, 255, 0.4);
   color: var(--color-white);
 }
