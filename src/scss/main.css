@@ -144,6 +144,12 @@ a {
   color: var(--color-white);
 }
 
+.gift-certificate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .header {
   display: flex;
   color: var(--color-white);
@@ -228,6 +234,14 @@ a {
     display: block;
   }
 }
+.podcast {
+  padding: 8rem 3.2rem;
+}
+
+.podcast-card {
+  height: 300px;
+}
+
 .record-studio {
   display: flex;
   flex-direction: column;

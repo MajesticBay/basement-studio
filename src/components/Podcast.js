@@ -1,11 +1,24 @@
+import ostap from "../images/podcast-ostap.png";
+import { Btn } from "./Btn";
+
 export const Podcast = () => {
     return (
-        <div>
+        <div className="podcast">
             <h1>ПОДКАСТ</h1>
             <div>
                 <p>It's all about unity of underground music culture.</p>
-                <img />
+                <div style={{
+                    // backgroundColor: "purple"
+                    backgroundImage: ostap
+                }}
+                className="podcast-card">
+                    {/* <img src={ostap} alt="ostap"/> */}
+                </div>
+                <p className="card__button">Дивитись  на youtube</p>
+                <Btn />
             </div>
         </div>
     )
 }
+
+export default Podcast;
