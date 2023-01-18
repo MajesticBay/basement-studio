@@ -6,6 +6,7 @@ import { CourseDj } from "./components/CourseDj";
 import { Rent } from "./components/Rent";
 import { Podcast } from "./components/Podcast";
 import { GiftCertificate } from "./components/GiftCertificate";
+import { ContactUs } from "./components/ContactUs";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Rent />
       <Podcast />
       <GiftCertificate />
+      <ContactUs />
     </main>
   );
 }
