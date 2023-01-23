@@ -4,7 +4,7 @@ import address from "../images/address.svg";
 import fb from "../images/fb.svg";
 import ig from "../images/ig.svg";
 import tk from "../images/tk.svg";
-import { Btn } from "./Btn";
+// import { Btn } from "./Btn";
 
 export const ContactUs = () => {
     return (
@@ -34,4 +34,3 @@ export const ContactUs = () => {
         </div>
     )
 }
-

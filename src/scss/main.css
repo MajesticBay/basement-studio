@@ -171,6 +171,16 @@ a {
   color: var(--color-white);
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 3.2rem;
+}
+.footer__link {
+  color: var(--color-white);
+  font-size: 1.4rem;
+}
+
 .gift-certificate {
   display: flex;
   flex-direction: column;

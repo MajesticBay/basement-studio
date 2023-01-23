@@ -7,6 +7,7 @@ import { Rent } from "./components/Rent";
 import { Podcast } from "./components/Podcast";
 import { GiftCertificate } from "./components/GiftCertificate";
 import { ContactUs } from "./components/ContactUs";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Podcast />
       <GiftCertificate />
       <ContactUs />
+      <Footer />
     </main>
   );
 }
