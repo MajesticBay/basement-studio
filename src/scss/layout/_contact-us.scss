@@ -1,0 +1,8 @@
+.contact-us {
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+        color: var(--color-white);
+    }
+}

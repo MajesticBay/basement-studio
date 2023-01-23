@@ -12,7 +12,7 @@ export const RecordStudio = () => {
                     <li className="card__text">Дикторське озвучення для реклами та різного роду відеоконтенту.</li>
                     <li className="card__text">Виготовлення аудіокниг та дубляж кіно.</li>
                 </ul>
-                <p className="card__button">ЗАМОВИТИ</p>
+                <p className="card__button pointer">ЗАМОВИТИ</p>
             </div>
         </div>
     )

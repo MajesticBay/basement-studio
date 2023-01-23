@@ -10,7 +10,7 @@ export const Rent = () => {
                     <li className="card__text">2x CDJ-300 | Xone:96 | 2x Technics SL-1210MK2 | 2x Ortofon Nightclub E.</li>
                     <li className="card__text">Universal Audio Apollo Twin для якісного запису твого dj міксу або лайву.</li>
                 </ul>
-                <p className="card__button">ЗАМОВИТИ</p>
+                <p className="card__button pointer">ЗАМОВИТИ</p>
             </div>
         </div>
     )
