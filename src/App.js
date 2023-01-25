@@ -1,28 +1,16 @@
-import { Header } from "./components/Header";
-import { Hero } from "./components/Hero";
-import { AboutUs } from "./components/AboutUs";
-import { RecordStudio } from "./components/RecordStudio";
-import { CourseDj } from "./components/CourseDj";
-import { Rent } from "./components/Rent";
-import { Podcast } from "./components/Podcast";
-import { GiftCertificate } from "./components/GiftCertificate";
-import { ContactUs } from "./components/ContactUs";
-import { Footer } from "./components/Footer";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { CourseDj } from "./pages/CourseDj";
 
 function App() {
   return (
-    <main className="main">
-      <Header/>
-      <Hero />
-      <AboutUs />
-      <RecordStudio />
-      <CourseDj />
-      <Rent />
-      <Podcast />
-      <GiftCertificate />
-      <ContactUs />
-      <Footer />
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/course-dj" element={<CourseDj />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
