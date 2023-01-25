@@ -12,16 +12,16 @@ import { Footer } from "../components/Footer";
 export const Home = () => {
     return (
         <main className="main">
-        <Header/>
-        <Hero />
-        <AboutUs />
-        <RecordStudio />
-        <CourseDj />
-        <Rent />
-        <Podcast />
-        <GiftCertificate />
-        <ContactUs />
-        <Footer />
+            <Header/>
+            <Hero />
+            <AboutUs />
+            <RecordStudio />
+            <CourseDj />
+            <Rent />
+            <Podcast />
+            <GiftCertificate />
+            <ContactUs />
+            <Footer />
         </main>
     )
 }
