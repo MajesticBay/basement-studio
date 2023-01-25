@@ -11,8 +11,7 @@ import { Footer } from "../components/Footer";
 
 export const Home = () => {
     return (
-        <main className="main">
-            <Header/>
+        <>
             <Hero />
             <AboutUs />
             <RecordStudio />
@@ -21,8 +20,7 @@ export const Home = () => {
             <Podcast />
             <GiftCertificate />
             <ContactUs />
-            <Footer />
-        </main>
+        </>
     )
 }
 
