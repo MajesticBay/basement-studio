@@ -13,7 +13,7 @@ const Ul = styled.ul`
   top: 0;
   right: 0;
   height: 100vh;
-  width: 70%;
+  width: 100%;
   max-width: 50rem;
   padding-top: 3.5rem;
   transition: transform 0.3s ease-in-out;
@@ -21,7 +21,14 @@ const Ul = styled.ul`
 
   li {
     padding: 2rem 3.5rem;
-    color: var(--color-black);
+    text-align: center;
+    color: var(--color-white);
+    font-size: 1.6rem;
+  }
+
+  li:hover {
+    font-weight: 800;
+    text-decoration: underline;
   }
 
   .mobile-menu__mobile-menu-login-signup-container {
@@ -48,16 +55,22 @@ export const MobileMenu = ({ openMobileMenu, setOpenMobileMenu }) => {
   return (
     <Ul openMobileMenu={openMobileMenu}>
       <Link onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
-        <li>Home</li>
+        <li>ПРО НАС</li>
       </Link>
-      <Link onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/store">
-        <li>Store</li>
+      <Link onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
+        <li>СТУДІЯ ЗВУКОЗАПИСУ</li>
       </Link>
-      <Link onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/tutorials">
-        <li>Tutorials</li>
+      <Link onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
+        <li>КУРС DJ</li>
       </Link>
-      <Link onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/faq">
-        <li>Help</li>
+      <Link onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
+        <li>ОРЕНДА</li>
+      </Link>
+      <Link onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
+        <li>ПОДКАСТ</li>
+      </Link>
+      <Link onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
+        <li>КОНТАКТИ</li>
       </Link>
     </Ul>
   );
