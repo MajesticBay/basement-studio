@@ -24,6 +24,7 @@ const Ul = styled.ul`
     text-align: center;
     color: var(--color-white);
     font-size: 1.6rem;
+    font-weight: 300;
   }
 
   li:hover {

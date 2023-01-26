@@ -9,9 +9,8 @@ export const Header = () => {
     return (
         <header className="header">
             <nav className="navigation-mobile">
-                <img src={logo} alt="hamburger menu" />
+                <img src={logo} alt="logo" />
                 <Hamburger openMobileMenu={openMobileMenu} setOpenMobileMenu={setOpenMobileMenu}/>
-                {/* <MobileMenu openMobileMenu={openMobileMenu} setOpenMobileMenu={setOpenMobileMenu} /> */}
                 <MobileMenu openMobileMenu={openMobileMenu} setOpenMobileMenu={setOpenMobileMenu} />
             </nav>
             <nav className="navigation">
