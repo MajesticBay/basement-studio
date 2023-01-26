@@ -99,12 +99,14 @@ a {
 }
 
 .btn {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1.8rem 0;
   border: 2px solid rgba(255, 255, 255, 0.4);
   color: var(--color-white);
+  font-weight: 800;
 }
 
 .card {
@@ -289,6 +291,12 @@ a {
 }
 .podcast {
   padding: 8rem 3.2rem;
+}
+.podcast__header {
+  color: var(--color-white);
+}
+.podcast__content {
+  color: var(--color-white);
 }
 
 .podcast-card {

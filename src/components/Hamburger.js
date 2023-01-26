@@ -5,7 +5,7 @@ const Div = styled.div`
   width: 3.3rem;
   height: 2rem;
   position: ${({ openMobileMenu }) => (openMobileMenu ? 'fixed' : 'absolute')};
-  top: 1.7rem;
+  top: 2.5rem;
   right: 2rem;
   z-index: 20;
   display: flex;

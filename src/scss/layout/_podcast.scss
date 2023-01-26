@@ -1,5 +1,13 @@
 .podcast {
     padding: 8rem 3.2rem;
+
+    &__header {
+        color: var(--color-white);
+    }
+
+    &__content {
+        color: var(--color-white);
+    }
 }
 
 .podcast-card {
