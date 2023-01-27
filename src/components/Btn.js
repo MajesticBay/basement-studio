@@ -1,10 +1,10 @@
 import arrow from "../images/arrow.svg";
 
-export const Btn = () => {
+export const Btn = ({ text, arrowDisplayed }) => {
     return (
         <div className="btn pointer">
-            <span>ДЕТАЛЬНІШЕ</span>
-            <img src={arrow} alt="arrow" />
+            <span>{ text }</span>
+            { arrowDisplayed ? <img src={arrow} alt="arrow" /> : <></> }
         </div>
     )
 }

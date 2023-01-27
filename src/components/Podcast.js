@@ -15,7 +15,7 @@ export const Podcast = () => {
                     {/* <img src={ostap} alt="ostap"/> */}
                 </div>
                 <p className="card__button pointer">Дивитись  на youtube</p>
-                <Btn />
+                <Btn text={"ДЕТАЛЬНІШЕ"} arrowDisplayed={true} />
             </div>
         </div>
     )

@@ -8,7 +8,7 @@ export const GiftCertificate = () => {
             <h1 className="gift-certificate__header">ПОДАРУНКОВИЙ СЕРТИФІКАТ</h1>
             <p>Текст про те яким класним подарунком може бути сертифікат на послуги студії)))</p>
             <p className="card__button pointer">Дивитись  на youtube</p>
-            <Btn />
+            <Btn text={"ДЕТАЛЬНІШЕ"} arrowDisplayed={true} />
         </div>
     )
 }
