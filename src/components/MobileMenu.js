@@ -20,16 +20,19 @@ const Ul = styled.ul`
   border-left: 1px solid var(--color-light-gray);
 
   li {
-    padding: 2rem 3.5rem;
+    width: fit-content;
+    padding-bottom: 4px;
     text-align: center;
     color: var(--color-white);
     font-size: 1.6rem;
     font-weight: 300;
+    border-bottom: 0;
   }
 
   li:hover {
     font-weight: 800;
-    text-decoration: underline;
+    border-bottom: 1px solid #fff;
+    transition: font-weight .25s ease-in-out, border-bottom .25s ease-in-out;
   }
 
   .mobile-menu__mobile-menu-login-signup-container {
@@ -55,22 +58,22 @@ const Ul = styled.ul`
 export const MobileMenu = ({ openMobileMenu, setOpenMobileMenu }) => {
   return (
     <Ul openMobileMenu={openMobileMenu}>
-      <Link onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
+      <Link style={{padding: '2.2rem 3.5rem', display: 'flex', justifyContent: 'center'}} onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
         <li>ПРО НАС</li>
       </Link>
-      <Link onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
+      <Link style={{padding: '2.2rem 3.5rem', display: 'flex', justifyContent: 'center'}} onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
         <li>СТУДІЯ ЗВУКОЗАПИСУ</li>
       </Link>
-      <Link onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
+      <Link style={{padding: '2.2rem 3.5rem', display: 'flex', justifyContent: 'center'}} onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
         <li>КУРС DJ</li>
       </Link>
-      <Link onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
+      <Link style={{padding: '2.2rem 3.5rem', display: 'flex', justifyContent: 'center'}} onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
         <li>ОРЕНДА</li>
       </Link>
-      <Link onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
+      <Link style={{padding: '2.2rem 3.5rem', display: 'flex', justifyContent: 'center'}} onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
         <li>ПОДКАСТ</li>
       </Link>
-      <Link onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
+      <Link style={{padding: '2.2rem 3.5rem', display: 'flex', justifyContent: 'center'}} onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
         <li>КОНТАКТИ</li>
       </Link>
     </Ul>
