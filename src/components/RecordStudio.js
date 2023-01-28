@@ -1,3 +1,5 @@
+import { Btn } from "./Btn";
+
 export const RecordStudio = () => {
     return (
         <div className="record-studio">
@@ -12,7 +14,12 @@ export const RecordStudio = () => {
                     <li className="card__text">Дикторське озвучення для реклами та різного роду відеоконтенту.</li>
                     <li className="card__text">Виготовлення аудіокниг та дубляж кіно.</li>
                 </ul>
-                <p className="card__button pointer">ЗАМОВИТИ</p>
+                {/* <p className="card__button pointer">ЗАМОВИТИ</p> */}
+                <Btn
+                    text={"ЗАМОВИТИ"}
+                    arrowDisplayed={false}
+                    dark={false}
+                />
             </div>
         </div>
     )

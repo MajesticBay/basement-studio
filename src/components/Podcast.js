@@ -6,7 +6,7 @@ export const Podcast = () => {
         <div className="podcast">
             <h1 className="podcast__header">ПОДКАСТ</h1>
             <div className="podcast__content">
-                <p>It's all about unity of underground music culture.</p>
+                <p className="podcast__text">It's all about unity of underground music culture.</p>
                 <div style={{
                     // backgroundColor: "purple"
                     backgroundImage: ostap
@@ -14,8 +14,17 @@ export const Podcast = () => {
                 className="podcast-card">
                     {/* <img src={ostap} alt="ostap"/> */}
                 </div>
-                <p className="card__button pointer">Дивитись  на youtube</p>
-                <Btn text={"ДЕТАЛЬНІШЕ"} arrowDisplayed={true} />
+                {/* <p className="card__button pointer">Дивитись  на youtube</p> */}
+                <Btn
+                    text={"Дивитись  на youtube"}
+                    arrowDisplayed={true}
+                    dark={false}
+                />
+                <Btn
+                    text={"ПІДТРИМАТИ"}
+                    arrowDisplayed={false}
+                    dark={true}
+                />
             </div>
         </div>
     )

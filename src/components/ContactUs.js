@@ -4,7 +4,7 @@ import address from "../images/address.svg";
 import fb from "../images/fb.svg";
 import ig from "../images/ig.svg";
 import tk from "../images/tk.svg";
-// import { Btn } from "./Btn";
+import { Btn } from "./Btn";
 
 export const ContactUs = () => {
     return (
@@ -29,8 +29,8 @@ export const ContactUs = () => {
                 <img src={ig} alt="ig" />
                 <img src={tk} alt="tk" />
             </div>
-            <h1>Залишилися запитання?</h1>
-            <p className="card__button pointer">ЗВ’ЯЖІТЬСЯ З НАМИ</p>
+            <h1 className="contact-us__sub-header">ЗАЛИШИЛИСЯ ЗАПИТАННЯ?</h1>
+            <Btn text={"ДІЗНАТИСЯ БІЛЬШЕ"} arrowDisplayed={true} dark={true} />
         </div>
     )
 }

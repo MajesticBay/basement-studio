@@ -94,19 +94,12 @@ a {
   font-size: 1.4rem;
 }
 
-.main {
-  background-color: var(--color-primary);
+body {
+  line-height: 1.92rem;
 }
 
-.btn {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1.8rem 0;
-  border: 2px solid rgba(255, 255, 255, 0.4);
-  color: var(--color-white);
-  font-weight: 800;
+.main {
+  background-color: var(--color-primary);
 }
 
 .card {
@@ -155,6 +148,9 @@ a {
   flex-direction: column;
 }
 .contact-us__header {
+  color: var(--color-white);
+}
+.contact-us__sub-header {
   color: var(--color-white);
 }
 .contact-us__text {
@@ -296,6 +292,10 @@ a {
   padding: 8rem 3.2rem;
 }
 .podcast__header {
+  color: var(--color-white);
+}
+.podcast__text {
+  font-size: 1.6rem;
   color: var(--color-white);
 }
 .podcast__content {
