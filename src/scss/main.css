@@ -92,6 +92,13 @@ a {
 .about-us__text {
   color: var(--color-white);
   font-size: 1.4rem;
+  line-height: 1.68rem;
+}
+.about-us__text:first-of-type {
+  margin-bottom: 1.4rem;
+}
+.about-us__text:last-of-type {
+  margin-bottom: 6.4rem;
 }
 
 body {
@@ -168,6 +175,20 @@ body {
   padding: 4rem 0;
 }
 .course-dj__text {
+  font-size: 1.6rem;
+  color: var(--color-white);
+}
+
+.course-production {
+  padding: 0 3.2rem;
+}
+.course-production__header {
+  color: var(--color-white);
+}
+.course-production__text-container {
+  padding: 4rem 0;
+}
+.course-production__text {
   font-size: 1.6rem;
   color: var(--color-white);
 }

@@ -7,5 +7,14 @@
     &__text {
         color: var(--color-white);
         font-size: 1.4rem;
+        line-height: 1.68rem;
+
+        &:first-of-type {
+            margin-bottom: 1.4rem;
+        }
+
+        &:last-of-type {
+            margin-bottom: 6.4rem;
+        }
     }
 }
