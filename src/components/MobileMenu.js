@@ -23,7 +23,6 @@ const Ul = styled.ul`
     width: fit-content;
     padding-bottom: 4px;
     text-align: center;
-    color: var(--color-white);
     font-size: 1.6rem;
     font-weight: 300;
     border-bottom: 0;

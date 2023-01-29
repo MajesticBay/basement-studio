@@ -90,7 +90,6 @@ a {
   background: var(--color-primary);
 }
 .about-us__text {
-  color: var(--color-white);
   font-size: 1.4rem;
   line-height: 1.68rem;
 }
@@ -107,6 +106,7 @@ body {
 
 .main {
   background-color: var(--color-primary);
+  color: var(--color-white);
 }
 
 .card {
@@ -114,7 +114,6 @@ body {
   flex-direction: column;
   align-items: center;
   border: 1px solid var(--color-white);
-  color: var(--color-white);
   padding: 2.4rem;
 }
 .card__title {
@@ -154,9 +153,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-.contact-us__header {
-  color: var(--color-white);
-}
 .contact-us__sub-header {
   color: var(--color-white);
 }
@@ -168,29 +164,21 @@ body {
 .course-dj {
   padding: 0 3.2rem;
 }
-.course-dj__header {
-  color: var(--color-white);
-}
 .course-dj__text-container {
   padding: 4rem 0;
 }
 .course-dj__text {
   font-size: 1.6rem;
-  color: var(--color-white);
 }
 
 .course-production {
   padding: 0 3.2rem;
-}
-.course-production__header {
-  color: var(--color-white);
 }
 .course-production__text-container {
   padding: 4rem 0;
 }
 .course-production__text {
   font-size: 1.6rem;
-  color: var(--color-white);
 }
 
 .footer {
@@ -221,13 +209,9 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.gift-certificate__header {
-  color: var(--color-white);
-}
 
 .header {
   display: flex;
-  color: var(--color-white);
 }
 
 .navigation-mobile {
@@ -312,15 +296,8 @@ body {
 .podcast {
   padding: 8rem 3.2rem;
 }
-.podcast__header {
-  color: var(--color-white);
-}
 .podcast__text {
   font-size: 1.6rem;
-  color: var(--color-white);
-}
-.podcast__content {
-  color: var(--color-white);
 }
 
 .podcast-card {
@@ -335,11 +312,9 @@ body {
 }
 .record-studio__title {
   font-size: 2.8rem;
-  color: var(--color-white);
 }
 .record-studio__text {
   font-size: 1.6rem;
-  color: var(--color-white);
 }
 
 .rent {
@@ -349,7 +324,6 @@ body {
   padding: 8rem 3.2rem;
 }
 .rent__title {
-  color: var(--color-white);
   padding-bottom: 4.8rem;
 }
 
