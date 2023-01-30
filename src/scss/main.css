@@ -173,6 +173,7 @@ body {
 .contact-us__sub-header {
   color: var(--color-white);
   margin-bottom: 2.4rem;
+  font-weight: 300;
 }
 .contact-us__text {
   color: var(--color-white);
