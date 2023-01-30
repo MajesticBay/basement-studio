@@ -1,14 +1,14 @@
 import { Btn } from "./Btn";
-import bgRecordStudio from "../images/bg_record_studio.png"
+// import bg from "../images/bg_record_studio.png";
 
 export const RecordStudio = () => {
+    const bgStyle = {
+        // backgroundImage: `url(${bg})`
+        background: "purple"
+    };
+
     return (
-        <div
-            style={{
-                backgroundImage: bgRecordStudio
-                // background: "purple"
-            }}
-            className="record-studio">
+        <div className="record-studio" style={{bgStyle}}>
             <h1 className="header">СТУДІЯ  ЗВУКОЗАПИСУ</h1>
             <p className="record-studio__text">Атмосфера в студії дозволить насолоджуватись процесом звукозапису або музичного продакшену.</p>
             <p className="record-studio__text">Звукорежисер - твій друг, професіонал, який завжди підтримає, порадить і допоможе зробити процес запису максимально комфортним і приємним.</p>
