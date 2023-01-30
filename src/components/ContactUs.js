@@ -30,7 +30,7 @@ export const ContactUs = () => {
                 <img src={tk} alt="tk" />
             </div>
             <h1 className="contact-us__sub-header">ЗАЛИШИЛИСЯ ЗАПИТАННЯ?</h1>
-            <Btn text={"ДІЗНАТИСЯ БІЛЬШЕ"} arrowDisplayed={true} dark={true} />
+            <Btn text={"ЗВ’ЯЖІТЬСЯ З НАМИ"} arrowDisplayed={true} dark={false} />
         </div>
     )
 }

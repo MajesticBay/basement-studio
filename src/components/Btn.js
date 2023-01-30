@@ -15,9 +15,6 @@ const Button = styled.div`
 }`
 
 export const Btn = ({ text, arrowDisplayed, dark }) => {
-    // dark = dark;
-    JSON.stringify(dark);
-    console.log("dark ", dark);
     return (
         <Button dark={dark} className="pointer">
             <span>{ text }</span>

@@ -6,6 +6,11 @@
 
     &__text {
         font-size: 1.6rem;
+
+        &:first-of-type {
+            margin-top: 2.4rem;
+            margin-bottom: 1.6rem;
+        }
     }
 
     &__text:last-of-type {
