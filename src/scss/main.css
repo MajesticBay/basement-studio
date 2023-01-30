@@ -116,10 +116,16 @@ body {
   color: var(--color-white);
 }
 
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 411px;
   border: 1px solid var(--color-white);
   padding: 3.2rem 2.4rem;
 }
@@ -151,6 +157,12 @@ body {
   color: var(--color-primary);
 }
 
+@media only screen and (min-width: 768px) {
+  .cards {
+    flex-direction: row;
+    gap: 2.4rem;
+  }
+}
 .contact-us {
   display: flex;
   flex-direction: column;
