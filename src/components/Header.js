@@ -7,7 +7,7 @@ import down from "../images/down.svg";
 export const Header = () => {
     const [openMobileMenu, setOpenMobileMenu] = useState(false);
     return (
-        <header className="header">
+        <header className="main-header">
             <nav className="navigation-mobile">
                 <img src={logo} alt="logo" />
                 <Hamburger openMobileMenu={openMobileMenu} setOpenMobileMenu={setOpenMobileMenu}/>

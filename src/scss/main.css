@@ -78,6 +78,11 @@ a {
   font-weight: 800;
 }
 
+.header {
+  font-size: 2.8rem;
+  margin-bottom: 4rem;
+}
+
 :root {
   --color-primary: #0C0C0C;
   --color-white: #FFFFFF;
@@ -162,7 +167,7 @@ body {
 }
 
 .course-dj {
-  padding: 0 3.2rem;
+  padding: 8rem 3.2rem;
 }
 .course-dj__text-container {
   padding: 4rem 0;
@@ -208,9 +213,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 8rem 3.2rem;
 }
 
-.header {
+.main-header {
   display: flex;
 }
 
@@ -237,7 +243,7 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  .header {
+  .main-header {
     justify-content: center;
   }
 
@@ -310,11 +316,11 @@ body {
   align-items: center;
   padding: 8rem 3.2rem;
 }
-.record-studio__title {
-  font-size: 2.8rem;
-}
 .record-studio__text {
   font-size: 1.6rem;
+}
+.record-studio__text:last-of-type {
+  margin-bottom: 4.8rem;
 }
 
 .rent {

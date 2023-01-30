@@ -4,7 +4,7 @@ import { Btn } from "./Btn";
 export const Podcast = () => {
     return (
         <div className="podcast">
-            <h1 className="podcast__header">ПОДКАСТ</h1>
+            <h1 className="header">ПОДКАСТ</h1>
             <div className="podcast__content">
                 <p className="podcast__text">It's all about unity of underground music culture.</p>
                 <div style={{

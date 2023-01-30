@@ -3,7 +3,7 @@ import { Btn } from "./Btn";
 export const Rent = () => {
     return (
         <div className="rent">
-            <h1 className="rent__title">ОРЕНДА</h1>
+            <h1 className="header">ОРЕНДА</h1>
             <div className="card">
                 <p className="card__title">DJ PLACE</p>
                 <p className="card__price">13$ / год</p>

@@ -3,7 +3,7 @@ import { Btn } from "../components/Btn";
 export const CourseProduction = () => {
     return (
         <div className="course-production">
-            <h1 className="course-production__header">КУРС production</h1>
+            <h1 className="header">КУРС PRODUCTION</h1>
             {/* <img src={keyboard} alt="keyboard" /> */}
             <div className="course-production__text-container">
                 <p className="course-production__text">Ми допоможемо вам зробити перші кроки у світ створення музики. Якщо ви давно хотіли навчитися працювати на професійному обладнанні, створювати треки – це чудовий шанс спробувати свої сили.</p>
