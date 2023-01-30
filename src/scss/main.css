@@ -318,12 +318,21 @@ body {
     margin-right: 15rem;
   }
   .nav__menu-item {
-    padding-left: 24px;
-    padding-right: 24px;
     font-size: 1.4rem;
   }
   .nav__menu-item:not(:last-child) {
     border-right: 1px solid rgba(255, 255, 255, 0.4);
+  }
+  .nav__menu-item-link {
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-bottom: 0.4rem;
+    color: var(--color-white);
+  }
+  .nav__menu-item-link:hover {
+    font-weight: 800;
+    border-bottom: 1px solid #fff;
+    transition: font-weight 0.25s ease-in-out, border-bottom 0.25s ease-in-out;
   }
 }
 .hero {

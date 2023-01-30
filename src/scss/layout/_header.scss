@@ -47,12 +47,23 @@
         margin-right: 15rem;
 
         &__menu-item {
-            padding-left: 24px;
-            padding-right: 24px;
             font-size: 1.4rem;
 
             &:not(:last-child){
                 border-right: 1px solid rgba(255, 255, 255, 0.4);
+            }
+        }
+
+        &__menu-item-link {
+            margin-left: 24px;
+            margin-right: 24px;
+            padding-bottom: .4rem;
+            color: var(--color-white);
+
+            &:hover {
+                font-weight: 800;
+                border-bottom: 1px solid #fff;
+                transition: font-weight .25s ease-in-out, border-bottom .25s ease-in-out;
             }
         }
     }

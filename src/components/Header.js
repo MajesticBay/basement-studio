@@ -16,13 +16,27 @@ export const Header = () => {
             <nav className="navigation">
                 <img src={logo} alt="hamburger menu" />
                 <ul className="nav">
-                    <li className="nav__menu-item">ПРО НАС</li>
-                    <li className="nav__menu-item">СТУДІЯ ЗВУКОЗАПИСУ</li>
-                    <li className="nav__menu-item">КУРС DJ</li>
-                    <li className="nav__menu-item">КУРС PRODUCTION</li>
-                    <li className="nav__menu-item">ОРЕНДА</li>
-                    <li className="nav__menu-item">ПОДКАСТ</li>
-                    <li className="nav__menu-item">КОНТАКТИ</li>
+                    <li className="nav__menu-item">
+                        <a className="nav__menu-item-link" href="/about-us">ПРО НАС</a>
+                    </li>
+                    <li className="nav__menu-item">
+                        <a className="nav__menu-item-link" href="/record-studio">СТУДІЯ ЗВУКОЗАПИСУ</a>
+                    </li>
+                    <li className="nav__menu-item">
+                        <a className="nav__menu-item-link" href="/course-dj">КУРС DJ</a>
+                    </li>
+                    <li className="nav__menu-item">
+                        <a className="nav__menu-item-link" href="/course-production">КУРС PRODUCTION</a>
+                    </li>
+                    <li className="nav__menu-item">
+                        <a className="nav__menu-item-link" href="/rent">ОРЕНДА</a>
+                    </li>
+                    <li className="nav__menu-item">
+                        <a className="nav__menu-item-link" href="/podcast">ПОДКАСТ</a>
+                    </li>
+                    <li className="nav__menu-item">
+                        <a className="nav__menu-item-link" href="/contact-us">КОНТАКТИ</a>
+                    </li>
                 </ul>
                 <div className="locale">
                     <p className="locale__current-language">UA</p>
