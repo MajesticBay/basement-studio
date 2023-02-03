@@ -28,9 +28,10 @@
         list-style-position: inside;
     }
 
-    &__text {
+    &__list-item {
         font-size: 1.4rem;
         color: rgba(255, 255, 255, 0.72);
+        margin-bottom: 1.6rem;
     }
 
     &__button {
@@ -48,5 +49,18 @@
     .cards {
         flex-direction: row;
         gap: 2.4rem;
+    }
+
+    .card {
+        padding-bottom: 14.4rem;
+
+        &__title {
+            font-size: 2.4rem;
+        }
+
+        &__list-item {
+            font-size: 1.6rem;
+            font-weight: 300;
+        }
     }
 }

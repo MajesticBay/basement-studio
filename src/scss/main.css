@@ -74,6 +74,10 @@ a {
   cursor: pointer;
 }
 
+.mobile {
+  display: flex !important;
+}
+
 .bold {
   font-weight: 800;
 }
@@ -84,6 +88,11 @@ a {
   text-align: center;
 }
 
+@media only screen and (min-width: 768px) {
+  .mobile {
+    display: none !important;
+  }
+}
 :root {
   --color-primary: #0C0C0C;
   --color-white: #FFFFFF;
@@ -143,9 +152,10 @@ body {
   list-style-type: disc;
   list-style-position: inside;
 }
-.card__text {
+.card__list-item {
   font-size: 1.4rem;
   color: rgba(255, 255, 255, 0.72);
+  margin-bottom: 1.6rem;
 }
 .card__button {
   background: var(--color-white);
@@ -161,6 +171,17 @@ body {
   .cards {
     flex-direction: row;
     gap: 2.4rem;
+  }
+
+  .card {
+    padding-bottom: 14.4rem;
+  }
+  .card__title {
+    font-size: 2.4rem;
+  }
+  .card__list-item {
+    font-size: 1.6rem;
+    font-weight: 300;
   }
 }
 .contact-us {

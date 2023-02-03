@@ -6,6 +6,7 @@ const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: var(--color-primary);
   position: fixed;
   z-index: 10;
@@ -15,7 +16,7 @@ const Ul = styled.ul`
   height: 100vh;
   width: 100%;
   max-width: 50rem;
-  padding-top: 3.5rem;
+  padding-top: 15.5rem;
   transition: transform 0.3s ease-in-out;
   border-left: 1px solid var(--color-light-gray);
 
@@ -35,23 +36,24 @@ const Ul = styled.ul`
     transition: font-weight .25s ease-in-out, border-bottom .25s ease-in-out;
   }
 
-  .mobile-menu__mobile-menu-login-signup-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    padding: 2rem 3.5rem;
-  }
+  .mobile-locale-switcher {
+    display: flex;
+    gap: .8rem;
+    margin-top: 8rem;
+    font-size: 14px;
+    line-height: 20px;
 
-  .mobile-menu-login-signup-container__login-btn {
-    border: 1px solid var(--color-black);
-    border-radius: 6px;
-    padding: 1rem;
-    text-align: center;
-    color: var(--color-black);
-  }
+    &__locale {
+      color: rgba(255, 255, 255, 0.4);
 
-  .mobile-menu-login-signup-container__login-btn--color-white {
-    color: var(--color-primary);
+      &--active {
+        color: var(--color-white);
+      }
+    }
+
+    &__pipe {
+      color: rgba(255, 255, 255, 0.4);
+    }
   }
 `;
 
@@ -76,6 +78,11 @@ export const MobileMenu = ({ openMobileMenu, setOpenMobileMenu }) => {
       <Link style={{padding: '2.2rem 3.5rem', display: 'flex', justifyContent: 'center'}} onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
         <li>КОНТАКТИ</li>
       </Link>
+      <div className="mobile-locale-switcher">
+        <p className="mobile-locale-switcher__locale mobile-locale-switcher__locale--active">UA</p>
+        <p className="mobile-locale-switcher__pipe">|</p>
+        <p className="mobile-locale-switcher__locale">EN</p>
+      </div>
     </Ul>
   );
 };

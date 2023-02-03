@@ -1,15 +1,18 @@
 import { useState } from "react";
 import { MobileMenu } from "./MobileMenu";
+import { MobileLogo } from "./MobileLogo.js";
 import Hamburger from "./Hamburger";
 import logo from "../images/logo.svg";
 import down from "../images/down.svg";
 
 export const Header = () => {
     const [openMobileMenu, setOpenMobileMenu] = useState(false);
+
     return (
         <header className="main-header">
             <nav className="navigation-mobile">
-                <img src={logo} alt="logo" />
+                {/* <img className="navigation-mobile__logo" src={logo} alt="logo" /> */}
+                <MobileLogo openMobileMenu={openMobileMenu} setOpenMobileMenu={setOpenMobileMenu} />
                 <Hamburger openMobileMenu={openMobileMenu} setOpenMobileMenu={setOpenMobileMenu}/>
                 <MobileMenu openMobileMenu={openMobileMenu} setOpenMobileMenu={setOpenMobileMenu} />
             </nav>

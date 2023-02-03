@@ -1,5 +1,21 @@
+// .pointer {
+//     cursor: pointer;
+//     display: none !important;
+// }
+
+// @media only screen and (min-width: 768px) {
+//     .pointer {
+//         // background-color: red !important;
+//         display: block !important;
+//     }
+// }
+
 .pointer {
     cursor: pointer;
+}
+
+.mobile {
+    display: flex !important;
 }
 
 .bold {
@@ -10,4 +26,10 @@
     font-size: 2.8rem;
     line-height: 33.6px;
     text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .mobile {
+        display: none !important;
+    }
 }

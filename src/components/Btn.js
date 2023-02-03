@@ -12,11 +12,11 @@ const Button = styled.div`
     // color: var(--color-white);
     color: ${(({ dark }) => (dark ? "white" : "black"))};
     font-weight: 800;
-}`
+`
 
 export const Btn = ({ text, arrowDisplayed, dark }) => {
     return (
-        <Button dark={dark} className="pointer">
+        <Button dark={dark} className="pointer mobile">
             <span>{ text }</span>
             { arrowDisplayed ? <img src={arrow} alt="arrow" /> : <></> }
         </Button>
