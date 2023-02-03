@@ -3,7 +3,7 @@ import { MobileMenu } from "./MobileMenu";
 import { MobileLogo } from "./MobileLogo.js";
 import Hamburger from "./Hamburger";
 import logo from "../images/icons/logo.svg";
-import down from "../images/icons/down.svg";
+// import down from "../images/icons/down.svg";
 
 export const Header = () => {
     const [openMobileMenu, setOpenMobileMenu] = useState(false);
@@ -41,9 +41,14 @@ export const Header = () => {
                         <a className="nav__menu-item-link" href="/contact-us">КОНТАКТИ</a>
                     </li>
                 </ul>
-                <div className="locale">
+                {/* <div className="locale">
                     <p className="locale__current-language">UA</p>
                     <img src={down} className="locale__down" alt="locale"/>
+                </div> */}
+                <div className="mobile-locale-switcher">
+                    <p className="mobile-locale-switcher__locale mobile-locale-switcher__locale--active">UA</p>
+                    <p className="mobile-locale-switcher__pipe">|</p>
+                    <p className="mobile-locale-switcher__locale">EN</p>
                 </div>
             </nav>
         </header>

@@ -35,26 +35,6 @@ const Ul = styled.ul`
     border-bottom: 1px solid #fff;
     transition: font-weight .25s ease-in-out, border-bottom .25s ease-in-out;
   }
-
-  .mobile-locale-switcher {
-    display: flex;
-    gap: .8rem;
-    margin-top: 8rem;
-    font-size: 14px;
-    line-height: 20px;
-
-    &__locale {
-      color: rgba(255, 255, 255, 0.4);
-
-      &--active {
-        color: var(--color-white);
-      }
-    }
-
-    &__pipe {
-      color: rgba(255, 255, 255, 0.4);
-    }
-  }
 `;
 
 export const MobileMenu = ({ openMobileMenu, setOpenMobileMenu }) => {

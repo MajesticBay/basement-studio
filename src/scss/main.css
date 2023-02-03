@@ -334,6 +334,23 @@ body {
   font-size: 1.4rem;
 }
 
+.mobile-locale-switcher {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 8rem;
+  font-size: 14px;
+  line-height: 20px;
+}
+.mobile-locale-switcher__locale {
+  color: rgba(255, 255, 255, 0.4);
+}
+.mobile-locale-switcher__locale--active {
+  color: var(--color-white);
+}
+.mobile-locale-switcher__pipe {
+  color: rgba(255, 255, 255, 0.4);
+}
+
 @media only screen and (min-width: 768px) {
   .main-header {
     justify-content: center;
@@ -371,6 +388,10 @@ body {
     font-weight: 800;
     border-bottom: 1px solid #fff;
     transition: font-weight 0.25s ease-in-out, border-bottom 0.25s ease-in-out;
+  }
+
+  .mobile-locale-switcher {
+    margin-top: 0;
   }
 }
 .hero {
