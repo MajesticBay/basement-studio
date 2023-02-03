@@ -29,9 +29,10 @@
     }
 
     &__list-item {
-        font-size: 1.4rem;
-        color: rgba(255, 255, 255, 0.72);
         margin-bottom: 1.6rem;
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.72);
     }
 
     &__button {

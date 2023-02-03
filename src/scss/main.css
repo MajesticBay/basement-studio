@@ -153,9 +153,10 @@ body {
   list-style-position: inside;
 }
 .card__list-item {
-  font-size: 1.4rem;
-  color: rgba(255, 255, 255, 0.72);
   margin-bottom: 1.6rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.72);
 }
 .card__button {
   background: var(--color-white);
@@ -307,6 +308,18 @@ body {
   gap: 2.4rem;
 }
 
+@media only screen and (min-width: 768px) {
+  .gift-certificate {
+    flex-direction: row;
+    align-items: center;
+  }
+  .gift-certificate__text {
+    margin-bottom: 0;
+  }
+  .gift-certificate__btn-container {
+    flex-direction: row-reverse;
+  }
+}
 .main-header {
   display: flex;
 }
