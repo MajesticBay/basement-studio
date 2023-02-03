@@ -1,9 +1,9 @@
-import email from "../images/email.svg";
-import phone from "../images/phone.svg";
-import address from "../images/address.svg";
-import fb from "../images/fb.svg";
-import ig from "../images/ig.svg";
-import tk from "../images/tk.svg";
+import email from "../images/icons/email.svg";
+import phone from "../images/icons/phone.svg";
+import address from "../images/icons/address.svg";
+import fb from "../images/icons/fb.svg";
+import ig from "../images/icons/ig.svg";
+import tk from "../images/icons/tk.svg";
 import { Btn } from "./Btn";
 
 export const ContactUs = () => {

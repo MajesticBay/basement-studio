@@ -1,4 +1,4 @@
-import logo from "../images/logo.svg";
+import logo from "../images/icons/logo.svg";
 import styled from "styled-components";
 
 const Image = styled.img`
@@ -6,8 +6,7 @@ const Image = styled.img`
     position: ${({ openMobileMenu }) => (openMobileMenu ? 'absolute' : 'relative')};;
     z-index: ${({ openMobileMenu }) => (openMobileMenu ? '999' : '')};
     top: ${({ openMobileMenu }) => (openMobileMenu ? '16px' : '')};
-    left: ${({ openMobileMenu }) => (openMobileMenu ? '24px' : '')}
-    transition: z-index 5s ease-in-out;
+    left: ${({ openMobileMenu }) => (openMobileMenu ? '24px' : '')};
 `
 
 export const MobileLogo = ({ openMobileMenu, setOpenMobileMenu }) => {

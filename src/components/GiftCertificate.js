@@ -1,4 +1,4 @@
-import giftCertificate from "../images/gift-certificate.svg";
+import giftCertificate from "../images/icons/gift-certificate.svg";
 import { Btn } from "./Btn";
 
 export const GiftCertificate = () => {

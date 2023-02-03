@@ -2,8 +2,8 @@ import { useState } from "react";
 import { MobileMenu } from "./MobileMenu";
 import { MobileLogo } from "./MobileLogo.js";
 import Hamburger from "./Hamburger";
-import logo from "../images/logo.svg";
-import down from "../images/down.svg";
+import logo from "../images/icons/logo.svg";
+import down from "../images/icons/down.svg";
 
 export const Header = () => {
     const [openMobileMenu, setOpenMobileMenu] = useState(false);

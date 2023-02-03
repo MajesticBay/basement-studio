@@ -1,4 +1,4 @@
-import arrow from "../images/arrow.svg";
+import arrow from "../images/icons/arrow.svg";
 import styled from "styled-components";
 
 const Button = styled.div`
