@@ -22,7 +22,7 @@ export const RecordStudio = () => {
                         <li className="card__list-item">Виготовлення аудіокниг та дубляж кіно.</li>
                     </ul>
                     <Btn
-                        className="mobile"
+                        className={"record-studio__btn"}
                         text={"ЗАМОВИТИ"}
                         arrowDisplayed={false}
                         dark={false}
@@ -37,6 +37,7 @@ export const RecordStudio = () => {
                         <li className="card__list-item">Термін виконання 1-3 робочі дні.</li>
                     </ul>
                     <Btn
+                        className={"record-studio__btn"}
                         text={"ЗАМОВИТИ"}
                         arrowDisplayed={false}
                         dark={false}
@@ -50,6 +51,7 @@ export const RecordStudio = () => {
                         <li className="card__list-item">Саунд дизайн та музика для реклами, кіно та різного роду відеоконтенту.</li>
                     </ul>
                     <Btn
+                        className={"record-studio__btn"}
                         text={"ЗАМОВИТИ"}
                         arrowDisplayed={false}
                         dark={false}
