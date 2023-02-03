@@ -400,6 +400,39 @@ body {
     display: block;
   }
 }
+#fb:hover #fb-rect {
+  fill: white;
+}
+
+#fb:hover #fb-path {
+  stroke: black;
+  fill: black;
+}
+
+#ig:hover #ig-rect {
+  fill: white;
+}
+
+#ig:hover #ig-vector1 {
+  fill: black;
+}
+
+#ig:hover #ig-vector2 {
+  fill: black;
+}
+
+#ig:hover #ig-vector3 {
+  fill: black;
+}
+
+#tk:hover #tk-path {
+  fill: black;
+}
+
+#tk:hover #tk-rect {
+  fill: white;
+}
+
 .podcast {
   padding: 8rem 3.2rem;
 }

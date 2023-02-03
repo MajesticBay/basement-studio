@@ -1,9 +1,9 @@
 import email from "../images/icons/email.svg";
 import phone from "../images/icons/phone.svg";
 import address from "../images/icons/address.svg";
-import fb from "../images/icons/fb.svg";
-import ig from "../images/icons/ig.svg";
-import tk from "../images/icons/tk.svg";
+import { ReactComponent as IconFB } from "../images/icons/fb.svg";
+import { ReactComponent as IconIG } from "../images/icons/ig.svg";
+import { ReactComponent as IconTK } from "../images/icons/tk.svg";
 import { Btn } from "./Btn";
 
 export const ContactUs = () => {
@@ -25,9 +25,9 @@ export const ContactUs = () => {
                 </a>
             </div>
             <div className="contact-us__social-media-container">
-                <img src={fb} alt="fb" />
-                <img src={ig} alt="ig" />
-                <img src={tk} alt="tk" />
+                <IconFB className="pointer" />
+                <IconIG className="pointer" />
+                <IconTK className="pointer" />
             </div>
             <h1 className="contact-us__sub-header">ЗАЛИШИЛИСЯ ЗАПИТАННЯ?</h1>
             <Btn text={"ЗВ’ЯЖІТЬСЯ З НАМИ"} arrowDisplayed={true} dark={false} />
