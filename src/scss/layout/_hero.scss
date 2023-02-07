@@ -9,6 +9,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        margin-bottom: 3rem;
     }
 
     &__scroll {
@@ -22,6 +23,10 @@
 @media only screen and (min-width: 768px) {
     .hero {
         background-image: url("/src/images/bg-desktop.png");
+
+        &__scroll-container {
+            margin-bottom: 6rem;
+        }
 
         &__scroll {
             &--mobile {
