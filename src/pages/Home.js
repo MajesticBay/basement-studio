@@ -4,7 +4,7 @@ import { RecordStudio } from "../components/RecordStudio";
 import { CourseDj } from "../components/CourseDj";
 import { CourseProduction } from "../components/CourseProduction";
 import { Rent } from "../components/Rent";
-import { Podcast } from "../components/Podcast";
+// import { Podcast } from "../components/Podcast";
 import { GiftCertificate } from "../components/GiftCertificate";
 import { ContactUs } from "../components/ContactUs";
 
@@ -17,7 +17,7 @@ export const Home = () => {
             <CourseDj />
             <CourseProduction />
             <Rent />
-            <Podcast />
+            {/* <Podcast /> */}
             <GiftCertificate />
             <ContactUs />
         </>
