@@ -4,6 +4,11 @@
     align-items: center;
     padding: 8rem 3.2rem;
 
+    &__left {
+        display: flex;
+        flex-direction: column;
+    }
+
     &__links-container {
         width: 100%;
         display: flex;
@@ -35,5 +40,26 @@
         color: var(--color-white);
         margin-bottom: 2.4rem;
         font-weight: 300;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .contact-us {
+        flex-direction: row;
+        padding: 6rem 8rem;
+
+        &__left {
+            width: 50%;
+        }
+
+        &__header {
+            text-align: left;
+            font-size: 4.8rem;
+            font-weight: 800;
+        }
+
+        &__text {
+            font-size: 1.6rem;
+        }
     }
 }
