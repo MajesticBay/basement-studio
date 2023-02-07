@@ -64,8 +64,8 @@
     .nav {
         display: flex;
         justify-content: space-around;
-        margin-left: 15rem;
-        margin-right: 15rem;
+        margin-left: min(0, 15rem);
+        margin-right: min(0, 15rem);
 
         &__menu-item {
             font-size: 1.4rem;
@@ -76,8 +76,8 @@
         }
 
         &__menu-item-link {
-            margin-left: 24px;
-            margin-right: 24px;
+            margin-left: min(1rem, 2.4rem);
+            margin-right: min(1rem, 2.4rem);
             padding-bottom: .4rem;
             color: var(--color-white);
 

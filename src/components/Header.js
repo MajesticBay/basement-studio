@@ -46,9 +46,9 @@ export const Header = () => {
                     <img src={down} className="locale__down" alt="locale"/>
                 </div> */}
                 <div className="mobile-locale-switcher">
-                    <p className="mobile-locale-switcher__locale mobile-locale-switcher__locale--active">UA</p>
+                    <p className="mobile-locale-switcher__locale mobile-locale-switcher__locale--active pointer">UA</p>
                     <p className="mobile-locale-switcher__pipe">|</p>
-                    <p className="mobile-locale-switcher__locale">EN</p>
+                    <p className="mobile-locale-switcher__locale pointer">EN</p>
                 </div>
             </nav>
         </header>
