@@ -19,6 +19,11 @@
     }
 
     &__btn {
+        display: none !important;
         margin-top: auto;
     }
+}
+
+.card:hover .record-studio__btn {
+    display: flex !important;
 }

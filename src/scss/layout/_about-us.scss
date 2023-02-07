@@ -18,3 +18,11 @@
         }
     }
 }
+
+@media only screen and (min-width: 768px) {
+    .about-us {
+        &__text {
+            margin: 0 min(15rem, 29.7rem);
+        }
+    }
+}

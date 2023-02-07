@@ -88,6 +88,22 @@ a {
   text-align: center;
 }
 
+.jump {
+  transform-origin: 50% 50%;
+  animation: jump 0.5s linear alternate infinite;
+}
+
+@keyframes jump {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  40% {
+    transform: translate3d(0, 30%, 0);
+  }
+  100% {
+    transform: translate3d(0, 100%, 0);
+  }
+}
 @media only screen and (min-width: 768px) {
   .mobile {
     display: none !important;
@@ -116,6 +132,11 @@ a {
   margin-bottom: 6.4rem;
 }
 
+@media only screen and (min-width: 768px) {
+  .about-us__text {
+    margin: 0 15rem;
+  }
+}
 body {
   line-height: 1.92rem;
 }
@@ -191,6 +212,10 @@ body {
   align-items: center;
   padding: 8rem 3.2rem;
 }
+.contact-us__left {
+  display: flex;
+  flex-direction: column;
+}
 .contact-us__links-container {
   width: 100%;
   display: flex;
@@ -220,6 +245,23 @@ body {
   font-weight: 300;
 }
 
+@media only screen and (min-width: 768px) {
+  .contact-us {
+    flex-direction: row;
+    padding: 6rem 8rem;
+  }
+  .contact-us__left {
+    width: 50%;
+  }
+  .contact-us__header {
+    text-align: left;
+    font-size: 4.8rem;
+    font-weight: 800;
+  }
+  .contact-us__text {
+    font-size: 1.6rem;
+  }
+}
 .course-dj {
   padding: 8rem 0;
 }
@@ -249,6 +291,14 @@ body {
   margin: 0 3.2rem;
 }
 
+@media only screen and (min-width: 768px) {
+  .course-dj {
+    position: relative;
+  }
+  .course-dj__img {
+    position: absolute;
+  }
+}
 .course-production {
   padding: 8rem 3.2rem;
 }
@@ -382,8 +432,8 @@ body {
   .nav {
     display: flex;
     justify-content: space-around;
-    margin-left: 15rem;
-    margin-right: 15rem;
+    margin-left: 0;
+    margin-right: 0;
   }
   .nav__menu-item {
     font-size: 1.4rem;
@@ -392,8 +442,8 @@ body {
     border-right: 1px solid rgba(255, 255, 255, 0.4);
   }
   .nav__menu-item-link {
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-left: 1rem;
+    margin-right: 1rem;
     padding-bottom: 0.4rem;
     color: var(--color-white);
   }
@@ -418,6 +468,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 3rem;
 }
 .hero__scroll--desktop {
   display: none;
@@ -426,6 +477,9 @@ body {
 @media only screen and (min-width: 768px) {
   .hero {
     background-image: url("/src/images/bg-desktop.png");
+  }
+  .hero__scroll-container {
+    margin-bottom: 6rem;
   }
   .hero__scroll--mobile {
     display: none;
@@ -505,7 +559,12 @@ body {
   margin-bottom: 4.8rem;
 }
 .record-studio__btn {
+  display: none !important;
   margin-top: auto;
+}
+
+.card:hover .record-studio__btn {
+  display: flex !important;
 }
 
 .rent {

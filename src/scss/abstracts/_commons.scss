@@ -28,6 +28,17 @@
     text-align: center;
 }
 
+.jump {
+    transform-origin: 50% 50%;
+    animation: jump .5s linear alternate infinite;
+}
+
+@keyframes jump {
+    0%   {transform: translate3d(0,0,0)}
+    40%  {transform: translate3d(0,30%,0)}
+    100% {transform: translate3d(0,100%,0)}
+}
+
 @media only screen and (min-width: 768px) {
     .mobile {
         display: none !important;
