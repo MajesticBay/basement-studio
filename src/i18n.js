@@ -19,6 +19,15 @@ i18n
     resources: {
       en: {
         translation: {
+          header: {
+            aboutUs: 'ABOUT US',
+            recordStudio: 'RECORD STUDIO',
+            courseDj: 'DJ COURSE',
+            courseProduction: 'PRODUCTION COURSE',
+            rent: 'RENT',
+            podcast: 'PODCAST',
+            contactUs: 'CONTACT US'
+          },
           aboutUs: {
             p1: ' - music studio based in Lviv for those who need a creative underground space (with an underground atmosphere) for communication and creating music.',
             p2: 'Comfort and professional equipment will make your creative process full of inspiration and freedom to experiment.'
@@ -30,6 +39,15 @@ i18n
       },
       ua: {
         translation: {
+          header: {
+            aboutUs: 'ПРО НАС',
+            recordStudio: 'СТУДІЯ ЗВУКОЗАПИСУ',
+            courseDj: 'КУРС DJ',
+            courseProduction: 'КУРС PRODUCTION',
+            rent: 'ОРЕНДА',
+            podcast: 'ПОДКАСТ',
+            contactUs: 'КОНТАКТИ'
+          },
           aboutUs: {
             p1: ' - музична студія, що базується у Львові для тих, кому потрібен креативний андерграунд-простір (з атмосферою андерграунду) для спілкування та створення музики.',
             p2: 'Комфорт та професійне обладнання зробить ваш творчий процес повним натхнення та свободи експериментів.'

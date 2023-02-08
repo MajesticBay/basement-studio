@@ -1,15 +1,15 @@
 import { useState } from "react";
+import { useTranslation } from 'react-i18next';
 import { MobileMenu } from "./MobileMenu";
 import { MobileLogo } from "./MobileLogo.js";
 import Hamburger from "./Hamburger";
 import logo from "../images/icons/logo.svg";
 // import down from "../images/icons/down.svg";
-import { useTranslation } from 'react-i18next';
 
 const lngs = {
     en: { nativeName: 'English' },
     ua: { nativeName: 'Ukranian' }
-  };
+};
 
 export const Header = () => {
     const { t, i18n } = useTranslation();
@@ -27,25 +27,25 @@ export const Header = () => {
                 <img src={logo} alt="hamburger menu" />
                 <ul className="nav">
                     <li className="nav__menu-item">
-                        <a className="nav__menu-item-link" href="/about-us">ПРО НАС</a>
+                        <a className="nav__menu-item-link" href="/about-us">{t('header.aboutUs')}</a>
                     </li>
                     <li className="nav__menu-item">
-                        <a className="nav__menu-item-link" href="/record-studio">СТУДІЯ ЗВУКОЗАПИСУ</a>
+                        <a className="nav__menu-item-link" href="/record-studio">{t('header.recordStudio')}</a>
                     </li>
                     <li className="nav__menu-item">
-                        <a className="nav__menu-item-link" href="/course-dj">КУРС DJ</a>
+                        <a className="nav__menu-item-link" href="/course-dj">{t('header.courseDj')}</a>
                     </li>
                     <li className="nav__menu-item">
-                        <a className="nav__menu-item-link" href="/course-production">КУРС PRODUCTION</a>
+                        <a className="nav__menu-item-link" href="/course-production">{t('header.courseProduction')}</a>
                     </li>
                     <li className="nav__menu-item">
-                        <a className="nav__menu-item-link" href="/rent">ОРЕНДА</a>
+                        <a className="nav__menu-item-link" href="/rent">{t('header.rent')}</a>
                     </li>
                     <li className="nav__menu-item">
-                        <a className="nav__menu-item-link" href="/podcast">ПОДКАСТ</a>
+                        <a className="nav__menu-item-link" href="/podcast">{t('header.podcast')}</a>
                     </li>
                     <li className="nav__menu-item">
-                        <a className="nav__menu-item-link" href="/contact-us">КОНТАКТИ</a>
+                        <a className="nav__menu-item-link" href="/contact-us">{t('header.contactUs')}</a>
                     </li>
                 </ul>
                 {/* <div className="locale">

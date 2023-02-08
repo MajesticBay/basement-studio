@@ -1,6 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
+
+const lngs = {
+    en: { nativeName: 'English' },
+    ua: { nativeName: 'Ukranian' }
+};
 
 const Ul = styled.ul`
   list-style: none;
@@ -38,27 +44,37 @@ const Ul = styled.ul`
 `;
 
 export const MobileMenu = ({ openMobileMenu, setOpenMobileMenu }) => {
+  const { t, i18n } = useTranslation();
+
   return (
     <Ul openMobileMenu={openMobileMenu}>
       <Link style={{padding: '2.2rem 3.5rem', display: 'flex', justifyContent: 'center'}} onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
-        <li>ПРО НАС</li>
+        <li>{t('header.aboutUs')}</li>
       </Link>
       <Link style={{padding: '2.2rem 3.5rem', display: 'flex', justifyContent: 'center'}} onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
-        <li>СТУДІЯ ЗВУКОЗАПИСУ</li>
+        <li>{t('header.recordStudio')}</li>
       </Link>
       <Link style={{padding: '2.2rem 3.5rem', display: 'flex', justifyContent: 'center'}} onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
-        <li>КУРС DJ</li>
+        <li>{t('header.courseDj')}</li>
       </Link>
       <Link style={{padding: '2.2rem 3.5rem', display: 'flex', justifyContent: 'center'}} onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
-        <li>ОРЕНДА</li>
+        <li>{t('header.courseProduction')}</li>
       </Link>
       <Link style={{padding: '2.2rem 3.5rem', display: 'flex', justifyContent: 'center'}} onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
-        <li>ПОДКАСТ</li>
+        <li>{t('header.rent')}</li>
       </Link>
       <Link style={{padding: '2.2rem 3.5rem', display: 'flex', justifyContent: 'center'}} onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
-        <li>КОНТАКТИ</li>
+        <li>{t('header.podcast')}</li>
+      </Link>
+      <Link style={{padding: '2.2rem 3.5rem', display: 'flex', justifyContent: 'center'}} onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
+        <li>{t('header.contactUs')}</li>
       </Link>
       <div className="mobile-locale-switcher">
+        {Object.keys(lngs).map((lng) => (
+            <button key={lng} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
+            {lngs[lng].nativeName}
+            </button>
+        ))}
         <p className="mobile-locale-switcher__locale mobile-locale-switcher__locale--active">UA</p>
         <p className="mobile-locale-switcher__pipe">|</p>
         <p className="mobile-locale-switcher__locale">EN</p>
