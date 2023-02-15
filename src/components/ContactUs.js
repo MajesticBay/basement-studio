@@ -1,3 +1,4 @@
+import { MapComponent } from "./MapComponent.tsx";
 import email from "../images/icons/email.svg";
 import phone from "../images/icons/phone.svg";
 import address from "../images/icons/address.svg";
@@ -34,7 +35,7 @@ export const ContactUs = () => {
                 <Btn text={"ЗВ’ЯЖІТЬСЯ З НАМИ"} arrowDisplayed={true} dark={false} />
             </div>
             <div className="contact-us__right">
-
+                <MapComponent />
             </div>
         </div>
     )
