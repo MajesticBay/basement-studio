@@ -70,6 +70,12 @@ a {
   text-decoration: none;
 }
 
+.gm-style-mtc,
+.gm-svpc,
+.gm-style-cc {
+  display: none;
+}
+
 .pointer {
   cursor: pointer;
 }
