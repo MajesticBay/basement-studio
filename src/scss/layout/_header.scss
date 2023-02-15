@@ -35,6 +35,8 @@
 
     &__locale {
         color: rgba(255, 255, 255, 0.4);
+        background: transparent;
+        border: none;
 
         &--active {
             color: var(--color-white);

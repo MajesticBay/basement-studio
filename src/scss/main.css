@@ -414,6 +414,8 @@ body {
 }
 .mobile-locale-switcher__locale {
   color: rgba(255, 255, 255, 0.4);
+  background: transparent;
+  border: none;
 }
 .mobile-locale-switcher__locale--active {
   color: var(--color-white);
