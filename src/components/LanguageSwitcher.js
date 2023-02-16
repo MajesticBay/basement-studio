@@ -9,7 +9,7 @@ const Button = styled.button`
 `
 
 export const LanguageSwitcher = ({text, value, handleLangChange}) => {
-    const { t, i18n } = useTranslation();
+    const { i18n } = useTranslation();
     return (
         <Button resolvedLanguage={i18n.resolvedLanguage} value={value} onClick={(event) => handleLangChange(event)}>{ text }</Button>
     )

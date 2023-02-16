@@ -36,8 +36,8 @@ export const RecordStudio = () => {
         }
     ]
 
-    const cards = cardsData.map((card) => (
-            <div className="card">
+    const cards = cardsData.map((card, indexCard) => (
+            <div className="card" key={indexCard}>
                 {/* <p>12123123123123123SDFSDFSD</p> */}
                 {/* ------------------------------- */}
                 {/* TO DO */}
@@ -46,8 +46,8 @@ export const RecordStudio = () => {
                 <p className="card__title">{ card.title }</p>
                 <p className="card__price">{ card.price }$ / год</p>
                 <ul className="card__list">
-                    {card.list.map((item) => (
-                        <li className="card__list-item">{item}</li>
+                    {card.list.map((item, index) => (
+                        <li className="card__list-item" key={index}>{item}</li>
                     ))}
                 </ul>
                 <Btn
