@@ -1,3 +1,4 @@
+import Carousel, { CarouselItem } from "../components/Carousel";
 import { Btn } from "./Btn";
 // import bg from "../images/bg_record_studio.png";
 
@@ -37,8 +38,8 @@ export const RecordStudio = () => {
     ]
 
     const cards = cardsData.map((card, indexCard) => (
+        // <CarouselItem>
             <div className="card" key={indexCard}>
-                {/* <p>12123123123123123SDFSDFSD</p> */}
                 {/* ------------------------------- */}
                 {/* TO DO */}
                 {/* Give each element inside the card a key */}
@@ -57,6 +58,7 @@ export const RecordStudio = () => {
                     dark={false}
                 />
             </div>
+        // </CarouselItem>
     ))
 
     return (
@@ -65,8 +67,8 @@ export const RecordStudio = () => {
             <p className="record-studio__text">Атмосфера в студії дозволить насолоджуватись процесом звукозапису або музичного продакшену.</p>
             <p className="record-studio__text">Звукорежисер - твій друг, професіонал, який завжди підтримає, порадить і допоможе зробити процес запису максимально комфортним і приємним.</p>
             <div className="cards">
-                {cards}
-                {/* <div className="card">
+            <Carousel>
+                <CarouselItem><div className="card">
                     <p className="card__title">ЗВУКОЗАПИС</p>
                     <p className="card__price">14$ / год</p>
                     <ul>
@@ -80,8 +82,8 @@ export const RecordStudio = () => {
                         arrowDisplayed={false}
                         dark={false}
                     />
-                </div>
-                <div className="card">
+                </div></CarouselItem>
+                <CarouselItem><div className="card">
                     <p className="card__title">ЗВЕДЕННЯ ТА МАСТЕРІНГ</p>
                     <p className="card__price">70$ / год</p>
                     <ul className="card__list">
@@ -95,8 +97,8 @@ export const RecordStudio = () => {
                         arrowDisplayed={false}
                         dark={false}
                     />
-                </div>
-                <div className="card">
+                </div></CarouselItem>
+                <CarouselItem><div className="card">
                     <p className="card__title">МУЗИЧНИЙ ПРОДАКШН</p>
                     <p className="card__price">80$ / год</p>
                     <ul className="card__list">
@@ -109,7 +111,11 @@ export const RecordStudio = () => {
                         arrowDisplayed={false}
                         dark={false}
                     />
-                </div> */}
+                </div></CarouselItem>
+            </Carousel>
+                {/* <Carousel> */}
+                    {/* {cards} */}
+                {/* </Carousel> */}
             </div>
         </div>
     )
