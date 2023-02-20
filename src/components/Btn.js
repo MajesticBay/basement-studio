@@ -17,6 +17,7 @@ const Button = styled.div`
 
     @media only screen and (min-width: 768px) {
         font-size: 2rem;
+        padding: 2.6rem 4rem;
     }
 `
 

@@ -49,30 +49,37 @@
 
 @media only screen and (min-width: 768px) {
     .course-dj {
+        height: 100vh;
         position: relative;
 
         &__header {
+            text-align: right;
+
             &--mobile {
                 display: none;
             }
 
             &--desktop {
-                display: inline;
+                display: block;
             }
         }
 
         &__img {
             position: absolute;
             width: 60%;
+            margin-top: 0;
         }
 
         &__outer-text-container {
             position: absolute;
             top: 20%;
             left: 50%;
+            margin-top: 0;
+            padding: 0;
         }
 
         &__text-container {
+            padding: 2.4rem;
             background-color: var(--color-primary);
         }
     }

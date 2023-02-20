@@ -346,24 +346,32 @@ body {
 
 @media only screen and (min-width: 768px) {
   .course-dj {
+    height: 100vh;
     position: relative;
+  }
+  .course-dj__header {
+    text-align: right;
   }
   .course-dj__header--mobile {
     display: none;
   }
   .course-dj__header--desktop {
-    display: inline;
+    display: block;
   }
   .course-dj__img {
     position: absolute;
     width: 60%;
+    margin-top: 0;
   }
   .course-dj__outer-text-container {
     position: absolute;
     top: 20%;
     left: 50%;
+    margin-top: 0;
+    padding: 0;
   }
   .course-dj__text-container {
+    padding: 2.4rem;
     background-color: var(--color-primary);
   }
 }
