@@ -1,5 +1,6 @@
-import arrow from "../images/icons/arrow.svg";
 import styled from "styled-components";
+import arrow from "../images/icons/arrow.svg";
+// import { Arrow } from "./Arrow";
 
 const Button = styled.div`
     width: 100%;
@@ -26,6 +27,7 @@ export const Btn = ({ text, arrowDisplayed, dark, className }) => {
         <Button dark={dark} className={className}>
             <span>{ text }</span>
             { arrowDisplayed ? <img src={arrow} alt="arrow" /> : <></> }
+            {/* { arrowDisplayed ? <Arrow /> : <></> } */}
         </Button>
     )
 }
