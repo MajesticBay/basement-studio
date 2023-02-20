@@ -7,6 +7,10 @@
 
     &__header {
         padding: 0 3.2rem;
+
+        &--desktop {
+            display: none;
+        }
     }
 
     &__img {
@@ -15,9 +19,14 @@
         height: auto;
     }
 
-    &__text-container {
+    &__outer-text-container {
         margin-top: 4rem;
         padding: 0 3.2rem;
+    }
+
+    &__text-container {
+        display: flex;
+        flex-direction: column;
     }
 
     &__text {
@@ -42,8 +51,29 @@
     .course-dj {
         position: relative;
 
+        &__header {
+            &--mobile {
+                display: none;
+            }
+
+            &--desktop {
+                display: inline;
+            }
+        }
+
         &__img {
             position: absolute;
+            width: 60%;
+        }
+
+        &__outer-text-container {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+        }
+
+        &__text-container {
+            background-color: var(--color-primary);
         }
     }
 }
