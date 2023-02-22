@@ -349,6 +349,11 @@ body {
     height: 100vh;
     position: relative;
   }
+  .course-dj__inner {
+    position: absolute;
+    width: 100%;
+    padding: 12rem 8rem;
+  }
   .course-dj__header {
     text-align: right;
   }
@@ -365,8 +370,8 @@ body {
   }
   .course-dj__outer-text-container {
     position: absolute;
-    top: 20%;
     left: 50%;
+    right: 8rem;
     margin-top: 0;
     padding: 0;
   }

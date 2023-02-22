@@ -1,11 +1,11 @@
 import Carousel, { CarouselItem } from "../components/Carousel";
 import { Btn } from "./Btn";
-// import bg from "../images/bg_record_studio.png";
+import bg from "../images/bg-record-studio-desktop.png";
 
 export const RecordStudio = () => {
     const bgStyle = {
-        // backgroundImage: `url(${bg})`
-        background: "purple"
+        backgroundImage: `url(${bg})`,
+        // background: "purple"
     };
 
     const cardsData = [
@@ -62,7 +62,8 @@ export const RecordStudio = () => {
     ))
 
     return (
-        <div className="record-studio" style={{bgStyle}}>
+        <div className="record-studio" style={bgStyle}>
+        {/* <div className="record-studio" style={{background: "purple"}}> */}
             <h1 className="header">СТУДІЯ  ЗВУКОЗАПИСУ</h1>
             <p className="record-studio__text">Атмосфера в студії дозволить насолоджуватись процесом звукозапису або музичного продакшену.</p>
             <p className="record-studio__text">Звукорежисер - твій друг, професіонал, який завжди підтримає, порадить і допоможе зробити процес запису максимально комфортним і приємним.</p>
