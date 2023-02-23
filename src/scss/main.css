@@ -386,10 +386,6 @@ body {
   .course-dj__text:last-of-type {
     margin-bottom: 0;
   }
-  .course-dj__btn {
-    width: fit-content;
-    width: -moz-fit-content;
-  }
 }
 .course-production {
   padding: 8rem 3.2rem;

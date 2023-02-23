@@ -84,7 +84,7 @@ export const RecordStudio = () => {
                         dark={false}
                     />
                 </div></CarouselItem>
-                <CarouselItem><div className="card">
+                {/* <CarouselItem><div className="card">
                     <p className="card__title">ЗВЕДЕННЯ ТА МАСТЕРІНГ</p>
                     <p className="card__price">70$ / год</p>
                     <ul className="card__list">
@@ -98,8 +98,8 @@ export const RecordStudio = () => {
                         arrowDisplayed={false}
                         dark={false}
                     />
-                </div></CarouselItem>
-                <CarouselItem><div className="card">
+                </div></CarouselItem> */}
+                {/* <CarouselItem><div className="card">
                     <p className="card__title">МУЗИЧНИЙ ПРОДАКШН</p>
                     <p className="card__price">80$ / год</p>
                     <ul className="card__list">
@@ -112,7 +112,7 @@ export const RecordStudio = () => {
                         arrowDisplayed={false}
                         dark={false}
                     />
-                </div></CarouselItem>
+                </div></CarouselItem> */}
             </Carousel>
                 {/* <Carousel> */}
                     {/* {cards} */}
