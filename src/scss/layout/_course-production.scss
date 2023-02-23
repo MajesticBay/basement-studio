@@ -5,8 +5,28 @@
     // gap: 4rem;
     padding: 8rem 3.2rem;
 
+    &__header {
+        padding: 0 3.2rem;
+
+        &--desktop {
+            display: none;
+        }
+    }
+
+    &__img {
+        margin-top: 4rem;
+        width: 100%;
+        height: auto;
+    }
+
+    &__outer-text-container {
+        margin-top: 4rem;
+        padding: 0 3.2rem;
+    }
+
     &__text-container {
-        padding: 4rem 0;
+        display: flex;
+        flex-direction: column;
     }
 
     &__text {
@@ -16,5 +36,74 @@
         &:first-of-type {
             margin-bottom: 1.6rem;
         }
+
+        &:last-of-type {
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__button {
+        margin: 0 3.2rem;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .course-production {
+        height: 100vh;
+        position: relative;
+
+        &__inner {
+            position: absolute;
+            width: 100%;
+            padding: 12rem 8rem;
+        }
+
+        &__header {
+            text-align: right;
+
+            &--mobile {
+                display: none;
+            }
+
+            &--desktop {
+                display: block;
+            }
+        }
+
+        &__img {
+            position: absolute;
+            width: 70%;
+            height: auto;
+            margin-top: 0;
+        }
+
+        &__outer-text-container {
+            position: absolute;
+            // top: 20%;
+            left: 50%;
+            right: 8rem;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            margin-top: 0;
+            padding: 0;
+        }
+
+        &__text-container {
+            padding: 2.4rem;
+            background-color: var(--color-primary);
+        }
+
+        &__text {
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        // &__btn {
+        //     width: -moz-fit-content;
+        //     width: fit-content;
+        // }
     }
 }
