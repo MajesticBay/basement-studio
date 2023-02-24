@@ -1,7 +1,8 @@
 .about-us {
     display: flex;
     flex-direction: column;
-    padding: 8rem 3.2rem;
+    align-items: center;
+    // padding: 8rem 3.2rem;
     background: var(--color-primary);
 
     &__text {
@@ -21,8 +22,14 @@
 
 @media only screen and (min-width: 768px) {
     .about-us {
+        max-width: 84.6rem;
+
         &__text {
-            margin: 0 min(15rem, 29.7rem);
+            width: 100%;
+            font-size: 2rem;
+            line-height: 120%;
+            font-weight: 400;
+            // margin: 0 min(15rem, 29.7rem);
         }
     }
 }
