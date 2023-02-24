@@ -124,6 +124,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   background: var(--color-primary);
 }
 .about-us__text {
@@ -222,6 +223,7 @@ body {
   }
 }
 .carousel {
+  width: 100%;
   overflow: hidden;
 }
 
@@ -257,6 +259,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   padding: 8rem 3.2rem;
 }
 .contact-us__left {
@@ -318,6 +321,7 @@ body {
   }
 }
 .course-dj {
+  width: 100%;
   padding: 8rem 0;
 }
 .course-dj__header {
@@ -397,6 +401,7 @@ body {
   }
 }
 .course-production {
+  width: 100%;
   padding: 8rem 3.2rem;
 }
 .course-production__header {
@@ -467,6 +472,7 @@ body {
 .footer {
   display: flex;
   flex-direction: column;
+  width: 100%;
   padding: 4rem 3.2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.24);
 }
@@ -492,6 +498,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 8rem 3.2rem;
+  width: 100%;
 }
 .gift-certificate__header {
   margin-top: 4rem;
@@ -620,6 +627,7 @@ body {
 .hero {
   background-image: url("/src/images/bg-mobile.png");
   height: 100vh;
+  width: 100%;
   position: relative;
 }
 .hero__scroll-container {
@@ -705,6 +713,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   padding: 8rem 3.2rem;
 }
 .record-studio__text {
@@ -731,6 +740,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   padding: 8rem 3.2rem;
 }
 .rent__card-container {
