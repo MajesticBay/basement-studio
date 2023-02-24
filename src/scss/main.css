@@ -430,11 +430,11 @@ body {
 .course-production__text:last-of-type {
   margin-bottom: 4rem;
 }
-.course-production__button {
+.course-production__btn {
   margin: 0 3.2rem;
 }
-.course-production__button--desktop {
-  display: none;
+.course-production__btn--desktop {
+  display: none !important;
 }
 
 @media only screen and (min-width: 768px) {
@@ -476,10 +476,10 @@ body {
     margin-bottom: 0;
   }
   .course-production__btn--mobile {
-    display: none;
+    display: none !important;
   }
   .course-production__btn--desktop {
-    display: block;
+    display: block !important;
   }
 }
 .footer {
