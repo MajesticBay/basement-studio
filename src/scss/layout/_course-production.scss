@@ -4,9 +4,10 @@
     // align-items: center;
     // gap: 4rem;
     width: 100%;
-    padding: 8rem 3.2rem;
+    // padding: 8rem 3.2rem;
 
     &__header {
+        text-align: center;
         padding: 0 3.2rem;
     }
 
@@ -45,6 +46,10 @@
 
     &__button {
         margin: 0 3.2rem;
+
+        &--desktop {
+            display: none;
+        }
     }
 }
 
@@ -56,38 +61,39 @@
 
         &__inner {
             position: absolute;
-            // width: 100%;
+            width: 100%;
             // padding: 12rem 8rem;
         }
 
-        &__header {
-            text-align: right;
-        }
+        // &__header {
+        //     text-align: right;
+        // }
 
         &__img {
             position: absolute;
             width: 70%;
             height: auto;
-            margin-top: 0;
+            right: 0;
+            // margin-top: 0;
 
-            // &--mobile {
-            //     display: none;
-            // }
+            &--mobile {
+                display: none;
+            }
 
-            // &--desktop {
-            //     display: block;
-            // }
+            &--desktop {
+                display: block;
+            }
         }
 
         &__outer-text-container {
             position: absolute;
-            // top: 20%;
-            left: 50%;
-            right: 8rem;
+            top: 20rem;
+            left: 8rem;
+            right: 50%;
             display: flex;
             flex-direction: column;
-            align-items: end;
-            margin-top: 0;
+            align-items: baseline;
+            // margin-top: 0;
             padding: 0;
         }
 
@@ -102,9 +108,14 @@
             }
         }
 
-        // &__btn {
-        //     width: -moz-fit-content;
-        //     width: fit-content;
-        // }
+        &__btn {
+            &--mobile {
+                display: none;
+            }
+
+            &--desktop {
+                display: block;
+            }
+        }
     }
 }
