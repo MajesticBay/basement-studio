@@ -497,8 +497,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 8rem 3.2rem;
+}
+.gift-certificate__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
+  max-width: 128rem;
+  padding: 8rem 3.2rem;
 }
 .gift-certificate__header {
   margin-top: 4rem;
@@ -517,7 +523,7 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  .gift-certificate {
+  .gift-certificate__inner {
     flex-direction: row;
     align-items: center;
   }
@@ -577,6 +583,7 @@ body {
 @media only screen and (min-width: 768px) {
   .main-header {
     justify-content: center;
+    width: 100%;
   }
 
   .navigation-mobile {
