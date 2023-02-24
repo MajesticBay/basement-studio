@@ -10,9 +10,42 @@ export const Header = () => {
     const { t, i18n } = useTranslation();
     const [openMobileMenu, setOpenMobileMenu] = useState(false);
 
-    function handleLangChange (e) {
+    function handleLangChange(e) {
         i18n.changeLanguage(e.target.value);
     }
+
+    const navLinksData = [
+        {
+            route: "about-us",
+            translation: "header.aboutUs"
+        },
+        {
+            route: "record-studio",
+            translation: "header.recordStudio"
+        },
+        {
+            route: "course-dj",
+            translation: "header.courseDj"
+        },
+        {
+            route: "course-production",
+            translation: "header.courseProduction"
+        },
+        {
+            route: "rent",
+            translation: "header.rent"
+        },
+        {
+            route: "contact-us",
+            translation: "header.contactUs"
+        }
+    ]
+
+    const navLinks = navLinksData.map((navLink, index) => (
+        <li key={index} className="nav__menu-item">
+            <a className="nav__menu-item-link" href={`/${navLink.route}`}>{t(`${navLink.translation}`)}</a>
+        </li>
+    ))
 
     return (
         <header className="main-header">
@@ -25,27 +58,7 @@ export const Header = () => {
             <nav className="navigation">
                 <img src={logo} alt="hamburger menu" />
                 <ul className="nav">
-                    <li className="nav__menu-item">
-                        <a className="nav__menu-item-link" href="/about-us">{t('header.aboutUs')}</a>
-                    </li>
-                    <li className="nav__menu-item">
-                        <a className="nav__menu-item-link" href="/record-studio">{t('header.recordStudio')}</a>
-                    </li>
-                    <li className="nav__menu-item">
-                        <a className="nav__menu-item-link" href="/course-dj">{t('header.courseDj')}</a>
-                    </li>
-                    <li className="nav__menu-item">
-                        <a className="nav__menu-item-link" href="/course-production">{t('header.courseProduction')}</a>
-                    </li>
-                    <li className="nav__menu-item">
-                        <a className="nav__menu-item-link" href="/rent">{t('header.rent')}</a>
-                    </li>
-                    <li className="nav__menu-item">
-                        <a className="nav__menu-item-link" href="/podcast">{t('header.podcast')}</a>
-                    </li>
-                    <li className="nav__menu-item">
-                        <a className="nav__menu-item-link" href="/contact-us">{t('header.contactUs')}</a>
-                    </li>
+                    {navLinks}
                 </ul>
                 <div className="mobile-locale-switcher">
                     <LanguageSwitcher value={"ua"} text={"UA"} handleLangChange={ handleLangChange } />
