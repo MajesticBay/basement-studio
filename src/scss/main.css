@@ -114,6 +114,10 @@ a {
   .mobile {
     display: none !important;
   }
+
+  .header {
+    font-size: 4.8rem;
+  }
 }
 :root {
   --color-primary: #0C0C0C;
@@ -378,8 +382,8 @@ body {
   }
   .course-dj__img {
     position: absolute;
-    width: 70%;
-    height: auto;
+    width: 858px;
+    height: 577px;
     margin-top: 0;
   }
   .course-dj__outer-text-container {
@@ -398,6 +402,9 @@ body {
   }
   .course-dj__text:last-of-type {
     margin-bottom: 0;
+  }
+  .course-dj__btn {
+    margin-right: 5rem;
   }
 }
 .course-production {
@@ -445,6 +452,7 @@ body {
   .course-production__inner {
     position: absolute;
     width: 100%;
+    padding: 12rem 8rem;
   }
   .course-production__img {
     position: absolute;

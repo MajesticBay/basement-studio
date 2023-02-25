@@ -73,8 +73,10 @@
 
         &__img {
             position: absolute;
-            width: 70%;
-            height: auto;
+            width: 858px;
+            height: 577px;
+            // width: 70%;
+            // height: auto;
             margin-top: 0;
         }
 
@@ -101,9 +103,8 @@
             }
         }
 
-        // &__btn {
-        //     width: -moz-fit-content;
-        //     width: fit-content;
-        // }
+        &__btn {
+            margin-right: 5rem;
+        }
     }
 }
