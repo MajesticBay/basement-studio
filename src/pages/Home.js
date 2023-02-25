@@ -7,13 +7,13 @@ import { Rent } from "../components/Rent";
 // import { Podcast } from "../components/Podcast";
 import { GiftCertificate } from "../components/GiftCertificate";
 import { ContactUs } from "../components/ContactUs";
-import { CarouselOuter } from "../components/CarouselOuter";
+// import { CarouselOuter } from "../components/CarouselOuter";
 
 export const Home = () => {
     return (
         <>
             <Hero />
-            <CarouselOuter />
+            {/* <CarouselOuter /> */}
             <AboutUs />
             <RecordStudio />
             <CourseDj />
