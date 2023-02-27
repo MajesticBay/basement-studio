@@ -14,7 +14,7 @@ export const AboutUs = () => {
             <p className="about-us__text">
                 {/* Комфорт та професійне обладнання зробить ваш творчий процес повним натхнення та свободи експериментів. */}
                 {t('aboutUs.p2')}</p>
-            <img src={photo} alt="gallery" />
+            <img className='about-us__photo' src={photo} alt="gallery" />
         </div>
     )
 }
