@@ -186,6 +186,10 @@ body {
   border: 1px solid var(--color-white);
   padding: 3.2rem 2.4rem;
 }
+.card__img-container {
+  background: #000000;
+  mix-blend-mode: color;
+}
 .card__img {
   width: 100%;
   height: auto;

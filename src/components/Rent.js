@@ -28,7 +28,9 @@ export const Rent = () => {
 
     const cards = cardsData.map((card, indexCard) => (
         <div className="card" key={indexCard}>
-            <img className="card__img" src={ card.image } alt={ card.image } />
+            <div className="card__img-container">
+                <img className="card__img" src={ card.image } alt={ card.image } />
+            </div>
             <p className="card__title">{ card.title }</p>
             <p className="card__price">{ card.price }$ / год</p>
             <ul className="card__list">
