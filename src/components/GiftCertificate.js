@@ -4,12 +4,13 @@ import giftCertificate from "../images/icons/gift-certificate.svg";
 
 export const GiftCertificate = () => {
     const bgStyle = {
-        backgroundImage: `url(${bg})`
+        backgroundImage: `url(${bg})`,
+        backgroundPosition: "50% 25%"
     }
 
     const bgOverlayStyle = {
-        background: "rgba(7, 7, 7, 0.6)",
-        backdropFilter: "blur(3px)"
+        background: "rgba(7, 7, 7, 0.5)",
+        backdropFilter: "blur(8px)",
     }
 
     return (
