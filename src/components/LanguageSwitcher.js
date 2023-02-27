@@ -6,6 +6,7 @@ const Button = styled.button`
     color: ${({resolvedLanguage, value}) => (resolvedLanguage === value ? 'var(--color-white)' : 'rgba(255, 255, 255, 0.4)')};
     background: transparent;
     border: none;
+    cursor: pointer;
 `
 
 export const LanguageSwitcher = ({text, value, handleLangChange}) => {
