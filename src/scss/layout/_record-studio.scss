@@ -35,3 +35,12 @@
 .card:hover .record-studio__btn {
     display: flex !important;
 }
+
+@media only screen and (min-width: 768px) {
+    .record-studio {
+        &__text {
+            // max-width: 10.61rem;
+            font-size: 20;
+        }
+    }
+}

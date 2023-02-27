@@ -57,7 +57,7 @@ export const ContactUs = () => {
                     <IconIG className="pointer" />
                     <IconTK className="pointer" />
                 </div>
-                <div className="contact-us__map map">
+                <div className="contact-us__map">
                     <MapComponent />
                 </div>
                 <h1 className="contact-us__sub-header">ЗАЛИШИЛИСЯ ЗАПИТАННЯ?</h1>

@@ -305,6 +305,7 @@ body {
 }
 .contact-us__map {
   grid-area: map;
+  height: 213px;
 }
 .contact-us__question {
   grid-area: map;
@@ -336,6 +337,10 @@ body {
   }
   .contact-us__text {
     font-size: 1.6rem;
+  }
+  .contact-us__map {
+    width: 80rem;
+    height: 66.3rem;
   }
 }
 .course-dj {
@@ -732,15 +737,6 @@ body {
   fill: white;
 }
 
-.map {
-  height: 213px;
-}
-
-@media only screen and (min-width: 768px) {
-  .map {
-    height: 500px;
-  }
-}
 .podcast {
   padding: 8rem 3.2rem;
 }
@@ -794,6 +790,11 @@ body {
   display: flex !important;
 }
 
+@media only screen and (min-width: 768px) {
+  .record-studio__text {
+    font-size: 20;
+  }
+}
 .rent {
   display: flex;
   flex-direction: column;

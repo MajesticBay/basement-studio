@@ -60,6 +60,7 @@
 
     &__map {
         grid-area: map;
+        height: 213px;
     }
 
     &__question {
@@ -104,6 +105,11 @@
 
         &__text {
             font-size: 1.6rem;
+        }
+
+        &__map {
+            width: 80rem;
+            height: 66.3rem;
         }
     }
 }
