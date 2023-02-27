@@ -8,6 +8,11 @@ export const RecordStudio = () => {
         // background: "purple"
     };
 
+    const bgOverlayStyle = {
+        background: "rgba(7, 7, 7, 0.6)",
+        backdropFilter: "blur(3px)"
+    }
+
     const cardsData = [
         {
             title: "ЗВУКОЗАПИС",
@@ -64,14 +69,15 @@ export const RecordStudio = () => {
 
     return (
         <div className="record-studio" style={bgStyle}>
-        {/* <div className="record-studio" style={{background: "purple"}}> */}
-            <h1 className="header">СТУДІЯ  ЗВУКОЗАПИСУ</h1>
-            <p className="record-studio__text">Атмосфера в студії дозволить насолоджуватись процесом звукозапису або музичного продакшену.</p>
-            <p className="record-studio__text">Звукорежисер - твій друг, професіонал, який завжди підтримає, порадить і допоможе зробити процес запису максимально комфортним і приємним.</p>
-            <div className="cards">
-                <Carousel>
-                    {cards}
-                </Carousel>
+            <div className="record-studio__inner" style={bgOverlayStyle}>
+                <h1 className="header">СТУДІЯ  ЗВУКОЗАПИСУ</h1>
+                <p className="record-studio__text">Атмосфера в студії дозволить насолоджуватись процесом звукозапису або музичного продакшену.</p>
+                <p className="record-studio__text">Звукорежисер - твій друг, професіонал, який завжди підтримає, порадить і допоможе зробити процес запису максимально комфортним і приємним.</p>
+                <div className="cards">
+                    <Carousel>
+                        {cards}
+                    </Carousel>
+                </div>
             </div>
         </div>
     )
