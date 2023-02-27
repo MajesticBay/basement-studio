@@ -186,6 +186,10 @@ body {
   border: 1px solid var(--color-white);
   padding: 3.2rem 2.4rem;
 }
+.card__img {
+  width: 100%;
+  height: auto;
+}
 .card__title {
   font-size: 2rem;
   font-weight: 300;
@@ -386,6 +390,7 @@ body {
   .course-dj__inner {
     position: absolute;
     width: 100%;
+    height: 100%;
     padding: 12rem 8rem;
   }
   .course-dj__header {
@@ -405,6 +410,7 @@ body {
   }
   .course-dj__outer-text-container {
     position: absolute;
+    top: 30%;
     left: 50%;
     right: 8rem;
     display: flex;
@@ -416,6 +422,9 @@ body {
   .course-dj__text-container {
     padding: 2.4rem;
     background-color: var(--color-primary);
+  }
+  .course-dj__text {
+    line-height: 130%;
   }
   .course-dj__text:last-of-type {
     margin-bottom: 0;
@@ -465,10 +474,12 @@ body {
   .course-production {
     height: 100vh;
     position: relative;
+    margin-top: 25rem;
   }
   .course-production__inner {
     position: absolute;
     width: 100%;
+    height: 100%;
     padding: 12rem 8rem;
   }
   .course-production__img {
@@ -816,6 +827,7 @@ body {
 @media only screen and (min-width: 768px) {
   .rent {
     height: 100vh;
+    margin-top: 25rem;
   }
 }
 

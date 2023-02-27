@@ -1,8 +1,11 @@
+import djPlace from "../images/dj_place.png";
+import productionPlace from "../images/production_place.png";
 import { Btn } from "./Btn";
 
 export const Rent = () => {
     const cardsData = [
         {
+            image: djPlace,
             title: "DJ PLACE",
             price: "13",
             list: [
@@ -12,6 +15,7 @@ export const Rent = () => {
             ]
         },
         {
+            image: productionPlace,
             title: "PRODUCTION PLACE",
             price: "13",
             list: [
@@ -24,6 +28,7 @@ export const Rent = () => {
 
     const cards = cardsData.map((card, indexCard) => (
         <div className="card" key={indexCard}>
+            <img className="card__img" src={ card.image } alt={ card.image } />
             <p className="card__title">{ card.title }</p>
             <p className="card__price">{ card.price }$ / год</p>
             <ul className="card__list">
