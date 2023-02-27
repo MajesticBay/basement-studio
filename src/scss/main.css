@@ -321,26 +321,24 @@ body {
   .contact-us {
     grid-template-columns: 1fr 60%;
     grid-template-areas: "header map" "links map" "social map" "question map" "btn map";
-    padding: 6rem 8rem;
-  }
-  .contact-us__left {
-    width: 50%;
-  }
-  .contact-us__right {
-    width: 50%;
-    height: 500px;
+    padding: 0;
+    padding-left: 8rem;
   }
   .contact-us__header {
     text-align: left;
     font-size: 4.8rem;
     font-weight: 800;
+    margin-top: 6rem;
   }
   .contact-us__text {
     font-size: 1.6rem;
   }
   .contact-us__map {
     width: 80rem;
-    height: 66.3rem;
+    height: 72rem;
+  }
+  .contact-us__btn {
+    margin-bottom: 8rem;
   }
 }
 .course-dj {

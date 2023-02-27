@@ -61,7 +61,7 @@ export const ContactUs = () => {
                     <MapComponent />
                 </div>
                 <h1 className="contact-us__sub-header">ЗАЛИШИЛИСЯ ЗАПИТАННЯ?</h1>
-                <Btn className={"contact-us__sub-header"} text={"ЗВ’ЯЖІТЬСЯ З НАМИ"} arrowDisplayed={true} dark={false} />
+                <Btn className={"contact-us__btn"} text={"ЗВ’ЯЖІТЬСЯ З НАМИ"} arrowDisplayed={true} dark={false} />
         </div>
     )
 }
