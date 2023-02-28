@@ -49,7 +49,7 @@ export const Rent = () => {
                 ))}
             </ul>
             <Btn
-                className={"record-studio__btn"}
+                className={"card__btn"}
                 text={"ЗАМОВИТИ"}
                 arrowDisplayed={false}
                 dark={false}

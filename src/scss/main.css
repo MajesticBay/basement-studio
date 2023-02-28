@@ -148,8 +148,6 @@ a {
   .about-us {
     max-width: 84.6rem;
     padding: 0;
-    padding-top: 17rem;
-    padding-bottom: 13rem;
   }
   .about-us__text {
     width: 100%;
@@ -176,6 +174,7 @@ body {
 .cards {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .card {
@@ -221,14 +220,9 @@ body {
   color: rgba(255, 255, 255, 0.72);
   white-space: break-spaces;
 }
-.card__button {
-  background: var(--color-white);
-  width: 100%;
-  text-align: center;
-  padding-top: 1.6rem;
-  padding-bottom: 1.6rem;
-  font-size: 1.6rem;
-  color: var(--color-primary);
+.card__btn {
+  display: none !important;
+  margin-top: auto;
 }
 
 @media only screen and (min-width: 768px) {
@@ -246,6 +240,13 @@ body {
   .card__list-item {
     font-size: 1.6rem;
     font-weight: 300;
+  }
+  .card__btn {
+    position: absolute;
+    bottom: 2rem;
+  }
+  .card:hover .card__btn {
+    display: flex !important;
   }
 }
 .carousel {
@@ -813,10 +814,6 @@ body {
   margin-top: auto;
 }
 
-.card:hover .record-studio__btn {
-  display: flex !important;
-}
-
 @media only screen and (min-width: 768px) {
   .record-studio__text {
     font-size: 20;
@@ -838,9 +835,10 @@ body {
 
 @media only screen and (min-width: 768px) {
   .rent {
-    height: 100vh;
     padding: 0;
-    margin-top: 25rem;
+  }
+  .rent__inner {
+    padding-bottom: 2rem;
   }
 }
 
