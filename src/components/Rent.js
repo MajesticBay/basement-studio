@@ -59,12 +59,14 @@ export const Rent = () => {
     return (
         <div className="rent" style={bgStyle}>
             <div className="rent__inner" style={bgOverlayStyle}>
-                <h1 className="header">ОРЕНДА</h1>
-                <div className="rent__card-container">
-                    <div className="cards">
-                        {cards}
+                {/* <div className="rent__content"> */}
+                    <h1 className="header">ОРЕНДА</h1>
+                    <div className="rent__card-container">
+                        <div className="cards">
+                            {cards}
+                        </div>
                     </div>
-                </div>
+                {/* </div> */}
             </div>
         </div>
     )
