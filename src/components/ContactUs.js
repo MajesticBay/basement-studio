@@ -53,7 +53,13 @@ export const ContactUs = () => {
                     </a>
                 </div>
                 <div className="contact-us__social-media-container">
-                    <IconFB className="pointer" />
+                    <a
+                        rel="noopener noreferrer"
+                        href="https://www.facebook.com/basement.studio.kyiv/"
+                        target="_blank"
+                    >
+                        <IconFB className="pointer" />
+                    </a>
                     <IconIG className="pointer" />
                     <IconTK className="pointer" />
                 </div>
