@@ -1,7 +1,4 @@
 .contact-us {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
     display: grid;
     gap: 4rem;
     width: 100%;
@@ -14,16 +11,6 @@
     "map"
     "question"
     "btn";
-
-    // &__left {
-    //     display: flex;
-    //     flex-direction: column;
-    // }
-
-    // &__right {
-    //     width: 100%;
-    //     height: 500px;
-    // }
 
     &__header {
         grid-area: header;
@@ -61,6 +48,9 @@
     &__map {
         grid-area: map;
         height: 213px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &__question {
@@ -78,7 +68,6 @@
 
 @media only screen and (min-width: 768px) {
     .contact-us {
-        // flex-direction: row;
         grid-template-columns: 1fr 60%;
         grid-template-areas:
         "header map"
@@ -86,18 +75,8 @@
         "social map"
         "question map"
         "btn map";
-        // padding: 6rem 8rem;
         padding: 0;
         padding-left: 8rem;
-
-        // &__left {
-        //     width: 50%;
-        // }
-
-        // &__right {
-        //     width: 50%;
-        //     height: 500px;
-        // }
 
         &__header {
             text-align: left;
@@ -111,9 +90,8 @@
         }
 
         &__map {
-            width: 80rem;
-            // height: 66.3rem;
-            height: 72rem;
+            width: 100%;
+            height: 100%;
         }
 
         &__btn {

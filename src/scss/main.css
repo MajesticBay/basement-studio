@@ -314,6 +314,9 @@ body {
 .contact-us__map {
   grid-area: map;
   height: 213px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .contact-us__question {
   grid-area: map;
@@ -342,8 +345,8 @@ body {
     font-size: 1.6rem;
   }
   .contact-us__map {
-    width: 80rem;
-    height: 72rem;
+    width: 100%;
+    height: 100%;
   }
   .contact-us__btn {
     margin-bottom: 8rem;
