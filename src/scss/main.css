@@ -183,12 +183,18 @@ body {
   flex-direction: column;
   align-items: center;
   max-width: 411px;
-  border: 1px solid var(--color-white);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   padding: 3.2rem 2.4rem;
+}
+.card:hover .card__img-container {
+  mix-blend-mode: unset;
+}
+.card:hover {
+  border: 1px solid var(--color-white);
 }
 .card__img-container {
   background: #000000;
-  mix-blend-mode: color;
+  mix-blend-mode: luminosity;
 }
 .card__img {
   width: 100%;
@@ -231,9 +237,6 @@ body {
     gap: 2.4rem;
   }
 
-  .card {
-    height: 48.3rem;
-  }
   .card__title {
     font-size: 2.4rem;
   }
