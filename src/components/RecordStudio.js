@@ -4,8 +4,7 @@ import bg from "../images/bg-record-studio-desktop.png";
 
 export const RecordStudio = () => {
     const bgStyle = {
-        backgroundImage: `url(${bg})`,
-        // background: "purple"
+        backgroundImage: `url(${bg})`
     };
 
     const bgOverlayStyle = {

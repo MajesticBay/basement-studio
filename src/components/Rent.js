@@ -1,8 +1,18 @@
+import { Btn } from "./Btn";
 import djPlace from "../images/dj_place.png";
 import productionPlace from "../images/production_place.png";
-import { Btn } from "./Btn";
+import bg from "../images/bg-record-studio-desktop.png";
 
 export const Rent = () => {
+    const bgStyle = {
+        backgroundImage: `url(${bg})`
+    }
+
+    const bgOverlayStyle = {
+        background: "rgba(7, 7, 7, 0.6)",
+        backdropFilter: "blur(10px)"
+    }
+
     const cardsData = [
         {
             image: djPlace,
@@ -47,11 +57,13 @@ export const Rent = () => {
         </div>
     ))
     return (
-        <div className="rent">
-            <h1 className="header">ОРЕНДА</h1>
-            <div className="rent__card-container">
-                <div className="cards">
-                    {cards}
+        <div className="rent" style={bgStyle}>
+            <div className="rent__inner" style={bgOverlayStyle}>
+                <h1 className="header">ОРЕНДА</h1>
+                <div className="rent__card-container">
+                    <div className="cards">
+                        {cards}
+                    </div>
                 </div>
             </div>
         </div>
