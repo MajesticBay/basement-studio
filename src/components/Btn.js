@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Arrow } from "./Arrow";
+import { Arrow } from "./icons/Arrow";
 
 const Button = styled.div`
     width: 100%;

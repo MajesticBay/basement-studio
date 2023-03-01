@@ -45,17 +45,17 @@
   animation: animateRoll 1.7s linear 0.3s infinite;
 }
 
-// @keyframes jump {
-//   0% {
-//     transform: translate3d(0, 0, 0);
-//   }
-//   40% {
-//     transform: translate3d(0, 30%, 0);
-//   }
-//   100% {
-//     transform: translate3d(0, 100%, 0);
-//   }
-// }
+@keyframes jump {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  40% {
+    transform: translate3d(0, 30%, 0);
+  }
+  100% {
+    transform: translate3d(0, 100%, 0);
+  }
+}
 
 // @keyframes jump {
 //   0%,20%,50%,80%,to {

@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useTranslation } from 'react-i18next';
 import { MobileMenu } from "./MobileMenu";
-import { MobileLogo } from "./MobileLogo.js";
+import { MobileLogo } from "./icons/MobileLogo.js";
 import { LanguageSwitcher } from "./LanguageSwitcher";
-import Hamburger from "./Hamburger";
+import Hamburger from "./icons/Hamburger";
 import logo from "../images/icons/logo.svg";
 
 export const Header = () => {
