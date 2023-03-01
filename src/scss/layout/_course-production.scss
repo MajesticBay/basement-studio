@@ -59,6 +59,7 @@
         height: 100vh;
         position: relative;
         // margin-top: 25rem;
+        margin-bottom: 30rem;
 
         &__inner {
             position: absolute;
@@ -89,7 +90,7 @@
 
         &__outer-text-container {
             position: absolute;
-            top: 20rem;
+            top: 30rem;
             left: 8rem;
             right: 50%;
             display: flex;

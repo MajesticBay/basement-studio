@@ -52,6 +52,7 @@
     .course-dj {
         height: 100vh;
         position: relative;
+        margin-bottom: 30rem;
 
         &__inner {
             position: absolute;
@@ -83,7 +84,7 @@
 
         &__outer-text-container {
             position: absolute;
-            top: 30%;
+            top: 37%;
             left: 50%;
             right: 8rem;
             display: flex;
