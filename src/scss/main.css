@@ -147,7 +147,6 @@ a {
 @media only screen and (min-width: 768px) {
   .about-us {
     max-width: 84.6rem;
-    padding: 0;
   }
   .about-us__text {
     width: 100%;
@@ -819,7 +818,7 @@ body {
 
 @media only screen and (min-width: 768px) {
   .record-studio__text {
-    font-size: 20;
+    max-width: 106.1rem;
   }
 }
 .rent {
