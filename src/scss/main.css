@@ -94,6 +94,11 @@ a {
   text-align: center;
 }
 
+.jump {
+  transform-origin: 50% 50%;
+  animation: jump 0.5s linear alternate infinite;
+}
+
 #circle-roll {
   animation: animateRoll 1.7s linear 0.3s infinite;
 }
@@ -112,6 +117,7 @@ a {
 @keyframes animateRoll {
   50% {
     cy: 37;
+    opacity: 0.1;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -614,6 +620,7 @@ body {
 }
 .main-header {
   display: flex;
+  width: 100%;
 }
 
 .navigation-mobile {
@@ -661,7 +668,6 @@ body {
 @media only screen and (min-width: 768px) {
   .main-header {
     justify-content: center;
-    width: 100%;
     position: absolute;
     top: 0;
     z-index: 1;

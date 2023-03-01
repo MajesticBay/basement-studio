@@ -1,5 +1,6 @@
 .main-header {
     display: flex;
+    width: 100%;
 }
 
 .navigation-mobile {
@@ -48,11 +49,9 @@
     }
 }
 
-
 @media only screen and (min-width: 768px) {
     .main-header {
         justify-content: center;
-        width: 100%;
         position: absolute;
         top: 0;
         z-index: 1;
