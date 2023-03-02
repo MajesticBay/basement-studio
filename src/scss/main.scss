@@ -3,20 +3,22 @@
 @import "abstracts/commons";
 @import "abstracts/variables";
 
-@import "layout/about-us";
+
 @import "layout/app";
 @import "layout/btn";
 @import "layout/card";
 @import "layout/carousel";
-@import "layout/contact-us";
-@import "layout/course-dj";
-@import "layout/course-production";
-@import "layout/footer";
-@import "layout/gift-certificate";
-@import "layout/header";
-@import "layout/hero";
 @import "layout/icons";
 @import "layout/map";
-@import "layout/podcast";
-@import "layout/record-studio";
-@import "layout/rent";
+
+@import "layout/sections/about-us";
+@import "layout/sections/contact-us";
+@import "layout/sections/course-dj";
+@import "layout/sections/course-production";
+@import "layout/sections/footer";
+@import "layout/sections/gift-certificate";
+@import "layout/sections/header";
+@import "layout/sections/hero";
+@import "layout/sections/podcast";
+@import "layout/sections/record-studio";
+@import "layout/sections/rent";
