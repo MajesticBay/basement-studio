@@ -191,7 +191,7 @@ const exampleMapStyles = [
   }
 ];
 
-const latLngStudio =  { lat: 50.442425221700354, lng: 30.63224526525359 }
+const latLngStudio =  { lat: 49.83231103828422, lng: 24.017608827629935 }
 
 const render = (status: Status) => {
   return <h1 style={{textAlign: "center", fontSize: "2rem"}}>{status}</h1>;
@@ -201,8 +201,8 @@ export const MapComponent: React.VFC = () => {
   const [clicks, setClicks] = React.useState<google.maps.LatLng[]>([]);
   const [zoom, setZoom] = React.useState(11.4); // initial zoom
   const [center, setCenter] = React.useState<google.maps.LatLngLiteral>({
-    lat: 50.442425221700354,
-    lng: 30.63224526525359
+    lat: 49.83231103828422,
+    lng: 24.017608827629935
   });
 
   const onClick = (e: google.maps.MapMouseEvent) => {
