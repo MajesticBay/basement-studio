@@ -199,7 +199,7 @@ const render = (status: Status) => {
 
 export const MapComponent: React.VFC = () => {
   const [clicks, setClicks] = React.useState<google.maps.LatLng[]>([]);
-  const [zoom, setZoom] = React.useState(11.4); // initial zoom
+  const [zoom, setZoom] = React.useState(13); // initial zoom
   const [center, setCenter] = React.useState<google.maps.LatLngLiteral>({
     lat: 49.83231103828422,
     lng: 24.017608827629935

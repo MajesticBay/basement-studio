@@ -1,4 +1,4 @@
-// import { MapComponent } from "./MapComponent.tsx";
+import { MapComponent } from "../MapComponent.tsx";
 import email from "../../images/icons/email.svg";
 import phone from "../../images/icons/phone.svg";
 import address from "../../images/icons/address.svg";
@@ -42,8 +42,8 @@ export const ContactUs = () => {
                     <IconTK className="pointer" />
                 </div>
                 <div className="contact-us__map">
-                    {/* <MapComponent /> */}
-                    <h1>In Development</h1>
+                    <MapComponent />
+                    {/* <h1>In Development</h1> */}
                 </div>
                 <h1 className="contact-us__sub-header">ЗАЛИШИЛИСЯ ЗАПИТАННЯ?</h1>
                 <Btn className={"contact-us__btn"} text={"ЗВ’ЯЖІТЬСЯ З НАМИ"} arrowDisplayed={true} dark={false} />
