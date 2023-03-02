@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import { MobileMenu } from "../MobileMenu";
 import { MobileLogo } from "../icons/MobileLogo.js";
@@ -56,7 +57,9 @@ export const Header = () => {
                 <MobileMenu openMobileMenu={openMobileMenu} setOpenMobileMenu={setOpenMobileMenu} />
             </nav>
             <nav className="navigation">
-                <img src={logo} alt="hamburger menu" />
+                <NavLink to="/">
+                    <img src={logo} alt="hamburger menu" />
+                </NavLink>
                 <ul className="nav">
                     {navLinks}
                 </ul>
