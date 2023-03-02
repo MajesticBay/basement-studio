@@ -288,12 +288,18 @@ body {
   justify-content: center;
 }
 
-.indicators > button {
+.indicators > div {
+  width: 8px;
+  height: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.24);
+  border-radius: 5px;
   margin: 5px;
 }
 
-.indicators > button.active {
-  background-color: green;
+.indicators > div.active {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.72);
   color: #fff;
 }
 
