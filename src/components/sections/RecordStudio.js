@@ -1,6 +1,6 @@
 import Carousel, { CarouselItem } from "../../components/Carousel";
 import { Btn } from "../Btn";
-import bg from "../../images/bg-record-studio-desktop.png";
+import bg from "../../images/bg-record-studio.png";
 
 export const RecordStudio = () => {
     const bgStyle = {

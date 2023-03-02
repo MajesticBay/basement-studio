@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Image = styled.img`
     display: inline;
-    position: ${({ openMobileMenu }) => (openMobileMenu ? 'absolute' : 'relative')};;
+    position: ${({ openMobileMenu }) => (openMobileMenu ? 'fixed' : 'relative')};;
     z-index: ${({ openMobileMenu }) => (openMobileMenu ? '999' : '')};
     top: ${({ openMobileMenu }) => (openMobileMenu ? '16px' : '')};
     left: ${({ openMobileMenu }) => (openMobileMenu ? '24px' : '')};
