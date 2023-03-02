@@ -1,11 +1,11 @@
 // import { MapComponent } from "./MapComponent.tsx";
-import email from "../images/icons/email.svg";
-import phone from "../images/icons/phone.svg";
-import address from "../images/icons/address.svg";
-import { ReactComponent as IconFB } from "../images/icons/fb.svg";
-import { ReactComponent as IconIG } from "../images/icons/ig.svg";
-import { ReactComponent as IconTK } from "../images/icons/tk.svg";
-import { Btn } from "./Btn";
+import email from "../../images/icons/email.svg";
+import phone from "../../images/icons/phone.svg";
+import address from "../../images/icons/address.svg";
+import { ReactComponent as IconFB } from "../../images/icons/fb.svg";
+import { ReactComponent as IconIG } from "../../images/icons/ig.svg";
+import { ReactComponent as IconTK } from "../../images/icons/tk.svg";
+import { Btn } from "../Btn";
 
 export const ContactUs = () => {
     return (

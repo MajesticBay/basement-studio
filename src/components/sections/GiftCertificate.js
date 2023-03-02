@@ -1,6 +1,6 @@
-import { Btn } from "./Btn";
-import bg from "../images/bg-record-studio-desktop.png";
-import giftCertificate from "../images/icons/gift-certificate.svg";
+import { Btn } from "../Btn";
+import bg from "../../images/bg-record-studio-desktop.png";
+import giftCertificate from "../../images/icons/gift-certificate.svg";
 
 export const GiftCertificate = () => {
     const bgStyle = {

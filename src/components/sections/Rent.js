@@ -1,7 +1,7 @@
-import { Btn } from "./Btn";
-import djPlace from "../images/dj_place.png";
-import productionPlace from "../images/production_place.png";
-import bg from "../images/bg-record-studio-desktop.png";
+import { Btn } from "../Btn";
+import djPlace from "../../images/dj_place.png";
+import productionPlace from "../../images/production_place.png";
+import bg from "../../images/bg-record-studio-desktop.png";
 
 export const Rent = () => {
     const bgStyle = {

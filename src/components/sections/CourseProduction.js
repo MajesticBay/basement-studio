@@ -1,5 +1,5 @@
-import { Btn } from "../components/Btn";
-import courseProduction from "../images/bg-record-studio-desktop.png";
+import { Btn } from "../Btn";
+import courseProduction from "../../images/bg-record-studio-desktop.png";
 
 export const CourseProduction = () => {
     return (

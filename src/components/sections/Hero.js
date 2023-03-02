@@ -1,7 +1,7 @@
 // import scrollMobile from "../images/icons/scroll-mobile.svg";
 // import scrollDesktop from "../images/icons/scroll-desktop.svg";
-import { ScrollDownMobile } from "./icons/ScrollDownMobile";
-import { ScrollDownDesktop } from "./icons/ScrollDownDesktop";
+import { ScrollDownMobile } from "../icons/ScrollDownMobile";
+import { ScrollDownDesktop } from "../icons/ScrollDownDesktop";
 
 export const Hero = () => {
     return (

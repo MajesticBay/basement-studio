@@ -1,5 +1,5 @@
-import keyboard from "../images/course-dj-keyboard.png";
-import { Btn } from "./Btn";
+import keyboard from "../../images/course-dj-keyboard.png";
+import { Btn } from "../Btn";
 
 export const CourseDj = () => {
     return (
