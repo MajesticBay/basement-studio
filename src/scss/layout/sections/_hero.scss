@@ -1,5 +1,6 @@
 .hero {
-    background-image: url("/src/images/bg-mobile.png");
+    background-image: url("/src/images/bg-desktop.png");
+    background-position: center;
     height: 100vh;
     width: 100%;
     position: relative;
@@ -24,6 +25,9 @@
 @media only screen and (min-width: 768px) {
     .hero {
         background-image: url("/src/images/bg-desktop.png");
+        // background-position: 50% 90%;
+        background-size: cover;
+        background-position: unset;
 
         &__scroll-container {
             margin-bottom: 6rem;

@@ -763,7 +763,8 @@ body {
   }
 }
 .hero {
-  background-image: url("/src/images/bg-mobile.png");
+  background-image: url("/src/images/bg-desktop.png");
+  background-position: center;
   height: 100vh;
   width: 100%;
   position: relative;
@@ -783,6 +784,8 @@ body {
 @media only screen and (min-width: 768px) {
   .hero {
     background-image: url("/src/images/bg-desktop.png");
+    background-size: cover;
+    background-position: unset;
   }
   .hero__scroll-container {
     margin-bottom: 6rem;
