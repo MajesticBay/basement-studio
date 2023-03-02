@@ -20,7 +20,12 @@ export const ContactUs = () => {
                         <img src={phone} alt="phone" />
                         <span className="contact-us__text">+380XXXXXXXXX</span>
                     </a>
-                    <a className="contact-us__link" href="#address">
+                    <a
+                        className="contact-us__link"
+                        rel="noopener noreferrer"
+                        href="https://goo.gl/maps/zGTo29rnvhj5ed299"
+                        target="_blank"
+                    >
                         <img src={address} alt="address" />
                         <span className="contact-us__text">вул. Сахарова 2, м. Львів, 79026</span>
                     </a>
