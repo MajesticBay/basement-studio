@@ -1,18 +1,18 @@
-import { MapComponent } from "../MapComponent.tsx";
-import email from "../../images/icons/email.svg";
-import phone from "../../images/icons/phone.svg";
-import address from "../../images/icons/address.svg";
+// import { MapComponent } from "../MapComponent.tsx";
+import { Btn } from "../Btn";
 import { ReactComponent as IconFB } from "../../images/icons/fb.svg";
 import { ReactComponent as IconIG } from "../../images/icons/ig.svg";
 import { ReactComponent as IconTK } from "../../images/icons/tk.svg";
-import { Btn } from "../Btn";
+import email from "../../images/icons/email.svg";
+import phone from "../../images/icons/phone.svg";
+import address from "../../images/icons/address.svg";
 
 export const ContactUs = () => {
     return (
         <div className="contact-us">
                 <h1 className="contact-us__header header">КОНТАКТИ</h1>
                 <div className="contact-us__links-container">
-                    <a className="contact-us__link" href="#email">
+                    <a className="contact-us__link" href="mailto:basementstudio@gmail.com">
                         <img src={email} alt="email" />
                         <span className="contact-us__text">basementstudio@gmail.com</span>
                     </a>
@@ -42,8 +42,8 @@ export const ContactUs = () => {
                     <IconTK className="pointer" />
                 </div>
                 <div className="contact-us__map">
-                    <MapComponent />
-                    {/* <h1>In Development</h1> */}
+                    {/* <MapComponent /> */}
+                    <h1>In Development</h1>
                 </div>
                 <h1 className="contact-us__sub-header">ЗАЛИШИЛИСЯ ЗАПИТАННЯ?</h1>
                 <Btn className={"contact-us__btn"} text={"ЗВ’ЯЖІТЬСЯ З НАМИ"} arrowDisplayed={true} dark={false} />
