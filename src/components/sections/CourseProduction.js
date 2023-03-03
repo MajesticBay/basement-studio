@@ -7,7 +7,7 @@ export const CourseProduction = () => {
             <img className="course-production__img course-production__img--mobile" src={courseProduction} alt="keyboard" />
             <h1 className="header course-production__header course-production__header--mobile">КУРС PRODUCTION</h1>
             <div className="course-production__inner">
-                <img className="course-production__img--desktop course-production__img" src={courseProduction} alt="keyboard" />
+                <img className="course-production__img course-production__img--desktop" src={courseProduction} alt="keyboard" />
                 <div className="course-production__outer-text-container">
                     {/* <h1 className="header course-production__header course-production__header--desktop">КУРС PRODUCTION</h1> */}
                     {/* <img className="course-production__img course-production__img--desktop" src={courseProduction} alt="keyboard" /> */}

@@ -16,7 +16,7 @@ export const ContactUs = () => {
                         <img src={email} alt="email" />
                         <span className="contact-us__text">basementstudio@gmail.com</span>
                     </a>
-                    <a className="contact-us__link" href="#phonemail">
+                    <a className="contact-us__link" href="tel:+380XXXXXXXXX">
                         <img src={phone} alt="phone" />
                         <span className="contact-us__text">+380XXXXXXXXX</span>
                     </a>

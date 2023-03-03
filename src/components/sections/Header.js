@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import { MobileMenu } from "../MobileMenu";
@@ -10,6 +10,11 @@ import logo from "../../images/icons/logo.svg";
 export const Header = () => {
     const { t, i18n } = useTranslation();
     const [openMobileMenu, setOpenMobileMenu] = useState(false);
+
+    useEffect(() => {
+        const body = document.querySelector('body');
+        body.style.overflow = openMobileMenu ? 'hidden' : 'unset';
+    }, [openMobileMenu])
 
     function handleLangChange(e) {
         i18n.changeLanguage(e.target.value);
@@ -51,7 +56,6 @@ export const Header = () => {
     return (
         <header className="main-header">
             <nav className="navigation-mobile">
-                {/* <img className="navigation-mobile__logo" src={logo} alt="logo" /> */}
                 <MobileLogo openMobileMenu={openMobileMenu} setOpenMobileMenu={setOpenMobileMenu} />
                 <Hamburger openMobileMenu={openMobileMenu} setOpenMobileMenu={setOpenMobileMenu}/>
                 <MobileMenu openMobileMenu={openMobileMenu} setOpenMobileMenu={setOpenMobileMenu} />
