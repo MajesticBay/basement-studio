@@ -41,34 +41,61 @@ const Ul = styled.ul`
 export const MobileMenu = ({ openMobileMenu, setOpenMobileMenu }) => {
   const { t, i18n } = useTranslation();
 
-  function handleLangChange (e) {
-    console.log("i'm here");
+  const handleLangChange = (e) => {
     i18n.changeLanguage(e.target.value);
   }
 
+  const clickMobileLink = (target) => {
+    setOpenMobileMenu(!openMobileMenu)
+    scrollIntoElement(target)
+  }
+
+  const scrollIntoElement = (target) => {
+    let element = document.getElementById(target);
+    element.scrollIntoView({behavior:"smooth", block: "end", inline:"nearest"});
+}
+
+  const navLinksData = [
+    {
+        route: "about-us",
+        translation: "header.aboutUs"
+    },
+    {
+        route: "record-studio",
+        translation: "header.recordStudio"
+    },
+    {
+        route: "course-dj",
+        translation: "header.courseDj"
+    },
+    {
+        route: "course-production",
+        translation: "header.courseProduction"
+    },
+    {
+        route: "rent",
+        translation: "header.rent"
+    },
+    {
+        route: "contact-us",
+        translation: "header.contactUs"
+    }
+  ]
+
+  const navLinks = navLinksData.map((navLink, index) => (
+    <Link
+      key={index}
+      style={{padding: '2.2rem 3.5rem', display: 'flex', justifyContent: 'center'}}
+      onClick={() => clickMobileLink(navLink.route)}
+      to="/"
+    >
+      <li>{t(`${navLink.translation}`)}</li>
+    </Link>
+  ))
+
   return (
     <Ul openMobileMenu={openMobileMenu}>
-      <Link style={{padding: '2.2rem 3.5rem', display: 'flex', justifyContent: 'center'}} onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
-        <li>{t('header.aboutUs')}</li>
-      </Link>
-      <Link style={{padding: '2.2rem 3.5rem', display: 'flex', justifyContent: 'center'}} onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
-        <li>{t('header.recordStudio')}</li>
-      </Link>
-      <Link style={{padding: '2.2rem 3.5rem', display: 'flex', justifyContent: 'center'}} onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
-        <li>{t('header.courseDj')}</li>
-      </Link>
-      <Link style={{padding: '2.2rem 3.5rem', display: 'flex', justifyContent: 'center'}} onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
-        <li>{t('header.courseProduction')}</li>
-      </Link>
-      <Link style={{padding: '2.2rem 3.5rem', display: 'flex', justifyContent: 'center'}} onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
-        <li>{t('header.rent')}</li>
-      </Link>
-      <Link style={{padding: '2.2rem 3.5rem', display: 'flex', justifyContent: 'center'}} onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
-        <li>{t('header.podcast')}</li>
-      </Link>
-      <Link style={{padding: '2.2rem 3.5rem', display: 'flex', justifyContent: 'center'}} onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/">
-        <li>{t('header.contactUs')}</li>
-      </Link>
+      {navLinks}
       <div className="mobile-locale-switcher">
         <LanguageSwitcher value={"ua"} text={"UA"} handleLangChange={ handleLangChange } />
         <p className="mobile-locale-switcher__pipe">|</p>
