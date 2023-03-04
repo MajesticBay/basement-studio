@@ -67,7 +67,7 @@
     }
 
     &__btn {
-        display: none !important;
+        // display: none !important;
         width: 100% !important;
         max-width: 58rem;
         margin-top: auto;
@@ -95,6 +95,7 @@
         }
 
         &__btn {
+            display: none !important;
             position: absolute;
             bottom: 2rem;
         }

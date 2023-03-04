@@ -1,7 +1,9 @@
+import MobileCarousel, { CarouselItem } from "../MobileCarousel.js";
 import { Btn } from "../Btn";
 import djPlace from "../../images/dj_place.png";
 import productionPlace from "../../images/production_place.png";
 import bg from "../../images/bg-record-studio.png";
+// import MobileCarousel from "../MobileCarousel";
 
 export const Rent = () => {
     const bgStyle = {
@@ -37,6 +39,7 @@ export const Rent = () => {
     ]
 
     const cards = cardsData.map((card, indexCard) => (
+        <CarouselItem>
         <div className="card" key={indexCard}>
             <div className="card__img-container">
                 <img className="card__img" src={ card.image } alt={ card.image } />
@@ -55,13 +58,21 @@ export const Rent = () => {
                 dark={false}
             />
         </div>
+        </CarouselItem>
     ))
     return (
         <div className="rent" style={bgStyle}>
             <div className="rent__inner" style={bgOverlayStyle}>
                 {/* <div className="rent__content"> */}
                     <h1 className="header">ОРЕНДА</h1>
-                    <div className="rent__card-container">
+                    <div className="rent__card-container--mobile">
+                        <div className="cards">
+                            <MobileCarousel>
+                                {cards}
+                            </MobileCarousel>
+                        </div>
+                    </div>
+                    <div className="rent__card-container--desktop">
                         <div className="cards">
                             {cards}
                         </div>

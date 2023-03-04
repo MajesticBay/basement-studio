@@ -16,6 +16,10 @@
 
     &__card-container {
         margin-top: 4rem;
+
+        &--desktop {
+            display: none;
+        }
     }
 
     &__title {
@@ -39,6 +43,18 @@
             display: flex;
             justify-content: center;
             padding-bottom: 2rem;
+        }
+
+        &__card-container {
+            margin-top: 4rem;
+
+            &--mobile {
+                display: none;
+            }
+
+            &--desktop {
+                display: block;
+            }
         }
 
         &__header {
