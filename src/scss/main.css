@@ -893,6 +893,9 @@ body {
   .rent__card-container--desktop {
     display: block;
   }
+  .rent__card {
+    height: 62.4rem;
+  }
   .rent__header {
     margin-top: 3.2rem;
   }
