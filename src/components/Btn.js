@@ -15,7 +15,7 @@ const Button = styled.div`
     font-weight: 800;
     font-size: 1.6rem;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 900px) {
         width: fit-content;
         width: -moz-fit-content;
         font-size: 2rem;
