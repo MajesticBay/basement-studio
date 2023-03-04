@@ -54,13 +54,15 @@ export const Header = () => {
 
     const navLinks = navLinksData.map((navLink, index) => (
         <li key={index} className="nav__menu-item">
-            <a
+            <NavLink
                 className="nav__menu-item-link"
                 // href={`/${navLink.route}`}
+                // to={`/${navLink.route}`}
+                to="/"
                 onClick={() => scrollIntoElement(navLink.route)}
             >
                 {t(`${navLink.translation}`)}
-            </a>
+            </NavLink>
         </li>
     ))
 
