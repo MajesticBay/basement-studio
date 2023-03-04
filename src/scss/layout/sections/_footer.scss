@@ -15,7 +15,7 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: $width-desktop) {
     .footer {
         flex-direction: row;
 

@@ -49,7 +49,7 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: $width-desktop) {
     .main-header {
         justify-content: center;
         position: absolute;
@@ -107,7 +107,7 @@
     }
 }
 
-@media only screen and (min-width: 844px) {
+@media only screen and (min-width: $width-desktop-header-fix) {
     .nav {
         &__menu-item {
             font-size: 1.4rem;

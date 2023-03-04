@@ -48,7 +48,7 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: $width-desktop) {
     .course-dj {
         height: 100vh;
         position: relative;

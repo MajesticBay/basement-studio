@@ -38,7 +38,7 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: $width-desktop) {
     .gift-certificate {
         &__inner {
             flex-direction: row;

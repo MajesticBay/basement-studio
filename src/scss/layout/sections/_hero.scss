@@ -22,7 +22,7 @@
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: $width-desktop) {
     .hero {
         // background-position: 50% 90%;
         background-size: cover;

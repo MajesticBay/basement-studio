@@ -32,7 +32,7 @@
     // }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: $width-desktop) {
     .record-studio {
         &__text {
             max-width: 106.1rem;

@@ -21,7 +21,7 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: $width-desktop) {
     .about-us {
         max-width: 84.6rem;
         // padding: 0;
