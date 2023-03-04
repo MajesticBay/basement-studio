@@ -3,7 +3,7 @@ import courseProduction from "../../images/bg-record-studio.png";
 
 export const CourseProduction = () => {
     return (
-        <div className="course-production">
+        <div id="course-production" className="course-production">
             <img className="course-production__img course-production__img--mobile" src={courseProduction} alt="keyboard" />
             <h1 className="header course-production__header course-production__header--mobile">КУРС PRODUCTION</h1>
             <div className="course-production__inner">

@@ -136,6 +136,7 @@ a {
 
 body {
   line-height: 1.92rem;
+  scroll-behavior: smooth;
 }
 
 .main {
@@ -746,6 +747,7 @@ body {
     margin-right: 1rem;
     padding-bottom: 0.4rem;
     color: var(--color-white);
+    cursor: pointer;
   }
   .nav__menu-item-link:hover {
     font-weight: 800;

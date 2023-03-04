@@ -9,7 +9,7 @@ import address from "../../images/icons/address.svg";
 
 export const ContactUs = () => {
     return (
-        <div className="contact-us">
+        <div id="contact-us" className="contact-us">
                 <h1 className="contact-us__header header">КОНТАКТИ</h1>
                 <div className="contact-us__links-container">
                     <a className="contact-us__link" href="mailto:basementstudio@gmail.com">

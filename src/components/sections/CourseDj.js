@@ -3,7 +3,7 @@ import { Btn } from "../Btn";
 
 export const CourseDj = () => {
     return (
-        <div className="course-dj">
+        <div id="course-dj" className="course-dj">
             <div className="course-dj__inner">
                 <h1 className="header course-dj__header course-dj__header--mobile">КУРС DJ</h1>
                 <img className="course-dj__img" src={keyboard} alt="keyboard" />

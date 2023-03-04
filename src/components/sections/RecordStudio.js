@@ -67,7 +67,7 @@ export const RecordStudio = () => {
     ))
 
     return (
-        <div className="record-studio" style={bgStyle}>
+        <div id="record-studio" className="record-studio" style={bgStyle}>
             <div className="record-studio__inner" style={bgOverlayStyle}>
                 <h1 className="header">СТУДІЯ  ЗВУКОЗАПИСУ</h1>
                 <p className="record-studio__text">Атмосфера в студії дозволить насолоджуватись процесом звукозапису або музичного продакшену.</p>

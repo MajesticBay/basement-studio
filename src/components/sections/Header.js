@@ -20,6 +20,11 @@ export const Header = () => {
         i18n.changeLanguage(e.target.value);
     }
 
+    const scrollIntoElement = (target) => {
+        var element = document.getElementById(target);
+        element.scrollIntoView({behavior:"smooth", block: "end", inline:"nearest"});
+    }
+
     const navLinksData = [
         {
             route: "about-us",
@@ -49,7 +54,13 @@ export const Header = () => {
 
     const navLinks = navLinksData.map((navLink, index) => (
         <li key={index} className="nav__menu-item">
-            <a className="nav__menu-item-link" href={`/${navLink.route}`}>{t(`${navLink.translation}`)}</a>
+            <a
+                className="nav__menu-item-link"
+                // href={`/${navLink.route}`}
+                onClick={() => scrollIntoElement(navLink.route)}
+            >
+                {t(`${navLink.translation}`)}
+            </a>
         </li>
     ))
 

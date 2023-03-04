@@ -61,7 +61,7 @@ export const Rent = () => {
         </CarouselItem>
     ))
     return (
-        <div className="rent" style={bgStyle}>
+        <div id="rent" className="rent" style={bgStyle}>
             <div className="rent__inner" style={bgOverlayStyle}>
                 {/* <div className="rent__content"> */}
                     <h1 className="header">ОРЕНДА</h1>
