@@ -1,5 +1,19 @@
 export const ScrollDownDesktop = () => {
-    return <svg className="hero__scroll hero__scroll--desktop animateRoll" alt="scroll desktop" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+    const scrollIntoElement = (target) => {
+        var element = document.getElementById(target);
+        element.scrollIntoView({behavior:"smooth", block: "end", inline:"nearest"});
+    }
+
+    return <svg
+        className="hero__scroll hero__scroll--desktop animateRoll"
+        alt="scroll desktop"
+        width="56"
+        height="56"
+        viewBox="0 0 56 56"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        onClick={() => scrollIntoElement("about-us")}
+    >
             <rect x="13" y="4" width="30" height="48" rx="15" stroke="white"/>
             <circle id="circle-roll" cx="28" cy="17" r="3" fill="white"/>
         </svg>
