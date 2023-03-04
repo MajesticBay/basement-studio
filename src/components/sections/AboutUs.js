@@ -1,8 +1,33 @@
 import { useTranslation } from 'react-i18next';
+import MobileCarousel, { CarouselItem } from "../../components/MobileCarousel";
 import photo from "../../images/photo1.png";
 
 export const AboutUs = () => {
     const { t } = useTranslation();
+
+    const imagesData = [
+        {
+            path: photo
+        },
+        {
+            path: photo
+        },
+        {
+            path: photo
+        },
+        {
+            path: photo
+        },
+        {
+            path: photo
+        }
+    ]
+
+    const images = imagesData.map((image, imageIndex) => (
+        <CarouselItem>
+            <img key={imageIndex} className='about-us__photo' src={image.path} alt="gallery" />
+        </CarouselItem>
+    ))
 
     return (
         <div id="about-us" className="about-us">
@@ -14,7 +39,9 @@ export const AboutUs = () => {
             <p className="about-us__text">
                 {/* Комфорт та професійне обладнання зробить ваш творчий процес повним натхнення та свободи експериментів. */}
                 {t('aboutUs.p2')}</p>
-            <img className='about-us__photo' src={photo} alt="gallery" />
+            <MobileCarousel>
+                {images}
+            </MobileCarousel>
         </div>
     )
 }
