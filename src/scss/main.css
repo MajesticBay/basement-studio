@@ -125,7 +125,7 @@ a {
     opacity: 0.1;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   .mobile {
     display: none !important;
   }
@@ -204,7 +204,7 @@ body {
   margin-top: auto;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   .cards {
     flex-direction: row;
     gap: 2.4rem;
@@ -323,7 +323,7 @@ body {
   margin-bottom: 6.4rem;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   .about-us {
     max-width: 84.6rem;
   }
@@ -390,7 +390,7 @@ body {
   grid-area: btn;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   .contact-us {
     grid-template-columns: 1fr 60%;
     grid-template-areas: "header map" "links map" "social map" "question map" "btn map";
@@ -451,7 +451,7 @@ body {
   margin: 0 3.2rem;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   .course-dj {
     height: 100vh;
     position: relative;
@@ -540,7 +540,7 @@ body {
   display: none !important;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   .course-production {
     height: 100vh;
     position: relative;
@@ -554,9 +554,9 @@ body {
   }
   .course-production__img {
     position: absolute;
-    width: 70%;
-    height: auto;
     right: 8rem;
+    width: 858px;
+    height: 577px;
   }
   .course-production__img--mobile {
     display: none;
@@ -603,7 +603,7 @@ body {
   margin-bottom: 2.4rem;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   .footer {
     flex-direction: row;
   }
@@ -648,7 +648,7 @@ body {
   gap: 2.4rem;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   .gift-certificate__inner {
     flex-direction: row;
     align-items: center;
@@ -707,7 +707,7 @@ body {
   color: rgba(255, 255, 255, 0.4);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   .main-header {
     justify-content: center;
     position: absolute;
@@ -783,7 +783,7 @@ body {
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   .hero {
     background-size: cover;
     background-position: unset;
@@ -843,7 +843,7 @@ body {
   margin-bottom: 4.8rem;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   .record-studio__text {
     max-width: 106.1rem;
   }
@@ -871,7 +871,7 @@ body {
   padding-bottom: 4.8rem;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   .rent__inner {
     width: 100%;
     display: flex;
