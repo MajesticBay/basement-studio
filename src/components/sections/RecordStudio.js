@@ -72,10 +72,13 @@ export const RecordStudio = () => {
                 <h1 className="header">СТУДІЯ  ЗВУКОЗАПИСУ</h1>
                 <p className="record-studio__text">Атмосфера в студії дозволить насолоджуватись процесом звукозапису або музичного продакшену.</p>
                 <p className="record-studio__text">Звукорежисер - твій друг, професіонал, який завжди підтримає, порадить і допоможе зробити процес запису максимально комфортним і приємним.</p>
-                <div className="cards">
-                    <Carousel>
-                        {cards}
-                    </Carousel>
+                    <div className="cards mobile">
+                        <Carousel>
+                            {cards}
+                        </Carousel>
+                    </div>
+                <div className="cards desktop">
+                    {cards}
                 </div>
             </div>
         </div>

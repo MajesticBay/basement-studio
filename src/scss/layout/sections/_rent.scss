@@ -17,9 +17,9 @@
     &__card-container {
         margin-top: 4rem;
 
-        &--desktop {
-            display: none;
-        }
+        // &--desktop {
+        //     display: none;
+        // }
     }
 
     &__title {
@@ -48,13 +48,13 @@
         &__card-container {
             margin-top: 4rem;
 
-            &--mobile {
-                display: none;
-            }
+            // &--mobile {
+            //     display: none;
+            // }
 
-            &--desktop {
-                display: block;
-            }
+            // &--desktop {
+            //     display: block;
+            // }
         }
 
         &__card {

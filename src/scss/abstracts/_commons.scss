@@ -12,6 +12,10 @@
   display: flex !important;
 }
 
+.desktop {
+  display: none !important;
+}
+
 .bold {
   font-weight: 800;
 }
@@ -53,6 +57,10 @@
 @media only screen and (min-width: $width-desktop) {
   .mobile {
     display: none !important;
+  }
+
+  .desktop {
+    display: flex !important;
   }
 
   .header {

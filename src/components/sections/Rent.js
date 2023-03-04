@@ -38,7 +38,7 @@ export const Rent = () => {
         }
     ]
 
-    const cards = cardsData.map((card, indexCard) => (
+    const cardsCarousel = cardsData.map((card, indexCard) => (
         <CarouselItem>
             <div className="card rent__card" key={indexCard}>
                 <div className="card__img-container">
@@ -60,24 +60,42 @@ export const Rent = () => {
             </div>
         </CarouselItem>
     ))
+
+    const cards = cardsData.map((card, indexCard) => (
+        <div className="card rent__card" key={indexCard}>
+            <div className="card__img-container">
+                <img className="card__img" src={ card.image } alt={ card.image } />
+            </div>
+            <p className="card__title">{ card.title }</p>
+            <p className="card__price">{ card.price }$ / год</p>
+            <ul className="card__list">
+                {card.list.map((item, index) => (
+                    <li className="card__list-item" key={index}>{item}</li>
+                ))}
+            </ul>
+            <Btn
+                className={"card__btn"}
+                text={"ЗАМОВИТИ"}
+                arrowDisplayed={false}
+                dark={false}
+            />
+        </div>
+    ))
+
     return (
         <div id="rent" className="rent" style={bgStyle}>
             <div className="rent__inner" style={bgOverlayStyle}>
-                {/* <div className="rent__content"> */}
-                    <h1 className="header">ОРЕНДА</h1>
-                    <div className="rent__card-container rent__card-container--mobile">
-                        <div className="cards">
-                            <MobileCarousel>
-                                {cards}
-                            </MobileCarousel>
-                        </div>
+                <h1 className="header">ОРЕНДА</h1>
+                <div className="rent__card-container rent__card-container--mobile">
+                    <div className="cards mobile">
+                        <MobileCarousel>
+                            {cardsCarousel}
+                        </MobileCarousel>
                     </div>
-                    <div className="rent__card-container rent__card-container--desktop">
-                        <div className="cards">
-                            {cards}
-                        </div>
+                    <div className="cards desktop">
+                        {cards}
                     </div>
-                {/* </div> */}
+                </div>
             </div>
         </div>
     )
