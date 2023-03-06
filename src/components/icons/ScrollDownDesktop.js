@@ -5,7 +5,7 @@ export const ScrollDownDesktop = () => {
     }
 
     return <svg
-        className="hero__scroll hero__scroll--desktop animateRoll"
+        className="hero__scroll hero__scroll--desktop animateRoll pointer"
         alt="scroll desktop"
         width="56"
         height="56"
