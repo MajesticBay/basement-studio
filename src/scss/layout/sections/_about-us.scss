@@ -19,6 +19,10 @@
             margin-bottom: 6.4rem;
         }
     }
+
+    // &__photo {
+    //     display: none;
+    // }
 }
 
 @media only screen and (min-width: $width-desktop) {
@@ -36,8 +40,8 @@
             // margin: 0 min(15rem, 29.7rem);
         }
 
-        &__photo {
-            display: none;
-        }
+        // &__photo {
+        //     display: none;
+        // }
     }
 }

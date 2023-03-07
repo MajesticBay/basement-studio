@@ -341,9 +341,6 @@ body {
     line-height: 120%;
     font-weight: 400;
   }
-  .about-us__photo {
-    display: none;
-  }
 }
 .contact-us {
   display: grid;
