@@ -611,6 +611,7 @@ body {
 @media only screen and (min-width: 900px) {
   .footer {
     flex-direction: row;
+    padding: 5rem 8rem;
   }
   .footer__link:first-child {
     margin-bottom: 0;
@@ -898,6 +899,9 @@ body {
   }
   .rent__card {
     height: 62.4rem;
+  }
+  .rent__card-list {
+    padding: 0;
   }
   .rent__header {
     margin-top: 3.2rem;
