@@ -18,6 +18,7 @@
 @media only screen and (min-width: $width-desktop) {
     .footer {
         flex-direction: row;
+        padding: 5rem 8rem;
 
         &__link:first-child {
             margin-bottom: 0;
