@@ -39,9 +39,17 @@
             // font-size: 20;
         }
 
+        &__inner {
+            padding: 8rem;
+        }
+
         // &__btn {
         //     display: flex !important;
         //     width: 100% !important;
         // }
+
+        &__card {
+            padding: 4.8rem 2.4rem;
+        }
     }
 }
