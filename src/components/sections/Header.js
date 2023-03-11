@@ -74,7 +74,7 @@ export const Header = () => {
                 <MobileMenu openMobileMenu={openMobileMenu} setOpenMobileMenu={setOpenMobileMenu} />
             </nav>
             <nav className="navigation">
-                <NavLink to="/">
+                <NavLink style={{height: "40px"}} to="/">
                     <img src={logo} alt="hamburger menu" />
                 </NavLink>
                 <ul className="nav">

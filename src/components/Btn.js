@@ -6,14 +6,20 @@ const Button = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 3.2rem;
     padding: 1.8rem 0;
     cursor: pointer;
-    background-color: ${(({ dark }) => (dark ? "transparent" : "white"))};
+    background-color: ${(({ dark }) => (dark ? "transparent" : "rgba(255, 255, 255, 0.92)"))};
     border: 2px solid rgba(255, 255, 255, 0.4);
     // color: var(--color-white);
     color: ${(({ dark }) => (dark ? "white" : "black"))};
     font-weight: 800;
     font-size: 1.6rem;
+
+    &:hover {
+        border: 2px solid var(--color-white);
+        background-color: ${(({ dark }) => (dark ? "transparent" : "var(--color-white)"))};
+    }
 
     @media only screen and (min-width: 900px) {
         width: fit-content;
