@@ -18,6 +18,8 @@ const Ul = styled.ul`
   width: 100%;
   // max-width: 50rem;
   padding-top: 15.5rem;
+  padding-bottom: env(safe-area-inset-top);
+  margin-bottom: env(safe-area-inset-top);
   transition: transform 0.3s ease-in-out;
   border-left: 1px solid var(--color-light-gray);
 
