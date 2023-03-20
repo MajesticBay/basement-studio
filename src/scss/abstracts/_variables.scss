@@ -3,6 +3,8 @@
     --color-white: #FFFFFF;
     // --width-768: 768px;
     // --width-844: 844px;
+    --safe-area-inset-top: env(safe-area-inset-top);
+    --safe-area-inset-bottom: env(safe-area-inset-bottom);
 }
 
 // CSS variables don't work with media queries declarations

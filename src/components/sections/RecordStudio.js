@@ -1,4 +1,5 @@
-import Carousel, { CarouselItem } from "../../components/Carousel";
+// import Carousel, { CarouselItem } from "../../components/Carousel";
+import Carousel from "../Carousel";
 import { Btn } from "../Btn";
 import bg from "../../images/bg-record-studio.png";
 
@@ -41,30 +42,30 @@ export const RecordStudio = () => {
         }
     ]
 
-    const cards = cardsData.map((card, indexCard) => (
-        // Carousel is here
-        <CarouselItem>
-            <div className="card record-studio__card" key={indexCard}>
-                {/* ------------------------------- */}
-                {/* TO DO */}
-                {/* Give each element inside the card a key */}
-                {/* ------------------------------- */}
-                <p className="card__title">{ card.title }</p>
-                <p className="card__price">{ card.price }$ / год</p>
-                <ul className="card__list">
-                    {card.list.map((item, index) => (
-                        <li className="card__list-item" key={index}>{item}</li>
-                    ))}
-                </ul>
-                <Btn
-                    className={"card__btn"}
-                    text={"ЗАМОВИТИ"}
-                    arrowDisplayed={false}
-                    dark={false}
-                />
-            </div>
-        </CarouselItem>
-    ))
+    // const cards = cardsData.map((card, indexCard) => (
+    //     // Carousel is here
+    //     <CarouselItem>
+    //         <div className="card record-studio__card" key={indexCard}>
+    //             {/* ------------------------------- */}
+    //             {/* TO DO */}
+    //             {/* Give each element inside the card a key */}
+    //             {/* ------------------------------- */}
+    //             <p className="card__title">{ card.title }</p>
+    //             <p className="card__price">{ card.price }$ / год</p>
+    //             <ul className="card__list">
+    //                 {card.list.map((item, index) => (
+    //                     <li className="card__list-item" key={index}>{item}</li>
+    //                 ))}
+    //             </ul>
+    //             <Btn
+    //                 className={"card__btn"}
+    //                 text={"ЗАМОВИТИ"}
+    //                 arrowDisplayed={false}
+    //                 dark={false}
+    //             />
+    //         </div>
+    //     </CarouselItem>
+    // ))
 
     return (
         <div id="record-studio" className="record-studio" style={bgStyle}>
@@ -73,12 +74,13 @@ export const RecordStudio = () => {
                 <p className="record-studio__text">Атмосфера в студії дозволить насолоджуватись процесом звукозапису або музичного продакшену.</p>
                 <p className="record-studio__text">Звукорежисер - твій друг, професіонал, який завжди підтримає, порадить і допоможе зробити процес запису максимально комфортним і приємним.</p>
                     <div className="cards mobile">
-                        <Carousel>
+                        {/* <Carousel>
                             {cards}
-                        </Carousel>
+                        </Carousel> */}
+                        <Carousel />
                     </div>
                 <div className="cards desktop">
-                    {cards}
+                    {/* {cards} */}
                 </div>
             </div>
         </div>
