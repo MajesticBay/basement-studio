@@ -3,7 +3,7 @@ import { useSwipeable } from "react-swipeable";
 
 export const CarouselItem = ({ children, width }) => {
   return (
-    <div className="carousel-item" style={{ width: width }}>
+    <div className="carousel-item" style={{ width: '90vw' }}>
       {children}
     </div>
   );
@@ -51,7 +51,7 @@ const MobileCarousel = ({ children }) => {
     >
       <div
         className="inner"
-        style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+        style={{ transform: `translateX(-${activeIndex * 90}vw)`}}
       >
         {React.Children.map(children, (child, index) => {
           return React.cloneElement(child, { width: "100%" });
@@ -72,6 +72,7 @@ const MobileCarousel = ({ children }) => {
               onClick={() => {
                 updateIndex(index);
               }}
+              
             >
               {/* {index + 1} */}
             </div>

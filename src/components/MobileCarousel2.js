@@ -3,13 +3,13 @@ import { useSwipeable } from "react-swipeable";
 
 export const CarouselItem = ({ children, width }) => {
   return (
-    <div className="carousel-item" style={{ width: width }}>
+    <div className="carousel-item" style={{ width: '90vw'}}>
       {children}
     </div>
   );
 };
 
-const CarouselOld = ({ children }) => {
+const MobileCarousel = ({ children }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [paused, setPaused] = useState(false);
 
@@ -51,7 +51,7 @@ const CarouselOld = ({ children }) => {
     >
       <div
         className="inner"
-        style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+        style={{ transform: `translateX(-${activeIndex * 90}vw)` , marginLeft: '7vw'}}
       >
         {React.Children.map(children, (child, index) => {
           return React.cloneElement(child, { width: "100%" });
@@ -69,9 +69,11 @@ const CarouselOld = ({ children }) => {
           return (
             <div
               className={`${index === activeIndex ? "active" : ""}`}
+              
               onClick={() => {
                 updateIndex(index);
               }}
+              
             >
               {/* {index + 1} */}
             </div>
@@ -89,4 +91,4 @@ const CarouselOld = ({ children }) => {
   );
 };
 
-export default CarouselOld;
+export default MobileCarousel;

@@ -1,4 +1,5 @@
 /* selecting each and every element on the page and applying reset to it */
+
 *,
 *::after,
 *::before {
@@ -73,8 +74,6 @@ a {
 :root {
   --color-primary: #0C0C0C;
   --color-white: #FFFFFF;
-  --safe-area-inset-top: env(safe-area-inset-top);
-  --safe-area-inset-bottom: env(safe-area-inset-bottom);
 }
 
 .gm-style-mtc,
@@ -246,6 +245,46 @@ body {
     visibility: inherit !important;
   }
 }
+.carousel {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 0.5s;
+}
+
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 200px; */
+  /* background-color: green; */
+  /* color: #fff; */
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+}
+
+.indicators > div {
+  width: 8px;
+  height: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.24);
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.indicators > div.active {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  color: #fff;
+}
+
 #fb:hover #fb-rect {
   fill: white;
 }
@@ -640,9 +679,6 @@ body {
 .main-header {
   display: flex;
   width: 100%;
-  position: absolute;
-  top: 0;
-  z-index: 1;
 }
 
 .navigation-mobile {
@@ -652,7 +688,6 @@ body {
   align-items: center;
   padding: 16px 24px;
   height: 7.2rem;
-  background: rgba(12, 12, 12, 0.94);
 }
 
 .navigation {
@@ -748,8 +783,10 @@ body {
 .hero {
   background-image: url("/src/images/bg.png");
   background-position: center;
+  height: 100vh;
   width: 100%;
   position: relative;
+  padding-bottom: env(safe-area-inset-top);
 }
 .hero__scroll-container {
   position: absolute;
@@ -761,12 +798,6 @@ body {
 }
 .hero__scroll--desktop {
   display: none;
-}
-
-.test {
-  background-color: purple;
-  width: var(--safe-area-inset-bottom);
-  height: var(--safe-area-inset-top);
 }
 
 @media only screen and (min-width: 900px) {

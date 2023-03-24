@@ -15,8 +15,6 @@ export const GiftCertificate = () => {
 
     return (
         <div className="gift-certificate" style={bgStyle}>
-
-<div className="test">blablabla</div>
             <div className="gift-certificate__bgOverlay" style={bgOverlayStyle}>
                 <div className="gift-certificate__inner">
                     <img src={ giftCertificate } alt="gift certificate" />
