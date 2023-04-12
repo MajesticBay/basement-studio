@@ -5,6 +5,8 @@ export const CourseDj = () => {
     return (
         <div id="course-dj" className="course-dj">
             <div className="course-dj__inner">
+
+                <div className="course-dj__wrapper">
                 <h1 className="header course-dj__header course-dj__header--mobile">КУРС DJ</h1>
                 <img className="course-dj__img" src={keyboard} alt="keyboard" />
                 <div className="course-dj__outer-text-container">
@@ -15,6 +17,9 @@ export const CourseDj = () => {
                     </div>
                     <Btn className={"course-dj__btn"} style={{ margin: "0 3.2rem" }} text={"ДЕТАЛЬНІШЕ"} arrowDisplayed={true} dark={false}/>
                 </div>
+
+                </div>
+
             </div>
         </div>
     )

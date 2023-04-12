@@ -39,8 +39,8 @@ export const Rent = () => {
     ]
 
     const cardsCarousel = cardsData.map((card, indexCard) => (
-        <CarouselItem>
-            <div className="card rent__card" key={indexCard}>
+        <CarouselItem key={indexCard}>
+            <div className="card rent__card" >
                 <div className="card__img-container">
                     <img className="card__img" src={ card.image } alt={ card.image } />
                 </div>

@@ -1,7 +1,10 @@
 export const ScrollDownDesktop = () => {
     const scrollIntoElement = (target) => {
-        var element = document.getElementById(target);
-        element.scrollIntoView({behavior:"smooth", block: "end", inline:"nearest"});
+        const px = window.innerHeight*1
+        window.scrollTo({
+            top: px,
+            behavior: "smooth"
+        })
     }
 
     return <svg

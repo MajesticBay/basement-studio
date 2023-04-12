@@ -43,8 +43,8 @@ export const RecordStudio = () => {
 
     const cards = cardsData.map((card, indexCard) => (
         // Carousel is here
-        <CarouselItem>
-            <div className="card record-studio__card" key={indexCard}>
+        <CarouselItem key={indexCard}>
+            <div className="card record-studio__card" >
                 {/* ------------------------------- */}
                 {/* TO DO */}
                 {/* Give each element inside the card a key */}

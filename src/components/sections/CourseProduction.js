@@ -7,6 +7,9 @@ export const CourseProduction = () => {
             <img className="course-production__img course-production__img--mobile" src={courseProduction} alt="keyboard" />
             <h1 className="header course-production__header course-production__header--mobile">КУРС PRODUCTION</h1>
             <div className="course-production__inner">
+
+                <div className="course-production__wrapper">                
+
                 <img className="course-production__img course-production__img--desktop" src={courseProduction} alt="keyboard" />
                 <div className="course-production__outer-text-container">
                     {/* <h1 className="header course-production__header course-production__header--desktop">КУРС PRODUCTION</h1> */}
@@ -18,6 +21,9 @@ export const CourseProduction = () => {
                     <Btn className="course-production__btn course-production__btn--mobile" text={"ДЕТАЛЬНІШЕ"} arrowDisplayed={true} dark={true}/>
                     <Btn className="course-production__btn course-production__btn--desktop" text={"ДЕТАЛЬНІШЕ"} arrowDisplayed={true} dark={false}/>
                 </div>
+
+                </div>
+
             </div>
         </div>
     )
