@@ -1,0 +1,21 @@
+.podcast {
+    padding: 8rem 3.2rem;
+
+    &__text {
+        margin-top: 2.4rem;
+        margin-bottom: 4rem;
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+
+    &__btn-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+        margin-top: 4rem;
+    }
+}
+
+.podcast-card {
+    height: 175px;
+}

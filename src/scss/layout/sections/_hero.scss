@@ -1,0 +1,46 @@
+.hero {
+    background-image: url("/src/images/bg.png");
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-bottom: env(safe-area-inset-top);
+
+    &__scroll-container {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+
+    &__scroll {
+        &--desktop {
+            display: none;
+        }
+    }
+}
+
+
+@media only screen and (min-width: $width-desktop) {
+    .hero {
+        // background-position: 50% 90%;
+        background-size: cover;
+        background-position: unset;
+
+        &__scroll-container {
+            margin-bottom: 6rem;
+        }
+
+        &__scroll {
+            &--mobile {
+                display: none;
+            }
+
+            &--desktop {
+                display: block;
+            }
+        }
+    }
+}

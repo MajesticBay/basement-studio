@@ -1,6 +1,13 @@
 :root {
     --color-primary: #0C0C0C;
     --color-white: #FFFFFF;
-    // --width-1280: 1280;
-    // --width-1180: 1180;
+    // --width-768: 768px;
+    // --width-844: 844px;
 }
+
+// CSS variables don't work with media queries declarations
+// so I decided to use Sass variables here
+// https://bholmes.dev/blog/alternative-to-css-variable-media-queries/
+$width-desktop: 900px;
+$width-desktop-header-fix: 844px;
+$width-mobile-record-studio-title-fix: 400px;

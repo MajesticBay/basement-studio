@@ -1,0 +1,57 @@
+.gift-certificate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    &__bgOverlay {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__inner {display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 128rem;
+        padding: 8rem 3.2rem;
+    }
+
+    &__header {
+        margin-top: 4rem;
+        margin-bottom: 2.4rem;
+    }
+
+    &__text {
+        margin-left: 3rem;
+        margin-bottom: 4rem;
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+
+    &__btn-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+    }
+}
+
+@media only screen and (min-width: $width-desktop) {
+    .gift-certificate {
+        &__inner {
+            flex-direction: row;
+            align-items: center;
+            padding: 8rem 0;
+        }
+
+        &__text {
+            margin-bottom: 0;
+        }
+
+        &__btn-container {
+            flex-direction: row-reverse;
+        }
+    }
+}

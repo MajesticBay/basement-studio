@@ -1,0 +1,28 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 4rem 3.2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.24);
+
+    &__link {
+        color: var(--color-white);
+        font-size: 1.4rem;
+    }
+
+    &__link:first-child {
+        margin-bottom: 2.4rem;
+    }
+}
+
+@media only screen and (min-width: $width-desktop) {
+    .footer {
+        flex-direction: row;
+        padding: 5rem 8rem;
+
+        &__link:first-child {
+            margin-bottom: 0;
+            margin-right: 2rem;
+        }
+    }
+}

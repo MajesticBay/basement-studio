@@ -1,0 +1,76 @@
+.gm-style-mtc,
+.gm-svpc,
+.gm-style-cc {
+  display: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.mobile {
+  display: flex !important;
+}
+
+.desktop {
+  display: none !important;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.header {
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 33.6px;
+  text-align: center;
+}
+
+.jump {
+  transform-origin: 50% 50%;
+  animation: jump 0.5s linear alternate infinite;
+}
+
+#circle-roll {
+  animation: animateRoll 1.7s linear 0.3s infinite;
+}
+
+@keyframes jump {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  40% {
+    transform: translate3d(0, 30%, 0);
+  }
+  100% {
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@keyframes animateRoll {
+  50% {
+    cy: 37;
+    opacity: 0.1;
+  }
+}
+
+@media only screen and (min-width: $width-mobile-record-studio-title-fix) {
+  .header {
+    font-size: 2.8rem;
+  }
+}
+
+@media only screen and (min-width: $width-desktop) {
+  .mobile {
+    display: none !important;
+  }
+
+  .desktop {
+    display: flex !important;
+  }
+
+  .header {
+    font-size: 4.8rem;
+  }
+}

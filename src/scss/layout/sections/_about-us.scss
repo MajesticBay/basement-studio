@@ -1,0 +1,50 @@
+.about-us {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    padding: 8rem 0;
+    background: var(--color-primary);
+
+    &__text {
+        font-size: 1.4rem;
+        font-weight: 300;
+        line-height: 1.68rem;
+        padding: 0 3.2rem;
+
+        &:first-of-type {
+            margin-bottom: 1.4rem;
+        }
+
+        &:last-of-type {
+            margin-bottom: 6.4rem;
+        }
+    }
+
+    // &__photo {
+    //     display: none;
+    // }
+}
+
+@media only screen and (min-width: $width-desktop) {
+    .about-us {
+        max-width: 84.6rem;
+        // padding: 0;
+        // padding-top: 17rem; // gap between components
+        // padding-bottom: 13rem; // gap between components
+
+        &__text {
+            width: 100%;
+            font-size: 2rem;
+            line-height: 120%;
+            font-weight: 300;
+            padding: 0;
+            // margin: 0 min(15rem, 29.7rem);
+        }
+
+        // &__photo {
+        //     display: none;
+        // }
+    }
+}

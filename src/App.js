@@ -1,12 +1,18 @@
-import { TopScreen } from './components/TopScreen';
-import { Header } from './components/Header'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Layout } from "./pages/Layout";
+import { Home } from "./pages/Home";
+import { CourseDj } from "./pages/CourseDj";
 
 function App() {
   return (
-    <>
-      <Header/>
-      <TopScreen />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />} >
+          <Route index element={<Home />} />
+          <Route path="/course-dj" element={<CourseDj />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

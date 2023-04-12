@@ -1,0 +1,73 @@
+.rent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    // padding: 8rem 3.2rem;
+
+    &__inner {
+        width: 100%;
+        padding: 8rem 3.2rem;
+    }
+
+    &__content {
+        width: 100%;
+    }
+
+    &__card-container {
+        margin-top: 4rem;
+
+        // &--desktop {
+        //     display: none;
+        // }
+    }
+
+    &__title {
+        padding-bottom: 4.8rem;
+    }
+}
+
+@media only screen and (min-width: $width-desktop) {
+    .rent {
+        // height: 100vh;
+
+        &__inner {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 8rem;
+        }
+
+        &__content {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 2rem;
+        }
+
+        &__card-container {
+            margin-top: 4rem;
+
+            // &--mobile {
+            //     display: none;
+            // }
+
+            // &--desktop {
+            //     display: block;
+            // }
+        }
+
+        &__card {
+            height: 62.4rem;
+            // padding: 0;
+        }
+
+        &__card-list {
+            padding: 0;
+        }
+
+        &__header {
+            margin-top: 3.2rem;
+        }
+    }
+}

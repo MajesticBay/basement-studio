@@ -1,0 +1,57 @@
+.record-studio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+ 
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 8rem 3.2rem;
+ 
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        font-weight: 300;
+
+        &:first-of-type {
+            margin-top: 2.4rem;
+            margin-bottom: 1.6rem;
+        }
+    }
+
+    &__text:last-of-type {
+        margin-bottom: 4.8rem;
+    }
+
+    // &__btn {
+    //     display: none !important;
+    //     margin-top: auto;
+    // }
+}
+
+@media only screen and (min-width: $width-desktop) {
+    .record-studio {
+        &__text {
+            max-width: 106.1rem;
+            // font-size: 20;
+        }
+
+        &__inner {
+            padding: 8rem;
+        }
+
+        // &__btn {
+        //     display: flex !important;
+        //     width: 100% !important;
+        // }
+
+        &__card {
+            padding: 4.8rem 2.4rem 2.4rem 2.4rem;
+        }
+    }
+}
