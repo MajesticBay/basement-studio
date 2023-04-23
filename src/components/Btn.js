@@ -21,7 +21,7 @@ const Button = styled.div`
         background-color: ${(({ dark }) => (dark ? "transparent" : "var(--color-white)"))};
     }
 
-    @media only screen and (min-width: 900px) {
+    @media only screen and (min-width: 1080px) {
         width: fit-content;
         width: -moz-fit-content;
         font-size: 2rem;
