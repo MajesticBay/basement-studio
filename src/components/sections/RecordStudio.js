@@ -3,6 +3,16 @@ import { Btn } from "../Btn";
 import bg from "../../images/bg-record-studio.png";
 
 export const RecordStudio = () => {
+
+
+    const data = {
+        title: "СТУДІЯ  ЗВУКОЗАПИСУ",
+        pFirst: "Атмосфера в студії дозволить насолоджуватись процесом звукозапису або музичного продакшену.",
+        pSecond: "Звукорежисер - твій друг, професіонал, який завжди підтримає,\
+        порадить і допоможе зробити процес запису максимально комфортним\
+        і приємним."
+    }
+
     const bgStyle = {
         backgroundImage: `url(${bg})`
     };
@@ -69,9 +79,21 @@ export const RecordStudio = () => {
     return (
         <div id="record-studio" className="record-studio" style={bgStyle}>
             <div className="record-studio__inner" style={bgOverlayStyle}>
-                <h1 className="header">СТУДІЯ  ЗВУКОЗАПИСУ</h1>
-                <p className="record-studio__text">Атмосфера в студії дозволить насолоджуватись процесом звукозапису або музичного продакшену.</p>
-                <p className="record-studio__text">Звукорежисер - твій друг, професіонал, який завжди підтримає, порадить і допоможе зробити процес запису максимально комфортним і приємним.</p>
+
+                <div className="record-studio__header-wrapper">
+                    <h1 className="header">
+                        {data.title}
+                    </h1>
+
+                    <p className="record-studio__text">
+                        {data.pFirst}
+                    </p>
+                    <p className="record-studio__text">
+                        {data.pSecond}
+                    </p>
+                </div>
+                
+                   
                     <div className="cards mobile">
                         <Carousel>
                             {cards}

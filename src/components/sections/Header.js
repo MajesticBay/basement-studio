@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-// import { useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import { MobileMenu } from "../MobileMenu";
@@ -64,9 +63,9 @@ export function Header(){
     const { t, i18n } = useTranslation();
     const [openMobileMenu, setOpenMobileMenu] = useState(false);
     const [navLinksState, setNavLinksState] = useState(navLinksData)
-    const [currentScreenNum] = useState(0)
+    const [currentScreenNum, setCurrentScreenNum] = useState(0)
 
-    // const myStateRef = useRef(currentScreenNum);
+    const myStateRef = useRef(currentScreenNum);
 
     useEffect(() => {
         const body = document.querySelector('body');
@@ -74,10 +73,10 @@ export function Header(){
     }, [openMobileMenu])
 
     function handleScroll() {
-        // const position = window.pageYOffset;
-        // const size = window.innerHeight
-        // const screenNum = Math.floor(Number((position + 40) / size))
-        // setCurrentScreenNum(screenNum)
+        const position = window.pageYOffset;
+        const size = window.innerHeight
+        const screenNum = Math.floor(Number((position + 40) / size))
+        setCurrentScreenNum(screenNum)
     }
 
     useEffect(() => {
@@ -90,7 +89,7 @@ export function Header(){
                 return {...nl, isCurrent: false}
             })
         )
-    }, [currentScreenNum, navLinksState])
+    }, [currentScreenNum])
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll, { passive: true });
@@ -99,21 +98,24 @@ export function Header(){
             window.removeEventListener('scroll', handleScroll);
         }
 
+        
     }, []);
 
     function handleLangChange(e) {
         i18n.changeLanguage(e.target.value);
     }
 
-    /* eslint-disable jsx-a11y/anchor-is-valid */
     const scrollIntoElement = (firstScreen) => {
         const px = window.innerHeight*firstScreen
         window.scrollTo({
             top: px,
             behavior: "smooth"
         })
+        
+        
     }
-    /* eslint-disable jsx-a11y/anchor-is-valid */
+
+    
 
     const navLinks = navLinksState.map((navLink, index) => (
         <li key={index} className={`nav__menu-item`}>
@@ -134,7 +136,10 @@ export function Header(){
                 <MobileMenu openMobileMenu={openMobileMenu} setOpenMobileMenu={setOpenMobileMenu} />
             </nav>
             <nav className="navigation">
-                <NavLink style={{height: "40px"}} to="/">
+                <NavLink 
+                    style={{height: "40px"}} 
+                    to="/"
+                >
                     <img src={logo} alt="hamburger menu" />
                 </NavLink>
                 <ul className="nav">

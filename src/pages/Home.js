@@ -22,7 +22,7 @@ export const Home = () => {
         paddingTop: '72px'
     }
 
-    const { width } = useWindowDimensions();
+    const { height, width } = useWindowDimensions();
 
     const [ isMobile, setIsMobile] = useState(width < 992)
 
@@ -77,7 +77,7 @@ export const Home = () => {
                         <Rent />
                     </FullpageSection>
 
-                    <FullpageSection id='contact-us' className='sectionWrapper' style={{height: '100vh'}}>
+                    <FullpageSection id='contact-us' className='sectionWrapper' style={{height: '100vh', display: "flex", flexDirection: 'column'}}>
                         <GiftCertificate />
                         <ContactUs />
                         <Footer />
