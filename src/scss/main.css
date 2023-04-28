@@ -1045,7 +1045,7 @@ body {
   }
   .course-production__img {
     position: absolute;
-    max-height: max-content;
+    max-height: 100%;
     margin-top: 4rem;
     right: 8rem;
     width: 858px;
@@ -1123,7 +1123,7 @@ body {
     max-width: 60rem;
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
     padding: 0;
   }
 
@@ -1172,11 +1172,11 @@ body {
       max-height: 300px;
     }
     .course-production__img{
-      max-height: 350px;
+      max-height: 300px;
       margin-bottom: 4%;
     }
     .course-production__header{
-      margin: 2% 0;
+      margin: 15px 0;
     }
   .course-production__outer-text-container{
     margin-top: 1.2rem
@@ -1310,4 +1310,135 @@ body {
   .gift-certificate__bgOverlay{
     width: 100%;
   }
+  .card__list-item{
+    font-size: 1.6rem;
+    margin-bottom: 1.4rem;
+  }
+}
+
+@media only screen and (max-height: 850px),
+            screen and (min-width: 1000px)
+{
+
+  .record-studio__text:first-of-type {
+    margin-top: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.record-studio__text:last-of-type {
+  margin-bottom: 0.5rem;
+}
+
+.record-studio__inner {
+  padding: 2rem 3rem;
+  justify-content: space-around;
+}
+
+.record-studio__header-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1;
+  justify-content: space-evenly;
+  max-height: 250px;
+}
+
+.record-studio__inner .cards.desktop {
+  flex: 1 1 60%;
+  padding: 0;
+  padding-top: 3%;
+  max-height: 600px;
+}
+.record-studio__card {
+  padding: 2.2rem 2.0rem;
+  max-height: 440px;
+}
+.course-dj__outer-text-container{
+  margin-top: 2rem;
+}
+.course-dj__img {
+  margin-top: 2rem;
+}
+
+.course-production__img{
+  /* max-height: 300px; */
+  margin-bottom: 0;
+}
+
+.card__list-item{
+  font-size: 1.4rem;
+  margin-bottom: 1.0rem;
+}
+
+.card__img{
+  max-height: 150px;
+  object-fit: cover;
+}
+.rent__card-container{
+  margin-top: 0;
+}
+.rent__inner{
+  justify-content: space-around;
+}
+.isUjPX {
+  font-size: 1.5rem;
+  padding: 2rem 3.5rem;
+}
+
+.rent__card-container .cards.desktop{
+  max-height: 600px;
+ 
+}
+
+.rent__card-container{
+  margin-top: 0;
+}
+
+.gift-certificate__inner{
+  margin-top: 72px;
+  padding: 4rem 3rem;
+}
+.contact-us {
+  grid-template-columns: 1fr 60%;
+  grid-template-areas: "header map" "links map" "social map" "question map" "btn map";
+  padding: 0;
+  padding-left: 8rem;
+  gap: 1%;
+  flex: 1 0
+}
+.contact-us__header {
+  text-align: left;
+  font-size: 3.8rem;
+  font-weight: 800;
+  margin-top: calc(3rem + 1%);
+}
+.contact-us__links-container{
+  margin-top: 2rem;
+}
+.contact-us__text {
+  font-size: 1.4rem;
+}
+.contact-us__sub-header{
+  margin-bottom: 15px;
+}
+.contact-us__map {
+  width: 100%;
+  height: 100%;
+}
+.contact-us__btn {
+  margin-bottom: 4rem;
+  padding: 2rem 3rem !important;
+}
+.footer {
+  flex-direction: row;
+  padding: 3rem 8rem;
+}
+.footer__link:first-child {
+  margin-bottom: 0;
+  margin-right: 2rem;
+}
+.contact-us__social-media-container{
+  margin: 3rem 0;
+}
+
 }
