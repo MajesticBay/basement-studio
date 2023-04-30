@@ -17,7 +17,7 @@ const Ul = styled.ul`
   height: 100vh;
   width: 100%;
   // max-width: 50rem;
-  padding-top: 15.5rem;
+  padding-top: 10.5rem;
   padding-bottom: env(safe-area-inset-top);
   margin-bottom: env(safe-area-inset-top);
   transition: transform 0.3s ease-in-out;
