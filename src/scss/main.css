@@ -377,6 +377,12 @@ body {
   grid-area: btn;
 }
 
+@media only screen and (min-width: 768px) {
+  .contact-us {
+    grid-template-columns: 1fr 60%;
+  }
+}
+
 .course-dj {
   width: 100%;
   padding: 8rem 0;
@@ -1441,4 +1447,19 @@ body {
   margin: 3rem 0;
 }
 
+}
+@media only screen and (max-height: 677px)
+{
+  .contact-us {
+    display: grid !important;
+    gap: 2rem !important;
+    width: 100% !important;
+    padding: 8rem 3.2rem !important;
+    grid-template-columns: 1fr !important;
+    grid-template-areas: "header" "links" "social" "map" "question" "btn" !important;
+  }
+
+  .contact-us__map {
+    height: 213px !important;
+  }
 }
