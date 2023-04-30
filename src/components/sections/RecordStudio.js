@@ -4,7 +4,7 @@ import bg from "../../images/bg-record-studio.png";
 
 export const RecordStudio = () => {
 
-
+    /* eslint-disable no-multi-str */
     const data = {
         title: "СТУДІЯ  ЗВУКОЗАПИСУ",
         pFirst: "Атмосфера в студії дозволить насолоджуватись процесом звукозапису або музичного продакшену.",
@@ -12,6 +12,7 @@ export const RecordStudio = () => {
         порадить і допоможе зробити процес запису максимально комфортним\
         і приємним."
     }
+    /* eslint-disable no-multi-str */
 
     const bgStyle = {
         backgroundImage: `url(${bg})`
