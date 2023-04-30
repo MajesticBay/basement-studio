@@ -406,11 +406,13 @@ function useDeepCompareMemoize(value: any) {
   return ref.current;
 }
 
+/* eslint-disable react-hooks/exhaustive-deps */
 function useDeepCompareEffectForMaps(
   callback: React.EffectCallback,
   dependencies: any[]
 ) {
   React.useEffect(callback, dependencies.map(useDeepCompareMemoize));
 }
+/* eslint-disable react-hooks/exhaustive-deps */
 
 export default MapComponent;
