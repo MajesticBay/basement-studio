@@ -1448,7 +1448,7 @@ body {
 }
 
 }
-@media only screen and (max-height: 677px)
+@media only screen and (max-height: 500px)
 {
   .contact-us {
     display: grid !important;
