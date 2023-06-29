@@ -9,22 +9,18 @@ export const CourseDj = () => {
       <div className="course-dj__inner">
         <div className="course-dj__wrapper">
           <h1 className="header course-dj__header course-dj__header--mobile">
-            КУРС DJ
+            {t("courseDJ.p1")}
           </h1>
           <img className="course-dj__img" src={keyboard} alt="keyboard" />
           <div className="course-dj__outer-text-container">
             <h1 className="header course-dj__header course-dj__header--desktop">
-              КУРС DJ
+              {t("courseDJ.p1")}
             </h1>
             <div className="course-dj__text-container">
               {/* <p className="course-dj__text">Ми допоможемо вам зробити перші кроки у світ створення музики. Якщо ви давно хотіли навчитися працювати на професійному обладнанні, створювати треки – це чудовий шанс спробувати свої сили.</p>
                         <p className="course-dj__text">Пориньте у світ сучасного діджеїнгу з професійними педагогами, які поділяться з вами передовими знаннями. Освойте всі тонкощі улюбленого хобі та виведіть його на якісно новий рівень.</p> */}
-              <p className="course-dj__text">{t("courseDJ.p1")}</p>
-              <p className="course-dj__text">
-                Пориньте у світ сучасного діджеїнгу з професійними педагогами,
-                які поділяться з вами передовими знаннями. Освойте всі тонкощі
-                улюбленого хобі та виведіть його на якісно новий рівень.
-              </p>
+              <p className="course-dj__text">{t("courseDJ.p2")}</p>
+              <p className="course-dj__text">{t("courseDJ.p3")}</p>
             </div>
             <Btn
               className={"course-dj__btn"}

@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import MobileCarousel, { CarouselItem } from "../MobileCarousel.js";
 import { Btn } from "../Btn";
 import djPlace from "../../images/dj_place.png";
@@ -6,6 +7,7 @@ import bg from "../../images/bg-record-studio.png";
 // import MobileCarousel from "../MobileCarousel";
 
 export const Rent = () => {
+    const { t } = useTranslation();
     const bgStyle = {
         backgroundImage: `url(${bg})`
     }
@@ -85,7 +87,7 @@ export const Rent = () => {
     return (
         <div id="rent" className="rent" style={bgStyle}>
             <div className="rent__inner" style={bgOverlayStyle}>
-                <h1 className="header">ОРЕНДА</h1>
+                <h1 className="header">{t("rent.p1")}</h1>
                 <div className="rent__card-container rent__card-container--mobile">
                     <div className="cards mobile">
                         <MobileCarousel>
