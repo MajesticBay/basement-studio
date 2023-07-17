@@ -65,9 +65,8 @@ export function Header(){
     const [navLinksState, setNavLinksState] = useState(navLinksData)
     const [currentScreenNum, setCurrentScreenNum] = useState(0)
 
-    /* eslint-disable no-unused-vars */
     const myStateRef = useRef(currentScreenNum);
-    /* eslint-disable no-unused-vars */
+
     useEffect(() => {
         const body = document.querySelector('body');
         body.style.overflow = openMobileMenu ? 'hidden' : 'unset';
@@ -80,7 +79,6 @@ export function Header(){
         setCurrentScreenNum(screenNum)
     }
 
-    /* eslint-disable react-hooks/exhaustive-deps */
     useEffect(() => {
         setNavLinksState(
             navLinksState.map( nl => {
@@ -92,7 +90,6 @@ export function Header(){
             })
         )
     }, [currentScreenNum])
-    /* eslint-disable react-hooks/exhaustive-deps */
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll, { passive: true });
@@ -100,6 +97,8 @@ export function Header(){
         return () => {
             window.removeEventListener('scroll', handleScroll);
         }
+
+        
     }, []);
 
     function handleLangChange(e) {
@@ -112,9 +111,12 @@ export function Header(){
             top: px,
             behavior: "smooth"
         })
+        
+        
     }
 
-    /* eslint-disable jsx-a11y/anchor-is-valid */
+    
+
     const navLinks = navLinksState.map((navLink, index) => (
         <li key={index} className={`nav__menu-item`}>
             <a
@@ -125,7 +127,6 @@ export function Header(){
             </a>
         </li>
     ))
-    /* eslint-disable jsx-a11y/anchor-is-valid */
 
     return (
         <header className="main-header">

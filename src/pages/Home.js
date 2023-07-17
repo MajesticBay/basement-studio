@@ -22,9 +22,7 @@ export const Home = () => {
         paddingTop: '72px'
     }
 
-    /* eslint-disable no-unused-vars */
     const { height, width } = useWindowDimensions();
-    /* eslint-disable no-unused-vars */
 
     const [ isMobile, setIsMobile] = useState(width < 992)
 
