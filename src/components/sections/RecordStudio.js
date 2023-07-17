@@ -1,16 +1,14 @@
+import { useTranslation } from 'react-i18next';
 import Carousel, { CarouselItem } from "../../components/Carousel";
 import { Btn } from "../Btn";
 import bg from "../../images/bg-record-studio.png";
 
 export const RecordStudio = () => {
-
-
+    const { t } = useTranslation();
     const data = {
-        title: "СТУДІЯ  ЗВУКОЗАПИСУ",
-        pFirst: "Атмосфера в студії дозволить насолоджуватись процесом звукозапису або музичного продакшену.",
-        pSecond: "Звукорежисер - твій друг, професіонал, який завжди підтримає,\
-        порадить і допоможе зробити процес запису максимально комфортним\
-        і приємним."
+        title: `${t('recordStudio.p1')}`,
+        pFirst: `${t('recordStudio.p2')}`,
+        pSecond: `${t('recordStudio.p3')}`
     }
 
     const bgStyle = {

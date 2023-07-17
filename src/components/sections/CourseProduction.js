@@ -1,11 +1,13 @@
+import { useTranslation } from 'react-i18next';
 import { Btn } from "../Btn";
 import courseProduction from "../../images/bg-record-studio.png";
 
 export const CourseProduction = () => {
+    const { t } = useTranslation();
     return (
         <div id="course-production" className="course-production">
             <img className="course-production__img course-production__img--mobile" src={courseProduction} alt="keyboard" />
-            <h1 className="header course-production__header course-production__header--mobile">КУРС PRODUCTION</h1>
+            <h1 className="header course-production__header course-production__header--mobile">{t('productionCourse.p1')}</h1>
             <div className="course-production__inner">
 
                 <div className="course-production__wrapper">                

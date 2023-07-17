@@ -1,3 +1,4 @@
+
 import { useTranslation } from 'react-i18next';
 import arrow from '../../images/icons/arrow.svg'
 import photo from "../../images/HighRes.png";

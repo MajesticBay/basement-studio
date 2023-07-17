@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 // import { MapComponent } from "../MapComponent.tsx";
 import { Btn } from "../Btn";
 import { ReactComponent as IconFB } from "../../images/icons/fb.svg";
@@ -8,9 +9,10 @@ import phone from "../../images/icons/phone.svg";
 import address from "../../images/icons/address.svg";
 
 export const ContactUs = () => {
+    const { t } = useTranslation();
     return (
         <div id="contact-us" className="contact-us">
-                <h1 className="contact-us__header header">КОНТАКТИ</h1>
+                <h1 className="contact-us__header header">{t('contacts.p1')}</h1>
                 <div className="contact-us__links-container">
                     <a className="contact-us__link" href="mailto:basementstudio@gmail.com">
                         <img src={email} alt="email" />
