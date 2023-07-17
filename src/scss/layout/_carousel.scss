@@ -2,6 +2,7 @@
   width: 100%;
   max-width: 100%;
   overflow: hidden;
+  height: 100%;
 }
 
 .inner {
@@ -13,6 +14,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 1.5rem;
   /* height: 200px; */
   /* background-color: green; */
   /* color: #fff; */
@@ -26,9 +28,8 @@
 .indicators > div {
   width: 8px;
   height: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.24);;
+  border: 1px solid rgba(255, 255, 255, 0.24);
   background: rgba(255, 255, 255, 0.24);
-  // border-radius: 8px;
   border-radius: 5px;
   margin: 5px;
 }
@@ -36,6 +37,20 @@
 .indicators > div.active {
   background: rgba(255, 255, 255, 0.72);
   border: 1px solid rgba(255, 255, 255, 0.72);
-  // background-color: green;
   color: #fff;
+}
+
+.carousell {
+  height: 100%;
+}
+.carousell-main {
+  height: 100%;
+}
+
+@media only screen and (min-width: 991px) {
+  .carousel-item{
+    height: 100%;
+    margin-bottom: 3rem;
+  }
+
 }
