@@ -62,6 +62,15 @@ export const RecordStudio = () => {
                 <ul className="card__list">
                     {card.list.map((item, index) => (
                         <li className="card__list-item" key={index}>{item}</li>
+                        // {item === "" ? () : ()}
+                        // {item.length === 0 ? (<li className="card__list-item" key={index}>{item}</li>) : ()}
+                        // {item.length === 0 ? () : ()}
+                        // {item === "" && <li className="card__list-item" key={index}>{item}</li>}
+                        // if (item) {
+                        //     <li className="card__list-item" key={index}>{item}</li>
+                        // } else {
+                        //     <li className="card__list-item" key={index}>{item}</li>
+                        // }
                     ))}
                 </ul>
                 <Btn

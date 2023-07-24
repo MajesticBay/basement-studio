@@ -23,9 +23,9 @@ export const Rent = () => {
             title: "DJ PLACE",
             price: "13",
             list: [
-                "Практикуй та записуй свій dj мікс на топовому обладнанні, що є клубним сандартом. Включає якісний запис твого мікса.",
-                "2x CDJ-300 | Xone:96 | 2x Technics SL-1210MK2 | 2x Ortofon Nightclub E.",
-                "Universal Audio Apollo Twin для якісного запису твого dj міксу або лайву."
+                `${t('rentCardOne.p1')}`,
+                `${t('rentCardOne.p2')}`,
+                `${t('rentCardOne.p3')}`
             ]
         },
         {
@@ -33,9 +33,9 @@ export const Rent = () => {
             title: "PRODUCTION PLACE",
             price: "13",
             list: [
-                "Експерементуй з аналоговим обладнанням та DAW;",
-                "Міксуй та роби мастерінг своїх треків;",
-                "Записуй вокал, шуми та звукові ефекти в рекордрумі."
+                `${t('rentCardTwo.p1')}`,
+                `${t('rentCardTwo.p2')}`,
+                `${t('rentCardTwo.p3')}`
             ]
         }
     ]
