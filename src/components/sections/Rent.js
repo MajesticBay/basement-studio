@@ -69,7 +69,7 @@ export const Rent = () => {
                 <img className="card__img" src={ card.image } alt={ card.image } />
             </div>
             <p className="card__title">{ card.title }</p>
-            <p className="card__price">{ card.price }$ / год</p>
+            <p className="card__price">{t('rent.price')}</p>
             <ul className="card__list rent__card-list">
                 {card.list.map((item, index) => (
                     <li className="card__list-item" key={index}>{item}</li>
