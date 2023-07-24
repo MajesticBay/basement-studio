@@ -22,29 +22,29 @@ export const RecordStudio = () => {
 
     const cardsData = [
         {
-            title: "ЗВУКОЗАПИС",
-            price: "14",
+            title: `${t('recordStudioCardOne.p1')}`,
+            price: `${t('recordStudioCardOne.price')}`,
             list: [
-                "Запис вокалу, інструментів та аудіоподкастів за допомогою професійного обладнання.",
-                "Дикторське озвучення для реклами та різного роду відеоконтенту.",
-                "Виготовлення аудіокниг та дубляж кіно."
+                `${t('recordStudioCardOne.p2')}`,
+                `${t('recordStudioCardOne.p3')}`,
+                `${t('recordStudioCardOne.p4')}`
             ]
         },
         {
-            title: "ЗВЕДЕННЯ ТА МАСТЕРІНГ",
-            price: "70",
+            title: `${t('recordStudioCardTwo.p1')}`,
+            price: `${t('recordStudioCardTwo.price')}`,
             list: [
-                "Зведення та мастерінг твоєї музики професійним та досвідченим звукорежисером.",
-                "Послуги зведення та мастерингу онлайн.",
-                "Термін виконання 1-3 робочі дні."
+                `${t('recordStudioCardTwo.p2')}`,
+                `${t('recordStudioCardTwo.p3')}`,
+                `${t('recordStudioCardTwo.p4')}`
             ]
         },
         {
-            title: "МУЗИЧНИЙ ПРОДАКШН",
-            price: "80",
+            title: `${t('recordStudioCardThree.p1')}`,
+            price: `${t('recordStudioCardThree.price')}`,
             list: [
-                "Ексклюзивний продакшн твого треку в будь-якому стилі. Приходь на студійну сесію та приймай безпосередню участь у творчому процесі.",
-                "Саунд дизайн та музика для реклами, кіно та різного роду відеоконтенту."
+                `${t('recordStudioCardThree.p2')}`,
+                `${t('recordStudioCardThree.p3')}`,
             ]
         }
     ]
@@ -58,7 +58,7 @@ export const RecordStudio = () => {
                 {/* Give each element inside the card a key */}
                 {/* ------------------------------- */}
                 <p className="card__title">{ card.title }</p>
-                <p className="card__price">{ card.price }$ / год</p>
+                <p className="card__price">{ card.price }</p>
                 <ul className="card__list">
                     {card.list.map((item, index) => (
                         <li className="card__list-item" key={index}>{item}</li>
