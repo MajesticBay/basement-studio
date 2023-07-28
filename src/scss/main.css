@@ -1080,6 +1080,9 @@ body {
   display: none;
   padding: 16px 10px;
 }
+.navigation__arrow-link {
+  height: 4rem;
+}
 
 .locale {
   display: flex;

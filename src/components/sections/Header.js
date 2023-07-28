@@ -182,7 +182,7 @@ export function Header() {
               </a>
             </nav>
             <nav className="navigation">
-              <a href="/" className="pointer">
+              <a href="/" className="pointer navigation__arrow-link">
                 <img src={arrowToTheLeft} />
               </a>
               <div className="mobile-locale-switcher">

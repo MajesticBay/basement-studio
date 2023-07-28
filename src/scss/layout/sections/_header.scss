@@ -25,6 +25,10 @@
 .navigation {
   display: none;
   padding: 16px 10px;
+
+  &__arrow-link {
+    height: 4rem;
+  }
 }
 
 .locale {
