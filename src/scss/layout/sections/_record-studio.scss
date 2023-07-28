@@ -1,9 +1,9 @@
 .record-studio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
   &__header-wrapper {
     display: flex;
     flex-direction: column;
@@ -18,19 +18,19 @@
     padding: 8rem 3.2rem;
   }
   &__text {
-    font-family: 'Gilroy';
+    font-family: "Gilroy";
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 130%;
     /* or 26px */
-  
+
     display: flex;
     align-items: center;
-  
+
     /* White/600 */
-  
-    color: #FFFFFF;
+
+    color: #ffffff;
   }
   &__text:first-of-type {
     margin-top: 2.4rem;
@@ -42,69 +42,68 @@
 }
 
 @media only screen and (min-width: 747px) {
+  .record-studio {
     &__text {
       align-items: center;
     }
   }
+}
 
-  @media only screen and (min-width: 991px) {
-  
-    .record-studio {
+@media only screen and (min-width: 991px) {
+  .record-studio {
     &__text {
-        max-width: 106.1rem;
-        font-size: 18px;
-      }
-      &__inner {
-        padding: 4rem 8rem;
-        justify-content: space-around;
-      }
-      &__card {
-        padding: 8% 2.4rem 2.4rem 2.4rem;
-      }
+      max-width: 106.1rem;
+      font-size: 18px;
     }
+    &__inner {
+      padding: 4rem 8rem;
+      justify-content: space-around;
+    }
+    &__card {
+      padding: 8% 2.4rem 2.4rem 2.4rem;
+    }
+  }
 }
 
 @media only screen and (min-width: 1240px) {
-    .record-studio {
-        &__text {
-            font-size: 20px;
-          }
-    }   
+  .record-studio {
+    &__text {
+      font-size: 20px;
+    }
+  }
 }
 
 @media only screen and (max-width: 764px) {
-    .record-studio{
+  .record-studio {
     &__inner {
-        padding: 8rem 1rem;
-      }
-    
-      &__card {
-        margin: 0rem 2rem;
-      }
-      &__text {
-        margin: 0rem 2rem;
-      }
+      padding: 8rem 1rem;
     }
+
+    &__card {
+      margin: 0rem 2rem;
+    }
+    &__text {
+      margin: 0rem 2rem;
+    }
+  }
 }
 
-@media only screen and (max-height: 850px),
-            screen and (min-width: 1000px)
-{
-    .record-studio{
+@media only screen and (max-height: 850px), screen and (min-width: 1000px) {
+  .record-studio {
     &__text:first-of-type {
-        margin-top: 1.4rem;
-        margin-bottom: 0.8rem;
+      margin-top: 1.4rem;
+      margin-bottom: 0.8rem;
     }
-    
+
     &__text:last-of-type {
       margin-bottom: 0.5rem;
     }
-    
+
     &__inner {
       padding: 2rem 3rem;
       justify-content: space-around;
     }
-    
+
     &__header-wrapper {
       display: flex;
       flex-direction: column;
@@ -113,7 +112,7 @@
       justify-content: space-evenly;
       max-height: 250px;
     }
-    
+
     &__inner .cards.desktop {
       flex: 1 1 60%;
       padding: 0;
@@ -121,8 +120,8 @@
       max-height: 600px;
     }
     &__card {
-      padding: 2.2rem 2.0rem;
+      padding: 2.2rem 2rem;
       max-height: 440px;
     }
-}
+  }
 }
