@@ -1,0 +1,13 @@
+.course-dj-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 8rem 0;
+    background: var(--color-primary);
+
+    &__top-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
