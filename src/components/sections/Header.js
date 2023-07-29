@@ -177,13 +177,13 @@ export function Header() {
         <>
           <header className="main-header">
             <nav className="navigation-mobile">
-              <a href="/" className="pointer">
-                <img src={arrowToTheLeft} />
+              <a href="/" className="pointer navigation__arrow-link">
+                <img src={arrowToTheLeft} alt="arrow to the left" />
               </a>
             </nav>
             <nav className="navigation">
               <a href="/" className="pointer navigation__arrow-link">
-                <img src={arrowToTheLeft} />
+                <img src={arrowToTheLeft} alt="arrow to the left" />
               </a>
               <div className="mobile-locale-switcher">
                 <LanguageSwitcher

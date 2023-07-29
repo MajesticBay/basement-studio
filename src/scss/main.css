@@ -1055,7 +1055,7 @@ body {
 .header {
   font-size: 2.4rem;
   font-weight: 800;
-  line-height: 33.6px;
+  line-height: 120%;
   text-align: center;
 }
 
@@ -1182,7 +1182,7 @@ body {
 }
 @media only screen and (min-width: 1240px) {
   .header {
-    font-size: 4.8;
+    font-size: 4.8rem;
   }
 }
 .hero {
@@ -1453,12 +1453,38 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 8rem 0;
+  margin-top: 7.2rem;
+  padding-top: 8rem;
   background: var(--color-primary);
 }
 .course-dj-page__top-container {
   display: flex;
   flex-direction: column;
+  justify-content: baseline;
+}
+.course-dj-page__header {
+  text-align: left;
+}
+.course-dj-page__sign-up {
+  margin-top: 2.4rem;
+  font-weight: 300;
+}
+.course-dj-page__btn {
+  margin-top: 2.4rem;
+}
+.course-dj-page__cards {
+  display: flex;
+  flex-direction: column;
+}
+.course-dj-page__card {
+  border: 1px solid var(--color-white);
+}
+
+@media only screen and (min-width: 768px) {
+  .course-dj-page__top-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
