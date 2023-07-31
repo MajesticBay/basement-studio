@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Btn } from "../Btn";
 import bg from "../../images/bg-gift-certificate.png";
-// import giftCertificate from "../../images/icons/gift-certificate.svg";
 import giftCertificate from "../../images/icons/gift-certificate.svg";
 
 export const GiftCertificate = () => {

@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-// import { MapComponent } from "../MapComponent.tsx";
+import { MapComponent } from "../MapComponent.tsx";
 // import { Btn } from "../Btn";
 // import { ReactComponent as IconFB } from "../../images/icons/fb.svg";
 import { ReactComponent as IconIG } from "../../images/icons/ig.svg";
@@ -46,8 +46,8 @@ export const ContactUs = () => {
                     <IconTG className="pointer" />
                 </div>
                 <div className="contact-us__map">
-                    {/* <MapComponent /> */}
-                    <h1>In Development</h1>
+                    <MapComponent />
+                    {/* <h1>In Development</h1> */}
                 </div>
                 {/* <h1 className="contact-us__sub-header">ЗАЛИШИЛИСЯ ЗАПИТАННЯ?</h1>
                 <Btn className={"contact-us__btn"} text={"ЗВ’ЯЖІТЬСЯ З НАМИ"} arrowDisplayed={true} dark={false} /> */}
