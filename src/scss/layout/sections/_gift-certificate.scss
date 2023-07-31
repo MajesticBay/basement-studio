@@ -19,9 +19,19 @@
     padding: 8rem 3.2rem;
   }
 
+  &__content-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
+  }
+
+  &__img {
+    max-width: 8.5rem;
   }
 
   &__header {
@@ -50,7 +60,23 @@
     &__inner {
       flex-direction: row;
       align-items: center;
+      justify-content: space-between;
       padding: 8rem 6rem;
+    }
+
+    &__content-outer {
+      flex-direction: row;
+      gap: 2.4rem;
+    }
+
+    &__content {
+      align-items: center;
+      gap: 1.6rem;
+    }
+
+    &__header {
+      margin-top: 0;
+      margin-bottom: 0;
     }
 
     &__text {
@@ -59,12 +85,6 @@
 
     &__btn-container {
       flex-direction: row-reverse;
-    }
-
-    &__header {
-      margin-top: 4rem;
-      margin-bottom: 2.4rem;
-      // display: none !important;
     }
 
     &__btn-container {

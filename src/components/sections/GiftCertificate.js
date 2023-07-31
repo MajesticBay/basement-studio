@@ -19,10 +19,12 @@ export const GiftCertificate = () => {
         <div className="gift-certificate" style={bgStyle}>
             <div className="gift-certificate__bgOverlay" style={bgOverlayStyle}>
                 <div className="gift-certificate__inner">
-                    <img src={ giftCertificate } alt="gift certificate" />
-                    <div className='gift-certificate__content'>
-                        <h1 className="gift-certificate__header header">{t('giftCertificate.p1')}</h1>
-                        <p className="gift-certificate__text">{t('giftCertificate.p2')}</p>
+                    <div className="gift-certificate__content-outer">
+                        <img className="gift-certificate__img" src={ giftCertificate } alt="gift certificate" />
+                        <div className="gift-certificate__content">
+                            <h1 className="gift-certificate__header header">{t('giftCertificate.p1')}</h1>
+                            <p className="gift-certificate__text">{t('giftCertificate.p2')}</p>
+                        </div>
                     </div>
                     <div className="gift-certificate__btn-container mobile">
                         <Btn text={t("giftCertificate.b1")} arrowDisplayed={false} dark={false} />
