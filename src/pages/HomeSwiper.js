@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { Suspense } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "../scss/main.css";
@@ -7,16 +7,25 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import Hero from "../components/sections/Hero";
-import { AboutUs } from "../components/sections/AboutUs";
-import { RecordStudio } from "../components/sections/RecordStudio";
-import { CourseDj } from "../components/sections/CourseDj";
-import { CourseProduction } from "../components/sections/CourseProduction";
-import { Rent } from "../components/sections/Rent";
-import { GiftCertificate } from "../components/sections/GiftCertificate";
-import { ContactUs } from "../components/sections/ContactUs";
-import { Footer } from "../components/sections/Footer";
 
+const componentsList = [
+  "AboutUs",
+  "RecordStudio",
+  "CourseDj",
+  "CourseProduction",
+  "Rent",
+  "GiftCertificate",
+  "ContactUs",
+  "Footer",
+];
 
+const componentMap = componentsList.map((componentName) => {
+  return React.lazy(() => import(`../components/sections/${componentName}`));
+});
+
+// Todo: - hold the fallback on low-speed connection
+//       - implement lazy load for pictures + preload
+//       - fix overscroll animation after the Footer component [chrome]
 export default function App() {
   return (
     <>
@@ -28,38 +37,20 @@ export default function App() {
         pagination={{
           clickable: true,
         }}
+        navigation={true}
         className="mySwiper"
       >
         <SwiperSlide>
           <Hero />
         </SwiperSlide>
 
-        <SwiperSlide>
-          <AboutUs />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <RecordStudio />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <CourseDj />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <CourseProduction />
-        </SwiperSlide>
-        
-        <SwiperSlide>
-          <Rent />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <GiftCertificate />
-          <ContactUs />
-          <Footer />
-        </SwiperSlide>
-
+        {componentMap.map((Component, index) => (
+          <SwiperSlide key={index}>
+            <Suspense fallback={<div>Loading...</div>}>
+              <Component />
+            </Suspense>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );

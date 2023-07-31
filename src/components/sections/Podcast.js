@@ -1,5 +1,5 @@
-import ostap from "../images/podcast-ostap.png";
-import { Btn } from "./Btn";
+import ostap from "../../images/podcast-ostap.png";
+import { Btn } from "../Btn";
 
 export const Podcast = () => {
   return (
