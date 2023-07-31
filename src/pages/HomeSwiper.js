@@ -1,15 +1,11 @@
 import React, { useRef, useState } from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
+import "../scss/main.css";
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
-import "../scss/main.css";
-
-// import required modules
-import { Mousewheel, Navigation, Pagination } from "swiper";
 import Hero from "../components/sections/Hero";
 import { AboutUs } from "../components/sections/AboutUs";
 import { RecordStudio } from "../components/sections/RecordStudio";
@@ -32,7 +28,6 @@ export default function App() {
         pagination={{
           clickable: true,
         }}
-        modules={[Mousewheel, Pagination, Navigation]}
         className="mySwiper"
       >
         <SwiperSlide>
