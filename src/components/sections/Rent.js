@@ -2,7 +2,8 @@ import { useTranslation } from 'react-i18next';
 import MobileCarousel, { CarouselItem } from "../MobileCarousel.js";
 import { Btn } from "../Btn";
 import djPlace from "../../images/dj_place.png";
-import productionPlace from "../../images/production_place.png";
+// import productionPlace from "../../images/production_place.png";
+import studioColored from "../../images/studio-colored.png";
 import bg from "../../images/bg-record-studio.png";
 // import MobileCarousel from "../MobileCarousel";
 
@@ -29,7 +30,7 @@ export const Rent = () => {
             ]
         },
         {
-            image: productionPlace,
+            image: studioColored,
             title: "PRODUCTION PLACE",
             price: "13",
             list: [
@@ -55,7 +56,7 @@ export const Rent = () => {
                 </ul>
                 <Btn
                     className={"card__btn"}
-                    text={"ЗАМОВИТИ"}
+                    text={t('rent.btn')}
                     arrowDisplayed={false}
                     dark={false}
                 />

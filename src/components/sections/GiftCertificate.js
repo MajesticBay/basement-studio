@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Btn } from "../Btn";
-import bg from "../../images/bg-record-studio.png";
+import bg from "../../images/bg-gift-certificate.png";
+// import giftCertificate from "../../images/icons/gift-certificate.svg";
 import giftCertificate from "../../images/icons/gift-certificate.svg";
 
 export const GiftCertificate = () => {
@@ -20,8 +21,10 @@ export const GiftCertificate = () => {
             <div className="gift-certificate__bgOverlay" style={bgOverlayStyle}>
                 <div className="gift-certificate__inner">
                     <img src={ giftCertificate } alt="gift certificate" />
-                    <h1 className="gift-certificate__header header mobile">{t('giftCertificate.p1')}</h1>
-                    <p className="gift-certificate__text">{t('giftCertificate.p2')}</p>
+                    <div className='gift-certificate__content'>
+                        <h1 className="gift-certificate__header header">{t('giftCertificate.p1')}</h1>
+                        <p className="gift-certificate__text">{t('giftCertificate.p2')}</p>
+                    </div>
                     <div className="gift-certificate__btn-container mobile">
                         <Btn text={t("giftCertificate.b1")} arrowDisplayed={false} dark={false} />
                         {/* <Btn text={"ДІЗНАТИСЯ БІЛЬШЕ"} arrowDisplayed={true} dark={true} /> */}

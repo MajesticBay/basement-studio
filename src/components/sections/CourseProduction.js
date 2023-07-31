@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Btn } from "../Btn";
-import courseProduction from "../../images/bg-record-studio.png";
+import courseProduction from "../../images/course-production-keyboard-colored.png";
 
 export const CourseProduction = () => {
     const { t } = useTranslation();

@@ -1000,6 +1000,10 @@ body {
   max-width: 128rem;
   padding: 8rem 3.2rem;
 }
+.gift-certificate__content {
+  display: flex;
+  flex-direction: column;
+}
 .gift-certificate__header {
   margin-top: 4rem;
   margin-bottom: 2.4rem;
@@ -1033,7 +1037,10 @@ body {
   .gift-certificate__header {
     margin-top: 4rem;
     margin-bottom: 2.4rem;
-    display: none !important;
+  }
+  .gift-certificate__btn-container {
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 @media only screen and (min-width: 1240px) {
@@ -1483,7 +1490,6 @@ body {
   line-height: 120%;
 }
 .course-dj-page__btn {
-  max-width: 21.7rem;
   margin-top: 2.4rem;
 }
 .course-dj-page__img {

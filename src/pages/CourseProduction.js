@@ -13,12 +13,12 @@ export const CourseProduction = () => {
       <section className="course-dj-page">
         <div className="course-dj-page__top-container">
           <h1 className="header course-dj-page__header">
-            {t("courseDjPage.header")}
+            {t("courseProductionPage.header")}
           </h1>
-          <p className="course-dj-page__sign-up">{t("courseDjPage.signup")}</p>
+          <p className="course-dj-page__sign-up">{t("courseProductionPage.signup")}</p>
           <Btn
             className={"course-dj-page__btn"}
-            text={"ЗАРЕЄСТРУВАТИСЬ"}
+            text={t("courseProductionPage.btn")}
             arrowDisplayed={true}
             dark={false}
           />

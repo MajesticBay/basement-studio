@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import keyboard from "../../images/course-dj-keyboard.png";
+import keyboard from "../../images/course-dj-keyboard-colored.png";
 import { Btn } from "../Btn";
 
 export const CourseDj = () => {
