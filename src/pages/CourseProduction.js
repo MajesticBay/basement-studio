@@ -1,24 +1,24 @@
-import { useTranslation } from "react-i18next";
-import { GiftCertificate } from "../components/sections/GiftCertificate";
-import { ContactUs } from "../components/sections/ContactUs";
-import { Footer } from "../components/sections/Footer";
-import { Btn } from "../components/Btn";
-import courseDjKeyboardSmall from "../images/course-dj-page-colored-small.png";
-import courseDjKeyboardLargeColored from "../images/course-dj-page-colored-larde.png";
+import { useTranslation } from 'react-i18next'
+import { GiftCertificate } from '../components/sections/GiftCertificate'
+import { ContactUs } from '../components/sections/ContactUs'
+import { Footer } from '../components/sections/Footer'
+import { Btn } from '../components/Btn'
+import courseDjKeyboardSmall from '../images/course-dj-page-colored-small.png'
+import courseDjKeyboardLargeColored from '../images/course-dj-page-colored-larde.png'
 
 export const CourseProduction = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
   return (
     <>
       <section className="course-dj-page">
         <div className="course-dj-page__top-container">
           <h1 className="header course-dj-page__header">
-            {t("courseProductionPage.header")}
+            {t('courseProductionPage.header')}
           </h1>
-          <p className="course-dj-page__sign-up">{t("courseProductionPage.signup")}</p>
+          <p className="course-dj-page__sign-up">{t('courseProductionPage.signup')}</p>
           <Btn
-            className={"course-dj-page__btn"}
-            text={t("courseProductionPage.btn")}
+            className={'course-dj-page__btn'}
+            text={t('courseProductionPage.btn')}
             arrowDisplayed={true}
             dark={false}
           />
@@ -35,92 +35,92 @@ export const CourseProduction = () => {
         />
         <div className="course-dj-page__content">
           <h2 className="course-dj-page__sub-header">
-            {t("courseDjPage.subheader")}
+            {t('courseDjPage.subheader')}
           </h2>
           <ul className="course-dj-page__list">
             <li className="course-dj-page__list-item">
-              {t("courseDjPage.listItem1")}
+              {t('courseDjPage.listItem1')}
             </li>
             <li className="course-dj-page__list-item">
-              {t("courseDjPage.listItem2")}
+              {t('courseDjPage.listItem2')}
             </li>
             <li className="course-dj-page__list-item">
-              {t("courseDjPage.listItem3")}
+              {t('courseDjPage.listItem3')}
             </li>
             <li className="course-dj-page__list-item">
-              {t("courseDjPage.listItem4")}
+              {t('courseDjPage.listItem4')}
             </li>
             <li className="course-dj-page__list-item">
-              {t("courseDjPage.listItem5")}
+              {t('courseDjPage.listItem5')}
             </li>
             <li className="course-dj-page__list-item">
-              {t("courseDjPage.listItem6")}
+              {t('courseDjPage.listItem6')}
             </li>
             <li className="course-dj-page__list-item">
-              {t("courseDjPage.listItem7")}
+              {t('courseDjPage.listItem7')}
             </li>
             <li className="course-dj-page__list-item">
-              {t("courseDjPage.listItem8")}
+              {t('courseDjPage.listItem8')}
             </li>
             <li className="course-dj-page__list-item">
-              {t("courseDjPage.listItem9")}
+              {t('courseDjPage.listItem9')}
             </li>
             <li className="course-dj-page__list-item">
-              {t("courseDjPage.listItem10")}
+              {t('courseDjPage.listItem10')}
             </li>
             <li className="course-dj-page__list-item">
-              {t("courseDjPage.listItem11")}
+              {t('courseDjPage.listItem11')}
             </li>
             <li className="course-dj-page__list-item">
-              {t("courseDjPage.listItem12")}
+              {t('courseDjPage.listItem12')}
             </li>
             <li className="course-dj-page__list-item">
-              {t("courseDjPage.listItem13")}
+              {t('courseDjPage.listItem13')}
             </li>
             <li className="course-dj-page__list-item">
-              {t("courseDjPage.listItem14")}
+              {t('courseDjPage.listItem14')}
             </li>
             <li className="course-dj-page__list-item">
-              {t("courseDjPage.listItem15")}
+              {t('courseDjPage.listItem15')}
             </li>
           </ul>
           <div className="course-dj-page__cards">
             <div className="course-dj-page__card course-page-card">
               <p className="course-page-card__header">
-                {t("courseDjPage.cardHeaderOne")}
+                {t('courseDjPage.cardHeaderOne')}
               </p>
               <p className="course-page-card__description">
-                {t("courseDjPage.cardDescription")}
+                {t('courseDjPage.cardDescription')}
               </p>
               <div className="course-page-card__row">
                 <p className="course-page-card__quantity">
-                  10 {t("courseDjPage.lessons")}
+                  10 {t('courseDjPage.lessons')}
                 </p>
                 <p className="course-page-card__price">300$</p>
               </div>
               <div className="course-page-card__row">
                 <p className="course-page-card__quantity">
-                  20 {t("courseDjPage.lessons")}
+                  20 {t('courseDjPage.lessons')}
                 </p>
                 <p className="course-page-card__price">300$</p>
               </div>
             </div>
             <div className="course-dj-page__card course-page-card">
               <p className="course-page-card__header">
-                {t("courseDjPage.cardHeaderTwo")}
+                {t('courseDjPage.cardHeaderTwo')}
               </p>
               <p className="course-page-card__description">
-                {t("courseDjPage.cardDescription")}
+                {t('courseDjPage.cardDescription')}
               </p>
               <div className="course-page-card__row">
                 <p className="course-page-card__quantity">
-                  10 {t("courseDjPage.lessons")}
+                  10 {t('courseDjPage.lessons')}
                 </p>
                 <p className="course-page-card__price">450$</p>
               </div>
               <div className="course-page-card__row">
                 <p className="course-page-card__quantity">
-                  20 {t("courseDjPage.lessons")}
+                  20 {t('courseDjPage.lessons')}
                 </p>
                 <p className="course-page-card__price">750$</p>
               </div>
@@ -132,7 +132,7 @@ export const CourseProduction = () => {
       <ContactUs />
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default CourseProduction;
+export default CourseProduction

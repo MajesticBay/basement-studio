@@ -1,13 +1,13 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const ArrowSVG = styled.svg`
     path {
-        fill: ${(({ dark }) => (dark ? "white" : "black"))};
+        fill: ${({ dark }) => (dark ? 'white' : 'black')};
     }
-`;
+`
 
 export const Arrow = ({ dark }) => {
-    return (
+  return (
         <ArrowSVG
             dark={dark}
             width="25"
@@ -23,7 +23,7 @@ export const Arrow = ({ dark }) => {
                 // fill="white"
             />
         </ArrowSVG>
-    )
+  )
 }
 
-export default Arrow;
+export default Arrow

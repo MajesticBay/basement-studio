@@ -1,8 +1,8 @@
-import { ScrollDownMobile } from "../icons/ScrollDownMobile";
-import { ScrollDownDesktop } from "../icons/ScrollDownDesktop";
+import { ScrollDownMobile } from '../icons/ScrollDownMobile'
+import { ScrollDownDesktop } from '../icons/ScrollDownDesktop'
 
 export const Hero = () => {
-    return (
+  return (
         <div className="hero">
             <div className="hero__scroll-container">
                 {/* we have svg as components as it makes it easier to deal with css animations */}
@@ -10,7 +10,7 @@ export const Hero = () => {
                 <ScrollDownDesktop />
             </div>
         </div>
-    )
+  )
 }
 
-export default Hero;
+export default Hero

@@ -1,55 +1,53 @@
-import { Hero } from "../components/sections/Hero";
-import { AboutUs } from "../components/sections/AboutUs";
-import { RecordStudio } from "../components/sections/RecordStudio";
-import { CourseDj } from "../components/sections/CourseDj";
-import { CourseProduction } from "../components/sections/CourseProduction";
-import { Rent } from "../components/sections/Rent";
-import { GiftCertificate } from "../components/sections/GiftCertificate";
-import { ContactUs } from "../components/sections/ContactUs";
-import { Fullpage, FullpageSection, FullPageSections} from '@ap.cx/react-fullpage' 
-import { useEffect, useRef, useState } from "react";
-import { Footer } from "../components/sections/Footer";
-import useWindowDimensions from "../hooks/useWindowDimentions";
+import { Hero } from '../components/sections/Hero'
+import { AboutUs } from '../components/sections/AboutUs'
+import { RecordStudio } from '../components/sections/RecordStudio'
+import { CourseDj } from '../components/sections/CourseDj'
+import { CourseProduction } from '../components/sections/CourseProduction'
+import { Rent } from '../components/sections/Rent'
+import { GiftCertificate } from '../components/sections/GiftCertificate'
+import { ContactUs } from '../components/sections/ContactUs'
+import { Fullpage, FullpageSection, FullPageSections } from '@ap.cx/react-fullpage'
+import { useEffect, useRef, useState } from 'react'
+import { Footer } from '../components/sections/Footer'
+import useWindowDimensions from '../hooks/useWindowDimentions'
 
 export const Home = () => {
+  const sectionStyle = {
+    height: '100vh',
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+    paddingTop: '72px'
+  }
 
+  const { height, width } = useWindowDimensions()
 
-    const sectionStyle = {
-        height: '100vh', 
-        width:'100%', 
-        display: 'flex', 
-        justifyContent: 'center',
-        paddingTop: '72px'
-    }
+  const [isMobile, setIsMobile] = useState(width < 992)
 
-    const { height, width } = useWindowDimensions();
+  useEffect(() => {
+    setIsMobile(width < 992)
+  }, [width])
 
-    const [ isMobile, setIsMobile] = useState(width < 992)
+  const a = useRef()
 
-    useEffect(() => {
-        setIsMobile(width < 992)
-    }, [width])
-
-    const a = useRef()
-
-    if (isMobile){
-        return (
+  if (isMobile) {
+    return (
             <>
                 <Hero />
                 <AboutUs />
                 <RecordStudio />
                 <CourseDj />
                 <CourseProduction />
-                <Rent /> 
+                <Rent />
                 {/* <CarouselOuter /> */}
                 <GiftCertificate />
                 <ContactUs />
                 <Footer />
             </>
-        )
-    }
+    )
+  }
 
-    return (
+  return (
         <>
         <Fullpage>
             <FullPageSections>
@@ -61,7 +59,7 @@ export const Home = () => {
                         <AboutUs />
                     </FullpageSection>
 
-                    <FullpageSection id='record-studio' className='sectionWrapper'  style={sectionStyle}>
+                    <FullpageSection id='record-studio' className='sectionWrapper' style={sectionStyle}>
                         <RecordStudio />
                     </FullpageSection>
 
@@ -69,7 +67,7 @@ export const Home = () => {
                         <CourseDj />
                     </FullpageSection>
 
-                    <FullpageSection id='course-production' className='sectionWrapper'  style={sectionStyle}>
+                    <FullpageSection id='course-production' className='sectionWrapper' style={sectionStyle}>
                         <CourseProduction />
                     </FullpageSection>
 
@@ -77,7 +75,7 @@ export const Home = () => {
                         <Rent />
                     </FullpageSection>
 
-                    <FullpageSection id='contact-us' className='sectionWrapper' style={{height: '100vh', display: "flex", flexDirection: 'column'}}>
+                    <FullpageSection id='contact-us' className='sectionWrapper' style={{ height: '100vh', display: 'flex', flexDirection: 'column' }}>
                         <GiftCertificate />
                         <ContactUs />
                         <Footer />
@@ -85,7 +83,7 @@ export const Home = () => {
                     </FullPageSections>
                     </Fullpage>
         </>
-    )
+  )
 }
 
-export default Home;
+export default Home

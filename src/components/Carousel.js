@@ -1,46 +1,46 @@
-import React, { useEffect, useState } from "react";
-import { useSwipeable } from "react-swipeable";
+import React, { useEffect, useState } from 'react'
+import { useSwipeable } from 'react-swipeable'
 
 export const CarouselItem = ({ children, width }) => {
   return (
-    <div className="carousel-item" style={{ width: width }}>
+    <div className="carousel-item" style={{ width }}>
       {children}
     </div>
-  );
-};
+  )
+}
 
 const Carousel = ({ children }) => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [paused, setPaused] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0)
+  const [paused, setPaused] = useState(false)
 
   const updateIndex = (newIndex) => {
     if (newIndex < 0) {
-      newIndex = React.Children.count(children) - 1;
+      newIndex = React.Children.count(children) - 1
     } else if (newIndex >= React.Children.count(children)) {
-      newIndex = 0;
+      newIndex = 0
     }
 
-    setActiveIndex(newIndex);
-  };
+    setActiveIndex(newIndex)
+  }
 
   useEffect(() => {
     const interval = setInterval(() => {
       if (!paused) {
-        updateIndex(activeIndex + 1);
+        updateIndex(activeIndex + 1)
       }
-    }, 3000);
+    }, 3000)
 
     return () => {
       if (interval) {
-        clearInterval(interval);
+        clearInterval(interval)
       }
-    };
-  });
+    }
+  })
 
   const handlers = useSwipeable({
     onSwipedLeft: () => updateIndex(activeIndex + 1),
     onSwipedRight: () => updateIndex(activeIndex - 1)
-  });
+  })
 
   return (
     <div
@@ -54,7 +54,7 @@ const Carousel = ({ children }) => {
         style={{ transform: `translateX(-${activeIndex * 100}%)` }}
       >
         {React.Children.map(children, (child, index) => {
-          return React.cloneElement(child, { width: "100%" });
+          return React.cloneElement(child, { width: '100%' })
         })}
       </div>
       <div className="indicators">
@@ -68,14 +68,14 @@ const Carousel = ({ children }) => {
         {React.Children.map(children, (child, index) => {
           return (
             <div
-              className={`${index === activeIndex ? "active" : ""}`}
+              className={`${index === activeIndex ? 'active' : ''}`}
               onClick={() => {
-                updateIndex(index);
+                updateIndex(index)
               }}
             >
               {/* {index + 1} */}
             </div>
-          );
+          )
         })}
         {/* <button
           onClick={() => {
@@ -86,7 +86,7 @@ const Carousel = ({ children }) => {
         </button> */}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Carousel;
+export default Carousel

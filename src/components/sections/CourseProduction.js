@@ -1,10 +1,10 @@
-import { useTranslation } from 'react-i18next';
-import { Btn } from "../Btn";
-import courseProduction from "../../images/course-production-keyboard-colored.png";
+import { useTranslation } from 'react-i18next'
+import { Btn } from '../Btn'
+import courseProduction from '../../images/course-production-keyboard-colored.png'
 
 export const CourseProduction = () => {
-    const { t } = useTranslation();
-    return (
+  const { t } = useTranslation()
+  return (
         <div id="course-production" className="course-production">
             <img className="course-production__img course-production__img--mobile" src={courseProduction} alt="keyboard" />
             <h1 className="header course-production__header course-production__header--mobile">{t('productionCourse.p1')}</h1>
@@ -28,7 +28,7 @@ export const CourseProduction = () => {
 
             </div>
         </div>
-    )
+  )
 }
 
-export default CourseProduction;
+export default CourseProduction

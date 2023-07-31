@@ -1,17 +1,17 @@
-import { useTranslation } from 'react-i18next';
-import { MapComponent } from "../MapComponent.tsx";
+import { useTranslation } from 'react-i18next'
+import { MapComponent } from '../MapComponent.tsx'
 // import { Btn } from "../Btn";
 // import { ReactComponent as IconFB } from "../../images/icons/fb.svg";
-import { ReactComponent as IconIG } from "../../images/icons/ig.svg";
+import { ReactComponent as IconIG } from '../../images/icons/ig.svg'
 // import { ReactComponent as IconTK } from "../../images/icons/tk.svg";
-import { ReactComponent as IconTG } from "../../images/icons/tg.svg";
-import email from "../../images/icons/email.svg";
-import phone from "../../images/icons/phone.svg";
-import address from "../../images/icons/address.svg";
+import { ReactComponent as IconTG } from '../../images/icons/tg.svg'
+import email from '../../images/icons/email.svg'
+import phone from '../../images/icons/phone.svg'
+import address from '../../images/icons/address.svg'
 
 export const ContactUs = () => {
-    const { t } = useTranslation();
-    return (
+  const { t } = useTranslation()
+  return (
         <div id="contact-us" className="contact-us">
                 <h1 className="contact-us__header header">{t('contacts.p1')}</h1>
                 <div className="contact-us__links-container">
@@ -52,5 +52,5 @@ export const ContactUs = () => {
                 {/* <h1 className="contact-us__sub-header">ЗАЛИШИЛИСЯ ЗАПИТАННЯ?</h1>
                 <Btn className={"contact-us__btn"} text={"ЗВ’ЯЖІТЬСЯ З НАМИ"} arrowDisplayed={true} dark={false} /> */}
         </div>
-    )
+  )
 }

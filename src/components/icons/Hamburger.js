@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
 const Div = styled.div`
   width: 3.3rem;
@@ -27,7 +27,7 @@ const Div = styled.div`
       transform: ${({ openMobileMenu }) => (openMobileMenu ? 'translateY(-5px) rotate(-45deg)' : 'rotate(0)')};
     }
   }
-`;
+`
 
 const Hamburger = ({ openMobileMenu, setOpenMobileMenu }) => {
   return (
@@ -39,7 +39,7 @@ const Hamburger = ({ openMobileMenu, setOpenMobileMenu }) => {
       <div />
       <div />
     </Div>
-  );
-};
+  )
+}
 
-export default Hamburger;
+export default Hamburger

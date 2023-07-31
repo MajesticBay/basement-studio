@@ -1,41 +1,41 @@
-import React, { Suspense } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import React, { Suspense } from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
-import "../scss/main.css";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import '../scss/main.css'
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/navigation'
 
-import Hero from "../components/sections/Hero";
+import Hero from '../components/sections/Hero'
 
 const componentsList = [
-  "AboutUs",
-  "RecordStudio",
-  "CourseDj",
-  "CourseProduction",
-  "Rent",
-  "GiftCertificate",
-  "ContactUs",
-  "Footer",
-];
+  'AboutUs',
+  'RecordStudio',
+  'CourseDj',
+  'CourseProduction',
+  'Rent',
+  'GiftCertificate',
+  'ContactUs',
+  'Footer'
+]
 
 const componentMap = componentsList.map((componentName) => {
-  return React.lazy(() => import(`../components/sections/${componentName}`));
-});
+  return React.lazy(() => import(`../components/sections/${componentName}`))
+})
 
 // Todo: - hold the fallback on low-speed connection
 //       - implement lazy load for pictures + preload
 //       - fix overscroll animation after the Footer component [chrome]
-export default function App() {
+export default function App () {
   return (
     <>
       <Swiper
-        direction={"vertical"}
+        direction={'vertical'}
         slidesPerView={1}
         spaceBetween={0}
         mousewheel={true}
         pagination={{
-          clickable: true,
+          clickable: true
         }}
         navigation={true}
         className="mySwiper"
@@ -53,5 +53,5 @@ export default function App() {
         ))}
       </Swiper>
     </>
-  );
+  )
 }

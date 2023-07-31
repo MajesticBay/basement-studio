@@ -1,14 +1,14 @@
-import { Header } from "../components/sections/Header";
+import { Header } from '../components/sections/Header'
 // import { Footer } from "../components/sections/Footer";
-import { Outlet } from "react-router-dom";
+import { Outlet } from 'react-router-dom'
 
 export const Layout = () => {
-    return (
+  return (
         <main className="main">
             <Header/>
             <Outlet />
         </main>
-    )
+  )
 }
 
-export default Layout;
+export default Layout
