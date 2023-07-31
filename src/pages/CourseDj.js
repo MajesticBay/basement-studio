@@ -18,7 +18,7 @@ export const CourseDj = () => {
           <p className="course-dj-page__sign-up">{t("courseDjPage.signup")}</p>
           <Btn
             className={"course-dj-page__btn"}
-            text={"ЗАРЕЄСТРУВАТИСЬ"}
+            text={t("courseDjPage.btn")}
             arrowDisplayed={true}
             dark={false}
           />

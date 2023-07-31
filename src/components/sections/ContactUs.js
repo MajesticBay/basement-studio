@@ -1,9 +1,10 @@
 import { useTranslation } from 'react-i18next';
 // import { MapComponent } from "../MapComponent.tsx";
-import { Btn } from "../Btn";
-import { ReactComponent as IconFB } from "../../images/icons/fb.svg";
+// import { Btn } from "../Btn";
+// import { ReactComponent as IconFB } from "../../images/icons/fb.svg";
 import { ReactComponent as IconIG } from "../../images/icons/ig.svg";
-import { ReactComponent as IconTK } from "../../images/icons/tk.svg";
+// import { ReactComponent as IconTK } from "../../images/icons/tk.svg";
+import { ReactComponent as IconTG } from "../../images/icons/tg.svg";
 import email from "../../images/icons/email.svg";
 import phone from "../../images/icons/phone.svg";
 import address from "../../images/icons/address.svg";
@@ -33,22 +34,23 @@ export const ContactUs = () => {
                     </a>
                 </div>
                 <div className="contact-us__social-media-container">
-                    <a
+                    {/* <a
                         rel="noopener noreferrer"
                         href="https://www.facebook.com/basement.studio.kyiv/"
                         target="_blank"
                     >
                         <IconFB className="pointer" />
-                    </a>
+                    </a> */}
                     <IconIG className="pointer" />
-                    <IconTK className="pointer" />
+                    {/* <IconTK className="pointer" /> */}
+                    <IconTG className="pointer" />
                 </div>
                 <div className="contact-us__map">
                     {/* <MapComponent /> */}
                     <h1>In Development</h1>
                 </div>
-                <h1 className="contact-us__sub-header">ЗАЛИШИЛИСЯ ЗАПИТАННЯ?</h1>
-                <Btn className={"contact-us__btn"} text={"ЗВ’ЯЖІТЬСЯ З НАМИ"} arrowDisplayed={true} dark={false} />
+                {/* <h1 className="contact-us__sub-header">ЗАЛИШИЛИСЯ ЗАПИТАННЯ?</h1>
+                <Btn className={"contact-us__btn"} text={"ЗВ’ЯЖІТЬСЯ З НАМИ"} arrowDisplayed={true} dark={false} /> */}
         </div>
     )
 }

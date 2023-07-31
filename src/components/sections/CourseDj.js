@@ -17,7 +17,7 @@ export const CourseDj = () => {
                         <p className="course-dj__text">{t('courseDJ.p2')}</p>
                         <p className="course-dj__text">{t('courseDJ.p3')}</p>
                     </div>
-                    <Btn className={"course-dj__btn"} style={{ margin: "0 3.2rem" }} text={"ДЕТАЛЬНІШЕ"} arrowDisplayed={true} dark={false}/>
+                    <Btn className={"course-dj__btn"} style={{ margin: "0 3.2rem" }} text={t('courseDjPage.btn')} arrowDisplayed={true} dark={false}/>
                 </div>
 
                 </div>

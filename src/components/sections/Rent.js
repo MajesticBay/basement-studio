@@ -77,7 +77,7 @@ export const Rent = () => {
             </ul>
             <Btn
                 className={"card__btn"}
-                text={"ЗАМОВИТИ"}
+                text={t('rent.btn')}
                 arrowDisplayed={false}
                 dark={false}
             />

@@ -150,25 +150,19 @@ export function Header() {
               </NavLink>
               <ul className="nav">{navLinks}</ul>
               <div className="mobile-locale-switcher">
-                <LanguageSwitcher
-                  value={"ua"}
-                  text={"UA"}
-                  handleLangChange={handleLangChange}
-                />
-                <p className="mobile-locale-switcher__pipe">|</p>
                 <div className="mobile-locale-switcher">
-                <LanguageSwitcher
-                  value={"ua"}
-                  text={"UA"}
-                  handleLangChange={handleLangChange}
-                />
-                <p className="mobile-locale-switcher__pipe">|</p>
-                <LanguageSwitcher
-                  value={"en"}
-                  text={"EN"}
-                  handleLangChange={handleLangChange}
-                />
-              </div>
+                  <LanguageSwitcher
+                    value={"ua"}
+                    text={"UA"}
+                    handleLangChange={handleLangChange}
+                  />
+                  <p className="mobile-locale-switcher__pipe">|</p>
+                  <LanguageSwitcher
+                    value={"en"}
+                    text={"EN"}
+                    handleLangChange={handleLangChange}
+                  />
+                </div>
               </div>
             </nav>
           </header>

@@ -75,7 +75,7 @@ export const RecordStudio = () => {
                 </ul>
                 <Btn
                     className={"card__btn"}
-                    text={"ЗАМОВИТИ"}
+                    text={t('recordStudio.btn')}
                     arrowDisplayed={false}
                     dark={false}
                 />

@@ -389,6 +389,14 @@ body {
   fill: white;
 }
 
+#tg:hover #tg-path {
+  fill: black;
+}
+
+#tg:hover #tg-rect {
+  fill: white;
+}
+
 .about-us {
   display: flex;
   flex-direction: column;

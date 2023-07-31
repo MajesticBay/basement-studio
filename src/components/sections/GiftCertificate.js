@@ -23,12 +23,12 @@ export const GiftCertificate = () => {
                     <h1 className="gift-certificate__header header mobile">{t('giftCertificate.p1')}</h1>
                     <p className="gift-certificate__text">{t('giftCertificate.p2')}</p>
                     <div className="gift-certificate__btn-container mobile">
-                        <Btn text={"ЗАМОВИТИ"} arrowDisplayed={false} dark={false} />
-                        <Btn text={"ДІЗНАТИСЯ БІЛЬШЕ"} arrowDisplayed={true} dark={true} />
+                        <Btn text={t("giftCertificate.b1")} arrowDisplayed={false} dark={false} />
+                        {/* <Btn text={"ДІЗНАТИСЯ БІЛЬШЕ"} arrowDisplayed={true} dark={true} /> */}
                     </div>
                     <div className="gift-certificate__btn-container desktop">
-                        <Btn text={"ЗАМОВИТИ"} arrowDisplayed={true} dark={false} />
-                        <Btn text={"ДІЗНАТИСЯ БІЛЬШЕ"} arrowDisplayed={false} dark={true} />
+                        <Btn text={t("giftCertificate.b1")} arrowDisplayed={true} dark={false} />
+                        {/* <Btn text={"ДІЗНАТИСЯ БІЛЬШЕ"} arrowDisplayed={false} dark={true} /> */}
                     </div>
                 </div>
             </div>
