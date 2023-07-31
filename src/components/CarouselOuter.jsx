@@ -1,4 +1,5 @@
-import Carousel, { CarouselItem } from '../components/Carousel'
+import React from 'react'
+import Carousel, { CarouselItem } from './Carousel'
 
 export const CarouselOuter = () => {
   return (

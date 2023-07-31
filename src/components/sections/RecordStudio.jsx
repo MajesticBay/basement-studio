@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import Carousel, { CarouselItem } from '../../components/Carousel'
+import Carousel, { CarouselItem } from '../Carousel'
 import { Btn } from '../Btn'
 import bg from '../../images/bg-record-studio.png'
 

@@ -5,7 +5,7 @@ import bg from '../../images/bg.png'
 import bg1 from '../../images/bg-record-studio.png'
 
 import React, { useEffect, useState } from 'react'
-import MobileCarousel, { CarouselItem } from '../../components/MobileCarousel2'
+import MobileCarousel, { CarouselItem } from '../MobileCarousel2'
 import '../../scss/NewCarousel.css'
 
 export const AboutUs = () => {
