@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 const Div = styled.div`
   width: 3.3rem;
@@ -40,6 +41,11 @@ const Hamburger = ({ openMobileMenu, setOpenMobileMenu }) => {
       <div />
     </Div>
   )
+}
+
+Hamburger.propTypes = {
+  openMobileMenu: PropTypes.bool.isRequired,
+  setOpenMobileMenu: PropTypes.func.isRequired
 }
 
 export default Hamburger

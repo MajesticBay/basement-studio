@@ -1,4 +1,6 @@
+import React from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 const ArrowSVG = styled.svg`
     path {
@@ -24,6 +26,10 @@ export const Arrow = ({ dark }) => {
             />
         </ArrowSVG>
   )
+}
+
+Arrow.propTypes = {
+  dark: PropTypes.bool.isRequired
 }
 
 export default Arrow

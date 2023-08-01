@@ -1,3 +1,5 @@
+import React from 'react'
+
 export const ScrollDownMobile = () => {
   const scrollIntoElement = (target) => {
     const px = window.innerHeight * 1
