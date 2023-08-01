@@ -1,7 +1,7 @@
-import i18n from 'i18next';
-import Backend from 'i18next-http-backend';
-import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
+import i18n from 'i18next'
+import Backend from 'i18next-http-backend'
+import { initReactI18next } from 'react-i18next'
+import LanguageDetector from 'i18next-browser-languagedetector'
 
 i18n
   .use(Backend)
@@ -16,10 +16,10 @@ i18n
     debug: true,
     fallbackLng: 'en',
     interpolation: {
-      escapeValue: false, // not needed for react as it escapes by default
+      escapeValue: false // not needed for react as it escapes by default
     },
     backend: {
-      loadPath: '/i18n/{{ns}}/{{lng}}.json',
+      loadPath: '/i18n/{{ns}}/{{lng}}.json'
     },
     ns: ['translations'],
     defaultNS: 'translations',
@@ -29,8 +29,8 @@ i18n
     //   formatSeparator: ',',
     // },
     react: {
-      useSuspense: true,
-    },
+      useSuspense: true
+    }
     // resources: {
     //   en: {
     //     translation: {
@@ -73,6 +73,6 @@ i18n
     //     }
     //   }
     // }
-  });
+  })
 
-export default i18n;
+export default i18n

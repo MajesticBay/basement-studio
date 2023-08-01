@@ -1,5 +1,6 @@
-import logo from "../../images/icons/logo.svg";
-import styled from "styled-components";
+import React from 'react'
+import logo from '../../images/icons/logo.svg'
+import styled from 'styled-components'
 
 const Image = styled.img`
     display: inline;
@@ -12,14 +13,14 @@ const Image = styled.img`
 `
 
 export const MobileLogo = ({ openMobileMenu, setOpenMobileMenu }) => {
-    return (
+  return (
         <Image
             openMobileMenu={openMobileMenu}
             // onClick={() => setOpenMobileMenu(!openMobileMenu)}
             src={logo}
         >
         </Image>
-    )
-};
+  )
+}
 
-export default MobileLogo;
+export default MobileLogo

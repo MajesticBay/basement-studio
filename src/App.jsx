@@ -1,11 +1,12 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Layout } from "./pages/Layout";
-import { Home } from "./pages/Home";
-import { CourseDj } from "./pages/CourseDj";
-import { CourseProduction } from "./pages/CourseProduction";
-import HomeSwiper from "./pages/HomeSwiper";
+import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Layout } from './pages/Layout'
+import { Home } from './pages/Home'
+import { CourseDj } from './pages/CourseDj'
+import { CourseProduction } from './pages/CourseProduction'
+import HomeSwiper from './pages/HomeSwiper'
 
-function App() {
+function App () {
   return (
     <BrowserRouter>
       <Routes>
@@ -17,7 +18,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-  );
+  )
 }
 
-export default App;
+export default App
