@@ -10,13 +10,9 @@ export const CourseProduction = () => {
             <img className="course-production__img course-production__img--mobile" src={courseProduction} alt="keyboard" />
             <h1 className="header course-production__header course-production__header--mobile">{t('productionCourse.p1')}</h1>
             <div className="course-production__inner">
-
                 <div className="course-production__wrapper">
-
                 <img className="course-production__img course-production__img--desktop" src={courseProduction} alt="keyboard" />
                 <div className="course-production__outer-text-container">
-                    {/* <h1 className="header course-production__header course-production__header--desktop">КУРС PRODUCTION</h1> */}
-                    {/* <img className="course-production__img course-production__img--desktop" src={courseProduction} alt="keyboard" /> */}
                     <div className="course-production__text-container">
                         <p className="course-production__text">{t('productionCourse.p2')}</p>
                         <p className="course-production__text">{t('productionCourse.p3')}</p>

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 export const CarouselItem = ({ children, width }) => {
   return (
-    <div className="carousel-item" style={{ width }}>
+    <div className="carousel-item" style={{ width: width || 'auto' }}>
       {children}
     </div>
   )
@@ -12,7 +12,7 @@ export const CarouselItem = ({ children, width }) => {
 
 CarouselItem.propTypes = {
   children: PropTypes.node.isRequired,
-  width: PropTypes.string.isRequired
+  width: PropTypes.string
 }
 
 const Carousel = ({ children }) => {
@@ -64,13 +64,6 @@ const Carousel = ({ children }) => {
         })}
       </div>
       <div className="indicators">
-        {/* <button
-          onClick={() => {
-            updateIndex(activeIndex - 1);
-          }}
-        >
-          Prev
-        </button> */}
         {React.Children.map(children, (child, index) => {
           return (
             <div
@@ -79,17 +72,9 @@ const Carousel = ({ children }) => {
                 updateIndex(index)
               }}
             >
-              {/* {index + 1} */}
             </div>
           )
         })}
-        {/* <button
-          onClick={() => {
-            updateIndex(activeIndex + 1);
-          }}
-        >
-          Next
-        </button> */}
       </div>
     </div>
   )

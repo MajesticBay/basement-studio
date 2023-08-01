@@ -29,11 +29,9 @@ export const GiftCertificate = () => {
                     </div>
                     <div className="gift-certificate__btn-container mobile">
                         <Btn text={t('giftCertificate.b1')} arrowDisplayed={false} dark={false} />
-                        {/* <Btn text={"ДІЗНАТИСЯ БІЛЬШЕ"} arrowDisplayed={true} dark={true} /> */}
                     </div>
                     <div className="gift-certificate__btn-container desktop">
                         <Btn text={t('giftCertificate.b1')} arrowDisplayed={true} dark={false} />
-                        {/* <Btn text={"ДІЗНАТИСЯ БІЛЬШЕ"} arrowDisplayed={false} dark={true} /> */}
                     </div>
                 </div>
             </div>
