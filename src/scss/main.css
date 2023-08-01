@@ -770,9 +770,6 @@ body {
 .course-production__text {
   font-size: 1.6rem;
   font-weight: 300;
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: medium;
   font-size: 20px;
   line-height: 130%;
   /* or 26px */
@@ -1282,14 +1279,12 @@ body {
   padding: 8rem 3.2rem;
 }
 .record-studio__text {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 300;
+  font-weight: 100;
   font-size: 16px;
   line-height: 130%;
   /* or 26px */
   display: flex;
-  align-items: center;
+  justify-content: center;
   /* White/600 */
   color: #ffffff;
 }

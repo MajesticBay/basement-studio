@@ -46,6 +46,12 @@ The `package.json` file contains various scripts for managing the project:
     npm run test
     ```
 
+6. `sass`: Creates CSS from SCSS that located at src/scss:
+
+    ```
+    npm run sass
+    ```
+
 ## Setup
 
 To set up the project locally, follow these steps:
