@@ -1,3 +1,4 @@
+import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { GiftCertificate } from '../components/sections/GiftCertificate'
 import { ContactUs } from '../components/sections/ContactUs'

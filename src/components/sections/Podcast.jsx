@@ -1,3 +1,4 @@
+import React from 'react'
 import ostap from '../../images/podcast-ostap.png'
 import { Btn } from '../Btn'
 
@@ -6,7 +7,7 @@ export const Podcast = () => {
     <div className="podcast">
       <h1 className="header">ПОДКАСТ</h1>
       <p className="podcast__text">
-        It's all about unity of underground music culture.
+        It&apos;s all about unity of underground music culture.
       </p>
       <div
         style={{

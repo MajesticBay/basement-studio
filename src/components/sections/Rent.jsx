@@ -1,3 +1,4 @@
+import React from 'react'
 import { useTranslation } from 'react-i18next'
 import MobileCarousel, { CarouselItem } from '../MobileCarousel.jsx'
 import { Btn } from '../Btn.jsx'

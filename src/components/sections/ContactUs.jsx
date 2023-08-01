@@ -1,3 +1,4 @@
+import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { MapComponent } from '../MapComponent.tsx'
 // import { Btn } from "../Btn";

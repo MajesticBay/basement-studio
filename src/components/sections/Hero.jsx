@@ -1,3 +1,4 @@
+import React from 'react'
 import { ScrollDownMobile } from '../icons/ScrollDownMobile'
 import { ScrollDownDesktop } from '../icons/ScrollDownDesktop'
 

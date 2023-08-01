@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useSwipeable } from 'react-swipeable'
+import PropTypes from 'prop-types'
 
 export const CarouselItem = ({ children, width }) => {
   return (
@@ -7,6 +8,11 @@ export const CarouselItem = ({ children, width }) => {
       {children}
     </div>
   )
+}
+
+CarouselItem.propTypes = {
+  children: PropTypes.node.isRequired,
+  width: PropTypes.string.isRequired
 }
 
 const Carousel = ({ children }) => {
@@ -87,6 +93,10 @@ const Carousel = ({ children }) => {
       </div>
     </div>
   )
+}
+
+Carousel.propTypes = {
+  children: PropTypes.node.isRequired
 }
 
 export default Carousel

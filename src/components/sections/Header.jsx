@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useLocation, NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { MobileMenu } from '../MobileMenu'
@@ -67,7 +67,7 @@ export function Header () {
   const [navLinksState, setNavLinksState] = useState(navLinksData)
   const [currentScreenNum, setCurrentScreenNum] = useState(0)
 
-  const myStateRef = useRef(currentScreenNum)
+  // const myStateRef = useRef(currentScreenNum)
 
   useEffect(() => {
     const body = document.querySelector('body')

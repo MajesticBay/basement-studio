@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 import { Arrow } from './icons/Arrow'
 
 const Button = styled.div`
@@ -34,10 +35,16 @@ export const Btn = ({ text, arrowDisplayed, dark, className }) => {
   return (
         <Button dark={dark} className={className}>
             <span>{ text }</span>
-            {/* { arrowDisplayed ? <img src={arrow} alt="arrow" /> : <></> } */}
             { arrowDisplayed ? <Arrow dark={dark} /> : <></> }
         </Button>
   )
+}
+
+Btn.propTypes = {
+  text: PropTypes.string.isRequired,
+  arrowDisplayed: PropTypes.bool,
+  dark: PropTypes.bool,
+  className: PropTypes.string
 }
 
 export default Btn

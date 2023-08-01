@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useSwipeable } from 'react-swipeable'
+import PropTypes from 'prop-types'
 
 export const CarouselItem = ({ children, width }) => {
   return (
@@ -7,6 +8,11 @@ export const CarouselItem = ({ children, width }) => {
       {children}
     </div>
   )
+}
+
+CarouselItem.propTypes = {
+  children: PropTypes.node.isRequired,
+  width: PropTypes.string
 }
 
 const MobileCarousel = ({ children }) => {
@@ -58,37 +64,25 @@ const MobileCarousel = ({ children }) => {
         })}
       </div>
       <div className="indicators">
-        {/* <button
-          onClick={() => {
-            updateIndex(activeIndex - 1);
-          }}
-        >
-          Prev
-        </button> */}
         {React.Children.map(children, (child, index) => {
           return (
             <div
               className={`${index === activeIndex ? 'active' : ''}`}
-
               onClick={() => {
                 updateIndex(index)
               }}
 
             >
-              {/* {index + 1} */}
             </div>
           )
         })}
-        {/* <button
-          onClick={() => {
-            updateIndex(activeIndex + 1);
-          }}
-        >
-          Next
-        </button> */}
       </div>
     </div>
   )
+}
+
+MobileCarousel.propTypes = {
+  children: PropTypes.node.isRequired
 }
 
 export default MobileCarousel

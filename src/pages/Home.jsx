@@ -1,3 +1,4 @@
+import React, { useEffect, useRef, useState } from 'react'
 import { Hero } from '../components/sections/Hero'
 import { AboutUs } from '../components/sections/AboutUs'
 import { RecordStudio } from '../components/sections/RecordStudio'
@@ -7,7 +8,6 @@ import { Rent } from '../components/sections/Rent'
 import { GiftCertificate } from '../components/sections/GiftCertificate'
 import { ContactUs } from '../components/sections/ContactUs'
 import { Fullpage, FullpageSection, FullPageSections } from '@ap.cx/react-fullpage'
-import { useEffect, useRef, useState } from 'react'
 import { Footer } from '../components/sections/Footer'
 import useWindowDimensions from '../hooks/useWindowDimentions'
 
@@ -20,7 +20,7 @@ export const Home = () => {
     paddingTop: '72px'
   }
 
-  const { height, width } = useWindowDimensions()
+  const { width } = useWindowDimensions()
 
   const [isMobile, setIsMobile] = useState(width < 992)
 

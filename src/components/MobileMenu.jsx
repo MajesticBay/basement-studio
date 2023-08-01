@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { LanguageSwitcher } from './LanguageSwitcher'
+import PropTypes from 'prop-types'
 
 const Ul = styled.ul`
   list-style: none;
@@ -95,6 +96,11 @@ export const MobileMenu = ({ openMobileMenu, setOpenMobileMenu }) => {
       <li>{t(`${navLink.translation}`)}</li>
     </Link>
   ))
+
+  MobileMenu.propTypes = {
+    openMobileMenu: PropTypes.bool.isRequired,
+    setOpenMobileMenu: PropTypes.func.isRequired
+  }
 
   return (
     <Ul openMobileMenu={openMobileMenu}>
