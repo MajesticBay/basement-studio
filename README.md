@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Basement Studio - Front-End Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a front-end application for Basement Studio. It is built with React, and is deployed on Netlify.
 
-## Available Scripts
+![Screenshot of the application](https://github.com/MajesticBay/basement-studio/assets/52670061/f834afc6-b676-4a33-909d-b6b18b22eff6)
 
-In the project directory, you can run:
+## Live Demo
 
-### `npm start`
+The main branch is deployed and can be accessed from [here](https://basement-studio-test.netlify.app/).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Design
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The design of the project can be found on Figma [here](https://www.figma.com/file/rxWIaqFa0cIzBmLe73KMfO/Basement-Studio?type=design&node-id=1437-4659&mode=design&t=033fVxnMSzXkpExl-0).
 
-### `npm test`
+## Scripts
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The `package.json` file contains various scripts for managing the project:
 
-### `npm run build`
+1. `lint`: Runs the eslint command on the current directory to check for and report any linting errors. Run the command using:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```
+    npm run lint
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. `lint-fix`: Runs the eslint command with the `--fix` flag which will automatically fix any fixable linting errors. Run the command using:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```
+    npm run lint-fix
+    ```
 
-### `npm run eject`
+3. `start`: Starts the development server. Use this command for running the application during development. Run the command using:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```
+    npm run start
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. `build`: Creates a production-ready build of the application. Use this command before deploying the application. Run the command using:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    ```
+    npm run build
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+5. `test`: Runs the test cases for the application. Run the command using:
 
-## Learn More
+    ```
+    npm run test
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Setup
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To set up the project locally, follow these steps:
 
-### Code Splitting
+1. Clone the repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    ```
+    git clone <repo-url>
+    ```
 
-### Analyzing the Bundle Size
+2. Install the dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    ```
+    npm install
+    ```
 
-### Making a Progressive Web App
+3. Start the development server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    ```
+    npm run start
+    ```
 
-### Advanced Configuration
+Visit `localhost:3000` in your browser to view the running application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
