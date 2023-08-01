@@ -15,11 +15,19 @@
     "plugins": [
         "react"
     ],
-    "rules": {
-    },
+    "rules": {},
     "settings": {
         "react": {
             "version": "detect"
         }
+    },
+    "globals": {
+        "google": "readonly",
+        "maps": "readonly",
+        "LatLng": "readonly",
+        "LatLngLiteral": "readonly",
+        "MapOptions": "readonly",
+        "MapProps": "readonly",
+        "MapComponent": "readonly"
     }
 }
