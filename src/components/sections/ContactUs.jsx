@@ -1,10 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { MapComponent } from '../MapComponent.tsx'
-// import { Btn } from "../Btn";
-// import { ReactComponent as IconFB } from "../../images/icons/fb.svg";
 import { ReactComponent as IconIG } from '../../images/icons/ig.svg'
-// import { ReactComponent as IconTK } from "../../images/icons/tk.svg";
 import { ReactComponent as IconTG } from '../../images/icons/tg.svg'
 import email from '../../images/icons/email.svg'
 import phone from '../../images/icons/phone.svg'
