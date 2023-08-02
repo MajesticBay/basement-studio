@@ -151,6 +151,7 @@ body {
   font-family: "Gilroy", "Inter", sans-serif;
   line-height: 1.92rem;
   scroll-behavior: smooth;
+  overscroll-behavior: none;
 }
 
 .main {
@@ -162,6 +163,28 @@ body {
   color: var(--color-white);
 }
 
+html {
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 50px;
+}
+
+.hero, #about-us, #record-studio, #course-dj, #course-production, #rent, #contact-us {
+  height: calc(100vh - 50px);
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+@media only screen and (max-width: 1080px) {
+  html {
+    scroll-snap-type: none;
+    scroll-padding-top: none;
+  }
+  .hero, #about-us, #record-studio, #course-dj, #course-production, #rent, #contact-us {
+    height: 100%;
+    scroll-snap-align: none;
+    scroll-snap-stop: none;
+  }
+}
 .cards {
   display: flex;
   flex-direction: column;

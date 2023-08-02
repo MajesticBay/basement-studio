@@ -7,45 +7,7 @@ import { LanguageSwitcher } from '../LanguageSwitcher'
 import Hamburger from '../icons/Hamburger'
 import logo from '../../images/icons/logo.svg'
 import arrowToTheLeft from '../../images/icons/arrow-to-the-left.svg'
-
-const navLinksData = [
-  {
-    route: 'about-us',
-    translation: 'header.aboutUs',
-    isCurrent: false,
-    screens: [1]
-  },
-  {
-    route: 'record-studio',
-    translation: 'header.recordStudio',
-    isCurrent: false,
-    screens: [2]
-  },
-  {
-    route: 'course-dj',
-    translation: 'header.courseDj',
-    isCurrent: false,
-    screens: [3]
-  },
-  {
-    route: 'course-production',
-    translation: 'header.courseProduction',
-    isCurrent: false,
-    screens: [4]
-  },
-  {
-    route: 'rent',
-    translation: 'header.rent',
-    isCurrent: false,
-    screens: [5]
-  },
-  {
-    route: 'contact-us',
-    translation: 'header.contactUs',
-    isCurrent: false,
-    screens: [6]
-  }
-]
+import navLinksData from '../constraints/navLinks.json'
 
 const getLinkByScreenNum = (screenNum) => {
   let link = {}
@@ -67,8 +29,6 @@ export function Header () {
   const [navLinksState, setNavLinksState] = useState(navLinksData)
   const [currentScreenNum, setCurrentScreenNum] = useState(0)
 
-  // const myStateRef = useRef(currentScreenNum)
-
   useEffect(() => {
     const body = document.querySelector('body')
     body.style.overflow = openMobileMenu ? 'hidden' : 'unset'
@@ -77,7 +37,7 @@ export function Header () {
   function handleScroll () {
     const position = window.pageYOffset
     const size = window.innerHeight
-    const screenNum = Math.floor(Number((position + 40) / size))
+    const screenNum = Math.floor(Number((position + 150) / size)) // Pay attention to this adjustment!
     setCurrentScreenNum(screenNum)
   }
 
@@ -105,19 +65,20 @@ export function Header () {
     i18n.changeLanguage(e.target.value)
   }
 
-  const scrollIntoElement = (firstScreen) => {
-    const px = window.innerHeight * firstScreen
-    window.scrollTo({
-      top: px,
-      behavior: 'smooth'
-    })
+  const scrollTo = (id) => {
+    const element = document.getElementById(id)
+    element.scrollIntoView({ behavior: 'smooth' })
   }
 
   const navLinks = navLinksState.map((navLink, index) => (
     <li key={index} className={'nav__menu-item'}>
       <a
+        href={`#${navLink.route}`}
         className={`nav__menu-item-link ${navLink.isCurrent ? '_current' : ''}`}
-        onClick={() => scrollIntoElement(navLink.screens[0])}
+        onClick={(event) => {
+          event.preventDefault()
+          scrollTo(navLink.route)
+        }}
       >
         {t(`${navLink.translation}`)}
       </a>

@@ -1,0 +1,38 @@
+[
+    {
+      "route": "about-us",
+      "translation": "header.aboutUs",
+      "isCurrent": false,
+      "screens": [1]
+    },
+    {
+      "route": "record-studio",
+      "translation": "header.recordStudio",
+      "isCurrent": false,
+      "screens": [2]
+    },
+    {
+      "route": "course-dj",
+      "translation": "header.courseDj",
+      "isCurrent": false,
+      "screens": [3]
+    },
+    {
+      "route": "course-production",
+      "translation": "header.courseProduction",
+      "isCurrent": false,
+      "screens": [4]
+    },
+    {
+      "route": "rent",
+      "translation": "header.rent",
+      "isCurrent": false,
+      "screens": [5]
+    },
+    {
+      "route": "contact-us",
+      "translation": "header.contactUs",
+      "isCurrent": false,
+      "screens": [6]
+    }
+  ]
