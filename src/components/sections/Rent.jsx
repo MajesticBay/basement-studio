@@ -3,10 +3,8 @@ import { useTranslation } from 'react-i18next'
 import MobileCarousel, { CarouselItem } from '../MobileCarousel.jsx'
 import { Btn } from '../Btn.jsx'
 import djPlace from '../../images/dj_place.png'
-// import productionPlace from "../../images/production_place.png";
 import studioColored from '../../images/studio-colored.png'
 import bg from '../../images/bg-record-studio.png'
-// import MobileCarousel from "../MobileCarousel";
 
 export const Rent = () => {
   const { t } = useTranslation()

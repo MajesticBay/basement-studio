@@ -13,7 +13,7 @@ const Ul = styled.ul`
   background-color: var(--color-primary);
   position: fixed;
   z-index: 10;
-  transform: ${({ openMobileMenu }) => (openMobileMenu ? 'translateX(0)' : 'translateX(100%)')};
+  transform: ${({ $openMobileMenu }) => ($openMobileMenu ? 'translateX(0)' : 'translateX(100%)')};
   top: 0;
   right: 0;
   height: 100vh;
@@ -103,7 +103,7 @@ export const MobileMenu = ({ openMobileMenu, setOpenMobileMenu }) => {
   }
 
   return (
-    <Ul openMobileMenu={openMobileMenu}>
+    <Ul $openMobileMenu={openMobileMenu}>
       {navLinks}
       <div className="mobile-locale-switcher">
         <LanguageSwitcher value={'ua'} text={'UA'} handleLangChange={ handleLangChange } />

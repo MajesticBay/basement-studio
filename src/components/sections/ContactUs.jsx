@@ -35,23 +35,12 @@ export const ContactUs = () => {
                     </a>
                 </div>
                 <div className="contact-us__social-media-container">
-                    {/* <a
-                        rel="noopener noreferrer"
-                        href="https://www.facebook.com/basement.studio.kyiv/"
-                        target="_blank"
-                    >
-                        <IconFB className="pointer" />
-                    </a> */}
                     <IconIG className="pointer" />
-                    {/* <IconTK className="pointer" /> */}
                     <IconTG className="pointer" />
                 </div>
                 <div className="contact-us__map">
                     <MapComponent />
-                    {/* <h1>In Development</h1> */}
                 </div>
-                {/* <h1 className="contact-us__sub-header">ЗАЛИШИЛИСЯ ЗАПИТАННЯ?</h1>
-                <Btn className={"contact-us__btn"} text={"ЗВ’ЯЖІТЬСЯ З НАМИ"} arrowDisplayed={true} dark={false} /> */}
         </div>
   )
 }

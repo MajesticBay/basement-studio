@@ -11,12 +11,10 @@ export const Podcast = () => {
       </p>
       <div
         style={{
-          // backgroundColor: "purple"
           backgroundImage: ostap
         }}
         className="podcast-card"
       >
-        {/* <img src={ostap} alt="ostap"/> */}
       </div>
       <div className="podcast__btn-container">
         <Btn text={'ДИВИТИСЬ  НА YOUTUBE'} arrowDisplayed={true} dark={false} />

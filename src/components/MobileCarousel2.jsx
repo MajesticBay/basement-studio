@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useSwipeable } from 'react-swipeable'
 import PropTypes from 'prop-types'
 
-export const CarouselItem = ({ children, width }) => {
+export const CarouselItem = ({ children }) => {
   return (
     <div className="carousel-item" style={{ width: '90vw' }}>
       {children}

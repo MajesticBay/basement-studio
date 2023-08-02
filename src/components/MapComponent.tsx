@@ -24,7 +24,6 @@ export const MapComponent: React.VFC = () => {
   }
 
   const onIdle = (m: google.maps.MapComponent) => {
-    console.log('onIdle')
     setZoom(m.getZoom()!)
     setCenter(m.getCenter()!.toJSON())
   }
