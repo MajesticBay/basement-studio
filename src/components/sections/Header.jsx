@@ -105,14 +105,34 @@ export function Header () {
     i18n.changeLanguage(e.target.value)
   }
 
+  // const scrollTo = (id) => {
+  //   const element = document.getElementById(id)
+  //   console.log('id', id)
+  //   element.scrollIntoView({ behavior: 'smooth' })
+  // }
+
   const scrollIntoElement = (firstScreen) => {
-    const px = window.innerHeight * firstScreen
+    const px = (window.innerHeight * firstScreen) * 2
     window.scrollTo({
       top: px,
       behavior: 'smooth'
     })
   }
 
+  // const navLinks = navLinksState.map((navLink, index) => (
+  //   <li key={index} className={'nav__menu-item'}>
+  //     <a
+  //       href={`#${navLink.route}`}
+  //       className={`nav__menu-item-link ${navLink.isCurrent ? '_current' : ''}`}
+  //       onClick={(event) => {
+  //         event.preventDefault()
+  //         scrollTo(navLink.route)
+  //       }}
+  //     >
+  //       {t(`${navLink.translation}`)}
+  //     </a>
+  //   </li>
+  // ))
   const navLinks = navLinksState.map((navLink, index) => (
     <li key={index} className={'nav__menu-item'}>
       <a

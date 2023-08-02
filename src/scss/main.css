@@ -162,6 +162,17 @@ body {
   color: var(--color-white);
 }
 
+html {
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 50px;
+}
+
+.hero, #about-us, #record-studio, #course-dj, #course-production, #rent, #contact-us {
+  height: calc(100vh - 50px);
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
 .cards {
   display: flex;
   flex-direction: column;
