@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  // max-width: 240px;
 
   &__bgOverlay {
     display: flex;
@@ -109,7 +110,7 @@ screen and (max-height: 1000),
 screen and (max-width: 1080) {
   .gift-certificate {
     &__inner {
-      margin-top: 72px;
+      // margin-top: 72px;
       padding: 4rem 3rem;
     }
   }
@@ -128,7 +129,7 @@ screen and (min-width: 1000px) {
 screen and (min-width: 1000px) {
   .gift-certificate {
     &__inner {
-      margin-top: 72px;
+      // margin-top: 72px;
       padding: 4rem 3rem;
     }
   }

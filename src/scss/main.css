@@ -445,7 +445,19 @@ html {
     padding: 0;
   }
 }
+#contact-us {
+  width: 100%;
+}
+
 .contact-us {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  padding: 8rem 3.2rem;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "links" "social" "map" "question" "btn";
+}
+.contact-us .contact-us-container {
   display: grid;
   gap: 2rem;
   width: 100%;
@@ -500,7 +512,7 @@ html {
 
 @media only screen and (min-width: 991px) {
   .contact-us {
-    grid-template-columns: 1fr 60%;
+    grid-template-columns: 1fr;
     grid-template-areas: "header map" "links map" "social map" "question map" "btn map";
     padding: 0;
     padding-left: 8rem;
@@ -524,8 +536,6 @@ html {
 }
 @media only screen and (min-width: 991px), screen and (max-height: 1000), screen and (max-width: 1080) {
   .contact-us {
-    grid-template-columns: 1fr 60%;
-    grid-template-areas: "header map" "links map" "social map" "question map" "btn map";
     padding: 0;
     padding-left: 8rem;
     gap: 1%;
@@ -568,12 +578,9 @@ html {
 }
 @media only screen and (max-height: 850px), screen and (min-width: 1000px) {
   .contact-us {
-    grid-template-columns: 1fr 60%;
-    grid-template-areas: "header map" "links map" "social map" "question map" "btn map";
+    flex-direction: column;
     padding: 0;
-    padding-left: 8rem;
-    gap: 1%;
-    flex: 1 0;
+    justify-items: start;
   }
   .contact-us__header {
     text-align: left;
@@ -592,7 +599,7 @@ html {
   }
   .contact-us__map {
     width: 100%;
-    height: 100%;
+    height: 47.5rem;
   }
   .contact-us__btn {
     margin-bottom: 4rem;
@@ -603,6 +610,9 @@ html {
   }
 }
 @media only screen and (min-height: 850px), screen and (min-width: 1000px) {
+  .contact-us {
+    flex-direction: row;
+  }
   .contact-us__text {
     font-size: 1.8rem;
   }
@@ -1081,7 +1091,6 @@ html {
 }
 @media only screen and (min-width: 991px), screen and (max-height: 1000), screen and (max-width: 1080) {
   .gift-certificate__inner {
-    margin-top: 72px;
     padding: 4rem 3rem;
   }
 }
@@ -1092,7 +1101,6 @@ html {
 }
 @media only screen and (max-height: 850px), screen and (min-width: 1000px) {
   .gift-certificate__inner {
-    margin-top: 72px;
     padding: 4rem 3rem;
   }
 }
