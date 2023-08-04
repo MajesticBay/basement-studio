@@ -454,23 +454,21 @@ html {
   gap: 2rem;
   width: 100%;
   padding: 8rem 3.2rem;
-  grid-template-columns: 1fr;
-  grid-template-areas: "header" "links" "social" "map" "question" "btn";
 }
 .contact-us .contact-us-container {
   display: grid;
+  justify-items: center;
   gap: 2rem;
   width: 100%;
-  padding: 8rem 3.2rem;
   grid-template-columns: 1fr;
-  grid-template-areas: "header" "links" "social" "map" "question" "btn";
+  grid-template-areas: "header" "links" "social";
 }
 .contact-us__header {
   grid-area: header;
 }
 .contact-us__links-container {
   grid-area: links;
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
@@ -480,6 +478,7 @@ html {
   display: flex;
   align-items: center;
   gap: 1.2rem;
+  left: auto;
 }
 .contact-us__text {
   color: var(--color-white);
@@ -612,6 +611,10 @@ html {
 @media only screen and (min-height: 850px), screen and (min-width: 1000px) {
   .contact-us {
     flex-direction: row;
+  }
+  .contact-us .contact-us-container {
+    padding-left: 8rem;
+    justify-items: left;
   }
   .contact-us__text {
     font-size: 1.8rem;
