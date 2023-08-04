@@ -5,9 +5,7 @@ import { RecordStudio } from '../components/sections/RecordStudio'
 import { CourseDj } from '../components/sections/CourseDj'
 import { CourseProduction } from '../components/sections/CourseProduction'
 import { Rent } from '../components/sections/Rent'
-// import { GiftCertificate } from '../components/sections/GiftCertificate'
 import { ContactUs } from '../components/sections/ContactUs'
-// import { Footer } from '../components/sections/Footer'
 
 export const Home = () => {
   return (
@@ -18,9 +16,7 @@ export const Home = () => {
             <CourseDj />
             <CourseProduction />
             <Rent />
-            {/* <GiftCertificate /> */}
             <ContactUs />
-            {/* <Footer /> */}
         </>
   )
 }

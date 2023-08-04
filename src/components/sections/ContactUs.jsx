@@ -8,7 +8,7 @@ import phone from '../../images/icons/phone.svg'
 import address from '../../images/icons/address.svg'
 
 import { GiftCertificate } from './GiftCertificate'
-// import { Footer } from './Footer'
+import { Footer } from './Footer'
 
 export const ContactUs = () => {
   const { t } = useTranslation()
@@ -46,7 +46,7 @@ export const ContactUs = () => {
                     <MapComponent />
                 </div>
             </div>
-            {/* <Footer /> */}
+            <Footer />
         </div>
   )
 }
