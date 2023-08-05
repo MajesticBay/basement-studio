@@ -2,6 +2,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { Btn } from '../Btn'
 import courseProduction from '../../images/course-production-keyboard-colored.png'
+import { Link } from 'react-router-dom'
 
 export const CourseProduction = () => {
   const { t } = useTranslation()
@@ -17,8 +18,10 @@ export const CourseProduction = () => {
                         <p className="course-production__text">{t('productionCourse.p2')}</p>
                         <p className="course-production__text">{t('productionCourse.p3')}</p>
                     </div>
-                    <Btn className="course-production__btn course-production__btn--mobile" text={t('productionCourse.btn')} arrowDisplayed={true} dark={true}/>
-                    <Btn className="course-production__btn course-production__btn--desktop" text={t('productionCourse.btn')} arrowDisplayed={true} dark={false}/>
+                    <Link to="/course-production">
+                        <Btn className="course-production__btn course-production__btn--mobile" text={t('productionCourse.btn')} arrowDisplayed={true} dark={true}/>
+                        <Btn className="course-production__btn course-production__btn--desktop" text={t('productionCourse.btn')} arrowDisplayed={true} dark={false}/>
+                    </Link>
                 </div>
 
                 </div>
