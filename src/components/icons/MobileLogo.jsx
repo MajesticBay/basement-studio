@@ -6,7 +6,6 @@ import PropTypes from 'prop-types'
 const dynamicStyle = props => props.$openMobileMenu && css`
     position: fixed;
     z-index: 999;
-    top: 16px;
     left: 24px;
 `
 
