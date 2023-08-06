@@ -1,8 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import { GiftCertificate } from '../components/sections/GiftCertificate'
 import { ContactUs } from '../components/sections/ContactUs'
-import { Footer } from '../components/sections/Footer'
 import { Btn } from '../components/Btn'
 import courseDjKeyboardSmall from '../images/course-dj-page-colored-small.png'
 import courseDjKeyboardLargeColored from '../images/course-dj-page-colored-larde.png'
@@ -11,7 +9,7 @@ export const CourseProduction = () => {
   const { t } = useTranslation()
   return (
     <>
-      <section className="course-dj-page">
+      <section id="course-dj-page" className="course-dj-page">
         <div className="course-dj-page__top-container">
           <h1 className="header course-dj-page__header">
             {t('courseProductionPage.header')}
@@ -129,9 +127,7 @@ export const CourseProduction = () => {
           </div>
         </div>
       </section>
-      <GiftCertificate />
-      <ContactUs />
-      <Footer />
+      <ContactUs snapless={true}/>
     </>
   )
 }

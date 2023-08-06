@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { useTranslation } from 'react-i18next'
 import { MapComponent } from '../MapComponent.tsx'
 import { ReactComponent as IconIG } from '../../images/icons/ig.svg'
@@ -10,10 +11,10 @@ import address from '../../images/icons/address.svg'
 import { GiftCertificate } from './GiftCertificate'
 import { Footer } from './Footer'
 
-export const ContactUs = () => {
+export const ContactUs = ({ snapless }) => {
   const { t } = useTranslation()
   return (
-        <div id="contact-us">
+        <div id={snapless ? 'contact-us-snapless' : 'contact-us'}>
             <GiftCertificate />
             <div className="contact-us">
                 <div className="contact-us-container">
@@ -49,4 +50,8 @@ export const ContactUs = () => {
             <Footer />
         </div>
   )
+}
+
+ContactUs.propTypes = {
+  snapless: PropTypes.bool
 }

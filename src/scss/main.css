@@ -445,7 +445,7 @@ html {
     padding: 0;
   }
 }
-#contact-us {
+#contact-us, #contact-us-snapless {
   width: 100%;
 }
 
