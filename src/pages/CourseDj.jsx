@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { ContactUs } from '../components/sections/ContactUs'
 import { Btn } from '../components/Btn'
@@ -7,6 +8,12 @@ import courseDjKeyboardLargeColored from '../images/course-dj-page-colored-larde
 
 export const CourseDj = () => {
   const { t } = useTranslation()
+
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
   return (
     <>
       <section className="course-dj-page">
