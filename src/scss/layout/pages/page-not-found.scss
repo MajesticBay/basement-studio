@@ -211,6 +211,7 @@ screen and (max-width: 1080) {
 @media only screen and (min-width: 1080px) {
     #page-not-found {
         height: 100vh;
+        margin: 0;
     }
 
 
@@ -221,6 +222,9 @@ screen and (max-width: 1080) {
             max-height: 100%;
         }
 
+        &__inner {
+            max-height: 70vh;
+        }
     }
 }
 
