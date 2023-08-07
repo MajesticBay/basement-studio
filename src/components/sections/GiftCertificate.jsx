@@ -8,7 +8,8 @@ export const GiftCertificate = () => {
   const { t } = useTranslation()
   const bgStyle = {
     backgroundImage: `url(${bg})`,
-    backgroundPosition: '50% 25%'
+    backgroundPosition: '50% 25%',
+    backgroundRepeat: 'no-repeat'
   }
 
   const bgOverlayStyle = {
