@@ -21,11 +21,11 @@ export const ContactUs = ({ snapless }) => {
                     <h1 className="contact-us__header header">{t('contacts.p1')}</h1>
                     <div className="contact-us__links-container">
                         <a className="contact-us__link" href="mailto:basementstudio@gmail.com">
-                            <img src={email} alt="email" />
+                            <img src={email} loading="lazy" alt="Email icon" />
                             <span className="contact-us__text">basementstudio@gmail.com</span>
                         </a>
                         <a className="contact-us__link" href="tel:+380XXXXXXXXX">
-                            <img src={phone} alt="phone" />
+                            <img src={phone} loading="lazy" alt="Phone icon" />
                             <span className="contact-us__text">+380XXXXXXXXX</span>
                         </a>
                         <a
@@ -34,7 +34,7 @@ export const ContactUs = ({ snapless }) => {
                             href="https://goo.gl/maps/zGTo29rnvhj5ed299"
                             target="_blank"
                         >
-                            <img src={address} alt="address" />
+                            <img src={address} alt="Address icon" />
                             <span className="contact-us__text">вул. Сахарова 2, м. Львів, 79026</span>
                         </a>
                     </div>

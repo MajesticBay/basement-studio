@@ -322,6 +322,47 @@ html {
   height: 100%;
 }
 
+.carousell-wrapper:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  animation: pulse 2.5s infinite;
+}
+
+.carousell-wrapper.loaded:before {
+  content: none;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+.carousell-wrapper {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+.carousell-wrapper img {
+  aspect-ratio: 1.5/1;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+  height: 100%;
+}
+
+.carousell-wrapper.loaded img {
+  opacity: 1;
+}
+
 .inner {
   white-space: nowrap;
   transition: transform 0.5s;
@@ -332,9 +373,6 @@ html {
   align-items: center;
   justify-content: center;
   margin-bottom: 1.5rem;
-  /* height: 200px; */
-  /* background-color: green; */
-  /* color: #fff; */
 }
 
 .indicators {
@@ -357,11 +395,7 @@ html {
   color: #fff;
 }
 
-.carousell {
-  height: 100%;
-}
-
-.carousell-main {
+.carousell, .carousell-main {
   height: 100%;
 }
 
