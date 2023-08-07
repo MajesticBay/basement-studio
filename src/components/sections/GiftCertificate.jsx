@@ -9,7 +9,8 @@ export const GiftCertificate = () => {
   const bgStyle = {
     backgroundImage: `url(${bg})`,
     backgroundPosition: '50% 25%',
-    backgroundRepeat: 'no-repeat'
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover'
   }
 
   const bgOverlayStyle = {
