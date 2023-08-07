@@ -1,4 +1,3 @@
-// import { useTranslation } from 'react-i18next'
 import bg from '../../images/bg-record-studio.png'
 import studioColored from '../../images/studio-colored.png'
 import djPlace from '../../images/dj_place.png'

@@ -8,11 +8,11 @@ export const CourseProduction = () => {
   const { t } = useTranslation()
   return (
         <div id="course-production" className="course-production">
-            <img className="course-production__img course-production__img--mobile" src={courseProduction} alt="Audio keyboard" />
+            <img className="course-production__img course-production__img--mobile" src={courseProduction} loading="lazy" alt="Audio keyboard" />
             <h1 className="header course-production__header course-production__header--mobile">{t('productionCourse.p1')}</h1>
             <div className="course-production__inner">
                 <div className="course-production__wrapper">
-                <img className="course-production__img course-production__img--desktop" src={courseProduction} alt="Audio keyboard" />
+                <img className="course-production__img course-production__img--desktop" src={courseProduction} loading="lazy" alt="Audio keyboard" />
                 <div className="course-production__outer-text-container">
                     <div className="course-production__text-container">
                         <p className="course-production__text">{t('productionCourse.p2')}</p>

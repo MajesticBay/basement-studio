@@ -132,6 +132,19 @@ export const AboutUs = () => {
     }
   })
 
+  const wrappers = document.querySelectorAll('.carousell-wrapper')
+  wrappers.forEach(div => {
+    const img = div.querySelector('img')
+
+    const loaded = () => {
+      // show image
+      div.classList.add('loaded')
+    }
+
+    if (img.complete) loaded()
+    else img.addEventListener('load', loaded)
+  })
+
   const images = imagesData.map((image, imageIndex) => (
         <CarouselItem key={imageIndex}>
             <img style={{ width: '93vw' }} className='about-us__photo' src={image.path} alt="gallery" />
@@ -159,23 +172,35 @@ export const AboutUs = () => {
       <div className="carousell-main">
         <div className="carousell"
         style={{ translate: `-${r}0vw 0` }}>
-          <div className="carousell-wrapper">
-            <img src={photo} alt="Carousel image" />
+          <div
+              className="carousell-wrapper"
+              style={{ backgroundImage: 'url(img/preview/HighRes-small.png)' }}>
+            <img src={photo} loading="lazy" alt="Carousel image" />
           </div>
-          <div className="carousell-wrapper">
-            <img src={bg} alt="Carousel image" />
+          <div
+              className="carousell-wrapper"
+              style={{ backgroundImage: 'url(img/preview/bg-small.png)' }}>
+            <img src={bg} loading="lazy" alt="Carousel image" />
           </div>
-          <div className="carousell-wrapper">
-            <img src={bg1} alt="Carousel image" />
+          <div
+              className="carousell-wrapper"
+              style={{ backgroundImage: 'url(img/preview/bg-record-studio-small.png)' }}>
+            <img src={bg1} loading="lazy" alt="Carousel image" />
           </div>
-          <div className="carousell-wrapper">
-            <img src={photo} alt="Carousel image" />
+          <div
+              className="carousell-wrapper"
+              style={{ backgroundImage: 'url(img/preview/HighRes-small.png)' }}>
+            <img src={photo} loading="lazy" alt="Carousel image" />
           </div>
-          <div className="carousell-wrapper">
-            <img src={photo} alt="Carousel image" />
+          <div
+              className="carousell-wrapper"
+              style={{ backgroundImage: 'url(img/preview/HighRes-small.png)' }}>
+            <img src={photo} loading="lazy" alt="Carousel image" />
           </div>
-          <div className="carousell-wrapper">
-            <img src={photo} alt="Carousel image" />
+          <div
+              className="carousell-wrapper"
+              style={{ backgroundImage: 'url(img/preview/HighRes-small.png)' }}>
+            <img src={photo} loading="lazy" alt="Carousel image" />
           </div>
         </div>
         <button onClick={handleNext} className='nextt'>

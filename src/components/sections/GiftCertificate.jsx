@@ -21,7 +21,7 @@ export const GiftCertificate = () => {
             <div className="gift-certificate__bgOverlay" style={bgOverlayStyle}>
                 <div className="gift-certificate__inner">
                     <div className="gift-certificate__content-outer">
-                        <img className="gift-certificate__img" src={ giftCertificate } alt="Gift certificate" />
+                        <img className="gift-certificate__img" src={ giftCertificate } loading="lazy" alt="Gift certificate" />
                         <div className="gift-certificate__content">
                             <h1 className="gift-certificate__header header">{t('giftCertificate.p1')}</h1>
                             <p className="gift-certificate__text">{t('giftCertificate.p2')}</p>

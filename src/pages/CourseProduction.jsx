@@ -32,11 +32,13 @@ export const CourseProduction = () => {
         <img
           className="course-dj-page__img-mobile"
           src={courseDjKeyboardSmall}
+          loading="lazy"
           alt="keyboard"
         />
         <img
           className="course-dj-page__img"
           src={courseDjKeyboardLargeColored}
+          loading="lazy"
           alt="keyboard"
         />
         <div className="course-dj-page__content">

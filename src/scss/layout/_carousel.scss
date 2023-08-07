@@ -5,6 +5,26 @@
   height: 100%;
 }
 
+.carousell-wrapper {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  img {
+    aspect-ratio: 1.5/1;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+    height: 100%;
+  }
+}
+
+.carousell-wrapper.loaded {
+  img {
+    opacity: 1;
+  }
+}
+
 .inner {
   white-space: nowrap;
   transition: transform 0.5s;
@@ -15,9 +35,6 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 1.5rem;
-  /* height: 200px; */
-  /* background-color: green; */
-  /* color: #fff; */
 }
 
 .indicators {

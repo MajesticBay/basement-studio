@@ -11,7 +11,7 @@ export const PageNotFound = () => {
       <div className="page-not-found__inner">
         <div className="page-not-found__wrapper">
           <h1 className="header page-not-found__header page-not-found__header--mobile">{t('404.h1')}</h1>
-          <img className="page-not-found__img" src={keyboard} alt="Audio keyboard" />
+          <img className="page-not-found__img" src={keyboard} loading="lazy" alt="Audio keyboard" />
           <div className="page-not-found__outer-text-container">
             <h1 className="header page-not-found__header page-not-found__header--desktop">{t('404.h1')}</h1>
             <div className="page-not-found__text-container">

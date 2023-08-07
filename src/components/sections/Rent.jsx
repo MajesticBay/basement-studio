@@ -17,7 +17,7 @@ export const Rent = () => {
         <CarouselItem key={indexCard}>
             <div className="card rent__card" >
                 <div className="card__img-container">
-                    <img className="card__img" src={ card.image } alt={ card.image } />
+                    <img className="card__img" src={ card.image } loading="lazy" alt={ card.image } />
                 </div>
                 <p className="card__title">{ card.title }</p>
                 <p className="card__price">{t('rent.price')}</p>
@@ -39,7 +39,7 @@ export const Rent = () => {
   const cards = cardsData.map((card, indexCard) => (
         <div className="card rent__card" key={indexCard}>
             <div className="card__img-container">
-                <img className="card__img" src={ card.image } alt={ card.image } />
+                <img className="card__img" src={ card.image } loading="lazy" alt={ card.image } />
             </div>
             <p className="card__title">{ card.title }</p>
             <p className="card__price">{t('rent.price')}</p>
