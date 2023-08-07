@@ -372,11 +372,7 @@ html {
   color: #fff;
 }
 
-.carousell {
-  height: 100%;
-}
-
-.carousell-main {
+.carousell, .carousell-main {
   height: 100%;
 }
 

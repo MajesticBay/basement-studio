@@ -147,7 +147,7 @@ export const AboutUs = () => {
 
   const images = imagesData.map((image, imageIndex) => (
         <CarouselItem key={imageIndex}>
-            <img style={{ width: '93vw' }} className='about-us__photo' src={image.path} alt="gallery" />
+            <img style={{ width: '93vw' }} className='about-us__photo' src={image.path} loading="lazy" alt="gallery" />
         </CarouselItem>
   ))
 
