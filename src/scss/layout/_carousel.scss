@@ -5,8 +5,31 @@
   height: 100%;
 }
 
+.carousell-wrapper:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  animation: pulse 2.5s infinite;
+}
+
+.carousell-wrapper.loaded:before {
+  content: none;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
 
 .carousell-wrapper {
+  position: relative;
   background-size: cover;
   background-position: center;
   display: flex;
