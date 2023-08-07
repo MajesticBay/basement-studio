@@ -12,7 +12,7 @@ export const CourseDj = () => {
 
                 <div className="course-dj__wrapper">
                 <h1 className="header course-dj__header course-dj__header--mobile">{t('courseDJ.p1')}</h1>
-                <img className="course-dj__img" src={keyboard} alt="keyboard" />
+                <img className="course-dj__img" src={keyboard} alt="Audio keyboard" />
                 <div className="course-dj__outer-text-container">
                     <h1 className="header course-dj__header course-dj__header--desktop">{t('courseDJ.p1')}</h1>
                     <div className="course-dj__text-container">

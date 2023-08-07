@@ -160,29 +160,29 @@ export const AboutUs = () => {
         <div className="carousell"
         style={{ translate: `-${r}0vw 0` }}>
           <div className="carousell-wrapper">
-            <img src={photo} alt="" />
+            <img src={photo} alt="Carousel image" />
           </div>
           <div className="carousell-wrapper">
-            <img src={bg} alt="" />
+            <img src={bg} alt="Carousel image" />
           </div>
           <div className="carousell-wrapper">
-            <img src={bg1} alt="" />
+            <img src={bg1} alt="Carousel image" />
           </div>
           <div className="carousell-wrapper">
-            <img src={photo} alt="" />
+            <img src={photo} alt="Carousel image" />
           </div>
           <div className="carousell-wrapper">
-            <img src={photo} alt="" />
+            <img src={photo} alt="Carousel image" />
           </div>
           <div className="carousell-wrapper">
-            <img src={photo} alt="" />
+            <img src={photo} alt="Carousel image" />
           </div>
         </div>
         <button onClick={handleNext} className='nextt'>
-          <img src={arrow} alt="" />
+          <img src={arrow} alt="Next arrow icon" />
         </button>
         <button onClick={handlePrev} className='prevv'>
-        <img src={arrow} alt="" />
+        <img src={arrow} alt="Previous arrow icon" />
         </button>
         <div className="afterr" style={{ background: `${r === 0 ? 'transparent' : ''}` }}></div>
         <div className="afterr2" style={{ background: `${r === 30 || r === 45 ? 'transparent' : ''}` }}></div>
