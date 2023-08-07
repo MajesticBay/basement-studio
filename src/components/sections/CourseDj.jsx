@@ -2,6 +2,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import keyboard from '../../images/course-dj-keyboard-colored.png'
 import { Btn } from '../Btn'
+import { Link } from 'react-router-dom'
 
 export const CourseDj = () => {
   const { t } = useTranslation()
@@ -18,7 +19,9 @@ export const CourseDj = () => {
                         <p className="course-dj__text">{t('courseDJ.p2')}</p>
                         <p className="course-dj__text">{t('courseDJ.p3')}</p>
                     </div>
-                    <Btn className={'course-dj__btn'} style={{ margin: '0 3.2rem' }} text={t('courseDjPage.btn')} arrowDisplayed={true} dark={false}/>
+                    <Link to="/course-dj">
+                        <Btn className={'course-dj__btn'} style={{ margin: '0 3.2rem' }} text={t('courseDjPage.btn')} arrowDisplayed={true} dark={false}/>
+                    </Link>
                 </div>
 
                 </div>

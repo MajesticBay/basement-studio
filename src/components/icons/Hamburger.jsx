@@ -19,6 +19,7 @@ const Div = styled.div`
     background-color: #ccc;
     border-radius: 10px;
     transition: all 0.3s linear;
+    background-color: white;
 
     &:nth-child(1) {
       transform: ${({ $openMobileMenu }) => ($openMobileMenu ? 'translateY(5px) rotate(45deg)' : 'translateY(0) rotate(0)')};

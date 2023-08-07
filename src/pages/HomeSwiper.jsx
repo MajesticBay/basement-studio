@@ -25,7 +25,7 @@ const componentMap = componentsList.map((componentName) => {
 
 // Todo: - hold the fallback on low-speed connection
 //       - implement lazy load for pictures + preload
-//       - fix overscroll animation after the Footer component [chrome]
+
 export default function App () {
   return (
     <>
