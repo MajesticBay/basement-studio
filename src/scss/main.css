@@ -243,7 +243,7 @@ html {
   margin-top: auto;
 }
 
-@media only screen and (min-width: 991px) {
+@media only screen and (min-width: 900px) {
   .cards {
     flex-direction: row;
     gap: 2.4rem;
@@ -479,7 +479,8 @@ html {
     padding: 0;
   }
 }
-#contact-us, #contact-us-snapless {
+#contact-us,
+#contact-us-snapless {
   width: 100%;
 }
 
@@ -654,6 +655,22 @@ html {
     font-size: 1.8rem;
   }
 }
+@media only screen and (min-width: 1440px) and (min-height: 1024px) {
+  .contact-us__header {
+    margin-top: 14rem;
+  }
+  .contact-us__links-container {
+    gap: 2.1rem;
+    margin-top: 4rem;
+  }
+  .contact-us__social-media-container {
+    margin-top: 12rem;
+    margin-bottom: 14rem;
+  }
+  .contact-us__map {
+    height: 69.2rem;
+  }
+}
 .course-dj {
   width: 100%;
   padding: 8rem 0;
@@ -820,6 +837,7 @@ html {
 .course-production__header {
   text-align: center;
   padding: 0 3.2rem;
+  padding-top: 4rem;
 }
 .course-production__img {
   margin-top: 4rem;
@@ -1030,7 +1048,7 @@ html {
     margin-right: 2rem;
   }
 }
-@media only screen and (max-height: 850px), screen and (min-width: 1000px) {
+@media only screen and (min-width: 1000px), (min-height: 700px) and (max-height: 850px) {
   .footer {
     flex-direction: row;
     padding: 3rem 8rem;
@@ -1040,6 +1058,12 @@ html {
     margin-right: 2rem;
   }
 }
+@media only screen and (min-width: 1440px) and (min-height: 1024px) {
+  .footer {
+    flex-direction: row;
+    padding: 5rem 8rem;
+  }
+}
 .gift-certificate {
   display: flex;
   flex-direction: column;
@@ -1047,6 +1071,7 @@ html {
   width: 100%;
 }
 .gift-certificate__bgOverlay {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1443,7 +1468,7 @@ html {
   width: 100%;
 }
 .rent__card-container {
-  margin-top: 4rem;
+  margin-top: 4.8rem;
 }
 .rent__title {
   padding-bottom: 4.8rem;
@@ -1510,7 +1535,7 @@ html {
     max-height: none;
   }
 }
-@media only screen and (max-height: 850px), screen and (min-width: 1000px) {
+@media only screen and (min-width: 1000px) and (max-height: 850px) {
   .rent__card-container {
     margin-top: 0;
   }
