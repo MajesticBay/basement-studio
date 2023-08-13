@@ -2,7 +2,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import Carousel, { CarouselItem } from '../Carousel'
 import { Btn } from '../Btn'
-import bg from '../../images/bg-record-studio.png'
+import bg from '../../images/png/bg-record-studio.png'
 
 export const RecordStudio = () => {
   const { t } = useTranslation()

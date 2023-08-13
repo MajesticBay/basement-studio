@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next'
-import arrow from '../../images/icons/arrow.svg'
-import photo from '../../images/HighRes.png'
-import bg from '../../images/bg.png'
-import bg1 from '../../images/bg-record-studio.png'
+import { arrow } from '../../images/icons/index.ts'
+import photo from '../../images/png/HighRes.png'
+import bg from '../../images/png/bg.png'
+import bg1 from '../../images/png/bg-record-studio.png'
 
 import React, { useEffect, useState } from 'react'
 import MobileCarousel, { CarouselItem } from '../MobileCarousel2'

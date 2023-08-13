@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../images/icons/logo.svg'
+import { logo } from '../../images/icons/index.ts'
 import styled, { css } from 'styled-components'
 import PropTypes from 'prop-types'
 

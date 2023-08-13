@@ -1294,7 +1294,7 @@ html {
   }
 }
 .hero {
-  background-image: url("/src/images/bg.png");
+  background-image: url("/src/images/png/bg.png");
   background-position: center;
   height: 100vh;
   width: 100%;

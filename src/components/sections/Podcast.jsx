@@ -1,5 +1,5 @@
 import React from 'react'
-import ostap from '../../images/podcast-ostap.png'
+import ostap from '../../images/png/podcast-ostap.png'
 import { Btn } from '../Btn'
 
 export const Podcast = () => {

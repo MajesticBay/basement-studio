@@ -5,8 +5,7 @@ import { MobileMenu } from '../MobileMenu'
 import { MobileLogo } from '../icons/MobileLogo'
 import { LanguageSwitcher } from '../LanguageSwitcher'
 import Hamburger from '../icons/Hamburger'
-import logo from '../../images/icons/logo.svg'
-import arrowToTheLeft from '../../images/icons/arrow-to-the-left.svg'
+import { logo, arrowToLeft } from '../../images/icons/index.ts'
 import navLinksData from '../constraints/navLinks.json'
 
 const getLinkByScreenNum = (screenNum) => {
@@ -134,12 +133,12 @@ export function Header () {
           <header className="main-header">
             <nav className="navigation-mobile">
               <a href="/" className="pointer navigation__arrow-link">
-                <img src={arrowToTheLeft} loading="lazy" alt="Left arrow icon" />
+                <img src={arrowToLeft} loading="lazy" alt="Left arrow icon" />
               </a>
             </nav>
             <nav className="navigation">
               <a href="/" className="pointer navigation__arrow-link">
-                <img src={arrowToTheLeft} loading="lazy" alt="Left arrow icon" />
+                <img src={arrowToLeft} loading="lazy" alt="Left arrow icon" />
               </a>
               <div className="mobile-locale-switcher">
                 <LanguageSwitcher
