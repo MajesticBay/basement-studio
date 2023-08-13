@@ -1,8 +1,8 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { Btn } from '../Btn'
-import bg from '../../images/bg-gift-certificate.png'
-import giftCertificate from '../../images/icons/gift-certificate.svg'
+import bg from '../../images/png/bg-gift-certificate.png'
+import { giftCertificate } from '../../images/icons/index.ts'
 
 export const GiftCertificate = () => {
   const { t } = useTranslation()

@@ -1,6 +1,6 @@
-import bg from '../../images/bg-record-studio.png'
-import studioColored from '../../images/studio-colored.png'
-import djPlace from '../../images/dj_place.png'
+import bg from '../../images/png/bg-record-studio.png'
+import studioColored from '../../images/png/studio-colored.png'
+import djPlace from '../../images/png/dj_place.png'
 
 export const bgStyle = {
   backgroundImage: `url(${bg})`

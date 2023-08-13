@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import keyboard from '../images/course-dj-keyboard-colored.png'
+import keyboard from '../images/png/course-dj-keyboard-colored.png'
 import { Btn } from '../components/Btn'
 import { Link } from 'react-router-dom'
 

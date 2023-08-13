@@ -1,7 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { Btn } from '../Btn'
-import courseProduction from '../../images/course-production-keyboard-colored.png'
+import courseProduction from '../../images/png/course-production-keyboard-colored.png'
 import { Link } from 'react-router-dom'
 
 export const CourseProduction = () => {

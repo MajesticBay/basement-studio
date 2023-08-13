@@ -3,8 +3,8 @@ import { useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { ContactUs } from '../components/sections/ContactUs'
 import { Btn } from '../components/Btn'
-import courseDjKeyboardSmall from '../images/course-dj-page-colored-small.png'
-import courseDjKeyboardLargeColored from '../images/course-dj-page-colored-larde.png'
+import courseDjKeyboardSmall from '../images/png/course-dj-page-colored-small.png'
+import courseDjKeyboardLargeColored from '../images/png/course-dj-page-colored-larde.png'
 
 export const CourseDj = () => {
   const { t } = useTranslation()
