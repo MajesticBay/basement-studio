@@ -331,6 +331,7 @@ html {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  height: 393px;
   margin-bottom: 1.5rem;
   /* height: 200px; */
   /* background-color: green; */
@@ -367,7 +368,6 @@ html {
 
 @media only screen and (min-width: 991px) {
   .carousel-item {
-    height: 100%;
     margin-bottom: 3rem;
   }
 }
@@ -1438,6 +1438,9 @@ html {
 }
 .rent__title {
   padding-bottom: 4.8rem;
+}
+.rent__cards {
+  height: 605.05px;
 }
 .rent__card {
   width: 50%;
