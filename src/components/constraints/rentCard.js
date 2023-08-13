@@ -1,6 +1,8 @@
 import bg from '../../images/png/bg-record-studio.png'
 import studioColored from '../../images/png/studio-colored.png'
 import djPlace from '../../images/png/dj_place.png'
+import studioColoredWebp from '../../images/webp/studio-colored.webp'
+import djPlaceWebp from '../../images/webp/dj_place.webp'
 
 export const bgStyle = {
   backgroundImage: `url(${bg})`
@@ -14,11 +16,13 @@ export const bgOverlayStyle = {
 export const cardStructures = [
   {
     image: djPlace,
+    imageWebp: djPlaceWebp,
     titleKey: 'DJ PLACE',
     listKeys: ['rentCardOne.p1', 'rentCardOne.p2', 'rentCardOne.p3']
   },
   {
     image: studioColored,
+    imageWebp: studioColoredWebp,
     titleKey: 'PRODUCTION PLACE',
     listKeys: ['rentCardTwo.p1', 'rentCardTwo.p2', 'rentCardTwo.p3']
   }
