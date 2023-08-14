@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  background-image: url("/src/images/png/bg-record-studio.png");
 
   &__inner {
     width: 100%;
@@ -26,7 +27,13 @@
   }
 }
 
-@media only screen and (min-width: 991px) {
+@supports (background-image: url("/src/images/webp/bg-record-studio.webp")) {
+  .rent {
+      background-image: url("/src/images/webp/bg-record-studio.webp");
+  }
+}
+
+@include respond(medium) {
   .rent {
     &__inner {
       width: 100%;

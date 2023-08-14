@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  background-image: url("/src/images/png/bg-record-studio.png");
 
   &__header-wrapper {
     display: flex;
@@ -18,18 +19,11 @@
     padding: 8rem 3.2rem;
   }
   &__text {
-    // font-family: "Gilroy";
-    // font-style: normal;
     font-weight: 100;
     font-size: 16px;
     line-height: 130%;
-    /* or 26px */
-
     display: flex;
     justify-content: center;
-
-    /* White/600 */
-
     color: #ffffff;
   }
   &__text:first-of-type {
@@ -41,6 +35,12 @@
   }
 }
 
+@supports (background-image: url("/src/images/webp/bg-record-studio.webp")) {
+  .record-studio {
+      background-image: url("/src/images/webp/bg-record-studio.webp");
+  }
+}
+
 @media only screen and (min-width: 747px) {
   .record-studio {
     &__text {
@@ -49,7 +49,7 @@
   }
 }
 
-@media only screen and (min-width: 991px) {
+@include respond(medium) {
   .record-studio {
     &__text {
       max-width: 106.1rem;
@@ -65,7 +65,7 @@
   }
 }
 
-@media only screen and (min-width: 1240px) {
+@include respond(large) {
   .record-studio {
     &__text {
       font-size: 20px;
