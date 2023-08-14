@@ -164,7 +164,7 @@ export const AboutUs = () => {
       {t('aboutUs.p2')}</p>
       <div className=""></div>
 
-      {window.screen.width <= 900
+      {windowWidth <= 900
         ? <>
       <MobileCarousel>
         {images}
