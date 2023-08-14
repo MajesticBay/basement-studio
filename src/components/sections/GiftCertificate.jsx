@@ -1,8 +1,8 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { Btn } from '../Btn'
-import bg from '../../images/bg-gift-certificate.png'
-import giftCertificate from '../../images/icons/gift-certificate.svg'
+import bg from '../../images/png/bg-gift-certificate.png'
+import { giftCertificate } from '../../images/icons/index.ts'
 
 export const GiftCertificate = () => {
   const { t } = useTranslation()
@@ -23,7 +23,7 @@ export const GiftCertificate = () => {
             <div className="gift-certificate__bgOverlay" style={bgOverlayStyle}>
                 <div className="gift-certificate__inner">
                     <div className="gift-certificate__content-outer">
-                        <img className="gift-certificate__img" src={ giftCertificate } alt="gift certificate" />
+                        <img className="gift-certificate__img" src={ giftCertificate } loading="lazy" alt="Gift certificate" />
                         <div className="gift-certificate__content">
                             <h1 className="gift-certificate__header header">{t('giftCertificate.p1')}</h1>
                             <p className="gift-certificate__text">{t('giftCertificate.p2')}</p>

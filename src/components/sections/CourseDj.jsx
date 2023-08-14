@@ -1,6 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import keyboard from '../../images/course-dj-keyboard-colored.png'
+import keyboard from '../../images/png/course-dj-keyboard-colored.png'
+import keyboardWebp from '../../images/webp/course-dj-keyboard-colored.webp'
 import { Btn } from '../Btn'
 import { Link } from 'react-router-dom'
 
@@ -12,7 +13,10 @@ export const CourseDj = () => {
 
                 <div className="course-dj__wrapper">
                 <h1 className="header course-dj__header course-dj__header--mobile">{t('courseDJ.p1')}</h1>
-                <img className="course-dj__img" src={keyboard} alt="keyboard" />
+                <picture>
+                    <source srcSet={keyboardWebp} type="image/webp" />
+                    <img className="course-dj__img" src={keyboard} loading="lazy" alt="Audio keyboard" />
+                </picture>
                 <div className="course-dj__outer-text-container">
                     <h1 className="header course-dj__header course-dj__header--desktop">{t('courseDJ.p1')}</h1>
                     <div className="course-dj__text-container">

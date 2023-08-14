@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next'
-import arrow from '../../images/icons/arrow.svg'
-import photo from '../../images/HighRes.png'
-import bg from '../../images/bg.png'
-import bg1 from '../../images/bg-record-studio.png'
+import { arrow } from '../../images/icons/index.ts'
+import photo from '../../images/png/HighRes.png'
+import bg from '../../images/png/bg.png'
+import bg1 from '../../images/png/bg-record-studio.png'
 
 import React, { useEffect, useState } from 'react'
 import MobileCarousel, { CarouselItem } from '../MobileCarousel2'
@@ -132,9 +132,22 @@ export const AboutUs = () => {
     }
   })
 
+  const wrappers = document.querySelectorAll('.carousell-wrapper')
+  wrappers.forEach(div => {
+    const img = div.querySelector('img')
+
+    const loaded = () => {
+      // show image
+      div.classList.add('loaded')
+    }
+
+    if (img.complete) loaded()
+    else img.addEventListener('load', loaded)
+  })
+
   const images = imagesData.map((image, imageIndex) => (
         <CarouselItem key={imageIndex}>
-            <img style={{ width: '93vw' }} className='about-us__photo' src={image.path} alt="gallery" />
+            <img style={{ width: '93vw' }} className='about-us__photo' src={image.path} loading="lazy" alt="gallery" />
         </CarouselItem>
   ))
 
@@ -159,30 +172,42 @@ export const AboutUs = () => {
       <div className="carousell-main">
         <div className="carousell"
         style={{ translate: `-${r}0vw 0` }}>
-          <div className="carousell-wrapper">
-            <img src={photo} alt="" />
+          <div
+              className="carousell-wrapper"
+              style={{ backgroundImage: 'url(img/preview/HighRes-small.png)' }}>
+            <img src={photo} loading="lazy" alt="Carousel image" />
           </div>
-          <div className="carousell-wrapper">
-            <img src={bg} alt="" />
+          <div
+              className="carousell-wrapper"
+              style={{ backgroundImage: 'url(img/preview/bg-small.png)' }}>
+            <img src={bg} loading="lazy" alt="Carousel image" />
           </div>
-          <div className="carousell-wrapper">
-            <img src={bg1} alt="" />
+          <div
+              className="carousell-wrapper"
+              style={{ backgroundImage: 'url(img/preview/bg-record-studio-small.png)' }}>
+            <img src={bg1} loading="lazy" alt="Carousel image" />
           </div>
-          <div className="carousell-wrapper">
-            <img src={photo} alt="" />
+          <div
+              className="carousell-wrapper"
+              style={{ backgroundImage: 'url(img/preview/HighRes-small.png)' }}>
+            <img src={photo} loading="lazy" alt="Carousel image" />
           </div>
-          <div className="carousell-wrapper">
-            <img src={photo} alt="" />
+          <div
+              className="carousell-wrapper"
+              style={{ backgroundImage: 'url(img/preview/HighRes-small.png)' }}>
+            <img src={photo} loading="lazy" alt="Carousel image" />
           </div>
-          <div className="carousell-wrapper">
-            <img src={photo} alt="" />
+          <div
+              className="carousell-wrapper"
+              style={{ backgroundImage: 'url(img/preview/HighRes-small.png)' }}>
+            <img src={photo} loading="lazy" alt="Carousel image" />
           </div>
         </div>
         <button onClick={handleNext} className='nextt'>
-          <img src={arrow} alt="" />
+          <img src={arrow} alt="Next arrow icon" />
         </button>
         <button onClick={handlePrev} className='prevv'>
-        <img src={arrow} alt="" />
+        <img src={arrow} alt="Previous arrow icon" />
         </button>
         <div className="afterr" style={{ background: `${r === 0 ? 'transparent' : ''}` }}></div>
         <div className="afterr2" style={{ background: `${r === 30 || r === 45 ? 'transparent' : ''}` }}></div>

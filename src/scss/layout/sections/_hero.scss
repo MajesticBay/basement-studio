@@ -1,5 +1,5 @@
 .hero {
-    background-image: url("/src/images/bg.png");
+    background-image: url("/src/images/png/bg.png");
     background-position: center;
     height: 100vh;
     width: 100%;
@@ -26,7 +26,6 @@
 
 @media only screen and (min-width: 991px) {
     .hero {
-        // background-position: 50% 90%;
         background-size: cover;
         background-position: unset;
         height: 100vh;
