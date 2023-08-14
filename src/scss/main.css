@@ -1542,6 +1542,12 @@ html {
   font-weight: 800;
   line-height: 120%;
 }
+.course-dj-page__first-line {
+  margin-top: 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 120%;
+}
 .course-dj-page__sign-up {
   margin-top: 2.4rem;
   font-size: 1.6rem;

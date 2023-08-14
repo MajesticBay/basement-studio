@@ -108,7 +108,7 @@ export const CourseDj = () => {
                 <p className="course-page-card__quantity">
                   20 {t('courseDjPage.lessons')}
                 </p>
-                <p className="course-page-card__price">300$</p>
+                <p className="course-page-card__price">500$</p>
               </div>
             </div>
             <div className="course-dj-page__card course-page-card">
