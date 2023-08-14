@@ -1314,11 +1314,6 @@ html {
   position: relative;
   padding-bottom: env(safe-area-inset-top);
 }
-@supports (background-image: url("/src/images/webp/bg-small.webp")) {
-  .hero {
-    background-image: url("/src/images/webp/bg-small.webp");
-  }
-}
 .hero__scroll-container {
   position: absolute;
   bottom: 0;

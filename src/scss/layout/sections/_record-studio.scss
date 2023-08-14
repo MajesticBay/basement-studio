@@ -49,7 +49,7 @@
   }
 }
 
-@media only screen and (min-width: 991px) {
+@include respond(medium) {
   .record-studio {
     &__text {
       max-width: 106.1rem;
@@ -65,7 +65,7 @@
   }
 }
 
-@media only screen and (min-width: 1240px) {
+@include respond(large) {
   .record-studio {
     &__text {
       font-size: 20px;

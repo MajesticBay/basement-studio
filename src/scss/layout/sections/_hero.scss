@@ -1,8 +1,5 @@
 .hero {
     background-image: url("/src/images/png/bg-small.png");
-    @supports (background-image: url("/src/images/webp/bg-small.webp")) {
-        background-image: url("/src/images/webp/bg-small.webp");
-    }
     background-position: center;
     height: 100vh;
     width: 100%;
@@ -27,7 +24,7 @@
 }
 
 
-@media only screen and (min-width: 451px) {
+@include respond(small) {
     .hero {
         background-image: url("/src/images/png/bg-med.png");
         @supports (background-image: url("/src/images/webp/bg-med.webp")) {
@@ -36,7 +33,7 @@
     }
 }
 
-@media only screen and (min-width: 991px) {
+@include respond(medium) {
     .hero {
         background-image: url("/src/images/png/bg.png");
         @supports (background-image: url("/src/images/webp/bg.webp")) {
