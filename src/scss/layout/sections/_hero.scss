@@ -1,5 +1,8 @@
 .hero {
-    background-image: url("/src/images/png/bg.png");
+    background-image: url("/src/images/png/bg-small.png");
+    @supports (background-image: url("/src/images/webp/bg-small.webp")) {
+        background-image: url("/src/images/webp/bg-small.webp");
+    }
     background-position: center;
     height: 100vh;
     width: 100%;
@@ -23,15 +26,22 @@
     }
 }
 
-@supports (background-image: url("/src/images/webp/bg.webp")) {
-    .hero {
-        background-image: url("/src/images/webp/bg.webp");
-    }
-  }
 
+@media only screen and (min-width: 451px) {
+    .hero {
+        background-image: url("/src/images/png/bg-med.png");
+        @supports (background-image: url("/src/images/webp/bg-med.webp")) {
+            background-image: url("/src/images/webp/bg-med.webp");
+        }
+    }
+}
 
 @media only screen and (min-width: 991px) {
     .hero {
+        background-image: url("/src/images/png/bg.png");
+        @supports (background-image: url("/src/images/webp/bg.webp")) {
+            background-image: url("/src/images/webp/bg.webp");
+        }
         background-size: cover;
         background-position: unset;
         height: 100vh;
