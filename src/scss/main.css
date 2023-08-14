@@ -484,7 +484,6 @@ html {
 }
 
 .contact-us {
-  display: flex;
   gap: 2rem;
   width: 100%;
   padding: 8rem 3.2rem;
@@ -599,6 +598,9 @@ html {
   }
 }
 @media only screen and (min-width: 1080px) {
+  .contact-us {
+    display: flex;
+  }
   .contact-us__header {
     text-align: left;
     font-size: 4.8rem;
