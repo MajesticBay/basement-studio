@@ -9,10 +9,8 @@
     justify-items: center;
     gap: 2rem;
     width: 100%;
-    // padding: 8rem 3.2rem;
     grid-template-columns: 1fr;
     grid-template-areas: "header""links""social";
-    // grid-template-areas: "header" "links" "social" "map" "question" "btn";
   }
 
   display: flex;
@@ -109,8 +107,6 @@ screen and (max-height: 1000),
 screen and (max-width: 1080) {
 
   .contact-us {
-    // grid-template-columns: 1fr;
-    // grid-template-areas: "header map" "links map" "social map" "question map" "btn map";
     padding: 0;
     padding-left: 8rem;
     gap: 1%;

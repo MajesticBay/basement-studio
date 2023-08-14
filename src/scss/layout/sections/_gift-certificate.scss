@@ -55,6 +55,12 @@
   }
 }
 
+@supports (background-image: url("/src/images/webp/bg-gift-certificate.webp")) {
+  .gift-certificate {
+      background-image: url("/src/images/webp/bg-gift-certificate.webp");
+  }
+}
+
   @include respond(medium) {
     .gift-certificate {
       &__inner {

@@ -16,19 +16,4 @@
             @content;
         }
     }
-    @else if $breakpoint == custom1 {
-        @media only screen and (min-width: 991px), screen and (max-height: 1000), screen and (max-width: 1080) {
-            @content;
-        }
-    }
-    @else if $breakpoint == custom2 {
-        @media only screen and (min-height: 900px), screen and (min-width: 1000px) {
-            @content;
-        }
-    }
-    @else if $breakpoint == custom3 {
-        @media only screen and (max-height: 850px), screen and (min-width: 1000px) {
-            @content;
-        }
-    }
 }

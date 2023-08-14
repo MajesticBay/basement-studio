@@ -23,6 +23,12 @@
     }
 }
 
+@supports (background-image: url("/src/images/webp/bg.webp")) {
+    .hero {
+        background-image: url("/src/images/webp/bg.webp");
+    }
+  }
+
 
 @media only screen and (min-width: 991px) {
     .hero {
