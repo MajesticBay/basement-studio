@@ -372,6 +372,7 @@ html {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  height: 393px;
   margin-bottom: 1.5rem;
 }
 
@@ -401,7 +402,6 @@ html {
 
 @media only screen and (min-width: 991px) {
   .carousel-item {
-    height: 100%;
     margin-bottom: 3rem;
   }
 }
@@ -1473,6 +1473,9 @@ html {
 .rent__title {
   padding-bottom: 4.8rem;
 }
+.rent__cards {
+  height: 605.05px;
+}
 .rent__card {
   width: 50%;
 }
@@ -1571,6 +1574,12 @@ html {
   text-align: left;
   font-size: 2.8rem;
   font-weight: 800;
+  line-height: 120%;
+}
+.course-dj-page__first-line {
+  margin-top: 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 300;
   line-height: 120%;
 }
 .course-dj-page__sign-up {

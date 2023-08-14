@@ -73,7 +73,7 @@ export const Rent = () => {
                             {cardsCarousel}
                         </MobileCarousel>
                     </div>
-                    <div className="cards desktop">
+                    <div className="rent__cards cards desktop">
                         {cards}
                     </div>
                 </div>
