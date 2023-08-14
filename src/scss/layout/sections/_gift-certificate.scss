@@ -1,21 +1,20 @@
 .gift-certificate {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex-layout(column, center, null);
   width: 100%;
-  // max-width: 240px;
+  background-image: url("/src/images/png/bg-gift-certificate.png");
+  background-position: 50% 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &__bgOverlay {
+    @include flex-layout(column, center, null);
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background: rgba(7, 7, 7, 0.5);
+    backdrop-filter: blur(8px);
   }
 
   &__inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-layout;
     width: 100%;
     max-width: 128rem;
     padding: 8rem 3.2rem;
@@ -50,88 +49,80 @@
   }
 
   &__btn-container {
+    @include flex-layout(row-reverse);
     width: 100%;
-    display: flex;
-    flex-direction: column;
     gap: 2.4rem;
   }
 }
 
-@media only screen and (min-width: 991px) {
-  .gift-certificate {
-    &__inner {
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      padding: 8rem 6rem;
-    }
-
-    &__content-outer {
-      flex-direction: row;
-      gap: 2.4rem;
-    }
-
-    &__content {
-      align-items: center;
-      gap: 1.6rem;
-    }
-
-    &__header {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
-    &__text {
-      margin-bottom: 0;
-    }
-
-    &__btn-container {
-      flex-direction: row-reverse;
-    }
-
-    &__btn-container {
-      width: -moz-fit-content;
-      width: fit-content;
+  @include respond(medium) {
+    .gift-certificate {
+      &__inner {
+        @include flex-layout(row, center, space-between);
+        padding: 8rem 6rem;
+      }
+  
+      &__content-outer {
+        flex-direction: row;
+        gap: 2.4rem;
+      }
+  
+      &__content {
+        align-items: center;
+        gap: 1.6rem;
+      }
+  
+      &__header {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+  
+      &__text {
+        margin-bottom: 0;
+      }
+  
+      &__btn-container {
+        @include flex-layout(row-reverse);
+        width: -moz-fit-content;
+        width: fit-content;
+      }
     }
   }
-}
-
-@media only screen and (min-width: 1240px) {
-  .gift-certificate {
-    &__inner {
-      flex-direction: row;
-      align-items: center;
-      padding: 8rem 3.2rem;
+  
+  @include respond(large) {
+    .gift-certificate {
+      &__inner {
+        flex-direction: row;
+        align-items: center;
+        padding: 8rem 3.2rem;
+      }
     }
   }
-}
-
-@media only screen and (min-width: 991px),
-screen and (max-height: 1000),
-screen and (max-width: 1080) {
-  .gift-certificate {
-    &__inner {
-      // margin-top: 72px;
-      padding: 4rem 3rem;
+  
+  @media only screen and (min-width: 991px),
+  screen and (max-height: 1000),
+  screen and (max-width: 1080) {
+    .gift-certificate {
+      &__inner {
+        padding: 4rem 3rem;
+      }
     }
   }
-}
-
-@media only screen and (min-height: 900px),
-screen and (min-width: 1000px) {
-  .gift-certificate {
-    &__bgOverlay {
-      width: 100%;
+  
+  @media only screen and (min-height: 900px),
+  screen and (min-width: 1000px) {
+    .gift-certificate {
+      &__bgOverlay {
+        width: 100%;
+      }
     }
   }
-}
-
-@media only screen and (max-height: 850px),
-screen and (min-width: 1000px) {
-  .gift-certificate {
-    &__inner {
-      // margin-top: 72px;
-      padding: 4rem 3rem;
+  
+  @media only screen and (max-height: 850px),
+  screen and (min-width: 1000px) {
+    .gift-certificate {
+      &__inner {
+        padding: 4rem 3rem;
+      }
     }
   }
-}

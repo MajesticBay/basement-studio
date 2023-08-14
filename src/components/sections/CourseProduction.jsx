@@ -9,7 +9,10 @@ export const CourseProduction = () => {
   const { t } = useTranslation()
   return (
         <div id="course-production" className="course-production">
-            <img className="course-production__img course-production__img--mobile" src={courseProduction} loading="lazy" alt="Audio keyboard" />
+            <picture>
+                <source srcSet={courseProductionWebp} type="image/webp" />
+                <img className="course-production__img course-production__img--mobile" src={courseProduction} loading="lazy" alt="Audio keyboard" />
+            </picture>
             <h1 className="header course-production__header course-production__header--mobile">{t('productionCourse.p1')}</h1>
             <div className="course-production__inner">
                 <div className="course-production__wrapper">

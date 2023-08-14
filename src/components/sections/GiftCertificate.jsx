@@ -1,26 +1,14 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { Btn } from '../Btn'
-import bg from '../../images/png/bg-gift-certificate.png'
 import { giftCertificate } from '../../images/icons/index.ts'
 
 export const GiftCertificate = () => {
   const { t } = useTranslation()
-  const bgStyle = {
-    backgroundImage: `url(${bg})`,
-    backgroundPosition: '50% 25%',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover'
-  }
-
-  const bgOverlayStyle = {
-    background: 'rgba(7, 7, 7, 0.5)',
-    backdropFilter: 'blur(8px)'
-  }
 
   return (
-        <div className="gift-certificate" style={bgStyle}>
-            <div className="gift-certificate__bgOverlay" style={bgOverlayStyle}>
+        <div className="gift-certificate">
+            <div className="gift-certificate__bgOverlay">
                 <div className="gift-certificate__inner">
                     <div className="gift-certificate__content-outer">
                         <img className="gift-certificate__img" src={ giftCertificate } loading="lazy" alt="Gift certificate" />

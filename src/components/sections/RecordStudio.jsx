@@ -2,17 +2,12 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import Carousel, { CarouselItem } from '../Carousel'
 import { Btn } from '../Btn'
-import bg from '../../images/png/bg-record-studio.png'
 
 export const RecordStudio = () => {
   const { t } = useTranslation()
 
   const data = ['p1', 'p2', 'p3'].map(p => t(`recordStudio.${p}`))
   const [title, pFirst, pSecond] = data
-
-  const bgStyle = {
-    backgroundImage: `url(${bg})`
-  }
 
   const bgOverlayStyle = {
     background: 'rgba(7, 7, 7, 0.6)',
@@ -46,7 +41,7 @@ export const RecordStudio = () => {
   ))
 
   return (
-        <div id="record-studio" className="record-studio" style={bgStyle}>
+        <div id="record-studio" className="record-studio">
             <div className="record-studio__inner" style={bgOverlayStyle}>
                 <div className="record-studio__header-wrapper">
                     <h1 className="header">{title}</h1>

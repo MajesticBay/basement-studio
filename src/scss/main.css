@@ -1069,17 +1069,24 @@ html {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  background-image: url("/src/images/png/bg-gift-certificate.png");
+  background-position: 50% 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .gift-certificate__bgOverlay {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  background: rgba(7, 7, 7, 0.5);
+  backdrop-filter: blur(8px);
 }
 .gift-certificate__inner {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100%;
   max-width: 128rem;
   padding: 8rem 3.2rem;
@@ -1108,14 +1115,17 @@ html {
   font-weight: 300;
 }
 .gift-certificate__btn-container {
-  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   gap: 2.4rem;
 }
 
 @media only screen and (min-width: 991px) {
   .gift-certificate__inner {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -1137,9 +1147,10 @@ html {
     margin-bottom: 0;
   }
   .gift-certificate__btn-container {
+    display: flex;
     flex-direction: row-reverse;
-  }
-  .gift-certificate__btn-container {
+    align-items: center;
+    justify-content: center;
     width: -moz-fit-content;
     width: fit-content;
   }
@@ -1356,6 +1367,7 @@ html {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  background-image: url("/src/images/png/bg-record-studio.png");
 }
 .record-studio__header-wrapper {
   display: flex;
@@ -1374,10 +1386,8 @@ html {
   font-weight: 100;
   font-size: 16px;
   line-height: 130%;
-  /* or 26px */
   display: flex;
   justify-content: center;
-  /* White/600 */
   color: #ffffff;
 }
 .record-studio__text:first-of-type {
@@ -1388,6 +1398,11 @@ html {
   margin-bottom: 4%;
 }
 
+@supports (background-image: url("/src/images/webp/bg-record-studio.webp")) {
+  .record-studio {
+    background-image: url("/src/images/webp/bg-record-studio.webp");
+  }
+}
 @media only screen and (min-width: 747px) {
   .record-studio__text {
     align-items: center;
@@ -1458,6 +1473,7 @@ html {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  background-image: url("/src/images/png/bg-record-studio.png");
 }
 .rent__inner {
   width: 100%;
@@ -1480,6 +1496,11 @@ html {
   width: 50%;
 }
 
+@supports (background-image: url("/src/images/webp/bg-record-studio.webp")) {
+  .rent {
+    background-image: url("/src/images/webp/bg-record-studio.webp");
+  }
+}
 @media only screen and (min-width: 991px) {
   .rent__inner {
     width: 100%;
