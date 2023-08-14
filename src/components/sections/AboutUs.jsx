@@ -18,19 +18,24 @@ export const AboutUs = () => {
   const [brightnessError2, setBrightnessError2] = useState('')
   const imagesData = [
     {
-      path: photo
+      path: photo,
+      webpPath: photoWebp
     },
     {
-      path: bg
+      path: bg,
+      webpPath: bgWebp
     },
     {
-      path: bg1
+      path: bg1,
+      webpPath: bg1Webp
     },
     {
-      path: photo
+      path: photo,
+      webpPath: photoWebp
     },
     {
-      path: photo
+      path: photo,
+      webpPath: photoWebp
     }
   ]
 
@@ -150,7 +155,10 @@ export const AboutUs = () => {
 
   const images = imagesData.map((image, imageIndex) => (
         <CarouselItem key={imageIndex}>
-            <img style={{ width: '93vw' }} className='about-us__photo' src={image.path} loading="lazy" alt="gallery" />
+            <picture>
+                <source srcSet={image.webpPath} type="image/webp" />
+                <img style={{ width: '93vw' }} className='about-us__photo' src={image.path} loading="lazy" alt="Gallery image" />
+            </picture>
         </CarouselItem>
   ))
 
