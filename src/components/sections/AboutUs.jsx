@@ -1,12 +1,15 @@
+import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { arrow } from '../../images/icons/index.ts'
+import MobileCarousel, { CarouselItem } from '../MobileCarousel2'
+import '../../scss/NewCarousel.css'
+
 import photo from '../../images/png/HighRes.png'
 import bg from '../../images/png/bg.png'
 import bg1 from '../../images/png/bg-record-studio.png'
-
-import React, { useEffect, useState } from 'react'
-import MobileCarousel, { CarouselItem } from '../MobileCarousel2'
-// import '../../scss/NewCarousel.css'
+import photoWebp from '../../images/webp/HighRes.webp'
+import bgWebp from '../../images/webp/bg.webp'
+import bg1Webp from '../../images/webp/bg-record-studio.webp'
 
 export const AboutUs = () => {
   const { t } = useTranslation()
@@ -161,10 +164,9 @@ export const AboutUs = () => {
       {t('aboutUs.p2')}</p>
       <div className=""></div>
 
-      {window.screen.width <= 900
+      {windowWidth <= 900
         ? <>
       <MobileCarousel>
-
         {images}
       </MobileCarousel>
       </>
@@ -175,32 +177,50 @@ export const AboutUs = () => {
           <div
               className="carousell-wrapper"
               style={{ backgroundImage: 'url(img/preview/HighRes-small.png)' }}>
-            <img src={photo} loading="lazy" alt="Carousel image" />
+            <picture>
+                <source srcSet={photoWebp} type="image/webp" />
+                <img src={photo} loading="lazy" alt="Carousel image" />
+            </picture>
           </div>
           <div
               className="carousell-wrapper"
               style={{ backgroundImage: 'url(img/preview/bg-small.png)' }}>
-            <img src={bg} loading="lazy" alt="Carousel image" />
+            <picture>
+                <source srcSet={bgWebp} type="image/webp" />
+                <img src={bg} loading="lazy" alt="Carousel image" />
+            </picture>
           </div>
           <div
               className="carousell-wrapper"
               style={{ backgroundImage: 'url(img/preview/bg-record-studio-small.png)' }}>
-            <img src={bg1} loading="lazy" alt="Carousel image" />
+            <picture>
+                <source srcSet={bg1Webp} type="image/webp" />
+                <img src={bg1} loading="lazy" alt="Carousel image" />
+            </picture>
           </div>
           <div
               className="carousell-wrapper"
               style={{ backgroundImage: 'url(img/preview/HighRes-small.png)' }}>
-            <img src={photo} loading="lazy" alt="Carousel image" />
+            <picture>
+                <source srcSet={photoWebp} type="image/webp" />
+                <img src={photo} loading="lazy" alt="Carousel image" />
+            </picture>
           </div>
           <div
               className="carousell-wrapper"
               style={{ backgroundImage: 'url(img/preview/HighRes-small.png)' }}>
-            <img src={photo} loading="lazy" alt="Carousel image" />
+            <picture>
+                <source srcSet={photoWebp} type="image/webp" />
+                <img src={photo} loading="lazy" alt="Carousel image" />
+            </picture>
           </div>
           <div
               className="carousell-wrapper"
               style={{ backgroundImage: 'url(img/preview/HighRes-small.png)' }}>
-            <img src={photo} loading="lazy" alt="Carousel image" />
+            <picture>
+                <source srcSet={photoWebp} type="image/webp" />
+                <img src={photo} loading="lazy" alt="Carousel image" />
+            </picture>
           </div>
         </div>
         <button onClick={handleNext} className='nextt'>

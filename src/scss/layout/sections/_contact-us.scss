@@ -9,13 +9,11 @@
     justify-items: center;
     gap: 2rem;
     width: 100%;
-    // padding: 8rem 3.2rem;
     grid-template-columns: 1fr;
     grid-template-areas: "header""links""social";
-    // grid-template-areas: "header" "links" "social" "map" "question" "btn";
   }
 
-  display: flex;
+  // display: flex;
   gap: 2rem;
   width: 100%;
   padding: 8rem 3.2rem;
@@ -75,7 +73,7 @@
 
 }
 
-@media only screen and (min-width: 991px) {
+@include respond(medium) {
   .contact-us {
     grid-template-columns: 1fr;
     grid-template-areas: "header map""links map""social map""question map""btn map";
@@ -109,8 +107,6 @@ screen and (max-height: 1000),
 screen and (max-width: 1080) {
 
   .contact-us {
-    // grid-template-columns: 1fr;
-    // grid-template-areas: "header map" "links map" "social map" "question map" "btn map";
     padding: 0;
     padding-left: 8rem;
     gap: 1%;
@@ -150,6 +146,7 @@ screen and (max-width: 1080) {
 
 @media only screen and (min-width: 1080px) {
   .contact-us {
+    display: flex;
     &__header {
       text-align: left;
       font-size: 4.8rem;

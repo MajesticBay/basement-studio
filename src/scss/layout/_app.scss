@@ -30,13 +30,6 @@ html {
     scroll-snap-stop: always;
 }
 
-// Lazy load feature
-// .blurred-img {
-//     background-image: url(imageName-small.jpg);
-//     background-repeat: no-repeat;
-//     background-size: cover;
-// }
-
 @media only screen and (max-width: 1080px)
   {
     html {
@@ -47,6 +40,5 @@ html {
     .hero, #about-us, #record-studio, #course-dj, #course-production, #rent, #contact-us {
         height: 100%;
         scroll-snap-align: none;
-        scroll-snap-stop: none;
     }
   }
