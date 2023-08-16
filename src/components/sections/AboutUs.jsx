@@ -6,7 +6,7 @@ import bg1 from '../../images/png/bg-record-studio.png'
 
 import React, { useEffect, useState } from 'react'
 import MobileCarousel, { CarouselItem } from '../MobileCarousel2'
-import '../../scss/NewCarousel.css'
+// import '../../scss/NewCarousel.css'
 
 export const AboutUs = () => {
   const { t } = useTranslation()
