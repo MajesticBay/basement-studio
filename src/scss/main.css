@@ -634,7 +634,7 @@ html {
   }
   .contact-us__map {
     width: 100%;
-    height: 47.5rem;
+    height: 100%;
   }
   .contact-us__btn {
     margin-bottom: 4rem;
@@ -647,6 +647,7 @@ html {
 @media only screen and (min-height: 850px), screen and (min-width: 1000px) {
   .contact-us {
     flex-direction: row;
+    height: 68vh;
   }
   .contact-us .contact-us-container {
     padding-left: 8rem;
@@ -1595,6 +1596,143 @@ html {
   .isUjPX {
     font-size: 1.5rem;
     padding: 2rem 3.5rem;
+  }
+}
+.carousell {
+  width: 360vw;
+  overflow: hidden;
+  /* border: 1px solid white; */
+  transition: all 0.3s;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: center;
+  margin-left: 20vw;
+  max-height: 50vh;
+}
+
+.carousell-main {
+  width: 98vw;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.carousell-wrapper img {
+  width: 60vw;
+  height: 100%;
+}
+
+.carousell-main button {
+  position: absolute;
+  width: 45px;
+  height: 35px;
+  border: 1px solid gray;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: #000;
+  color: aliceblue;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.nextt,
+.prevv {
+  top: 45%;
+}
+
+.prevv {
+  left: 19vw;
+  rotate: 180deg;
+}
+
+.nextt {
+  right: 18vw;
+}
+
+.afterr,
+.afterr2 {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7019607843);
+  z-index: 10;
+  width: 20vw;
+  max-height: 50vh;
+}
+
+.afterr {
+  left: 0;
+}
+
+.afterr2 {
+  right: 0;
+}
+
+.dots-wrapper {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+  gap: 10px;
+  width: 200px;
+  margin: 0 auto;
+  bottom: 40px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.21);
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.399);
+}
+
+@media (max-width: 900px) {
+  .carousell {
+    width: 540vw;
+    margin-left: 5vw;
+  }
+  .carousell-main {
+    display: none;
+  }
+  .carousell-wrapper img {
+    width: 90vw;
+  }
+  .afterr {
+    width: 5vw;
+  }
+  .afterr2 {
+    width: 5vw;
+  }
+  .prevv {
+    left: 2vw;
+  }
+  .nextt {
+    right: 1vw;
+  }
+  .nextt,
+  .prevv {
+    top: 40%;
+  }
+}
+@media (max-width: 650px) {
+  .prevv,
+  .nextt {
+    width: 30px !important;
+    height: 25px !important;
+  }
+  .prevv img,
+  .nextt img {
+    width: 15px;
+  }
+}
+@media (min-width: 1080px) {
+  .nextt,
+  .prevv {
+    top: 40%;
   }
 }
 .course-dj-page {
