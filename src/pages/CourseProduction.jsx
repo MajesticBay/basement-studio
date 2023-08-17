@@ -4,10 +4,10 @@ import { useTranslation } from 'react-i18next'
 import { ContactUs } from '../components/sections/ContactUs'
 import { Btn } from '../components/Btn'
 
-import courseDjKeyboardSmall from '../images/png/course-dj-page-colored-small.png'
-import courseDjKeyboardLargeColored from '../images/png/course-dj-page-colored-larde.png'
-import courseDjKeyboardSmallWebp from '../images/webp/course-dj-page-colored-small.webp'
-import courseDjKeyboardLargeColoredWebp from '../images/webp/course-dj-page-colored-larde.webp'
+import courseProductionKeyboardSmall from '../images/png/course-production-page-colored-small.png'
+import courseProductionKeyboardLargeColored from '../images/png/course-production-page-colored-large.png'
+import courseProductionKeyboardSmallWebp from '../images/webp/course-production-page-colored-small.webp'
+import courseProductionKeyboardLargeColoredWebp from '../images/webp/course-production-page-colored-large.webp'
 
 export const CourseProduction = () => {
   const { t } = useTranslation()
@@ -36,12 +36,12 @@ export const CourseProduction = () => {
           />
         </div>
         <picture>
-            <source srcSet={courseDjKeyboardSmallWebp} type="image/webp" />
-            <img className="course-dj-page__img-mobile" src={courseDjKeyboardSmall} loading="lazy" alt="Audio keyboard" />
+            <source srcSet={courseProductionKeyboardSmallWebp} type="image/webp" />
+            <img className="course-dj-page__img-mobile" src={courseProductionKeyboardSmall} loading="lazy" alt="Audio keyboard" />
         </picture>
         <picture>
-            <source srcSet={courseDjKeyboardLargeColoredWebp} type="image/webp" />
-            <img className="course-dj-page__img" src={courseDjKeyboardLargeColored} loading="lazy" alt="Audio keyboard" />
+            <source srcSet={courseProductionKeyboardLargeColoredWebp} type="image/webp" />
+            <img className="course-dj-page__img" src={courseProductionKeyboardLargeColored} loading="lazy" alt="Audio keyboard" />
         </picture>
         <div className="course-dj-page__content">
           <h2 className="course-dj-page__sub-header">
