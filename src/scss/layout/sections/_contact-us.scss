@@ -3,15 +3,26 @@
   width: 100%;
 }
 
+
+
 .contact-us {
   .contact-us-container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-items: center;
-    gap: 2rem;
+    // gap: 2rem;
     width: 100%;
     grid-template-columns: 1fr;
     grid-template-areas: "header""links""social";
   }
+  // .contact-us-container {
+  //   display: grid;
+  //   justify-items: center;
+  //   gap: 2rem;
+  //   width: 100%;
+  //   grid-template-columns: 1fr;
+  //   grid-template-areas: "header""links""social";
+  // }
 
   // display: flex;
   gap: 2rem;
@@ -28,7 +39,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
-    margin-top: 5.1rem;
+    // margin-top: 5.1rem;
   }
 
   &__link {
@@ -36,6 +47,7 @@
     align-items: center;
     gap: 1.2rem;
     left: auto;
+    padding-left: 3rem;
   }
 
   &__text {
@@ -50,6 +62,7 @@
     gap: 2.4rem;
     margin-top: 4rem;
     margin-bottom: 4.8rem;
+    justify-content: center;
   }
 
   &__map {
@@ -120,7 +133,7 @@ screen and (max-width: 1080) {
     }
 
     &__links-container {
-      margin-top: 2rem;
+      // margin-top: 2rem;
     }
 
     &__text {
@@ -169,16 +182,17 @@ screen and (min-width: 1000px) {
     flex-direction: column;
     padding: 0;
     justify-items: start;
+    // height: 30vh; // map issue 
 
     &__header {
       text-align: left;
       font-size: 3.8rem;
       font-weight: 800;
-      margin-top: calc(3rem + 1%);
+      margin: 8rem 0 4.8rem 0;
     }
 
     &__links-container {
-      margin-top: 2rem;
+      // margin-top: 2rem;
     }
 
     &__text {
@@ -191,8 +205,8 @@ screen and (min-width: 1000px) {
 
     &__map {
       width: 100%;
-      // height: 47.5rem;
-      height: 100%;
+      // height: 100%;
+      height: 20rem;
     }
 
     &__btn {
@@ -201,7 +215,7 @@ screen and (min-width: 1000px) {
     }
 
     &__social-media-container {
-      margin: 3rem 0;
+      // margin: 3rem 0;
     }
   }
 
@@ -216,7 +230,8 @@ screen and (min-width: 1000px) {
     }
 
     flex-direction: row;
-    height: calc(100vh - 32vh);
+    // height: calc(100vh - 32vh);
+    // height: auto;
 
     &__text {
       font-size: 1.8rem;
@@ -232,7 +247,7 @@ screen and (min-width: 1000px) {
 
     &__links-container {
       gap: 2.1rem;
-      margin-top: 4rem;
+      // margin-top: 4rem;
     }
 
     &__social-media-container {
