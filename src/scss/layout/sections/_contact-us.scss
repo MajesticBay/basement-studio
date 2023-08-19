@@ -132,9 +132,9 @@ screen and (max-width: 1080) {
       margin-top: calc(3rem + 1%);
     }
 
-    &__links-container {
-      // margin-top: 2rem;
-    }
+    // &__links-container {
+    //   // margin-top: 2rem;
+    // }
 
     &__text {
       font-size: 1.4rem;
@@ -144,10 +144,11 @@ screen and (max-width: 1080) {
       margin-bottom: 15px;
     }
 
-    &__map {
-      width: 100%;
-      height: 100%;
-    }
+    // &__map {
+    //   width: 100%;
+    //   // height: 100%;
+    //   height: 20rem;
+    // }
 
     &__btn {
       margin-bottom: 4rem;
@@ -155,6 +156,13 @@ screen and (max-width: 1080) {
     }
   }
 
+}
+
+@media only screen and (max-width: 991px) {
+  #contact-us-map {
+      height: 20rem;
+      margin-bottom: 8rem;
+  }
 }
 
 @media only screen and (min-width: 1080px) {
@@ -183,6 +191,8 @@ screen and (min-width: 1000px) {
     padding: 0;
     justify-items: start;
     // height: 30vh; // map issue 
+    // height: calc(100% - 72px - 165px - 50px);
+    height: max-content;
 
     &__header {
       text-align: left;
@@ -206,7 +216,9 @@ screen and (min-width: 1000px) {
     &__map {
       width: 100%;
       // height: 100%;
-      height: 20rem;
+      // height: 45rem;
+      height: auto;
+      // flex: 1;
     }
 
     &__btn {
