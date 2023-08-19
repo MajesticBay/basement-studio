@@ -45,13 +45,22 @@ screen and (max-width: 1080) {
 @media only screen and (min-width: 1000px),
 (min-height: 700px) and (max-height: 850px) {
   .footer {
-    flex-direction: row;
-    padding: 3rem 8rem;
+    // flex-direction: row;
+    padding: 4rem 3.2rem;
+    // margin-top: 8rem;
 
     &__link:first-child {
-      margin-bottom: 0;
-      margin-right: 2rem;
+      // margin-bottom: 2.4rem;
+      // margin-right: 2rem;
     }
+  }
+}
+
+@media only screen and (min-width:1080px){
+  .footer{
+    // position: absolute;
+    // bottom: 0;
+    background-color: black;
   }
 }
 

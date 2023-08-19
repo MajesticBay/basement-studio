@@ -39,7 +39,7 @@ export const ContactUs = ({ snapless }) => {
                         <IconTG className="pointer" />
                     </div>
                 </div>
-                <div className="contact-us__map">
+                <div className="contact-us__map" id="contact-us-map">
                     <MapComponent />
                 </div>
             </div>
