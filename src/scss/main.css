@@ -483,6 +483,11 @@ html {
   width: 100%;
 }
 
+#contact-us {
+  display: flex;
+  flex-direction: column;
+}
+
 .contact-us {
   gap: 2rem;
   width: 100%;
@@ -1048,8 +1053,6 @@ html {
 }
 @media only screen and (min-width: 1080px) {
   .footer {
-    position: absolute;
-    bottom: 0;
     background-color: black;
   }
 }

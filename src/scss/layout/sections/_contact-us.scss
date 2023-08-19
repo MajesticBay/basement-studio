@@ -3,7 +3,10 @@
   width: 100%;
 }
 
-
+#contact-us {
+  display: flex;
+  flex-direction: column;
+}
 
 .contact-us {
   .contact-us-container {
@@ -15,16 +18,7 @@
     grid-template-columns: 1fr;
     grid-template-areas: "header""links""social";
   }
-  // .contact-us-container {
-  //   display: grid;
-  //   justify-items: center;
-  //   gap: 2rem;
-  //   width: 100%;
-  //   grid-template-columns: 1fr;
-  //   grid-template-areas: "header""links""social";
-  // }
 
-  // display: flex;
   gap: 2rem;
   width: 100%;
   padding: 8rem 3.2rem;
