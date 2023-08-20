@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { Arrow } from './icons/Arrow'
+import { Arrow } from './icons/index.ts'
 
 const Button = styled.div`
 width: 100%;

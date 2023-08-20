@@ -840,6 +840,10 @@ html {
 .course-production {
   width: 100%;
 }
+.course-production h1 {
+  z-index: 10;
+  position: relative;
+}
 .course-production__header {
   text-align: center;
   padding: 0 3.2rem;
