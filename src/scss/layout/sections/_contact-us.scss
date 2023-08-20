@@ -146,10 +146,17 @@ screen and (max-width: 1080) {
 
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 990px) {
   #contact-us-map {
-      height: 20rem;
-      margin-bottom: 8rem;
+    height: 20rem;
+    margin-bottom: 8rem;
+  }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1080px) {
+  #contact-us-map {
+    height: 30rem;
+    margin-bottom: 8rem;
   }
 }
 
