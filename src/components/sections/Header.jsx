@@ -93,9 +93,9 @@ export function Header () {
               </a>
             )}
         <div className="mobile-locale-switcher">
-          <LanguageSwitcher value={'ua'} text={'UA'} onChange={handleLangChange} />
+          <LanguageSwitcher value={'ua'} text={'UA'} handleLangChange={handleLangChange} />
           <p className="mobile-locale-switcher__pipe">|</p>
-          <LanguageSwitcher value={'en'} text={'EN'} onChange={handleLangChange} />
+          <LanguageSwitcher value={'en'} text={'EN'} handleLangChange={handleLangChange} />
         </div>
       </nav>
     </header>
