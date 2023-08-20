@@ -1,6 +1,5 @@
 import React from 'react'
-import { ScrollDownMobile } from '../icons/ScrollDownMobile'
-import { ScrollDownDesktop } from '../icons/ScrollDownDesktop'
+import { ScrollDownMobile, ScrollDownDesktop } from '../icons/index.ts'
 
 export const Hero = () => {
   return (
