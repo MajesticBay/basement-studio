@@ -100,7 +100,7 @@ a {
 .header {
   font-size: 2.4rem;
   font-weight: 800;
-  line-height: 33.6px;
+  line-height: 120%;
   text-align: center;
 }
 
@@ -503,6 +503,7 @@ html {
 }
 .contact-us__header {
   grid-area: header;
+  text-align: center;
 }
 .contact-us__links-container {
   grid-area: links;
@@ -548,6 +549,15 @@ html {
   grid-area: btn;
 }
 
+@media only screen and (min-width: 990px) {
+  .contact-us__header {
+    padding-left: 3rem;
+  }
+  .contact-us__social-media-container {
+    justify-content: flex-start;
+    padding-left: 3rem;
+  }
+}
 @media only screen and (min-width: 991px) {
   .contact-us {
     grid-template-columns: 1fr;
@@ -613,13 +623,21 @@ html {
     display: flex;
   }
   .contact-us__header {
+    margin-top: calc(3rem + 1%);
+    padding-left: 0;
     text-align: left;
     font-size: 4.8rem;
     font-weight: 800;
-    margin-top: calc(3rem + 1%);
   }
   .contact-us__text {
     font-size: 2rem;
+  }
+  .contact-us__link {
+    padding-left: 0;
+  }
+  .contact-us__social-media-container {
+    padding-left: 0;
+    justify-content: flex-start;
   }
 }
 @media only screen and (max-height: 850px), screen and (min-width: 1000px) {
@@ -630,7 +648,6 @@ html {
     height: max-content;
   }
   .contact-us__header {
-    text-align: left;
     font-size: 3.8rem;
     font-weight: 800;
     margin: 8rem 0 4.8rem 0;
@@ -997,9 +1014,6 @@ html {
     max-height: 300px;
     margin-bottom: 4%;
   }
-  .course-production__header {
-    margin: 15px 0;
-  }
   .course-production__outer-text-container {
     margin-top: 1.2rem;
   }
@@ -1190,13 +1204,6 @@ html {
     padding: 4rem 3rem;
   }
 }
-.header {
-  font-size: 2.4rem;
-  font-weight: 800;
-  line-height: 120%;
-  text-align: center;
-}
-
 .main-header {
   display: flex;
   width: 100%;
