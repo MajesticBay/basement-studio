@@ -1531,6 +1531,7 @@ html {
 }
 .rent__card {
   width: 50%;
+  height: 57rem;
 }
 
 @supports (background-image: url("/src/images/webp/bg-record-studio.webp")) {
