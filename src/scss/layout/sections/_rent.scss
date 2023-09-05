@@ -63,7 +63,7 @@
   }
 }
 
-@media only screen and (min-width: 1080px), screen and (max-height: 1000) {
+@media only screen and (min-width: $width-1080), screen and (max-height: $width-1000) {
   .rent {
     &__card {
       height: 100%;
@@ -72,9 +72,9 @@
   }
 }
 
-@media only screen and (min-width: 991px),
-  screen and (max-height: 1000),
-  screen and (max-width: 1080) {
+@media only screen and (min-width: $width-991),
+  screen and (max-height: $width-1000),
+  screen and (max-width: $width-1080) {
   .rent {
     &__inner {
       padding: 2rem 8rem;
@@ -94,7 +94,7 @@
   }
 }
 
-@media only screen and (max-width: 764px) {
+@media only screen and (max-width: $width-764) {
   .rent {
     &__card {
       margin: 0rem 2rem 2rem 2rem;
@@ -103,7 +103,7 @@
   }
 }
 
-@media only screen and (min-height: 900px), screen and (min-width: 1000px) {
+@media only screen and (min-height: $width-990), screen and (min-width: $width-1000) {
   .rent {
     &__card {
       max-height: none;
@@ -111,7 +111,7 @@
   }
 }
 
-@media only screen and (min-width: 1000px) and (max-height: 850px) {
+@media only screen and (min-width: $width-1000) and (max-height: $width-850) {
   .rent {
     &__card-container {
       margin-top: 0;

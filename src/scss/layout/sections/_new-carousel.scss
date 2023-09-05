@@ -1,7 +1,6 @@
 .carousell {
     width: 360vw;
     overflow: hidden;
-
     /* border: 1px solid white; */
     transition: all 0.3s;
     display: flex;
@@ -37,7 +36,6 @@
     color: aliceblue;
     z-index: 20;
     cursor: pointer;
-
 }
 
 .nextt,
@@ -93,7 +91,7 @@
     border: 1px solid rgba(255, 255, 255, 0.399);
 }
 
-@media (max-width: 900px) {
+@media (max-width: $width-900) {
     .carousell {
         width: 540vw;
         margin-left: 5vw;
@@ -130,7 +128,7 @@
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: $width-650) {
 
     .prevv,
     .nextt {
@@ -144,7 +142,7 @@
     }
 }
 
-@media (min-width: 1080px) {
+@media (min-width: $width-1080) {
 
     .nextt,
     .prevv {

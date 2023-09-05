@@ -79,7 +79,7 @@
   }
 }
 
-@media only screen and (min-width: 990px) {
+@media only screen and (min-width: $width-990) {
   .contact-us {
     &__header {
       padding-left: 3rem;
@@ -121,9 +121,9 @@
   }
 }
 
-@media only screen and (min-width: 991px),
-screen and (max-height: 1000),
-screen and (max-width: 1080) {
+@media only screen and (min-width: $width-991),
+screen and (max-height: $width-1000),
+screen and (max-width: $width-1080) {
 
   .contact-us {
     padding: 0;
@@ -154,21 +154,21 @@ screen and (max-width: 1080) {
 
 }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: $width-990) {
   #contact-us-map {
     height: 20rem;
     margin-bottom: 8rem;
   }
 }
 
-@media only screen and (min-width: 991px) and (max-width: 1080px) {
+@media only screen and (min-width: $width-991) and (max-width: $width-1080) {
   #contact-us-map {
     height: 30rem;
     margin-bottom: 8rem;
   }
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: $width-1080) {
   .contact-us {
     display: flex;
     &__header {
@@ -194,8 +194,8 @@ screen and (max-width: 1080) {
   }
 }
 
-@media only screen and (max-height: 850px),
-screen and (min-width: 1000px) {
+@media only screen and (max-height: $width-850),
+screen and (min-width: $width-1000) {
 
   .contact-us {
     flex-direction: column;
@@ -231,8 +231,8 @@ screen and (min-width: 1000px) {
 
 }
 
-@media only screen and (min-height: 850px),
-screen and (min-width: 1000px) {
+@media only screen and (min-height: $width-850),
+screen and (min-width: $width-1000) {
   .contact-us {
     .contact-us-container {
       padding-left: 8rem;
@@ -247,7 +247,7 @@ screen and (min-width: 1000px) {
   }
 }
 
-@media only screen and (min-width: 1440px) and (min-height: 1024px) {
+@media only screen and (min-width: $width-1440) and (min-height: $width-1024) {
   .contact-us {
     &__header {
       margin-top: 14rem;

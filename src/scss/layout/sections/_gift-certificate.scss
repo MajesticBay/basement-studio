@@ -11,6 +11,7 @@
     width: 100%;
     background: rgba(7, 7, 7, 0.5);
     backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
   &__inner {
@@ -67,26 +68,26 @@
         @include flex-layout(row, center, space-between);
         padding: 8rem 6rem;
       }
-  
+
       &__content-outer {
         flex-direction: row;
         gap: 2.4rem;
       }
-  
+
       &__content {
         align-items: center;
         gap: 1.6rem;
       }
-  
+
       &__header {
         margin-top: 0;
         margin-bottom: 0;
       }
-  
+
       &__text {
         margin-bottom: 0;
       }
-  
+
       &__btn-container {
         @include flex-layout(row-reverse);
         width: -moz-fit-content;
@@ -94,7 +95,7 @@
       }
     }
   }
-  
+
   @include respond(large) {
     .gift-certificate {
       &__inner {
@@ -104,28 +105,28 @@
       }
     }
   }
-  
-  @media only screen and (min-width: 991px),
-  screen and (max-height: 1000),
-  screen and (max-width: 1080) {
+
+  @media only screen and (min-width: $width-991),
+  screen and (max-height: $width-1000),
+  screen and (max-width: $width-1080) {
     .gift-certificate {
       &__inner {
         padding: 4rem 3rem;
       }
     }
   }
-  
-  @media only screen and (min-height: 900px),
-  screen and (min-width: 1000px) {
+
+  @media only screen and (min-height: $width-990),
+  screen and (min-width: $width-1000) {
     .gift-certificate {
       &__bgOverlay {
         width: 100%;
       }
     }
   }
-  
-  @media only screen and (max-height: 850px),
-  screen and (min-width: 1000px) {
+
+  @media only screen and (max-height: $width-850),
+  screen and (min-width: $width-1000) {
     .gift-certificate {
       &__inner {
         padding: 4rem 3rem;

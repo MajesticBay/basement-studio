@@ -168,7 +168,13 @@ html {
   scroll-padding-top: 50px;
 }
 
-.hero, #about-us, #record-studio, #course-dj, #course-production, #rent, #contact-us {
+.hero,
+#about-us,
+#record-studio,
+#course-dj,
+#course-production,
+#rent,
+#contact-us {
   height: calc(100vh - 50px);
   scroll-snap-align: start;
   scroll-snap-stop: always;
@@ -179,7 +185,13 @@ html {
     scroll-snap-type: none;
     scroll-padding-top: none;
   }
-  .hero, #about-us, #record-studio, #course-dj, #course-production, #rent, #contact-us {
+  .hero,
+  #about-us,
+  #record-studio,
+  #course-dj,
+  #course-production,
+  #rent,
+  #contact-us {
     height: 100%;
     scroll-snap-align: none;
   }
@@ -270,7 +282,7 @@ html {
     visibility: inherit !important;
   }
 }
-@media only screen and (min-width: 991px), screen and (max-height: 1000), screen and (max-width: 1080) {
+@media only screen and (min-width: 991px), screen and (max-height: 1000px), screen and (max-width: 1080px) {
   .card__title {
     margin-top: 10px;
   }
@@ -583,7 +595,7 @@ html {
     margin-bottom: 8rem;
   }
 }
-@media only screen and (min-width: 991px), screen and (max-height: 1000), screen and (max-width: 1080) {
+@media only screen and (min-width: 991px), screen and (max-height: 1000px), screen and (max-width: 1080px) {
   .contact-us {
     padding: 0;
     padding-left: 8rem;
@@ -837,7 +849,7 @@ html {
     padding: 0;
   }
 }
-@media only screen and (min-width: 991px), screen and (max-height: 1000), screen and (max-width: 1080) {
+@media only screen and (min-width: 991px), screen and (max-height: 1000px), screen and (max-width: 1080px) {
   .course-dj__img {
     max-height: 300px;
   }
@@ -1010,7 +1022,7 @@ html {
     padding: 0;
   }
 }
-@media only screen and (min-width: 991px), screen and (max-height: 1000), screen and (max-width: 1080) {
+@media only screen and (min-width: 991px), screen and (max-height: 1000px), screen and (max-width: 1080px) {
   .course-production__img {
     max-height: 300px;
     margin-bottom: 4%;
@@ -1061,7 +1073,7 @@ html {
     margin-right: 2rem;
   }
 }
-@media only screen and (min-width: 991px), screen and (max-height: 1000), screen and (max-width: 1080) {
+@media only screen and (min-width: 991px), screen and (max-height: 1000px), screen and (max-width: 1080px) {
   .footer {
     flex-direction: row;
     padding: 3rem 8rem;
@@ -1104,6 +1116,7 @@ html {
   width: 100%;
   background: rgba(7, 7, 7, 0.5);
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(10px);
 }
 .gift-certificate__inner {
   display: flex;
@@ -1190,12 +1203,12 @@ html {
     padding: 8rem 3.2rem;
   }
 }
-@media only screen and (min-width: 991px), screen and (max-height: 1000), screen and (max-width: 1080) {
+@media only screen and (min-width: 991px), screen and (max-height: 1000px), screen and (max-width: 1080px) {
   .gift-certificate__inner {
     padding: 4rem 3rem;
   }
 }
-@media only screen and (min-height: 900px), screen and (min-width: 1000px) {
+@media only screen and (min-height: 990px), screen and (min-width: 1000px) {
   .gift-certificate__bgOverlay {
     width: 100%;
   }
@@ -1565,13 +1578,13 @@ html {
     margin-top: 3.2rem;
   }
 }
-@media only screen and (min-width: 1080px), screen and (max-height: 1000) {
+@media only screen and (min-width: 1080px), screen and (max-height: 1000px) {
   .rent__card {
     height: 100%;
     max-height: 600px;
   }
 }
-@media only screen and (min-width: 991px), screen and (max-height: 1000), screen and (max-width: 1080) {
+@media only screen and (min-width: 991px), screen and (max-height: 1000px), screen and (max-width: 1080px) {
   .rent__inner {
     padding: 2rem 8rem;
   }
@@ -1592,7 +1605,7 @@ html {
     width: 100%;
   }
 }
-@media only screen and (min-height: 900px), screen and (min-width: 1000px) {
+@media only screen and (min-height: 990px), screen and (min-width: 1000px) {
   .rent__card {
     max-height: none;
   }
@@ -2051,7 +2064,7 @@ html {
     padding: 0;
   }
 }
-@media only screen and (min-width: 991px), screen and (max-height: 1000), screen and (max-width: 1080) {
+@media only screen and (min-width: 991px), screen and (max-height: 1000px), screen and (max-width: 1080px) {
   #page-not-found {
     height: 100vh;
   }

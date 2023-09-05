@@ -64,7 +64,7 @@
     }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: $width-900) {
     .cards {
         flex-direction: row;
         gap: 2.4rem;
@@ -98,9 +98,9 @@
     }
 }
 
-@media only screen and (min-width: 991px),
-            screen and (max-height: 1000),
-            screen and (max-width: 1080) 
+@media only screen and (min-width: $width-991),
+            screen and (max-height: $width-1000),
+            screen and (max-width: $width-1080)
   {
     .card__title{
         margin-top: 10px;
@@ -113,8 +113,8 @@
       }
   }
 
-  @media only screen and (min-height: 900px),
-            screen and (min-width: 1000px)
+  @media only screen and (min-height: $width-900),
+            screen and (min-width: $width-1000)
         {
             .cards.desktop {
                 height: 100%;
@@ -127,8 +127,8 @@
                 margin-bottom: 1.4rem;
               }
         }
-        @media only screen and (max-height: 850px),
-        screen and (min-width: 1000px)
+        @media only screen and (max-height: $width-850),
+        screen and (min-width: $width-1000)
 {
     .record-studio__inner .cards.desktop {
         flex: 1 1 60%;
@@ -137,11 +137,11 @@
         max-height: 600px;
       }
 
-      .card__list-item{
+      .card__list-item {
         font-size: 1.4rem;
         margin-bottom: 1.0rem;
       }
-      
+
       .card__img{
         max-height: 150px;
         object-fit: cover;
@@ -149,8 +149,8 @@
 }
 
 
-@media only screen and (min-height: 850px),
-            screen and (min-width: 1000px)
+@media only screen and (min-height: $width-850),
+            screen and (min-width: $width-1000)
 {
   .card__list-item{
     font-size: 1.6rem;
