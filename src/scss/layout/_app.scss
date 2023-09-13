@@ -1,3 +1,24 @@
+@font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Gilroy'), url('/src/fonts/Gilroy-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Gilroy'), url('/src/fonts/Gilroy-UltraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gilroy'), url('/src/fonts/Gilroy-Regular.ttf') format('truetype');
+}
+
 body {
     box-sizing: border-box;
     font-family: "Gilroy", "Inter", sans-serif;
