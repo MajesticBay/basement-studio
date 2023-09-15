@@ -132,7 +132,7 @@ screen and (max-width: $width-1080) {
     flex: 1 0;
 
     &__header {
-      text-align: left;
+      // text-align: left;
       font-size: 3.8rem;
       font-weight: 800;
       margin-top: calc(3rem + 1%);

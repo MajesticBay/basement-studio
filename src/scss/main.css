@@ -620,7 +620,6 @@ html {
     flex: 1 0;
   }
   .contact-us__header {
-    text-align: left;
     font-size: 3.8rem;
     font-weight: 800;
     margin-top: calc(3rem + 1%);
