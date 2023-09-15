@@ -58,78 +58,102 @@
 
 @supports (background-image: url("/src/images/webp/bg-gift-certificate.webp")) {
   .gift-certificate {
-      background-image: url("/src/images/webp/bg-gift-certificate.webp");
+    background-image: url("/src/images/webp/bg-gift-certificate.webp");
   }
 }
 
-  @include respond(medium) {
-    .gift-certificate {
-      &__inner {
-        @include flex-layout(row, center, space-between);
-        padding: 8rem 6rem;
-      }
+@include respond(medium) {
+  .gift-certificate {
+    &__inner {
+      @include flex-layout(row, center, space-between);
+      padding: 8rem 6rem;
+    }
 
-      &__content-outer {
-        flex-direction: row;
-        gap: 2.4rem;
-      }
+    &__content-outer {
+      flex-direction: row;
+      gap: 2.4rem;
+    }
 
-      &__content {
-        align-items: center;
-        gap: 1.6rem;
-      }
+    &__content {
+      align-items: center;
+      gap: 1.6rem;
+    }
 
-      &__header {
-        margin-top: 0;
-        margin-bottom: 0;
-      }
+    &__header {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
 
-      &__text {
-        margin-bottom: 0;
-      }
+    &__text {
+      margin-bottom: 0;
+    }
 
-      &__btn-container {
-        @include flex-layout(row-reverse);
-        width: -moz-fit-content;
-        width: fit-content;
-      }
+    &__btn-container {
+      @include flex-layout(row-reverse);
+      width: -moz-fit-content;
+      width: fit-content;
     }
   }
+}
 
-  @include respond(large) {
-    .gift-certificate {
-      &__inner {
-        flex-direction: row;
-        align-items: center;
-        padding: 8rem 3.2rem;
-      }
+@include respond(large) {
+  .gift-certificate {
+    &__inner {
+      flex-direction: row;
+      align-items: center;
+      padding: 8rem 3.2rem;
     }
   }
+}
 
-  @media only screen and (min-width: $width-991),
-  screen and (max-height: $width-1000),
-  screen and (max-width: $width-1080) {
-    .gift-certificate {
-      &__inner {
-        padding: 4rem 3rem;
-      }
+@include respond(medium) {
+  .gift-certificate {
+    &__content {
+      align-items: flex-start;
+    }
+
+    &__text {
+      margin-left: 0;
     }
   }
+}
 
-  @media only screen and (min-height: $width-990),
-  screen and (min-width: $width-1000) {
-    .gift-certificate {
-      &__bgOverlay {
-        width: 100%;
-      }
+@media only screen and (min-width: $width-1000) {
+  .gift-certificate {
+    &__content {
+      align-items: flex-start;
+    }
+
+    &__text {
+      margin-left: 0;
     }
   }
+}
 
-  @media only screen and (max-height: $width-850),
-  screen and (min-width: $width-1000) {
-    .gift-certificate {
-      &__inner {
-        padding: 4rem 3rem;
-      }
+@media only screen and (min-width: $width-991),
+screen and (max-height: $width-1000),
+screen and (max-width: $width-1080) {
+  .gift-certificate {
+    &__inner {
+      padding: 4rem 3rem;
     }
   }
+}
+
+@media only screen and (min-height: $width-990),
+screen and (min-width: $width-1000) {
+  .gift-certificate {
+    &__bgOverlay {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-height: $width-850),
+screen and (min-width: $width-1000) {
+  .gift-certificate {
+    &__inner {
+      padding: 4rem 3rem;
+    }
+  }
+}

@@ -1219,6 +1219,22 @@ html {
     padding: 8rem 3.2rem;
   }
 }
+@media only screen and (min-width: 991px) {
+  .gift-certificate__content {
+    align-items: flex-start;
+  }
+  .gift-certificate__text {
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .gift-certificate__content {
+    align-items: flex-start;
+  }
+  .gift-certificate__text {
+    margin-left: 0;
+  }
+}
 @media only screen and (min-width: 991px), screen and (max-height: 1000px), screen and (max-width: 1080px) {
   .gift-certificate__inner {
     padding: 4rem 3rem;
