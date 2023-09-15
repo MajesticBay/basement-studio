@@ -15,7 +15,6 @@ html {
 body {
   /*easier to calculate props: total  width and height will include paddings */
   box-sizing: border-box;
-  font-family: "Gilroy", "Inter", sans-serif;
 }
 
 /*
@@ -146,9 +145,27 @@ a {
     font-size: 4.8rem;
   }
 }
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Gilroy"), url("/src/fonts/Gilroy-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Gilroy"), url("/src/fonts/Gilroy-UltraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gilroy"), url("/src/fonts/Gilroy-Regular.ttf") format("truetype");
+}
 body {
   box-sizing: border-box;
-  font-family: "Gilroy", "Inter", sans-serif;
+  font-family: "Gilroy";
   line-height: 1.92rem;
   scroll-behavior: smooth;
   overscroll-behavior: none;
