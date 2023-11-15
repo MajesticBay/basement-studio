@@ -90,7 +90,7 @@
   }
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: $width-1080) {
   .course-production {
     display: block;
     position: relative;
@@ -154,7 +154,7 @@
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: $width-1440) {
   .course-production {
 
     &__wrapper {
@@ -188,9 +188,9 @@
   }
 }
 
-@media only screen and (min-width: 991px),
-screen and (max-height: 1000),
-screen and (max-width: 1080) {
+@media only screen and (min-width: $width-991),
+screen and (max-height: $width-1000),
+screen and (max-width: $width-1080) {
   .course-production {
 
     &__img {
@@ -212,7 +212,7 @@ screen and (max-width: 1080) {
   }
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: $width-1080) {
   .course-production {
     padding-top: 2rem;
 
@@ -224,8 +224,8 @@ screen and (max-width: 1080) {
 }
 
 
-@media only screen and (max-height: 850px),
-screen and (min-width: 1000px) {
+@media only screen and (max-height: $width-850),
+screen and (min-width: $width-1000) {
   .course-production {
 
     &__img {

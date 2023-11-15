@@ -44,7 +44,6 @@
         margin-bottom: 30rem;
         padding: 2rem 80px;
         height: 100%;
-      
       &__text{
         font-size: 18px;
       }
@@ -61,13 +60,13 @@
     }
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: $width-1080) {
 
     .course-dj {
         /* height: 100vh; */
         position: relative;
         margin-bottom: 30rem;
-      
+
       &__wrapper {
         position: relative;
         display: block;
@@ -123,7 +122,7 @@
     }
 }
 
-@media only screen and (min-width: 1440px) { 
+@media only screen and (min-width: $width-1440) {
 
     .course-dj {
 
@@ -152,9 +151,9 @@
     }
 }
 
-@media only screen and (min-width: 991px),
-            screen and (max-height: 1000),
-            screen and (max-width: 1080) 
+@media only screen and (min-width: $width-991),
+            screen and (max-height: $width-1000),
+            screen and (max-width: $width-1080)
   {
     .course-dj {
     
@@ -166,7 +165,7 @@
     }
   }
 
-  @media only screen and (min-width: 1080px)
+  @media only screen and (min-width: $width-1080)
   {
     .course-dj {
     
@@ -178,7 +177,7 @@
         }
   }
 
-  @media only screen and (max-width: 764px) {
+  @media only screen and (max-width: $width-764) {
 
     .course-dj {
         &__outer-text-container{

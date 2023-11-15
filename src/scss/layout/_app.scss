@@ -1,6 +1,28 @@
+@font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Gilroy'), url('/src/fonts/Gilroy-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Gilroy'), url('/src/fonts/Gilroy-UltraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gilroy'), url('/src/fonts/Gilroy-Regular.ttf') format('truetype');
+}
+
 body {
     box-sizing: border-box;
-    font-family: "Gilroy", "Inter", sans-serif;
+    // font-family: "Gilroy", "Inter", sans-serif;
+    font-family: "Gilroy";
     // line-height: 125%;
     line-height: 1.92rem;
     scroll-behavior: smooth;
@@ -24,21 +46,32 @@ html {
     scroll-padding-top: $padding-header-scroll;
 }
 
-.hero, #about-us, #record-studio, #course-dj, #course-production, #rent, #contact-us {
+.hero,
+#about-us,
+#record-studio,
+#course-dj,
+#course-production,
+#rent,
+#contact-us {
     height: calc(100vh - $padding-header-scroll);
     scroll-snap-align: start;
     scroll-snap-stop: always;
 }
 
-@media only screen and (max-width: 1080px)
-  {
+@media only screen and (max-width: $width-1080) {
     html {
         scroll-snap-type: none;
         scroll-padding-top: none;
     }
-    
-    .hero, #about-us, #record-studio, #course-dj, #course-production, #rent, #contact-us {
+
+    .hero,
+    #about-us,
+    #record-studio,
+    #course-dj,
+    #course-production,
+    #rent,
+    #contact-us {
         height: 100%;
         scroll-snap-align: none;
     }
-  }
+}

@@ -130,7 +130,7 @@
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: $width-768) {
     .course-dj-page {
         &__top-container {
             display: flex;
@@ -165,7 +165,7 @@
     }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: $width-1440) {
     .course-dj-page {
         &__img {
             width: 1280px;
