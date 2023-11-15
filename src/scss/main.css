@@ -15,7 +15,6 @@ html {
 body {
   /*easier to calculate props: total  width and height will include paddings */
   box-sizing: border-box;
-  font-family: "Gilroy", "Inter", sans-serif;
 }
 
 /*
@@ -146,9 +145,27 @@ a {
     font-size: 4.8rem;
   }
 }
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Gilroy"), url("/src/fonts/Gilroy-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Gilroy"), url("/src/fonts/Gilroy-UltraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gilroy"), url("/src/fonts/Gilroy-Regular.ttf") format("truetype");
+}
 body {
   box-sizing: border-box;
-  font-family: "Gilroy", "Inter", sans-serif;
+  font-family: "Gilroy";
   line-height: 1.92rem;
   scroll-behavior: smooth;
   overscroll-behavior: none;
@@ -168,7 +185,13 @@ html {
   scroll-padding-top: 50px;
 }
 
-.hero, #about-us, #record-studio, #course-dj, #course-production, #rent, #contact-us {
+.hero,
+#about-us,
+#record-studio,
+#course-dj,
+#course-production,
+#rent,
+#contact-us {
   height: calc(100vh - 50px);
   scroll-snap-align: start;
   scroll-snap-stop: always;
@@ -179,7 +202,13 @@ html {
     scroll-snap-type: none;
     scroll-padding-top: none;
   }
-  .hero, #about-us, #record-studio, #course-dj, #course-production, #rent, #contact-us {
+  .hero,
+  #about-us,
+  #record-studio,
+  #course-dj,
+  #course-production,
+  #rent,
+  #contact-us {
     height: 100%;
     scroll-snap-align: none;
   }
@@ -270,7 +299,7 @@ html {
     visibility: inherit !important;
   }
 }
-@media only screen and (min-width: 991px), screen and (max-height: 1000), screen and (max-width: 1080) {
+@media only screen and (min-width: 991px), screen and (max-height: 1000px), screen and (max-width: 1080px) {
   .card__title {
     margin-top: 10px;
   }
@@ -371,7 +400,6 @@ html {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 393px;
   margin-bottom: 1.5rem;
 }
 
@@ -395,12 +423,14 @@ html {
   color: #fff;
 }
 
-.carousell, .carousell-main {
+.carousell,
+.carousell-main {
   height: 100%;
 }
 
 @media only screen and (min-width: 991px) {
   .carousel-item {
+    height: 393px;
     margin-bottom: 3rem;
   }
 }
@@ -589,7 +619,7 @@ html {
     margin-bottom: 8rem;
   }
 }
-@media only screen and (min-width: 991px), screen and (max-height: 1000), screen and (max-width: 1080) {
+@media only screen and (min-width: 991px), screen and (max-height: 1000px), screen and (max-width: 1080px) {
   .contact-us {
     padding: 0;
     padding-left: 8rem;
@@ -597,7 +627,6 @@ html {
     flex: 1 0;
   }
   .contact-us__header {
-    text-align: left;
     font-size: 3.8rem;
     font-weight: 800;
     margin-top: calc(3rem + 1%);
@@ -843,7 +872,7 @@ html {
     padding: 0;
   }
 }
-@media only screen and (min-width: 991px), screen and (max-height: 1000), screen and (max-width: 1080) {
+@media only screen and (min-width: 991px), screen and (max-height: 1000px), screen and (max-width: 1080px) {
   .course-dj__img {
     max-height: 300px;
   }
@@ -1016,7 +1045,7 @@ html {
     padding: 0;
   }
 }
-@media only screen and (min-width: 991px), screen and (max-height: 1000), screen and (max-width: 1080) {
+@media only screen and (min-width: 991px), screen and (max-height: 1000px), screen and (max-width: 1080px) {
   .course-production__img {
     max-height: 300px;
     margin-bottom: 4%;
@@ -1067,7 +1096,7 @@ html {
     margin-right: 2rem;
   }
 }
-@media only screen and (min-width: 991px), screen and (max-height: 1000), screen and (max-width: 1080) {
+@media only screen and (min-width: 991px), screen and (max-height: 1000px), screen and (max-width: 1080px) {
   .footer {
     flex-direction: row;
     padding: 3rem 8rem;
@@ -1110,6 +1139,7 @@ html {
   width: 100%;
   background: rgba(7, 7, 7, 0.5);
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(10px);
 }
 .gift-certificate__inner {
   display: flex;
@@ -1196,12 +1226,28 @@ html {
     padding: 8rem 3.2rem;
   }
 }
-@media only screen and (min-width: 991px), screen and (max-height: 1000), screen and (max-width: 1080) {
+@media only screen and (min-width: 991px) {
+  .gift-certificate__content {
+    align-items: flex-start;
+  }
+  .gift-certificate__text {
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .gift-certificate__content {
+    align-items: flex-start;
+  }
+  .gift-certificate__text {
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 991px), screen and (max-height: 1000px), screen and (max-width: 1080px) {
   .gift-certificate__inner {
     padding: 4rem 3rem;
   }
 }
-@media only screen and (min-height: 900px), screen and (min-width: 1000px) {
+@media only screen and (min-height: 990px), screen and (min-width: 1000px) {
   .gift-certificate__bgOverlay {
     width: 100%;
   }
@@ -1537,6 +1583,7 @@ html {
 }
 .rent__card {
   width: 50%;
+  height: 57rem;
 }
 
 @supports (background-image: url("/src/images/webp/bg-record-studio.webp")) {
@@ -1570,13 +1617,13 @@ html {
     margin-top: 3.2rem;
   }
 }
-@media only screen and (min-width: 1080px), screen and (max-height: 1000) {
+@media only screen and (min-width: 1080px), screen and (max-height: 1000px) {
   .rent__card {
     height: 100%;
     max-height: 600px;
   }
 }
-@media only screen and (min-width: 991px), screen and (max-height: 1000), screen and (max-width: 1080) {
+@media only screen and (min-width: 991px), screen and (max-height: 1000px), screen and (max-width: 1080px) {
   .rent__inner {
     padding: 2rem 8rem;
   }
@@ -1587,7 +1634,7 @@ html {
     align-items: center;
   }
   .rent__card {
-    height: 100%;
+    height: 537px;
     max-height: 590px;
   }
 }
@@ -1597,7 +1644,7 @@ html {
     width: 100%;
   }
 }
-@media only screen and (min-height: 900px), screen and (min-width: 1000px) {
+@media only screen and (min-height: 990px), screen and (min-width: 1000px) {
   .rent__card {
     max-height: none;
   }
@@ -2056,7 +2103,7 @@ html {
     padding: 0;
   }
 }
-@media only screen and (min-width: 991px), screen and (max-height: 1000), screen and (max-width: 1080) {
+@media only screen and (min-width: 991px), screen and (max-height: 1000px), screen and (max-width: 1080px) {
   #page-not-found {
     height: 100vh;
   }

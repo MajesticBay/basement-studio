@@ -47,10 +47,9 @@
     &__button {
         margin: 0 3.2rem;
     }
-
 }
 
-@media only screen and (min-width: 991px) {
+@media only screen and (min-width: $width-991) {
     #page-not-found {
         height: 100vh;
     }
@@ -80,11 +79,10 @@
     }
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: $width-1080) {
     #page-not-found {
         height: 100vh;
     }
-
 
     .page-not-found {
         /* height: 100vh; */
@@ -156,11 +154,10 @@
     }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: $width-1440) {
     #page-not-found {
         height: 100vh;
     }
-
 
     .page-not-found {
 
@@ -191,33 +188,32 @@
     }
 }
 
-@media only screen and (min-width: 991px),
-screen and (max-height: 1000),
-screen and (max-width: 1080) {
+@media only screen and (min-width: $width-991),
+screen and (max-height: $width-1000),
+screen and (max-width: $width-1080) {
     #page-not-found {
         height: 100vh;
     }
+
     .page-not-found {
         &__img {
             max-height: 45rem;
 
         }
+
         &__wrapper {
             justify-content: center;
         }
     }
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: $width-1080) {
     #page-not-found {
         height: 100vh;
         margin: 0;
     }
 
-
     .page-not-found {
-
-
         &__img {
             max-height: 100%;
         }
@@ -228,11 +224,10 @@ screen and (max-width: 1080) {
     }
 }
 
-@media only screen and (max-width: 764px) {
+@media only screen and (max-width: $width-764) {
     #page-not-found {
         height: 100vh;
     }
-
 
     .page-not-found {
         &__outer-text-container {

@@ -8,6 +8,19 @@
 // CSS variables don't work with media queries declarations
 // so I decided to use Sass variables here
 // https://bholmes.dev/blog/alternative-to-css-variable-media-queries/
-$width-desktop: 900px;
-$width-desktop-header-fix: 844px;
 $width-mobile-record-studio-title-fix: 400px;
+$width-desktop-header-fix: 844px;
+$width-desktop: 900px;
+$width-400: 400px;
+$width-650: 650px;
+$width-764: 764px;
+$width-768: 768px;
+$width-850: 850px;
+$width-900: 900px;
+$width-990: 990px;
+$width-991: 991px;
+$width-1000: 1000px;
+$width-1024: 1024px;
+$width-1080: 1080px;
+$width-1440: 1440px;
+
