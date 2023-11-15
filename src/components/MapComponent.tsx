@@ -4,7 +4,7 @@ import { isLatLngLiteral } from '@googlemaps/typescript-guards'
 import { createCustomEqual } from 'fast-equals'
 import exampleMapStyles from './constraints/mapStyles.json'
 
-const latLngStudio = { lat: 49.83231103828422, lng: 24.017608827629935 }
+const latLngStudio = { lat: 49.84575394674439, lng: 24.02971348896511 }
 
 const render = (status: Status) => {
   return <h1 style={{ textAlign: 'center', fontSize: '2rem' }}>{status}</h1>
@@ -14,8 +14,8 @@ export const MapComponent: React.VFC = () => {
   const [clicks, setClicks] = React.useState<google.maps.LatLng[]>([])
   const [zoom, setZoom] = React.useState(13) // initial zoom
   const [center, setCenter] = React.useState<google.maps.LatLngLiteral>({
-    lat: 49.83231103828422,
-    lng: 24.017608827629935
+    lat: latLngStudio.lat,
+    lng: latLngStudio.lng
   })
 
   const onClick = (e: google.maps.MapMouseEvent) => {

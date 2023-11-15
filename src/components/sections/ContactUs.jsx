@@ -20,23 +20,30 @@ export const ContactUs = ({ snapless }) => {
                             <img src={email} loading="lazy" alt="Email icon" />
                             <span className="contact-us__text">basementstudio@gmail.com</span>
                         </a>
-                        <a className="contact-us__link" href="tel:+380XXXXXXXXX">
+                        <a className="contact-us__link" href="tel:+380638817112">
                             <img src={phone} loading="lazy" alt="Phone icon" />
-                            <span className="contact-us__text">+380XXXXXXXXX</span>
+                            <span className="contact-us__text">+380638817112</span>
                         </a>
                         <a
                             className="contact-us__link"
                             rel="noopener noreferrer"
-                            href="https://goo.gl/maps/zGTo29rnvhj5ed299"
+                            href="https://maps.app.goo.gl/SAmcCQNUBSYRbPop9"
                             target="_blank"
                         >
                             <img src={address} alt="Address icon" />
-                            <span className="contact-us__text">вул. Сахарова 2, м. Львів, 79026</span>
+                            <div>
+                                <span className="contact-us__text">{t('contacts.address.span1')}</span>
+                                <span className="contact-us__text">{t('contacts.address.span2')}</span>
+                            </div>
                         </a>
                     </div>
                     <div className="contact-us__social-media-container">
-                        <IconIG className="pointer" />
-                        <IconTG className="pointer" />
+                        <a href="https://www.instagram.com/basement.studio.lviv/" target="_blank" rel="noopener noreferrer">
+                            <IconIG className="pointer" />
+                        </a>
+                        <a href="https://t.me/" target="_blank" rel="noopener noreferrer">
+                            <IconTG className="pointer" />
+                        </a>
                     </div>
                 </div>
                 <div className="contact-us__map" id="contact-us-map">
