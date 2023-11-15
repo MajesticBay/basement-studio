@@ -38,8 +38,12 @@ export const ContactUs = ({ snapless }) => {
                         </a>
                     </div>
                     <div className="contact-us__social-media-container">
-                        <IconIG className="pointer" />
-                        <IconTG className="pointer" />
+                        <a href="https://www.instagram.com/basement.studio.lviv/" target="_blank" rel="noopener noreferrer">
+                            <IconIG className="pointer" />
+                        </a>
+                        <a href="https://t.me/" target="_blank" rel="noopener noreferrer">
+                            <IconTG className="pointer" />
+                        </a>
                     </div>
                 </div>
                 <div className="contact-us__map" id="contact-us-map">
