@@ -44,6 +44,17 @@
     padding-left: 3rem;
   }
 
+  &__link:nth-child(3) {
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+    span {
+      padding-top: 2px;
+    }
+  }
+
+
   &__text {
     color: var(--color-white);
     font-size: 1.4rem;

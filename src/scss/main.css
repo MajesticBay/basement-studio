@@ -519,6 +519,13 @@ html {
   left: auto;
   padding-left: 3rem;
 }
+.contact-us__link:nth-child(3) div {
+  display: flex;
+  flex-direction: column;
+}
+.contact-us__link:nth-child(3) span {
+  padding-top: 2px;
+}
 .contact-us__text {
   color: var(--color-white);
   font-size: 1.4rem;
