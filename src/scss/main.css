@@ -314,7 +314,7 @@ html {
   .cards.desktop {
     height: 100%;
     flex: 1 0;
-    align-items: center;
+    margin-top: 2%;
     padding: 3% 0;
   }
   .card__list-item {
@@ -1478,6 +1478,7 @@ html {
   display: flex;
   justify-content: center;
   color: #ffffff;
+  text-align: center;
 }
 .record-studio__text:first-of-type {
   margin-top: 2.4rem;
@@ -1529,13 +1530,14 @@ html {
 @media only screen and (max-height: 850px), screen and (min-width: 1000px) {
   .record-studio__text:first-of-type {
     margin-top: 1.4rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0;
   }
   .record-studio__text:last-of-type {
     margin-bottom: 0.5rem;
   }
   .record-studio__inner {
     padding: 2rem 3rem;
+    padding-top: 9rem;
     justify-content: space-around;
   }
   .record-studio__header-wrapper {
