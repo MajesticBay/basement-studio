@@ -1628,6 +1628,7 @@ html {
 @media only screen and (min-width: 991px), screen and (max-height: 1000px), screen and (max-width: 1080px) {
   .rent__inner {
     padding: 2rem 8rem;
+    padding-top: 7rem;
   }
   .rent__card-container {
     display: flex;
