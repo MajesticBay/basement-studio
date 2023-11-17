@@ -41,7 +41,7 @@ export const ContactUs = ({ snapless }) => {
                         <a href="https://www.instagram.com/basement.studio.lviv/" target="_blank" rel="noopener noreferrer">
                             <IconIG className="pointer" />
                         </a>
-                        <a href="https://t.me/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://t.me/ostapoleksyn" target="_blank" rel="noopener noreferrer">
                             <IconTG className="pointer" />
                         </a>
                     </div>

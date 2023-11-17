@@ -23,9 +23,6 @@ const componentMap = componentsList.map((componentName) => {
   return React.lazy(() => import(`../components/sections/${componentName}`))
 })
 
-// Todo: - hold the fallback on low-speed connection
-//       - implement lazy load for pictures + preload
-
 export default function App () {
   return (
     <>

@@ -119,7 +119,8 @@
             .cards.desktop {
                 height: 100%;
                 flex: 1 0;
-                align-items: center;
+                // align-items: center; // heght fix
+                margin-top: 2%; // heght fix
                 padding: 3% 0;
               }
               .card__list-item{
