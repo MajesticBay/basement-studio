@@ -1392,8 +1392,8 @@ html {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 6rem;
-  bottom: 6rem;
+  margin-bottom: 4rem;
+  bottom: 4rem;
 }
 .hero__scroll--desktop {
   display: none;
@@ -1431,8 +1431,8 @@ html {
     }
   }
   .hero__scroll-container {
-    margin-bottom: 6rem;
-    bottom: 6rem;
+    margin-bottom: 4rem;
+    bottom: 4rem;
   }
   .hero__scroll--mobile {
     display: none;
