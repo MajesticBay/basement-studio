@@ -16,6 +16,7 @@ import '../../scss/NewCarousel.css'
 //        - move from jpg to high-compressed png
 //        - DRY 'carousell-main' div
 //        - DRY images data
+//        - share resize window listener to other components
 
 import frame1 from '../../images/jpg/carousel/1.jpg'
 import frame1webp from '../../images/webp/carousel/1.webp'
@@ -91,6 +92,7 @@ export const AboutUs = () => {
     } else {
       setR(window.screen.width <= 900 ? r + 9 : r + 6)
     }
+    console.log(`[${r}]=>`)
   }
 
   const checkWidth = (a, b) => {
@@ -99,6 +101,7 @@ export const AboutUs = () => {
     } else {
       setR(a)
     }
+    console.log(`==[${r}]==`)
   }
 
   const handlePrev = () => {
@@ -107,6 +110,7 @@ export const AboutUs = () => {
     } else {
       setR(window.screen.width <= 900 ? r - 9 : r - 6)
     }
+    console.log(`<=[${r}]`)
   }
 
   /* eslint-disable default-case */
@@ -181,9 +185,9 @@ export const AboutUs = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       if (window.screen.width >= 900) {
-        if (r !== 60) {
+        if (r !== 54) {
           setR(r + 6)
-        } else if (r === 60) {
+        } else if (r === 54) {
           setR(0)
         }
       }
