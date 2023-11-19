@@ -41,8 +41,6 @@ import frame10webp from '../../images/webp/carousel/10.webp'
 export const AboutUs = () => {
   const { t } = useTranslation()
   const [r, setR] = useState(0)
-  const [brightnessError, setBrightnessError] = useState('')
-  const [brightnessError2, setBrightnessError2] = useState('')
   const imagesData = [
     {
       path: frame1,
@@ -108,9 +106,6 @@ export const AboutUs = () => {
       setR(window.screen.width <= 900 ? r - 9 : r - 6)
     }
   }
-  useEffect(() => {
-    console.log(`==[${r}]==`)
-  }, [r])
 
   /* eslint-disable default-case */
   const handleDot = (e) => {
@@ -151,23 +146,6 @@ export const AboutUs = () => {
   }
   /* eslint-disable default-case */
 
-  useEffect(() => {
-    if (r === 12 && window.screen.width >= 900) {
-      setBrightnessError('white')
-    } else if (r === 18 && window.screen.width <= 900) {
-      setBrightnessError('white')
-    } else {
-      setBrightnessError('')
-    }
-
-    if (r === 18 && window.screen.width >= 900) {
-      setBrightnessError2('white')
-    } else if (r === 27 && window.screen.width <= 900) {
-      setBrightnessError2('white')
-    } else {
-      setBrightnessError2('')
-    }
-  }, [r])
   const [windowWidth, setWindowWidth] = useState(window.innerWidth) // eslint-disable-line
   const [windowHeight, setWindowHeight] = useState(window.innerHeight) // eslint-disable-line
   const setWindowDimensions = () => {
@@ -335,21 +313,21 @@ export const AboutUs = () => {
             <div onClick={() => handleDot(2)}
               style={{ background: `${r === 6 || r === 9 ? 'white' : ''}` }} className="dot"></div>
             <div onClick={() => handleDot(3)}
-              style={{ background: `${brightnessError}` }} className="dot"></div>
+              style={{ background: `${(window.screen.width > 900 && r === 12) || (window.screen.width <= 900 && r === 24) ? 'white' : ''}` }} className="dot"></div>
             <div onClick={() => handleDot(4)}
-              style={{ background: `${brightnessError2}` }} className="dot"></div>
+              style={{ background: `${(window.screen.width > 900 && r === 18) || (window.screen.width <= 900 && r === 30) ? 'white' : ''}` }} className="dot"></div>
             <div onClick={() => handleDot(5)}
-              style={{ background: `${r === 24 || r === 36 ? 'white' : ''}` }} className="dot"></div>
+              style={{ background: `${(window.screen.width > 900 && r === 24) || (window.screen.width <= 900 && r === 36) ? 'white' : ''}` }} className="dot"></div>
             <div onClick={() => handleDot(6)}
-              style={{ background: `${r === 30 || r === 45 ? 'white' : ''}` }} className="dot"></div>
+              style={{ background: `${(window.screen.width > 900 && r === 30) || (window.screen.width <= 900 && r === 45) ? 'white' : ''}` }} className="dot"></div>
             <div onClick={() => handleDot(7)}
-              style={{ background: `${r === 36 || r === 54 ? 'white' : ''}` }} className="dot"></div>
+              style={{ background: `${(window.screen.width > 900 && r === 36) || (window.screen.width <= 900 && r === 54) ? 'white' : ''}` }} className="dot"></div>
             <div onClick={() => handleDot(8)}
-              style={{ background: `${r === 42 || r === 63 ? 'white' : ''}` }} className="dot"></div>
+              style={{ background: `${(window.screen.width > 900 && r === 42) || (window.screen.width <= 900 && r === 63) ? 'white' : ''}` }} className="dot"></div>
             <div onClick={() => handleDot(9)}
-              style={{ background: `${r === 48 || r === 72 ? 'white' : ''}` }} className="dot"></div>
+              style={{ background: `${(window.screen.width > 900 && r === 48) || (window.screen.width <= 900 && r === 72) ? 'white' : ''}` }} className="dot"></div>
             <div onClick={() => handleDot(10)}
-              style={{ background: `${r === 54 || r === 81 ? 'white' : ''}` }} className="dot"></div>
+              style={{ background: `${(window.screen.width > 900 && r === 54) || (window.screen.width <= 900 && r === 81) ? 'white' : ''}` }} className="dot"></div>
           </div>
         </>
       }
