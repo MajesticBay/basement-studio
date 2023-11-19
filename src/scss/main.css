@@ -1681,14 +1681,12 @@ html {
   }
 }
 .carousell {
-  width: 360vw;
+  width: 600vw;
   overflow: hidden;
-  /* border: 1px solid white; */
   transition: all 0.3s;
   display: flex;
   align-content: center;
   flex-direction: row;
-  /* align-items: center; */
   justify-content: center;
   margin-left: 20vw;
   max-height: 50vh;
