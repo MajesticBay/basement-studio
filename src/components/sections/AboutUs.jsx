@@ -11,6 +11,27 @@ import photoWebp from '../../images/webp/HighRes.webp'
 import bgWebp from '../../images/webp/bg.webp'
 import bg1Webp from '../../images/webp/bg-record-studio.webp'
 
+import frame1 from '../../images/jpg/carousel/1.jpg'
+import frame1webp from '../../images/webp/carousel/1.webp'
+import frame2 from '../../images/jpg/carousel/2.jpg'
+import frame2webp from '../../images/webp/carousel/2.webp'
+import frame3 from '../../images/jpg/carousel/3.jpg'
+import frame3webp from '../../images/webp/carousel/3.webp'
+import frame4 from '../../images/jpg/carousel/4.jpg'
+import frame4webp from '../../images/webp/carousel/4.webp'
+import frame5 from '../../images/jpg/carousel/5.jpg'
+import frame5webp from '../../images/webp/carousel/5.webp'
+import frame6 from '../../images/jpg/carousel/6.jpg'
+import frame6webp from '../../images/webp/carousel/6.webp'
+// import frame7 from '../../images/jpg/carousel/7.jpg'
+// import frame7webp from '../../images/webp/carousel/7.webp'
+// import frame8 from '../../images/jpg/carousel/8.jpg'
+// import frame8webp from '../../images/webp/carousel/8.webp'
+// import frame9 from '../../images/jpg/carousel/9.jpg'
+// import frame9webp from '../../images/webp/carousel/9.webp'
+// import frame10 from '../../images/jpg/carousel/10.jpg'
+// import frame10webp from '../../images/webp/carousel/10.webp'
+
 export const AboutUs = () => {
   const { t } = useTranslation()
   const [r, setR] = useState(0)
@@ -184,52 +205,84 @@ export const AboutUs = () => {
         style={{ translate: `-${r}0vw 0` }}>
           <div
               className="carousell-wrapper"
-              style={{ backgroundImage: 'url(img/preview/HighRes-small.png)' }}>
+              style={{ backgroundImage: 'url(img/preview/carousel/1.png)' }}>
             <picture>
-                <source srcSet={photoWebp} type="image/webp" />
-                <img src={photo} loading="lazy" alt="Carousel image" />
+                <source srcSet={frame1webp} type="image/webp" />
+                <img src={frame1} loading="lazy" alt="Carousel image" />
             </picture>
           </div>
           <div
               className="carousell-wrapper"
-              style={{ backgroundImage: 'url(img/preview/bg-small.png)' }}>
+              style={{ backgroundImage: 'url(img/preview/carousel/2.png)' }}>
             <picture>
-                <source srcSet={bgWebp} type="image/webp" />
-                <img src={bg} loading="lazy" alt="Carousel image" />
+                <source srcSet={frame2webp} type="image/webp" />
+                <img src={frame2} loading="lazy" alt="Carousel image" />
             </picture>
           </div>
           <div
               className="carousell-wrapper"
-              style={{ backgroundImage: 'url(img/preview/bg-record-studio-small.png)' }}>
+              style={{ backgroundImage: 'url(img/preview/carousel/3.png)' }}>
             <picture>
-                <source srcSet={bg1Webp} type="image/webp" />
-                <img src={bg1} loading="lazy" alt="Carousel image" />
+                <source srcSet={frame3webp} type="image/webp" />
+                <img src={frame3} loading="lazy" alt="Carousel image" />
             </picture>
           </div>
           <div
               className="carousell-wrapper"
-              style={{ backgroundImage: 'url(img/preview/HighRes-small.png)' }}>
+              style={{ backgroundImage: 'url(img/preview/carousel/4.png)' }}>
             <picture>
-                <source srcSet={photoWebp} type="image/webp" />
-                <img src={photo} loading="lazy" alt="Carousel image" />
+                <source srcSet={frame4webp} type="image/webp" />
+                <img src={frame4} loading="lazy" alt="Carousel image" />
             </picture>
           </div>
           <div
               className="carousell-wrapper"
-              style={{ backgroundImage: 'url(img/preview/HighRes-small.png)' }}>
+              style={{ backgroundImage: 'url(img/preview/carousel/5.png)' }}>
             <picture>
-                <source srcSet={photoWebp} type="image/webp" />
-                <img src={photo} loading="lazy" alt="Carousel image" />
+                <source srcSet={frame5webp} type="image/webp" />
+                <img src={frame5} loading="lazy" alt="Carousel image" />
             </picture>
           </div>
           <div
               className="carousell-wrapper"
-              style={{ backgroundImage: 'url(img/preview/HighRes-small.png)' }}>
+              style={{ backgroundImage: 'url(img/preview/carousel/6.png)' }}>
             <picture>
-                <source srcSet={photoWebp} type="image/webp" />
-                <img src={photo} loading="lazy" alt="Carousel image" />
+                <source srcSet={frame6webp} type="image/webp" />
+                <img src={frame6} loading="lazy" alt="Carousel image" />
             </picture>
           </div>
+          {/* <div
+              className="carousell-wrapper"
+              style={{ backgroundImage: 'url(img/preview/carousel/7.png)' }}>
+            <picture>
+                <source srcSet={frame7webp} type="image/webp" />
+                <img src={frame7} loading="lazy" alt="Carousel image" />
+            </picture>
+          </div>
+          <div
+              className="carousell-wrapper"
+              style={{ backgroundImage: 'url(img/preview/carousel/8.png)' }}>
+            <picture>
+                <source srcSet={frame8webp} type="image/webp" />
+                <img src={frame8} loading="lazy" alt="Carousel image" />
+            </picture>
+          </div>
+          <div
+              className="carousell-wrapper"
+              style={{ backgroundImage: 'url(img/preview/carousel/9.png)' }}>
+            <picture>
+                <source srcSet={frame9webp} type="image/webp" />
+                <img src={frame9} loading="lazy" alt="Carousel image" />
+            </picture>
+          </div>
+          <div
+              className="carousell-wrapper"
+              style={{ backgroundImage: 'url(img/preview/carousel/10.png)' }}>
+            <picture>
+                <source srcSet={frame10webp} type="image/webp" />
+                <img src={frame10} loading="lazy" alt="Carousel image" />
+            </picture>
+          </div> */}
         </div>
         <button onClick={handleNext} className='nextt'>
           <img src={arrow} alt="Next arrow icon" />
