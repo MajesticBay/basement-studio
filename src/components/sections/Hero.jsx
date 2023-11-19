@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import { ScrollDownMobile, ScrollDownDesktop } from '../icons/index.ts'
+import useWindowDimensions from '../hooks/useWindowDimensions'
 
 export const Hero = () => {
-  const [loadVideo, setLoadVideo] = useState(false)
+  const { width } = useWindowDimensions()
+  const [loadVideo, setLoadVideo] = useState(width > 1080)
 
   useEffect(() => {
-    const handleResize = () => setLoadVideo(window.innerWidth > 1080)
-    window.addEventListener('resize', handleResize)
-    handleResize()
-    return () => window.removeEventListener('resize', handleResize)
-  }, [])
+    setLoadVideo(width > 1080)
+  }, [width])
 
   return (
     <div className="hero">
@@ -17,7 +16,7 @@ export const Hero = () => {
         <iframe
           id="video-background"
           src="https://www.youtube.com/embed/LYWFL5pGeME?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=LYWFL5pGeME&mute=1"
-          frameBorder="0" // Trick to hide a logo https://jsfiddle.net/s6tp2xfm
+          frameBorder="0"
           allowFullScreen
         />
       )}

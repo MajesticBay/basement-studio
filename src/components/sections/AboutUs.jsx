@@ -3,19 +3,10 @@ import { useTranslation } from 'react-i18next'
 import { arrow } from '../../images/icons/index.ts'
 import MobileCarousel, { CarouselItem } from '../MobileCarousel2'
 import '../../scss/NewCarousel.css'
+import useWindowDimensions from '../hooks/useWindowDimensions'
 
-// import photo from '../../images/png/HighRes.png'
-// import bg from '../../images/png/bg.png'
-// import bg1 from '../../images/png/bg-record-studio.png'
-// import photoWebp from '../../images/webp/HighRes.webp'
-// import bgWebp from '../../images/webp/bg.webp'
-// import bg1Webp from '../../images/webp/bg-record-studio.webp'
-
-// To do: - fix white dots
+// To do:
 //        - move from jpg to high-compressed png
-//        - DRY 'carousell-main' div
-//        - DRY images data
-//        - share resize window listener to other components
 
 import frame1 from '../../images/jpg/carousel/1.jpg'
 import frame1webp from '../../images/webp/carousel/1.webp'
@@ -41,58 +32,71 @@ import frame10webp from '../../images/webp/carousel/10.webp'
 export const AboutUs = () => {
   const { t } = useTranslation()
   const [r, setR] = useState(0)
+  const { width } = useWindowDimensions()
+
   const imagesData = [
     {
       path: frame1,
-      webpPath: frame1webp
+      webpPath: frame1webp,
+      bgImage: 'img/preview/carousel/1.png'
     },
     {
       path: frame2,
-      webpPath: frame2webp
+      webpPath: frame2webp,
+      bgImage: 'img/preview/carousel/2.png'
     },
     {
       path: frame3,
-      webpPath: frame3webp
+      webpPath: frame3webp,
+      bgImage: 'img/preview/carousel/3.png'
     },
     {
       path: frame4,
-      webpPath: frame4webp
+      webpPath: frame4webp,
+      bgImage: 'img/preview/carousel/4.png'
     },
     {
       path: frame5,
-      webpPath: frame5webp
+      webpPath: frame5webp,
+      bgImage: 'img/preview/carousel/5.png'
     },
     {
       path: frame6,
-      webpPath: frame6webp
+      webpPath: frame6webp,
+      bgImage: 'img/preview/carousel/6.png'
     },
     {
       path: frame7,
-      webpPath: frame7webp
+      webpPath: frame7webp,
+      bgImage: 'img/preview/carousel/7.png'
     },
     {
       path: frame8,
-      webpPath: frame8webp
+      webpPath: frame8webp,
+      bgImage: 'img/preview/carousel/8.png'
     },
     {
       path: frame9,
-      webpPath: frame9webp
+      webpPath: frame9webp,
+      bgImage: 'img/preview/carousel/9.png'
     },
     {
       path: frame10,
-      webpPath: frame10webp
+      webpPath: frame10webp,
+      bgImage: 'img/preview/carousel/10.png'
     }
   ]
+
   const handleNext = () => {
     if (r === 54 || r === 81) {
       setR(0)
     } else {
-      setR(window.screen.width <= 900 ? r + 9 : r + 6)
+      setR(width <= 900 ? r + 9 : r + 6)
     }
   }
 
   const checkWidth = (a, b) => {
-    if (window.screen.width <= 900) {
+    if (width <= 900) {
       setR(b)
     } else {
       setR(a)
@@ -101,10 +105,16 @@ export const AboutUs = () => {
 
   const handlePrev = () => {
     if (r <= 0) {
-      setR(window.screen.width <= 900 ? 81 : 54)
+      setR(width <= 900 ? 81 : 54)
     } else {
-      setR(window.screen.width <= 900 ? r - 9 : r - 6)
+      setR(width <= 900 ? r - 9 : r - 6)
     }
+  }
+
+  const isDotActive = (dotIndex) => {
+    const increment = width > 900 ? 6 : 9
+    const activeRValue = increment * (dotIndex - 1)
+    return r === activeRValue ? 'white' : ''
   }
 
   /* eslint-disable default-case */
@@ -144,24 +154,10 @@ export const AboutUs = () => {
         setR(0)
     }
   }
-  /* eslint-disable default-case */
-
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth) // eslint-disable-line
-  const [windowHeight, setWindowHeight] = useState(window.innerHeight) // eslint-disable-line
-  const setWindowDimensions = () => {
-    setWindowWidth(window.innerWidth)
-    setWindowHeight(window.innerHeight)
-  }
-  useEffect(() => {
-    window.addEventListener('resize', setWindowDimensions)
-    return () => {
-      window.removeEventListener('resize', setWindowDimensions)
-    }
-  }, [])
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (window.screen.width >= 900) {
+      if (width >= 900) {
         if (r !== 54) {
           setR(r + 6)
         } else if (r === 54) {
@@ -207,7 +203,7 @@ export const AboutUs = () => {
         {t('aboutUs.p2')}</p>
       <div className=""></div>
 
-      {windowWidth <= 900
+      {width <= 900
         ? <>
           <MobileCarousel>
             {images}
@@ -215,88 +211,17 @@ export const AboutUs = () => {
         </>
         : <>
           <div className="carousell-main">
-            <div className="carousell"
-              style={{ translate: `-${r}0vw 0` }}>
-              <div
-                className="carousell-wrapper"
-                style={{ backgroundImage: 'url(img/preview/carousel/1.png)' }}>
-                <picture>
-                  <source srcSet={frame1webp} type="image/webp" />
-                  <img src={frame1} loading="lazy" alt="Carousel image" />
-                </picture>
-              </div>
-              <div
-                className="carousell-wrapper"
-                style={{ backgroundImage: 'url(img/preview/carousel/2.png)' }}>
-                <picture>
-                  <source srcSet={frame2webp} type="image/webp" />
-                  <img src={frame2} loading="lazy" alt="Carousel image" />
-                </picture>
-              </div>
-              <div
-                className="carousell-wrapper"
-                style={{ backgroundImage: 'url(img/preview/carousel/3.png)' }}>
-                <picture>
-                  <source srcSet={frame3webp} type="image/webp" />
-                  <img src={frame3} loading="lazy" alt="Carousel image" />
-                </picture>
-              </div>
-              <div
-                className="carousell-wrapper"
-                style={{ backgroundImage: 'url(img/preview/carousel/4.png)' }}>
-                <picture>
-                  <source srcSet={frame4webp} type="image/webp" />
-                  <img src={frame4} loading="lazy" alt="Carousel image" />
-                </picture>
-              </div>
-              <div
-                className="carousell-wrapper"
-                style={{ backgroundImage: 'url(img/preview/carousel/5.png)' }}>
-                <picture>
-                  <source srcSet={frame5webp} type="image/webp" />
-                  <img src={frame5} loading="lazy" alt="Carousel image" />
-                </picture>
-              </div>
-              <div
-                className="carousell-wrapper"
-                style={{ backgroundImage: 'url(img/preview/carousel/6.png)' }}>
-                <picture>
-                  <source srcSet={frame6webp} type="image/webp" />
-                  <img src={frame6} loading="lazy" alt="Carousel image" />
-                </picture>
-              </div>
-              <div
-                className="carousell-wrapper"
-                style={{ backgroundImage: 'url(img/preview/carousel/7.png)' }}>
-                <picture>
-                  <source srcSet={frame7webp} type="image/webp" />
-                  <img src={frame7} loading="lazy" alt="Carousel image" />
-                </picture>
-              </div>
-              <div
-                className="carousell-wrapper"
-                style={{ backgroundImage: 'url(img/preview/carousel/8.png)' }}>
-                <picture>
-                  <source srcSet={frame8webp} type="image/webp" />
-                  <img src={frame8} loading="lazy" alt="Carousel image" />
-                </picture>
-              </div>
-              <div
-                className="carousell-wrapper"
-                style={{ backgroundImage: 'url(img/preview/carousel/9.png)' }}>
-                <picture>
-                  <source srcSet={frame9webp} type="image/webp" />
-                  <img src={frame9} loading="lazy" alt="Carousel image" />
-                </picture>
-              </div>
-              <div
-                className="carousell-wrapper"
-                style={{ backgroundImage: 'url(img/preview/carousel/10.png)' }}>
-                <picture>
-                  <source srcSet={frame10webp} type="image/webp" />
-                  <img src={frame10} loading="lazy" alt="Carousel image" />
-                </picture>
-              </div>
+            <div className="carousell" style={{ translate: `-${r}0vw 0` }}>
+              {imagesData.map((item, index) => (
+                <div key={index}
+                  className="carousell-wrapper"
+                  style={{ backgroundImage: `url(${item.bgImage})` }}>
+                  <picture>
+                    <source srcSet={item.webpPath} type="image/webp" />
+                    <img src={item.path} loading="lazy" alt={`Carousel image ${index + 1}`} />
+                  </picture>
+                </div>
+              ))}
             </div>
             <button onClick={handleNext} className='nextt'>
               <img src={arrow} alt="Next arrow icon" />
@@ -308,26 +233,13 @@ export const AboutUs = () => {
             <div className="afterr2" style={{ background: `${r === 54 || r === 81 ? 'transparent' : ''}` }}></div>
           </div>
           <div className="dots-wrapper">
-            <div onClick={() => handleDot(1)}
-              style={{ background: `${r === 0 ? 'white' : ''}` }} className="dot"></div>
-            <div onClick={() => handleDot(2)}
-              style={{ background: `${r === 6 || r === 9 ? 'white' : ''}` }} className="dot"></div>
-            <div onClick={() => handleDot(3)}
-              style={{ background: `${(window.screen.width > 900 && r === 12) || (window.screen.width <= 900 && r === 24) ? 'white' : ''}` }} className="dot"></div>
-            <div onClick={() => handleDot(4)}
-              style={{ background: `${(window.screen.width > 900 && r === 18) || (window.screen.width <= 900 && r === 30) ? 'white' : ''}` }} className="dot"></div>
-            <div onClick={() => handleDot(5)}
-              style={{ background: `${(window.screen.width > 900 && r === 24) || (window.screen.width <= 900 && r === 36) ? 'white' : ''}` }} className="dot"></div>
-            <div onClick={() => handleDot(6)}
-              style={{ background: `${(window.screen.width > 900 && r === 30) || (window.screen.width <= 900 && r === 45) ? 'white' : ''}` }} className="dot"></div>
-            <div onClick={() => handleDot(7)}
-              style={{ background: `${(window.screen.width > 900 && r === 36) || (window.screen.width <= 900 && r === 54) ? 'white' : ''}` }} className="dot"></div>
-            <div onClick={() => handleDot(8)}
-              style={{ background: `${(window.screen.width > 900 && r === 42) || (window.screen.width <= 900 && r === 63) ? 'white' : ''}` }} className="dot"></div>
-            <div onClick={() => handleDot(9)}
-              style={{ background: `${(window.screen.width > 900 && r === 48) || (window.screen.width <= 900 && r === 72) ? 'white' : ''}` }} className="dot"></div>
-            <div onClick={() => handleDot(10)}
-              style={{ background: `${(window.screen.width > 900 && r === 54) || (window.screen.width <= 900 && r === 81) ? 'white' : ''}` }} className="dot"></div>
+            {Array.from({ length: 10 }, (_, i) => (
+              <div key={i}
+                onClick={() => handleDot(i + 1)}
+                style={{ background: isDotActive(i + 1) }}
+                className="dot"
+              ></div>
+            ))}
           </div>
         </>
       }
