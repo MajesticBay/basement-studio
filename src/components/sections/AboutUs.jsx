@@ -11,6 +11,12 @@ import '../../scss/NewCarousel.css'
 // import bgWebp from '../../images/webp/bg.webp'
 // import bg1Webp from '../../images/webp/bg-record-studio.webp'
 
+// To do: - fix white dots
+//        - fix last four images rendering
+//        - move from jpg to high-compressed png
+//        - DRY 'carousell-main' div
+//        - DRY images data
+
 import frame1 from '../../images/jpg/carousel/1.jpg'
 import frame1webp from '../../images/webp/carousel/1.webp'
 import frame2 from '../../images/jpg/carousel/2.jpg'
@@ -194,7 +200,6 @@ export const AboutUs = () => {
     const img = div.querySelector('img')
 
     const loaded = () => {
-      // show image
       div.classList.add('loaded')
     }
 
