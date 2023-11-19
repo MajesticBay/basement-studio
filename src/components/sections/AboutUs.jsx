@@ -12,7 +12,6 @@ import '../../scss/NewCarousel.css'
 // import bg1Webp from '../../images/webp/bg-record-studio.webp'
 
 // To do: - fix white dots
-//        - fix last four images rendering
 //        - move from jpg to high-compressed png
 //        - DRY 'carousell-main' div
 //        - DRY images data
@@ -87,12 +86,11 @@ export const AboutUs = () => {
     }
   ]
   const handleNext = () => {
-    if (r === 60 || r === 90) {
+    if (r === 54 || r === 81) {
       setR(0)
     } else {
       setR(window.screen.width <= 900 ? r + 9 : r + 6)
     }
-    console.log(`[${r}]=>`)
   }
 
   const checkWidth = (a, b) => {
@@ -101,17 +99,18 @@ export const AboutUs = () => {
     } else {
       setR(a)
     }
-    console.log(`==[${r}]==`)
   }
 
   const handlePrev = () => {
     if (r <= 0) {
-      setR(window.screen.width <= 900 ? 90 : 60)
+      setR(window.screen.width <= 900 ? 81 : 54)
     } else {
       setR(window.screen.width <= 900 ? r - 9 : r - 6)
     }
-    console.log(`<=[${r}]`)
   }
+  useEffect(() => {
+    console.log(`==[${r}]==`)
+  }, [r])
 
   /* eslint-disable default-case */
   const handleDot = (e) => {
@@ -135,7 +134,7 @@ export const AboutUs = () => {
         checkWidth(30, 45)
         break
       case 7:
-        checkWidth(36, 54) // Assuming each frame is 6vw or 9vw wide
+        checkWidth(36, 54)
         break
       case 8:
         checkWidth(42, 63)
@@ -147,7 +146,7 @@ export const AboutUs = () => {
         checkWidth(54, 81)
         break
       default:
-        setR(0) // Default case to handle any unexpected values
+        setR(0)
     }
   }
   /* eslint-disable default-case */
@@ -328,7 +327,7 @@ export const AboutUs = () => {
               <img src={arrow} alt="Previous arrow icon" />
             </button>
             <div className="afterr" style={{ background: `${r === 0 ? 'transparent' : ''}` }}></div>
-            <div className="afterr2" style={{ background: `${r === 60 || r === 90 ? 'transparent' : ''}` }}></div>
+            <div className="afterr2" style={{ background: `${r === 54 || r === 81 ? 'transparent' : ''}` }}></div>
           </div>
           <div className="dots-wrapper">
             <div onClick={() => handleDot(1)}
