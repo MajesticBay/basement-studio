@@ -4,12 +4,6 @@ import { arrow } from '../../images/icons/index.ts'
 import MobileCarousel, { CarouselItem } from '../MobileCarousel2'
 import '../../scss/NewCarousel.css'
 
-import photo from '../../images/png/HighRes.png'
-import bg from '../../images/png/bg.png'
-import bg1 from '../../images/png/bg-record-studio.png'
-import photoWebp from '../../images/webp/HighRes.webp'
-import bgWebp from '../../images/webp/bg.webp'
-import bg1Webp from '../../images/webp/bg-record-studio.webp'
 import carousel1 from '../../images/png/carousel1.png'
 import carousel2 from '../../images/png/carousel2.png'
 import carousel3 from '../../images/png/carousel3.png'
@@ -129,6 +123,22 @@ export const AboutUs = () => {
       case 6:
         checkWidth(30, 45)
         break
+
+      case 7:
+        checkWidth(36, 54)
+        break
+
+      case 8:
+        checkWidth(42, 63)
+        break
+
+      case 9:
+        checkWidth(48, 72)
+        break
+
+      case 10:
+        checkWidth(54, 81)
+        break
     }
   }
   /* eslint-disable default-case */
@@ -226,48 +236,88 @@ export const AboutUs = () => {
               className="carousell-wrapper"
               style={{ backgroundImage: 'url(img/preview/HighRes-small.png)' }}>
             <picture>
-                <source srcSet={photoWebp} type="image/webp" />
-                <img src={photo} loading="lazy" alt="Carousel image" />
-            </picture>
-          </div>
-          <div
-              className="carousell-wrapper"
-              style={{ backgroundImage: 'url(img/preview/bg-small.png)' }}>
-            <picture>
-                <source srcSet={bgWebp} type="image/webp" />
-                <img src={bg} loading="lazy" alt="Carousel image" />
-            </picture>
-          </div>
-          <div
-              className="carousell-wrapper"
-              style={{ backgroundImage: 'url(img/preview/bg-record-studio-small.png)' }}>
-            <picture>
-                <source srcSet={bg1Webp} type="image/webp" />
-                <img src={bg1} loading="lazy" alt="Carousel image" />
+                <source srcSet={carousel1Webp} type="image/webp" />
+                <img src={carousel1} loading="lazy" alt="Carousel image" />
             </picture>
           </div>
           <div
               className="carousell-wrapper"
               style={{ backgroundImage: 'url(img/preview/HighRes-small.png)' }}>
             <picture>
-                <source srcSet={photoWebp} type="image/webp" />
-                <img src={photo} loading="lazy" alt="Carousel image" />
+                <source srcSet={carousel2Webp} type="image/webp" />
+                <img src={carousel2} loading="lazy" alt="Carousel image" />
             </picture>
           </div>
           <div
               className="carousell-wrapper"
               style={{ backgroundImage: 'url(img/preview/HighRes-small.png)' }}>
             <picture>
-                <source srcSet={photoWebp} type="image/webp" />
-                <img src={photo} loading="lazy" alt="Carousel image" />
+                <source srcSet={carousel3Webp} type="image/webp" />
+                <img src={carousel3} loading="lazy" alt="Carousel image" />
             </picture>
           </div>
           <div
               className="carousell-wrapper"
               style={{ backgroundImage: 'url(img/preview/HighRes-small.png)' }}>
             <picture>
-                <source srcSet={photoWebp} type="image/webp" />
-                <img src={photo} loading="lazy" alt="Carousel image" />
+                <source srcSet={carousel4Webp} type="image/webp" />
+                <img src={carousel4} loading="lazy" alt="Carousel image" />
+            </picture>
+          </div>
+          <div
+              className="carousell-wrapper"
+              style={{ backgroundImage: 'url(img/preview/HighRes-small.png)' }}>
+            <picture>
+                <source srcSet={carousel5Webp} type="image/webp" />
+                <img src={carousel5} loading="lazy" alt="Carousel image" />
+            </picture>
+          </div>
+          <div
+              className="carousell-wrapper"
+              style={{ backgroundImage: 'url(img/preview/HighRes-small.png)' }}>
+            <picture>
+                <source srcSet={carousel6Webp} type="image/webp" />
+                <img src={carousel6} loading="lazy" alt="Carousel image" />
+            </picture>
+          </div>
+          <div
+              className="carousell-wrapper"
+              style={{ backgroundImage: 'url(img/preview/HighRes-small.png)' }}>
+            <picture>
+                <source srcSet={carousel6Webp} type="image/webp" />
+                <img src={carousel6} loading="lazy" alt="Carousel image" />
+            </picture>
+          </div>
+          <div
+              className="carousell-wrapper"
+              style={{ backgroundImage: 'url(img/preview/HighRes-small.png)' }}>
+            <picture>
+                <source srcSet={carousel7Webp} type="image/webp" />
+                <img src={carousel7} loading="lazy" alt="Carousel image" />
+            </picture>
+          </div>
+          <div
+              className="carousell-wrapper"
+              style={{ backgroundImage: 'url(img/preview/HighRes-small.png)' }}>
+            <picture>
+                <source srcSet={carousel8Webp} type="image/webp" />
+                <img src={carousel8} loading="lazy" alt="Carousel image" />
+            </picture>
+          </div>
+          <div
+              className="carousell-wrapper"
+              style={{ backgroundImage: 'url(img/preview/HighRes-small.png)' }}>
+            <picture>
+                <source srcSet={carousel6Webp} type="image/webp" />
+                <img src={carousel6} loading="lazy" alt="Carousel image" />
+            </picture>
+          </div>
+          <div
+              className="carousell-wrapper"
+              style={{ backgroundImage: 'url(img/preview/HighRes-small.png)' }}>
+            <picture>
+                <source srcSet={carousel10Webp} type="image/webp" />
+                <img src={carousel10} loading="lazy" alt="Carousel image" />
             </picture>
           </div>
         </div>
@@ -289,10 +339,12 @@ export const AboutUs = () => {
           style={{ background: `${brightnessError}` }} className="dot"></div>
           <div onClick={() => handleDot(4)}
           style={{ background: `${brightnessError2}` }} className="dot"></div>
-          <div onClick={() => handleDot(5)}
-          style={{ background: `${r === 24 || r === 36 ? 'white' : ''}` }} className="dot"></div>
-          <div onClick={() => handleDot(6)}
-          style={{ background: `${r === 30 || r === 45 ? 'white' : ''}` }} className="dot"></div>
+          <div onClick={() => handleDot(5)} className="dot"></div>
+          <div onClick={() => handleDot(6)} className="dot"></div>
+          <div onClick={() => handleDot(7)} className="dot"></div>
+          <div onClick={() => handleDot(8)} className="dot"></div>
+          <div onClick={() => handleDot(9)} className="dot"></div>
+          <div onClick={() => handleDot(10)} className="dot"></div>
       </div>
       </>
       }
