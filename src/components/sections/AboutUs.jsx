@@ -10,6 +10,26 @@ import bg1 from '../../images/png/bg-record-studio.png'
 import photoWebp from '../../images/webp/HighRes.webp'
 import bgWebp from '../../images/webp/bg.webp'
 import bg1Webp from '../../images/webp/bg-record-studio.webp'
+import carousel1 from '../../images/png/carousel1.png'
+import carousel2 from '../../images/png/carousel2.png'
+import carousel3 from '../../images/png/carousel3.png'
+import carousel4 from '../../images/png/carousel4.png'
+import carousel5 from '../../images/png/carousel5.png'
+import carousel6 from '../../images/png/carousel6.png'
+import carousel7 from '../../images/png/carousel7.png'
+import carousel8 from '../../images/png/carousel8.png'
+import carousel9 from '../../images/png/carousel9.png'
+import carousel10 from '../../images/png/carousel10.png'
+import carousel1Webp from '../../images/webp/carousel1.webp'
+import carousel2Webp from '../../images/webp/carousel2.webp'
+import carousel3Webp from '../../images/webp/carousel3.webp'
+import carousel4Webp from '../../images/webp/carousel4.webp'
+import carousel5Webp from '../../images/webp/carousel5.webp'
+import carousel6Webp from '../../images/webp/carousel6.webp'
+import carousel7Webp from '../../images/webp/carousel7.webp'
+import carousel8Webp from '../../images/webp/carousel8.webp'
+import carousel9Webp from '../../images/webp/carousel9.webp'
+import carousel10Webp from '../../images/webp/carousel10.webp'
 
 export const AboutUs = () => {
   const { t } = useTranslation()
@@ -18,24 +38,44 @@ export const AboutUs = () => {
   const [brightnessError2, setBrightnessError2] = useState('')
   const imagesData = [
     {
-      path: photo,
-      webpPath: photoWebp
+      path: carousel1,
+      webpPath: carousel1Webp
     },
     {
-      path: bg,
-      webpPath: bgWebp
+      path: carousel2,
+      webpPath: carousel2Webp
     },
     {
-      path: bg1,
-      webpPath: bg1Webp
+      path: carousel3,
+      webpPath: carousel3Webp
     },
     {
-      path: photo,
-      webpPath: photoWebp
+      path: carousel4,
+      webpPath: carousel4Webp
     },
     {
-      path: photo,
-      webpPath: photoWebp
+      path: carousel5,
+      webpPath: carousel5Webp
+    },
+    {
+      path: carousel6,
+      webpPath: carousel6Webp
+    },
+    {
+      path: carousel7,
+      webpPath: carousel7Webp
+    },
+    {
+      path: carousel8,
+      webpPath: carousel8Webp
+    },
+    {
+      path: carousel9,
+      webpPath: carousel9Webp
+    },
+    {
+      path: carousel10,
+      webpPath: carousel10Webp
     }
   ]
 
