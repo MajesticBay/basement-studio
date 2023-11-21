@@ -72,12 +72,11 @@
   }
 }
 
-@media only screen and (min-width: $width-991),
-  screen and (max-height: $width-1000),
+@media only screen and (min-width: $width-991) and (max-height: $width-1000),
   screen and (max-width: $width-1080) {
   .rent {
     &__inner {
-      padding: 2rem 8rem;
+      // padding: 2rem 8rem;
       padding-top: 7rem;
     }
     &__card-container {
