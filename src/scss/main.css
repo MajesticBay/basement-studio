@@ -767,6 +767,12 @@ html {
 .course-dj__button {
   margin: 0 3.2rem;
 }
+.course-dj__btn--desktop {
+  display: none !important;
+}
+.course-dj__btn--mobile {
+  display: flex;
+}
 
 @media only screen and (min-width: 991px) {
   .course-dj {
@@ -846,6 +852,12 @@ html {
   .course-dj__btn {
     margin-right: 5rem;
     width: 100%;
+  }
+  .course-dj__btn--desktop {
+    display: flex !important;
+  }
+  .course-dj__btn--mobile {
+    display: none !important;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -1015,7 +1027,7 @@ html {
     display: none !important;
   }
   .course-production__btn--desktop {
-    display: block !important;
+    display: flex !important;
   }
 }
 @media only screen and (min-width: 1440px) {

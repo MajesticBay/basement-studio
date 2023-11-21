@@ -78,7 +78,7 @@
   .rent {
     &__inner {
       padding: 2rem 8rem;
-      padding-top: 7rem; // height fix
+      padding-top: 7rem;
     }
     &__card-container {
       display: flex;
@@ -88,7 +88,6 @@
     }
     &__card {
       // height: 100%;
-      // height: 521px;
       height: 537px;
       max-height: 590px;
     }

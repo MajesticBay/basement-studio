@@ -149,7 +149,7 @@
     }
 
     &__btn--desktop {
-      display: block !important;
+      display: flex !important;
     }
   }
 }
@@ -197,10 +197,6 @@ screen and (max-width: $width-1080) {
       max-height: 300px;
       margin-bottom: 4%;
     }
-
-    // &__header {
-    //   margin: 15px 0;
-    // }
 
     &__outer-text-container {
       margin-top: 1.2rem

@@ -37,7 +37,6 @@ export const MapComponent: React.VFC = () => {
         <Map
           options={{
             styles: exampleMapStyles
-            // mapId: '40cce4bc1037efb7'
           }}
           center={center}
           onClick={onClick}
@@ -103,7 +102,6 @@ const Map: React.FC<MapProps> = ({
       <div ref={ref} style={style} />
       {React.Children.map(children, (child) => {
         if (React.isValidElement(child)) {
-          // set the map prop on the child component
           return React.cloneElement(child, { map })
         }
       })}
@@ -147,9 +145,6 @@ const deepCompareEqualsForMaps = createCustomEqual(
       return new google.maps.LatLng(a).equals(new google.maps.LatLng(b))
     }
 
-    // TODO extend to other types
-
-    // use fast-equals for other objects
     return deepEqual(a, b)
   }
 )
