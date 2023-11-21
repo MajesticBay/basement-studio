@@ -27,21 +27,6 @@
   }
 }
 
-@media only screen and (min-width: $width-991),
-screen and (max-height: $width-1000),
-screen and (max-width: $width-1080) {
-  .footer {
-    flex-direction: row;
-    padding: 3rem 8rem;
-
-    &__link:first-child {
-      margin-bottom: 0;
-      margin-right: 2rem;
-    }
-  }
-
-}
-
 @media only screen and (min-width: $width-1000),
 (min-height: 700px) and (max-height: $width-850) {
   .footer {
