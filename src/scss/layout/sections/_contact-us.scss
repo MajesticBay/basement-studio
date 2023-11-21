@@ -33,6 +33,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
+    margin-top: 3rem;
   }
 
   &__link {
@@ -137,7 +138,7 @@ screen and (max-width: $width-1080) {
 
   .contact-us {
     padding: 0;
-    padding-left: 8rem;
+    // padding-left: 8rem;
     gap: 1%;
     flex: 1 0;
 
@@ -217,6 +218,10 @@ screen and (min-width: $width-1000) {
       font-weight: 800;
       margin: 8rem 0 4.8rem 0;
     }
+    
+    &__links-container {
+      margin-top: 0rem;
+    }
 
     &__text {
       font-size: 1.4rem;
@@ -239,8 +244,7 @@ screen and (min-width: $width-1000) {
 
 }
 
-@media only screen and (min-height: $width-850),
-screen and (min-width: $width-1000) {
+@media only screen and (min-height: $width-850) and (min-width: $width-1000) {
   .contact-us {
     .contact-us-container {
       padding-left: 8rem;
