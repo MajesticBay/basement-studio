@@ -552,10 +552,11 @@ html {
 }
 .contact-us__link:nth-child(3) div {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 .contact-us__link:nth-child(3) span {
   padding-top: 2px;
+  padding-right: 4px;
 }
 .contact-us__text {
   color: var(--color-white);
@@ -595,6 +596,9 @@ html {
     justify-content: flex-start;
     padding-left: 3rem;
   }
+  .contact-us__link:nth-child(3) div {
+    flex-direction: column;
+  }
 }
 @media only screen and (min-width: 991px) {
   .contact-us {
@@ -618,6 +622,9 @@ html {
   }
   .contact-us__btn {
     margin-bottom: 8rem;
+  }
+  .contact-us__link:nth-child(3) div {
+    flex-direction: column;
   }
 }
 @media only screen and (min-width: 991px), screen and (max-height: 1000px), screen and (max-width: 1080px) {
@@ -1142,7 +1149,7 @@ html {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background: rgba(7, 7, 7, 0.5);
+  background: rgba(7, 7, 7, 0.25);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(10px);
 }

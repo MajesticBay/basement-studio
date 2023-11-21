@@ -47,10 +47,11 @@
   &__link:nth-child(3) {
     div {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
     }
     span {
       padding-top: 2px;
+      padding-right: 4px;
     }
   }
 
@@ -100,6 +101,12 @@
       justify-content: flex-start;
       padding-left: 3rem;
     }
+    
+    &__link:nth-child(3) {
+      div {
+        flex-direction: column;
+      }
+    }
   }
 }
 
@@ -128,6 +135,12 @@
 
     &__btn {
       margin-bottom: 8rem;
+    }
+    
+    &__link:nth-child(3) {
+      div {
+        flex-direction: column;
+      }
     }
   }
 }
@@ -253,6 +266,10 @@ screen and (min-width: $width-1000) {
 
     flex-direction: row;
 
+    // &__link:nth-child(3) {
+    //   flex-direction: column;
+    // }
+
     &__text {
       font-size: 1.8rem;
     }
@@ -268,6 +285,10 @@ screen and (min-width: $width-1000) {
     &__links-container {
       gap: 2.1rem;
     }
+
+    // &__link:nth-child(3) {
+    //   flex-direction: column;
+    // }
 
     &__social-media-container {
       margin-top: 12rem;
