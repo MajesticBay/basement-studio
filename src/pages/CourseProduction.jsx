@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { ContactUs } from '../components/sections/ContactUs'
 import { Btn } from '../components/Btn'
+import { links } from '../components/constraints/constrData'
 
 import courseProductionKeyboardSmall from '../images/png/course-production-page-colored-small.png'
 import courseProductionKeyboardLargeColored from '../images/png/course-production-page-colored-large.png'
@@ -28,12 +29,14 @@ export const CourseProduction = () => {
             {t('courseProductionPage.firstLine')}
           </p>
           <p className="course-dj-page__sign-up">{t('courseProductionPage.signup')}</p>
-          <Btn
-            className={'course-dj-page__btn'}
-            text={t('courseProductionPage.btn')}
-            arrowDisplayed={true}
-            dark={false}
-          />
+          <a href={links.TELEGRAM_LINK} target="_blank" rel="noopener noreferrer">
+            <Btn
+              className={'course-dj-page__btn'}
+              text={t('courseProductionPage.btn')}
+              arrowDisplayed={true}
+              dark={false}
+            />
+          </a>
         </div>
         <picture>
             <source srcSet={courseProductionKeyboardSmallWebp} type="image/webp" />

@@ -2,6 +2,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { Btn } from '../Btn'
 import { giftCertificate } from '../../images/icons/index.ts'
+import { links } from '../constraints/constrData'
 
 export const GiftCertificate = () => {
   const { t } = useTranslation()
@@ -17,12 +18,14 @@ export const GiftCertificate = () => {
                             <p className="gift-certificate__text">{t('giftCertificate.p2')}</p>
                         </div>
                     </div>
-                    <div className="gift-certificate__btn-container mobile">
-                        <Btn text={t('giftCertificate.b1')} arrowDisplayed={false} dark={false} />
-                    </div>
-                    <div className="gift-certificate__btn-container desktop">
-                        <Btn text={t('giftCertificate.b1')} arrowDisplayed={true} dark={false} />
-                    </div>
+                    <a href={links.TELEGRAM_LINK} target="_blank" rel="noopener noreferrer">
+                        <div className="gift-certificate__btn-container mobile">
+                            <Btn text={t('giftCertificate.b1')} arrowDisplayed={false} dark={false} />
+                        </div>
+                        <div className="gift-certificate__btn-container desktop">
+                            <Btn text={t('giftCertificate.b1')} arrowDisplayed={true} dark={false} />
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

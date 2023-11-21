@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import MobileCarousel, { CarouselItem } from '../MobileCarousel.jsx'
 import { Btn } from '../Btn.jsx'
 import { bgOverlayStyle, cardStructures } from '../constraints/rentCard'
+import { links } from '../constraints/constrData'
 
 export const Rent = () => {
   const { t } = useTranslation()
@@ -29,12 +30,14 @@ export const Rent = () => {
                         <li className="card__list-item" key={index}>{item}</li>
                     ))}
                 </ul>
-                <Btn
-                    className={'card__btn'}
-                    text={t('rent.btn')}
-                    arrowDisplayed={false}
-                    dark={false}
-                />
+                <a href={links.TELEGRAM_LINK} target="_blank" rel="noopener noreferrer">
+                    <Btn
+                        className={'card__btn'}
+                        text={t('rent.btn')}
+                        arrowDisplayed={false}
+                        dark={false}
+                    />
+                </a>
             </div>
         </CarouselItem>
   ))
@@ -54,12 +57,14 @@ export const Rent = () => {
                     <li className="card__list-item" key={index}>{item}</li>
                 ))}
             </ul>
-            <Btn
-                className={'card__btn'}
-                text={t('rent.btn')}
-                arrowDisplayed={false}
-                dark={false}
-            />
+            <a href={links.TELEGRAM_LINK} target="_blank" rel="noopener noreferrer">
+                <Btn
+                    className={'card__btn'}
+                    text={t('rent.btn')}
+                    arrowDisplayed={false}
+                    dark={false}
+                />
+            </a>
         </div>
   ))
 
