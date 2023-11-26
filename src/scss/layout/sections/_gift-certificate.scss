@@ -9,7 +9,7 @@
   &__bgOverlay {
     @include flex-layout(column, center, null);
     width: 100%;
-    background: rgba(7, 7, 7, 0.5);
+    background: rgba(7, 7, 7, 0.25);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(10px);
   }
@@ -54,6 +54,10 @@
     width: 100%;
     gap: 2.4rem;
   }
+
+  a {
+    width: 100%;
+  }
 }
 
 @supports (background-image: url("/src/images/webp/bg-gift-certificate.webp")) {
@@ -93,15 +97,9 @@
       width: -moz-fit-content;
       width: fit-content;
     }
-  }
-}
 
-@include respond(large) {
-  .gift-certificate {
-    &__inner {
-      flex-direction: row;
-      align-items: center;
-      padding: 8rem 3.2rem;
+    a {
+      width: auto;
     }
   }
 }
@@ -115,45 +113,34 @@
     &__text {
       margin-left: 0;
     }
-  }
-}
 
-@media only screen and (min-width: $width-1000) {
-  .gift-certificate {
-    &__content {
-      align-items: flex-start;
-    }
-
-    &__text {
-      margin-left: 0;
-    }
-  }
-}
-
-@media only screen and (min-width: $width-991),
-screen and (max-height: $width-1000),
-screen and (max-width: $width-1080) {
-  .gift-certificate {
-    &__inner {
-      padding: 4rem 3rem;
-    }
-  }
-}
-
-@media only screen and (min-height: $width-990),
-screen and (min-width: $width-1000) {
-  .gift-certificate {
     &__bgOverlay {
       width: 100%;
     }
+
+    &__inner {
+      padding: 4rem 3rem;
+    }
+
+    &__btn-container {
+      div {
+        padding: 1.8rem;
+      }
+    }
   }
 }
 
-@media only screen and (max-height: $width-850),
-screen and (min-width: $width-1000) {
+@include respond(large) {
   .gift-certificate {
     &__inner {
-      padding: 4rem 3rem;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &__btn-container {
+      div {
+        padding: 2.6rem 4rem;
+      }
     }
   }
 }

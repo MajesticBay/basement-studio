@@ -2,6 +2,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import Carousel, { CarouselItem } from '../Carousel'
 import { Btn } from '../Btn'
+import { links } from '../constraints/constrData'
 
 export const RecordStudio = () => {
   const { t } = useTranslation()
@@ -30,12 +31,14 @@ export const RecordStudio = () => {
                 <ul className="card__list">
                     {card.list.map(item => <li className="card__list-item" key={item}>{item}</li>)}
                 </ul>
-                <Btn
-                    className={'card__btn'}
-                    text={t('recordStudio.btn')}
-                    arrowDisplayed={false}
-                    dark={false}
-                />
+                <a href={links.TELEGRAM_LINK} target="_blank" rel="noopener noreferrer">
+                    <Btn
+                        className={'card__btn'}
+                        text={t('recordStudio.btn')}
+                        arrowDisplayed={false}
+                        dark={false}
+                    />
+                </a>
             </div>
         </CarouselItem>
   ))

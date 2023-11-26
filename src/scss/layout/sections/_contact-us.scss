@@ -24,7 +24,6 @@
 
   &__header {
     grid-area: header;
-    // padding-left: 3rem;
     text-align: center;
   }
 
@@ -34,6 +33,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
+    margin-top: 3rem;
   }
 
   &__link {
@@ -47,10 +47,11 @@
   &__link:nth-child(3) {
     div {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
     }
     span {
       padding-top: 2px;
+      padding-right: 4px;
     }
   }
 
@@ -100,6 +101,12 @@
       justify-content: flex-start;
       padding-left: 3rem;
     }
+    
+    &__link:nth-child(3) {
+      div {
+        flex-direction: column;
+      }
+    }
   }
 }
 
@@ -129,6 +136,12 @@
     &__btn {
       margin-bottom: 8rem;
     }
+    
+    &__link:nth-child(3) {
+      div {
+        flex-direction: column;
+      }
+    }
   }
 }
 
@@ -138,12 +151,11 @@ screen and (max-width: $width-1080) {
 
   .contact-us {
     padding: 0;
-    padding-left: 8rem;
+    // padding-left: 8rem;
     gap: 1%;
     flex: 1 0;
 
     &__header {
-      // text-align: left;
       font-size: 3.8rem;
       font-weight: 800;
       margin-top: calc(3rem + 1%);
@@ -215,10 +227,13 @@ screen and (min-width: $width-1000) {
     height: max-content;
 
     &__header {
-      // text-align: left;
       font-size: 3.8rem;
       font-weight: 800;
       margin: 8rem 0 4.8rem 0;
+    }
+    
+    &__links-container {
+      margin-top: 0rem;
     }
 
     &__text {
@@ -242,8 +257,7 @@ screen and (min-width: $width-1000) {
 
 }
 
-@media only screen and (min-height: $width-850),
-screen and (min-width: $width-1000) {
+@media only screen and (min-height: $width-850) and (min-width: $width-1000) {
   .contact-us {
     .contact-us-container {
       padding-left: 8rem;
@@ -251,6 +265,10 @@ screen and (min-width: $width-1000) {
     }
 
     flex-direction: row;
+
+    // &__link:nth-child(3) {
+    //   flex-direction: column;
+    // }
 
     &__text {
       font-size: 1.8rem;
@@ -267,6 +285,10 @@ screen and (min-width: $width-1000) {
     &__links-container {
       gap: 2.1rem;
     }
+
+    // &__link:nth-child(3) {
+    //   flex-direction: column;
+    // }
 
     &__social-media-container {
       margin-top: 12rem;

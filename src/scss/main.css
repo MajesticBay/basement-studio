@@ -349,6 +349,9 @@ html {
   overflow: hidden;
   height: 100%;
 }
+.carousel a {
+  display: none;
+}
 
 .carousell-wrapper:before {
   content: "";
@@ -432,6 +435,9 @@ html {
   .carousel-item {
     height: 393px;
     margin-bottom: 3rem;
+  }
+  a {
+    display: block;
   }
 }
 #fb:hover #fb-rect {
@@ -541,6 +547,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+  margin-top: 3rem;
 }
 .contact-us__link {
   display: flex;
@@ -551,10 +558,11 @@ html {
 }
 .contact-us__link:nth-child(3) div {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 .contact-us__link:nth-child(3) span {
   padding-top: 2px;
+  padding-right: 4px;
 }
 .contact-us__text {
   color: var(--color-white);
@@ -594,6 +602,9 @@ html {
     justify-content: flex-start;
     padding-left: 3rem;
   }
+  .contact-us__link:nth-child(3) div {
+    flex-direction: column;
+  }
 }
 @media only screen and (min-width: 991px) {
   .contact-us {
@@ -618,11 +629,13 @@ html {
   .contact-us__btn {
     margin-bottom: 8rem;
   }
+  .contact-us__link:nth-child(3) div {
+    flex-direction: column;
+  }
 }
 @media only screen and (min-width: 991px), screen and (max-height: 1000px), screen and (max-width: 1080px) {
   .contact-us {
     padding: 0;
-    padding-left: 8rem;
     gap: 1%;
     flex: 1 0;
   }
@@ -688,6 +701,9 @@ html {
     font-weight: 800;
     margin: 8rem 0 4.8rem 0;
   }
+  .contact-us__links-container {
+    margin-top: 0rem;
+  }
   .contact-us__text {
     font-size: 1.4rem;
   }
@@ -703,7 +719,7 @@ html {
     padding: 2rem 3rem !important;
   }
 }
-@media only screen and (min-height: 850px), screen and (min-width: 1000px) {
+@media only screen and (min-height: 850px) and (min-width: 1000px) {
   .contact-us {
     flex-direction: row;
   }
@@ -766,6 +782,12 @@ html {
 }
 .course-dj__button {
   margin: 0 3.2rem;
+}
+.course-dj__btn--desktop {
+  display: none !important;
+}
+.course-dj__btn--mobile {
+  display: flex;
 }
 
 @media only screen and (min-width: 991px) {
@@ -846,6 +868,12 @@ html {
   .course-dj__btn {
     margin-right: 5rem;
     width: 100%;
+  }
+  .course-dj__btn--desktop {
+    display: flex !important;
+  }
+  .course-dj__btn--mobile {
+    display: none !important;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -1015,7 +1043,7 @@ html {
     display: none !important;
   }
   .course-production__btn--desktop {
-    display: block !important;
+    display: flex !important;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -1096,16 +1124,6 @@ html {
     margin-right: 2rem;
   }
 }
-@media only screen and (min-width: 991px), screen and (max-height: 1000px), screen and (max-width: 1080px) {
-  .footer {
-    flex-direction: row;
-    padding: 3rem 8rem;
-  }
-  .footer__link:first-child {
-    margin-bottom: 0;
-    margin-right: 2rem;
-  }
-}
 @media only screen and (min-width: 1000px), (min-height: 700px) and (max-height: 850px) {
   .footer {
     padding: 4rem 3.2rem;
@@ -1137,7 +1155,7 @@ html {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background: rgba(7, 7, 7, 0.5);
+  background: rgba(7, 7, 7, 0.25);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -1181,6 +1199,9 @@ html {
   width: 100%;
   gap: 2.4rem;
 }
+.gift-certificate a {
+  width: 100%;
+}
 
 @supports (background-image: url("/src/images/webp/bg-gift-certificate.webp")) {
   .gift-certificate {
@@ -1218,12 +1239,8 @@ html {
     width: -moz-fit-content;
     width: fit-content;
   }
-}
-@media only screen and (min-width: 1240px) {
-  .gift-certificate__inner {
-    flex-direction: row;
-    align-items: center;
-    padding: 8rem 3.2rem;
+  .gift-certificate a {
+    width: auto;
   }
 }
 @media only screen and (min-width: 991px) {
@@ -1233,28 +1250,23 @@ html {
   .gift-certificate__text {
     margin-left: 0;
   }
-}
-@media only screen and (min-width: 1000px) {
-  .gift-certificate__content {
-    align-items: flex-start;
-  }
-  .gift-certificate__text {
-    margin-left: 0;
-  }
-}
-@media only screen and (min-width: 991px), screen and (max-height: 1000px), screen and (max-width: 1080px) {
-  .gift-certificate__inner {
-    padding: 4rem 3rem;
-  }
-}
-@media only screen and (min-height: 990px), screen and (min-width: 1000px) {
   .gift-certificate__bgOverlay {
     width: 100%;
   }
-}
-@media only screen and (max-height: 850px), screen and (min-width: 1000px) {
   .gift-certificate__inner {
     padding: 4rem 3rem;
+  }
+  .gift-certificate__btn-container div {
+    padding: 1.8rem;
+  }
+}
+@media only screen and (min-width: 1240px) {
+  .gift-certificate__inner {
+    flex-direction: row;
+    align-items: center;
+  }
+  .gift-certificate__btn-container div {
+    padding: 2.6rem 4rem;
   }
 }
 .main-header {
@@ -1635,9 +1647,8 @@ html {
     max-height: 600px;
   }
 }
-@media only screen and (min-width: 991px), screen and (max-height: 1000px), screen and (max-width: 1080px) {
+@media only screen and (min-width: 991px) and (max-height: 1000px), screen and (max-width: 1080px) {
   .rent__inner {
-    padding: 2rem 8rem;
     padding-top: 7rem;
   }
   .rent__card-container {
@@ -1956,6 +1967,82 @@ html {
 }
 @media only screen and (min-width: 1440px) {
   .course-dj-page__img {
+    width: 1280px;
+  }
+}
+.terms-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 7.2rem;
+  padding: 4rem 3.2rem;
+  background: var(--color-primary);
+}
+.terms-page__top-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.terms-page__header {
+  text-align: left;
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 120%;
+}
+.terms-page__sign-up {
+  margin-top: 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 120%;
+}
+.terms-page__img {
+  display: none;
+}
+.terms-page__img-mobile {
+  width: 100%;
+  object-fit: contain;
+  margin-top: 2rem;
+}
+.terms-page__content {
+  width: 100%;
+}
+.terms-page__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 2.4rem;
+  list-style: disc;
+  list-style-type: none;
+}
+.terms-page__list-item {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+}
+
+@media only screen and (min-width: 768px) {
+  .terms-page__top-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 84.6rem;
+  }
+  .terms-page__img-mobile {
+    display: none;
+  }
+  .terms-page__img {
+    display: block;
+    width: 100%;
+    max-width: 1280px;
+    margin-top: 2rem;
+  }
+  .terms-page__content {
+    max-width: 84.6rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .terms-page__img {
     width: 1280px;
   }
 }

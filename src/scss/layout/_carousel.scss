@@ -3,6 +3,10 @@
   max-width: 100%;
   overflow: hidden;
   height: 100%;
+
+  a {
+    display: none;
+  }
 }
 
 .carousell-wrapper:before {
@@ -95,5 +99,8 @@
     // height: 100%;
     height: 393px;
     margin-bottom: 3rem;
+  }
+  a {
+    display: block;
   }
 }

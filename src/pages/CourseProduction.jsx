@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
+import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { ContactUs } from '../components/sections/ContactUs'
 import { Btn } from '../components/Btn'
+import { links } from '../components/constraints/constrData'
+import useScrollToTop from '../components/hooks/useScrollToTop'
 
 import courseProductionKeyboardSmall from '../images/png/course-production-page-colored-small.png'
 import courseProductionKeyboardLargeColored from '../images/png/course-production-page-colored-large.png'
@@ -11,11 +12,9 @@ import courseProductionKeyboardLargeColoredWebp from '../images/webp/course-prod
 
 export const CourseProduction = () => {
   const { t } = useTranslation()
+  useScrollToTop()
 
-  const { pathname } = useLocation()
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [pathname])
+  const listItems = Array.from({ length: 24 }, (_, i) => `courseProductionPage.listItem${i + 1}`)
 
   return (
     <>
@@ -28,98 +27,33 @@ export const CourseProduction = () => {
             {t('courseProductionPage.firstLine')}
           </p>
           <p className="course-dj-page__sign-up">{t('courseProductionPage.signup')}</p>
-          <Btn
-            className={'course-dj-page__btn'}
-            text={t('courseProductionPage.btn')}
-            arrowDisplayed={true}
-            dark={false}
-          />
+          <a href={links.TELEGRAM_LINK} target="_blank" rel="noopener noreferrer">
+            <Btn
+              className={'course-dj-page__btn'}
+              text={t('courseProductionPage.btn')}
+              arrowDisplayed={true}
+              dark={false}
+            />
+          </a>
         </div>
         <picture>
-            <source srcSet={courseProductionKeyboardSmallWebp} type="image/webp" />
-            <img className="course-dj-page__img-mobile" src={courseProductionKeyboardSmall} loading="lazy" alt="Audio keyboard" />
+          <source srcSet={courseProductionKeyboardSmallWebp} type="image/webp" />
+          <img className="course-dj-page__img-mobile" src={courseProductionKeyboardSmall} loading="lazy" alt="Audio keyboard" />
         </picture>
         <picture>
-            <source srcSet={courseProductionKeyboardLargeColoredWebp} type="image/webp" />
-            <img className="course-dj-page__img" src={courseProductionKeyboardLargeColored} loading="lazy" alt="Audio keyboard" />
+          <source srcSet={courseProductionKeyboardLargeColoredWebp} type="image/webp" />
+          <img className="course-dj-page__img" src={courseProductionKeyboardLargeColored} loading="lazy" alt="Audio keyboard" />
         </picture>
         <div className="course-dj-page__content">
           <h2 className="course-dj-page__sub-header">
             {t('courseProductionPage.subheader')}
           </h2>
           <ul className="course-dj-page__list">
-            <li className="course-dj-page__list-item">
-              {t('courseProductionPage.listItem1')}
-            </li>
-            <li className="course-dj-page__list-item">
-              {t('courseProductionPage.listItem2')}
-            </li>
-            <li className="course-dj-page__list-item">
-              {t('courseProductionPage.listItem3')}
-            </li>
-            <li className="course-dj-page__list-item">
-              {t('courseProductionPage.listItem4')}
-            </li>
-            <li className="course-dj-page__list-item">
-              {t('courseProductionPage.listItem5')}
-            </li>
-            <li className="course-dj-page__list-item">
-              {t('courseProductionPage.listItem6')}
-            </li>
-            <li className="course-dj-page__list-item">
-              {t('courseProductionPage.listItem7')}
-            </li>
-            <li className="course-dj-page__list-item">
-              {t('courseProductionPage.listItem8')}
-            </li>
-            <li className="course-dj-page__list-item">
-              {t('courseProductionPage.listItem9')}
-            </li>
-            <li className="course-dj-page__list-item">
-              {t('courseProductionPage.listItem10')}
-            </li>
-            <li className="course-dj-page__list-item">
-              {t('courseProductionPage.listItem11')}
-            </li>
-            <li className="course-dj-page__list-item">
-              {t('courseProductionPage.listItem12')}
-            </li>
-            <li className="course-dj-page__list-item">
-              {t('courseProductionPage.listItem13')}
-            </li>
-            <li className="course-dj-page__list-item">
-              {t('courseProductionPage.listItem14')}
-            </li>
-            <li className="course-dj-page__list-item">
-              {t('courseProductionPage.listItem15')}
-            </li>
-            <li className="course-dj-page__list-item">
-              {t('courseProductionPage.listItem16')}
-            </li>
-            <li className="course-dj-page__list-item">
-              {t('courseProductionPage.listItem17')}
-            </li>
-            <li className="course-dj-page__list-item">
-              {t('courseProductionPage.listItem18')}
-            </li>
-            <li className="course-dj-page__list-item">
-              {t('courseProductionPage.listItem19')}
-            </li>
-            <li className="course-dj-page__list-item">
-              {t('courseProductionPage.listItem20')}
-            </li>
-            <li className="course-dj-page__list-item">
-              {t('courseProductionPage.listItem21')}
-            </li>
-            <li className="course-dj-page__list-item">
-              {t('courseProductionPage.listItem22')}
-            </li>
-            <li className="course-dj-page__list-item">
-              {t('courseProductionPage.listItem23')}
-            </li>
-            <li className="course-dj-page__list-item">
-              {t('courseProductionPage.listItem24')}
-            </li>
+            {listItems.map(itemKey => (
+              <li key={itemKey} className="course-dj-page__list-item">
+                {t(itemKey)}
+              </li>
+            ))}
           </ul>
           <div className="course-dj-page__cards">
             <div className="course-dj-page__card course-page-card">
@@ -165,7 +99,7 @@ export const CourseProduction = () => {
           </div>
         </div>
       </section>
-      <ContactUs snapless={true}/>
+      <ContactUs snapless={true} />
     </>
   )
 }

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { useTranslation } from 'react-i18next'
 import { MapComponent } from '../MapComponent.tsx'
 import { IconIG, IconTG, email, phone, address } from '../../images/icons/index.ts'
+import { links } from '../constraints/constrData'
 
 import { GiftCertificate } from './GiftCertificate'
 import { Footer } from './Footer'
@@ -41,7 +42,7 @@ export const ContactUs = ({ snapless }) => {
                         <a href="https://www.instagram.com/basement.studio.lviv/" target="_blank" rel="noopener noreferrer">
                             <IconIG className="pointer" />
                         </a>
-                        <a href="https://t.me/ostapoleksyn" target="_blank" rel="noopener noreferrer">
+                        <a href={links.TELEGRAM_LINK} target="_blank" rel="noopener noreferrer">
                             <IconTG className="pointer" />
                         </a>
                     </div>

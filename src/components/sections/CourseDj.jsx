@@ -24,7 +24,8 @@ export const CourseDj = () => {
                         <p className="course-dj__text">{t('courseDJ.p3')}</p>
                     </div>
                     <Link to="/course-dj">
-                        <Btn className={'course-dj__btn'} style={{ margin: '0 3.2rem' }} text={t('courseDjPage.main.btn')} arrowDisplayed={true} dark={false}/>
+                        <Btn className='course-dj__btn course-dj__btn--mobile' style={{ margin: '0 3.2rem' }} text={t('courseDjPage.main.btn')} arrowDisplayed={true} dark={true}/>
+                        <Btn className='course-dj__btn course-dj__btn--desktop' style={{ margin: '0 3.2rem' }} text={t('courseDjPage.main.btn')} arrowDisplayed={true} dark={false}/>
                     </Link>
                 </div>
 

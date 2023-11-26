@@ -94,7 +94,6 @@
     &__text:first-of-type {
       margin-top: 1.4rem;
       margin-bottom: 0;
-      // margin-bottom: 0.8rem;
     }
 
     &__text:last-of-type {
@@ -103,7 +102,7 @@
 
     &__inner {
       padding: 2rem 3rem;
-      padding-top: 9rem; // heght fix
+      padding-top: 9rem;
       justify-content: space-around;
     }
 
