@@ -349,6 +349,9 @@ html {
   overflow: hidden;
   height: 100%;
 }
+.carousel a {
+  display: none;
+}
 
 .carousell-wrapper:before {
   content: "";
@@ -432,6 +435,9 @@ html {
   .carousel-item {
     height: 393px;
     margin-bottom: 3rem;
+  }
+  a {
+    display: block;
   }
 }
 #fb:hover #fb-rect {
@@ -1193,6 +1199,9 @@ html {
   width: 100%;
   gap: 2.4rem;
 }
+.gift-certificate a {
+  width: 100%;
+}
 
 @supports (background-image: url("/src/images/webp/bg-gift-certificate.webp")) {
   .gift-certificate {
@@ -1230,12 +1239,8 @@ html {
     width: -moz-fit-content;
     width: fit-content;
   }
-}
-@media only screen and (min-width: 1240px) {
-  .gift-certificate__inner {
-    flex-direction: row;
-    align-items: center;
-    padding: 8rem 3.2rem;
+  .gift-certificate a {
+    width: auto;
   }
 }
 @media only screen and (min-width: 991px) {
@@ -1245,28 +1250,23 @@ html {
   .gift-certificate__text {
     margin-left: 0;
   }
-}
-@media only screen and (min-width: 1000px) {
-  .gift-certificate__content {
-    align-items: flex-start;
-  }
-  .gift-certificate__text {
-    margin-left: 0;
-  }
-}
-@media only screen and (min-width: 991px), screen and (max-height: 1000px), screen and (max-width: 1080px) {
-  .gift-certificate__inner {
-    padding: 4rem 3rem;
-  }
-}
-@media only screen and (min-height: 990px), screen and (min-width: 1000px) {
   .gift-certificate__bgOverlay {
     width: 100%;
   }
-}
-@media only screen and (max-height: 850px), screen and (min-width: 1000px) {
   .gift-certificate__inner {
     padding: 4rem 3rem;
+  }
+  .gift-certificate__btn-container div {
+    padding: 1.8rem;
+  }
+}
+@media only screen and (min-width: 1240px) {
+  .gift-certificate__inner {
+    flex-direction: row;
+    align-items: center;
+  }
+  .gift-certificate__btn-container div {
+    padding: 2.6rem 4rem;
   }
 }
 .main-header {
