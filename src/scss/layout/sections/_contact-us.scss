@@ -221,7 +221,7 @@ screen and (max-width: $width-1080) {
 screen and (min-width: $width-1000) {
 
   .contact-us {
-    flex-direction: column;
+    // flex-direction: column;
     padding: 0;
     justify-items: start;
     height: max-content;
@@ -257,7 +257,7 @@ screen and (min-width: $width-1000) {
 
 }
 
-@media only screen and (min-height: $width-850) and (min-width: $width-1000) {
+@media only screen and (min-width: $width-1000) {
   .contact-us {
     .contact-us-container {
       padding-left: 8rem;
@@ -265,10 +265,6 @@ screen and (min-width: $width-1000) {
     }
 
     flex-direction: row;
-
-    // &__link:nth-child(3) {
-    //   flex-direction: column;
-    // }
 
     &__text {
       font-size: 1.8rem;
@@ -285,10 +281,6 @@ screen and (min-width: $width-1000) {
     &__links-container {
       gap: 2.1rem;
     }
-
-    // &__link:nth-child(3) {
-    //   flex-direction: column;
-    // }
 
     &__social-media-container {
       margin-top: 12rem;

@@ -691,7 +691,6 @@ html {
 }
 @media only screen and (max-height: 850px), screen and (min-width: 1000px) {
   .contact-us {
-    flex-direction: column;
     padding: 0;
     justify-items: start;
     height: max-content;
@@ -719,7 +718,7 @@ html {
     padding: 2rem 3rem !important;
   }
 }
-@media only screen and (min-height: 850px) and (min-width: 1000px) {
+@media only screen and (min-width: 1000px) {
   .contact-us {
     flex-direction: row;
   }
