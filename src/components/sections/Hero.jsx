@@ -15,7 +15,7 @@ export const Hero = () => {
       {loadVideo && (
         <iframe
           id="video-background"
-          src="https://www.youtube.com/embed/LYWFL5pGeME?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=LYWFL5pGeME&mute=1"
+          src="https://www.youtube.com/embed/EvhdLeCekTI?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=EvhdLeCekTI&mute=1"
           frameBorder="0"
           allowFullScreen
         />
