@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
+import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { ContactUs } from '../components/sections/ContactUs'
 import { Btn } from '../components/Btn'
 import { links } from '../components/constraints/constrData'
+import useScrollToTop from '../components/hooks/useScrollToTop'
 
 import courseDjKeyboardSmall from '../images/png/course-dj-page-colored-small.png'
 import courseDjKeyboardLargeColored from '../images/png/course-dj-page-colored-larde.png'
@@ -12,11 +12,7 @@ import courseDjKeyboardLargeColoredWebp from '../images/webp/course-dj-page-colo
 
 export const CourseDj = () => {
   const { t } = useTranslation()
-
-  const { pathname } = useLocation()
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [pathname])
+  useScrollToTop()
 
   return (
     <>
