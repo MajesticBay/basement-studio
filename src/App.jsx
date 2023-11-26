@@ -5,6 +5,7 @@ import { Home } from './pages/Home'
 import { PageNotFound } from './pages/PageNotFound'
 import { CourseDj } from './pages/CourseDj'
 import { CourseProduction } from './pages/CourseProduction'
+import { Terms } from './pages/Terms'
 
 function App () {
   return (
@@ -14,6 +15,7 @@ function App () {
           <Route index element={<Home />} />
           <Route path="/course-dj" element={<CourseDj />} />
           <Route path="/course-production" element={<CourseProduction />} />
+          <Route path="/terms" element={<Terms />} />
           <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>
