@@ -1,6 +1,6 @@
 {
     "header.aboutUs": "ABOUT US",
-    "header.recordStudio": "RECORD STUDIO",
+    "header.recordStudio": "RECORDING STUDIO",
     "header.courseDj": "DJ COURSE",
     "header.courseProduction": "PRODUCTION COURSE",
     "header.rent": "RENT",
@@ -144,6 +144,8 @@
     "courseProductionPage.listItem22": "Track arrangement and structure.",
     "courseProductionPage.listItem23": "Ableton for live performance with the ability to integrate drum machines, sequencers, synthesizers, midi controllers and effectors.",
     "courseProductionPage.listItem24": "Preparation for mastering. Sound summation and export of the pre-master track.",
+    "footer.privacy" : "Privacy Policy & Cookies Statement",
+    "footer.terms" : "Website Terms Of Use",
     "404.h1": "404 - Page Not Found",
     "404.p1": "The page you are looking for might have been removed or is temporarily unavailable.",
     "404.btn": "Back to main"
