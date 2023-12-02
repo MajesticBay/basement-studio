@@ -190,29 +190,15 @@
   }
 }
 
-@media only screen and (min-width: $width-991),
-screen and (max-height: $width-1000),
-screen and (max-width: $width-1080) {
-  .course-dj {
-
-
-    &__img {
-      max-height: 300px;
-    }
-
-  }
-}
 
 @media only screen and (min-width: $width-1080) {
   .course-dj {
-
-
     &__img {
       max-height: 100%;
     }
-
   }
 }
+
 
 @media only screen and (max-width: $width-764) {
 

@@ -89,7 +89,7 @@
   }
 }
 
-@media only screen and (max-height: $width-850), screen and (min-width: $width-1000) {
+@media only screen and (max-height: $width-850) and (min-width: $width-1000) {
   .record-studio {
     &__text:first-of-type {
       margin-top: 1.4rem;
