@@ -1,0 +1,24 @@
+[[redirects]]
+  from = "/terms"
+  to = "/terms"
+  status = 200
+
+[[redirects]]
+  from = "/privacy"
+  to = "/privacy"
+  status = 200
+
+[[redirects]]
+  from = "/course-dj"
+  to = "/course-dj"
+  status = 200
+
+[[redirects]]
+  from = "/course-production"
+  to = "/course-production"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
