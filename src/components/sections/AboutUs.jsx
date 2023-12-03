@@ -46,7 +46,7 @@ export const AboutUs = () => {
     if (isVisible) {
       interval = setInterval(() => {
         updateR('next')
-      }, 5000)
+      }, 3000)
     }
     return () => {
       if (interval) {
@@ -77,7 +77,7 @@ export const AboutUs = () => {
   ))
 
   return (
-    <div ref={aboutUsRef} id="about-us" className="about-us" style={{ position: 'relative' }}>
+    <div id="about-us" className="about-us" style={{ position: 'relative' }}>
       <p className="about-us__text">
         <span className="bold">BASEMENT</span>
         {t('aboutUs.p1')}
@@ -93,7 +93,7 @@ export const AboutUs = () => {
           </MobileCarousel>
         </>
         : <>
-          <div className="carousell-main">
+          <div ref={aboutUsRef} className="carousell-main">
             <div className="carousell" style={{ translate: `-${r}0vw 0` }}>
               {imagesData.map((item, index) => (
                 <div key={index}
