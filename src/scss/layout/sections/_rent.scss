@@ -75,20 +75,12 @@
 @media only screen and (min-width: $width-991) and (max-height: $width-1000),
   screen and (max-width: $width-1080) {
   .rent {
-    &__inner {
-      // padding: 2rem 8rem;
-      padding-top: 7rem;
-    }
     &__card-container {
-      display: flex;
       margin-top: 2rem;
-      flex: 1 0;
-      align-items: center;
     }
     &__card {
-      // height: 100%;
-      height: 537px;
-      max-height: 590px;
+      height: 540px;
+      margin-bottom: 1.5rem;
     }
   }
 }

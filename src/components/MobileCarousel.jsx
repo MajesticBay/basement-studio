@@ -33,7 +33,7 @@ const MobileCarousel = ({ children }) => {
       if (!paused) {
         updateIndex(activeIndex + 1)
       }
-    }, 3000)
+    }, 5000)
 
     return () => {
       if (interval) {
