@@ -25,10 +25,21 @@ export function Header () {
   useEffect(() => {
     window.addEventListener('scroll', handleScroll, { passive: true })
     if (hash) {
+      // 990px
+      // const scrolledY = window.scrollY
       if (hash === '#terms' || hash === '#privacy') {
         document.getElementById('contact-us').scrollIntoView()
+        // if (scrolledY) {
+        //   window.scroll(0, scrolledY + 300)
+        // }
       } else {
         document.getElementById(hash.replace('#', ''))?.scrollIntoView()
+        // if (window.innerWidth <= 990) {
+        //   window.scroll(0, 50)
+        // }
+        // if (window.innerWidth <= 990 & scrolledY) {
+        //   window.scroll(0, scrolledY + 50)
+        // }
       }
     }
     return () => window.removeEventListener('scroll', handleScroll)
@@ -49,8 +60,28 @@ export function Header () {
     )
   }, [currentScreenNum])
 
+  // const scrollTo = (id) => {
+  //   // Find the element
+  //   const element = document.getElementById(id)
+  //   if (element) {
+  //     // Scroll to the element
+  //     element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+
+  //     // Calculate the height of the navbar
+  //     const navbarHeight = document.querySelector('.main-header').offsetHeight
+
+  //     // Adjust the scroll position by the navbar height
+  //     const scrolledY = window.scrollY
+  //     if (scrolledY) {
+  //       window.scroll(0, scrolledY - navbarHeight) // Subtract the navbar height
+  //     }
+  //   }
+  // }
+
   const handleLangChange = (e) => i18n.changeLanguage(e.target.value)
-  const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+  const scrollTo = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+  }
 
   return (
     <header className="main-header">
