@@ -223,6 +223,7 @@ html {
 .card {
   display: flex;
   flex-direction: column;
+  min-height: 350px;
   max-width: 411px;
   border: 1px solid rgba(255, 255, 255, 0.4);
   padding: 3.2rem 2.4rem;
@@ -346,6 +347,7 @@ html {
 .carousel {
   width: 100%;
   max-width: 100%;
+  overflow: hidden;
   height: 100%;
 }
 .carousel a {
@@ -1573,6 +1575,7 @@ html {
   }
   .record-studio__card {
     padding: 2.2rem 2rem;
+    height: 350px;
     max-height: 440px;
   }
 }
