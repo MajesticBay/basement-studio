@@ -1713,7 +1713,7 @@ html {
   display: flex;
   background: #000;
   color: aliceblue;
-  z-index: 20;
+  z-index: 25;
   cursor: pointer;
 }
 
@@ -1737,7 +1737,7 @@ html {
   position: absolute;
   top: 0;
   background: rgba(0, 0, 0, 0.7019607843);
-  z-index: 10;
+  z-index: 20;
   width: 20vw;
   max-height: 50vh;
 }
