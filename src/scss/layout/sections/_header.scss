@@ -1,7 +1,8 @@
 .main-header {
   display: flex;
   width: 100%;
-  position: absolute;
+  // position: absolute;
+  position: fixed;
   background: rgba(12, 12, 12, 0.94);
   z-index: 100;
 }
