@@ -346,7 +346,6 @@ html {
 .carousel {
   width: 100%;
   max-width: 100%;
-  overflow: hidden;
   height: 100%;
 }
 .carousel a {
@@ -404,6 +403,8 @@ html {
   align-items: center;
   justify-content: center;
   margin-bottom: 1.5rem;
+  margin-top: 0;
+  width: 100%;
 }
 
 .indicators {
