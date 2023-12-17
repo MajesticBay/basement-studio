@@ -12,7 +12,7 @@ const getLinkByScreenNum = (screenNum) => {
 }
 
 export function Header () {
-  const { pathname: currentPath } = useLocation()
+  const { pathname: currentPath, hash } = useLocation()
   const { t, i18n } = useTranslation()
   const [openMobileMenu, setOpenMobileMenu] = useState(false)
   const [navLinksState, setNavLinksState] = useState(navLinksData)
@@ -24,6 +24,13 @@ export function Header () {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll, { passive: true })
+    if (hash) {
+      if (hash === '#terms' || hash === '#privacy') {
+        document.getElementById('contact-us').scrollIntoView()
+      } else {
+        document.getElementById(hash.replace('#', ''))?.scrollIntoView()
+      }
+    }
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
@@ -57,7 +64,7 @@ export function Header () {
             </>
             )
           : (
-            <a href="/" className="pointer navigation__arrow-link">
+            <a href={'/' + `${currentPath.replace('/', '#')}`} className="pointer navigation__arrow-link">
               <img src={arrowToLeft} loading="lazy" alt="Left arrow icon" />
             </a>
             )}
@@ -88,7 +95,7 @@ export function Header () {
             </>
             )
           : (
-              <a href="/" className="pointer navigation__arrow-link">
+              <a href={'/' + `${currentPath.replace('/', '#')}`} className="pointer navigation__arrow-link">
                 <img src={arrowToLeft} loading="lazy" alt="Left arrow icon" />
               </a>
             )}
