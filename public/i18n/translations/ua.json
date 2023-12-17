@@ -116,7 +116,6 @@
   "courseDjPage.lessons": "занять",
   "courseProductionPage.header": "КУРС PRODUCTION",
   "courseProductionPage.signup": "Реєструйся та приходь на пробний урок!",
-  "courseProductionPage.firstLine": "",
   "courseProductionPage.btn": "ЗАРЕЄСТРУВАТИСЬ",
   "courseProductionPage.subheader": "Програма курсу:",
   "courseProductionPage.listItem1": "Знайомство з програмою Ableton Live. Особливості та відмінності від інших DAW.",
@@ -143,6 +142,8 @@
   "courseProductionPage.listItem22": "Аранжування та структура треку.",
   "courseProductionPage.listItem23": "Ableton Live як основа лайв перформенсу з можливістю інтегрування драм машин, секвенсорів, синтезаторів, контроллерів та ефекторів.",
   "courseProductionPage.listItem24": "Підготовка треків до мастерінгу. Сумація звуку та експортування Premaster треку.",
+  "footer.privacy" : "Політика Конфіденційності Та Використання Cookies",
+  "footer.terms" : "Умови Користування Веб-сайту",
   "404.h1": "404 - Сторінки немає",
   "404.p1": "Сторінки яку ви шукаєте, скоріше за все не існує або вона тимчасово недоступна",
   "404.btn": "На головну"

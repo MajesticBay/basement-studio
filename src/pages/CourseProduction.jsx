@@ -23,9 +23,6 @@ export const CourseProduction = () => {
           <h1 className="header course-dj-page__header">
             {t('courseProductionPage.header')}
           </h1>
-          <p className="course-dj-page__first-line">
-            {t('courseProductionPage.firstLine')}
-          </p>
           <p className="course-dj-page__sign-up">{t('courseProductionPage.signup')}</p>
           <a href={links.TELEGRAM_LINK} target="_blank" rel="noopener noreferrer">
             <Btn

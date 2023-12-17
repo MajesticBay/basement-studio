@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import { useSwipeable } from 'react-swipeable'
 import PropTypes from 'prop-types'
+import useElementVisibility from './hooks/useElementVisibility'
 
 export const CarouselItem = ({ children }) => {
   return (
@@ -18,6 +19,9 @@ const MobileCarousel = ({ children }) => {
   const [activeIndex, setActiveIndex] = useState(0)
   const [paused, setPaused] = useState(false)
 
+  const rentRef = useRef(null)
+  const isVisible = useElementVisibility(rentRef)
+
   const updateIndex = (newIndex) => {
     if (newIndex < 0) {
       newIndex = React.Children.count(children) - 1
@@ -29,11 +33,15 @@ const MobileCarousel = ({ children }) => {
   }
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      if (!paused) {
-        updateIndex(activeIndex + 1)
-      }
-    }, 3000)
+    let interval
+
+    if (isVisible) {
+      interval = setInterval(() => {
+        if (!paused) {
+          updateIndex(activeIndex + 1)
+        }
+      }, 5000)
+    }
 
     return () => {
       if (interval) {
@@ -51,6 +59,7 @@ const MobileCarousel = ({ children }) => {
     <div
       {...handlers}
       className="carousel"
+      ref={rentRef}
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >

@@ -1,15 +1,19 @@
-import React, { useEffect, useState } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { arrow } from '../../images/icons/index.ts'
 import MobileCarousel, { CarouselItem } from '../MobileCarousel2'
 import '../../scss/NewCarousel.css'
 import useWindowDimensions from '../hooks/useWindowDimensions'
+import useElementVisibility from '../hooks/useElementVisibility'
 import { imagesData } from '../constraints/carouselPics'
 
 export const AboutUs = () => {
   const { t } = useTranslation()
   const [r, setR] = useState(0)
   const { width } = useWindowDimensions()
+
+  const aboutUsRef = useRef(null)
+  const isVisible = useElementVisibility(aboutUsRef)
 
   const isDotActive = (dotIndex) => {
     const increment = width > 900 ? 6 : 9
@@ -38,11 +42,18 @@ export const AboutUs = () => {
   }
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      updateR('next')
-    }, 5000)
-    return () => clearInterval(interval)
-  }, [width])
+    let interval
+    if (isVisible) {
+      interval = setInterval(() => {
+        updateR('next')
+      }, 3000)
+    }
+    return () => {
+      if (interval) {
+        clearInterval(interval)
+      }
+    }
+  }, [isVisible, width])
 
   const wrappers = document.querySelectorAll('.carousell-wrapper')
   wrappers.forEach(div => {
@@ -82,7 +93,7 @@ export const AboutUs = () => {
           </MobileCarousel>
         </>
         : <>
-          <div className="carousell-main">
+          <div ref={aboutUsRef} className="carousell-main">
             <div className="carousell" style={{ translate: `-${r}0vw 0` }}>
               {imagesData.map((item, index) => (
                 <div key={index}

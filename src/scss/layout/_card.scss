@@ -8,6 +8,7 @@
 .card {
     display: flex;
     flex-direction: column;
+    min-height: 350px;
     max-width: 411px;
     border: 1px solid rgba(255, 255, 255, 0.4);
     padding: 3.2rem 2.4rem;

@@ -188,9 +188,7 @@
   }
 }
 
-@media only screen and (min-width: $width-991),
-screen and (max-height: $width-1000),
-screen and (max-width: $width-1080) {
+@media only screen and (min-width: $width-991) and (max-height: $width-1000) {
   .course-production {
 
     &__img {
@@ -220,10 +218,8 @@ screen and (max-width: $width-1080) {
 }
 
 
-@media only screen and (max-height: $width-850),
-screen and (min-width: $width-1000) {
+@media only screen and (max-height: $width-850) and (min-width: $width-1000) {
   .course-production {
-
     &__img {
       margin-bottom: 0;
     }
