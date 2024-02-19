@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import MobileCarousel, { CarouselItem } from '../MobileCarousel'
+import MobileCarousel, { CarouselItem } from '../MobileCarousel2'
 import { Btn } from '../Btn.jsx'
 import { bgOverlayStyle, cardStructures } from '../constraints/rentCard'
 import { links } from '../constraints/constrData'
@@ -74,7 +74,7 @@ export const Rent = () => {
                 <h1 className="header">{t('rent.p1')}</h1>
                 <div className="rent__card-container rent__card-container--mobile">
                     <div className="cards mobile">
-                        <MobileCarousel>
+                        <MobileCarousel correction={2.5}>
                             {cardsCarousel}
                         </MobileCarousel>
                     </div>
