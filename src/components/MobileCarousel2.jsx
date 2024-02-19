@@ -15,7 +15,7 @@ CarouselItem.propTypes = {
   width: PropTypes.string
 }
 
-const MobileCarousel = ({ children }) => {
+const MobileCarousel = ({ correction, children }) => {
   const [activeIndex, setActiveIndex] = useState(0)
   const [paused, setPaused] = useState(false)
 
@@ -57,7 +57,7 @@ const MobileCarousel = ({ children }) => {
     >
       <div
         className="inner"
-        style={{ transform: `translateX(-${activeIndex * 90}vw)`, marginLeft: '7vw' }}
+        style={{ transform: `translateX(-${activeIndex * 90}vw)`, marginLeft: correction ? `${correction}vw` : '7vw' }}
       >
         {React.Children.map(children, (child, index) => {
           return React.cloneElement(child, { width: '100%' })
@@ -82,6 +82,7 @@ const MobileCarousel = ({ children }) => {
 }
 
 MobileCarousel.propTypes = {
+  correction: PropTypes.number,
   children: PropTypes.node.isRequired
 }
 

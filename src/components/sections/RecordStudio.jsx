@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import Carousel, { CarouselItem } from '../Carousel'
+import MobileCarousel, { CarouselItem } from '../MobileCarousel2'
 import { Btn } from '../Btn'
 import { links } from '../constraints/constrData'
 
@@ -52,7 +52,7 @@ export const RecordStudio = () => {
                     <p className="record-studio__text">{pSecond}</p>
                 </div>
                 <div className="cards mobile">
-                    <Carousel>{cards}</Carousel>
+                    <MobileCarousel correction={3}>{cards}</MobileCarousel>
                 </div>
                 <div className="cards desktop">{cards}</div>
             </div>
