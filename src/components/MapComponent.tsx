@@ -36,7 +36,8 @@ export const MapComponent: React.VFC = () => {
       >
         <Map
           options={{
-            styles: exampleMapStyles
+            styles: exampleMapStyles,
+            language: 'en'
           }}
           center={center}
           onClick={onClick}
