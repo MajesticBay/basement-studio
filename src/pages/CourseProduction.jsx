@@ -64,13 +64,13 @@ export const CourseProduction = () => {
                 <p className="course-page-card__quantity">
                   10 {t('courseDjPage.lessons')}
                 </p>
-                <p className="course-page-card__price">$400</p>
+                <p className="course-page-card__price">$450</p>
               </div>
               <div className="course-page-card__row">
                 <p className="course-page-card__quantity">
                   20 {t('courseDjPage.lessons')}
                 </p>
-                <p className="course-page-card__price">$700</p>
+                <p className="course-page-card__price">$800</p>
               </div>
             </div>
             <div className="course-dj-page__card course-page-card">
@@ -84,13 +84,13 @@ export const CourseProduction = () => {
                 <p className="course-page-card__quantity">
                   10 {t('courseDjPage.lessons')}
                 </p>
-                <p className="course-page-card__price">$600</p>
+                <p className="course-page-card__price">$700</p>
               </div>
               <div className="course-page-card__row">
                 <p className="course-page-card__quantity">
                   20 {t('courseDjPage.lessons')}
                 </p>
-                <p className="course-page-card__price">$1100</p>
+                <p className="course-page-card__price">$1300</p>
               </div>
             </div>
           </div>
